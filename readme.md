@@ -6,7 +6,7 @@ WORK IN PROGRESS
 >This repo is partly based on [STM32N6-GettingStarted-ObjectDetection](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection)
 
 > [!WARNING]
-> Third-party components under `Middlewares/` and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
+> Third-party components under `Middlewares/`, 'Application/STM32CubeIDE/' and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
 
 ## Compilation
 within the application folder run
