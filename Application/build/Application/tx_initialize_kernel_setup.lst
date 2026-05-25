@@ -1,0 +1,233 @@
+ARM GAS  /tmp/ccQwAAhY.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"tx_initialize_kernel_setup.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c"
+  25              		.section	.text._tx_initialize_kernel_setup,"ax",%progbits
+  26              		.align	1
+  27              		.global	_tx_initialize_kernel_setup
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_tx_initialize_kernel_setup:
+  33              	.LFB8:
+   1:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  12:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  13:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**   Initialize                                                          */
+  19:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  23:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  25:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+ARM GAS  /tmp/ccQwAAhY.s 			page 2
+
+
+  26:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  28:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** #include "tx_initialize.h"
+  30:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** #include "tx_thread.h"
+  31:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  32:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  33:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  34:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  35:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  FUNCTION                                               RELEASE        */
+  36:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  37:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    _tx_initialize_kernel_setup                         PORTABLE C      */
+  38:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                           6.1          */
+  39:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  AUTHOR                                                                */
+  40:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  41:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    William E. Lamie, Microsoft Corporation                             */
+  42:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  43:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  DESCRIPTION                                                           */
+  44:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  45:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    This function is called by the compiler's startup code to make      */
+  46:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    ThreadX objects accessible to the compiler's library.  If this      */
+  47:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    function is not called by the compiler, all ThreadX initialization  */
+  48:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    takes place from the kernel enter function defined previously.      */
+  49:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  50:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  INPUT                                                                 */
+  51:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  52:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    None                                                                */
+  53:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  54:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  OUTPUT                                                                */
+  55:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  56:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    None                                                                */
+  57:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  58:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  CALLS                                                                 */
+  59:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  60:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    _tx_initialize_low_level          Low-level initialization          */
+  61:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    _tx_initialize_high_level         High-level initialization         */
+  62:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  63:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  CALLED BY                                                             */
+  64:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  65:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    startup code                      Compiler startup code             */
+  66:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  67:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  RELEASE HISTORY                                                       */
+  68:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  69:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*    DATE              NAME                      DESCRIPTION             */
+  70:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  71:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+  72:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
+  73:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                            resulting in version 6.1    */
+  74:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /*                                                                        */
+  75:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** /**************************************************************************/
+  76:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** VOID  _tx_initialize_kernel_setup(VOID)
+  77:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** {
+  34              		.loc 1 77 1 view -0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 0, uses_anonymous_args = 0
+  78:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+ARM GAS  /tmp/ccQwAAhY.s 			page 3
+
+
+  79:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Ensure that the system state variable is set to indicate
+  80:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****        initialization is in progress.  Note that this variable is
+  81:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****        later used to represent interrupt nesting.  */
+  82:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     _tx_thread_system_state =  TX_INITIALIZE_IN_PROGRESS;
+  38              		.loc 1 82 5 view .LVU1
+  39              		.loc 1 82 29 is_stmt 0 view .LVU2
+  40 0000 4FF0F033 		mov	r3, #-252645136
+  77:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  41              		.loc 1 77 1 view .LVU3
+  42 0004 10B5     		push	{r4, lr}
+  43              		.cfi_def_cfa_offset 8
+  44              		.cfi_offset 4, -8
+  45              		.cfi_offset 14, -4
+  46              		.loc 1 82 29 view .LVU4
+  47 0006 064C     		ldr	r4, .L2
+  48 0008 2360     		str	r3, [r4]
+  83:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  84:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Call any port specific preprocessing.  */
+  85:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     TX_PORT_SPECIFIC_PRE_INITIALIZATION
+  86:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  87:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Invoke the low-level initialization to handle all processor specific
+  88:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****        initialization issues.  */
+  89:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     _tx_initialize_low_level();
+  49              		.loc 1 89 5 is_stmt 1 view .LVU5
+  50 000a FFF7FEFF 		bl	_tx_initialize_low_level
+  51              	.LVL0:
+  90:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  91:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Invoke the high-level initialization to exercise all of the
+  92:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****        ThreadX components and the application's initialization
+  93:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****        function.  */
+  94:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     _tx_initialize_high_level();
+  52              		.loc 1 94 5 view .LVU6
+  53 000e FFF7FEFF 		bl	_tx_initialize_high_level
+  54              	.LVL1:
+  95:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  96:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Call any port specific post-processing.  */
+  97:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     TX_PORT_SPECIFIC_POST_INITIALIZATION
+  55              		.loc 1 97 5 view .LVU7
+  56 0012 044A     		ldr	r2, .L2+4
+  57 0014 1368     		ldr	r3, [r2]
+  58 0016 0133     		adds	r3, r3, #1
+  59 0018 1360     		str	r3, [r2]
+  98:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** 
+  99:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     /* Set the system state to indicate initialization is almost done.  */
+ 100:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c ****     _tx_thread_system_state =  TX_INITIALIZE_ALMOST_DONE;
+  60              		.loc 1 100 5 view .LVU8
+  61              		.loc 1 100 29 is_stmt 0 view .LVU9
+  62 001a 034B     		ldr	r3, .L2+8
+  63 001c 2360     		str	r3, [r4]
+ 101:../Middlewares/threadx/common/src/tx_initialize_kernel_setup.c **** }
+  64              		.loc 1 101 1 view .LVU10
+  65 001e 10BD     		pop	{r4, pc}
+  66              	.L3:
+  67              		.align	2
+  68              	.L2:
+  69 0020 00000000 		.word	_tx_thread_system_state
+  70 0024 00000000 		.word	_tx_thread_preempt_disable
+ARM GAS  /tmp/ccQwAAhY.s 			page 4
+
+
+  71 0028 F1F0F0F0 		.word	-252645135
+  72              		.cfi_endproc
+  73              	.LFE8:
+  75              		.text
+  76              	.Letext0:
+  77              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+  78              		.file 3 "../Middlewares/threadx/common/inc/tx_thread.h"
+  79              		.file 4 "../Middlewares/threadx/common/inc/tx_initialize.h"
+ARM GAS  /tmp/ccQwAAhY.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tx_initialize_kernel_setup.c
+     /tmp/ccQwAAhY.s:26     .text._tx_initialize_kernel_setup:00000000 $t
+     /tmp/ccQwAAhY.s:32     .text._tx_initialize_kernel_setup:00000000 _tx_initialize_kernel_setup
+     /tmp/ccQwAAhY.s:69     .text._tx_initialize_kernel_setup:00000020 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_initialize.h.51.e1963fa1b2d5f240125caf44b0e61d2d
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+
+UNDEFINED SYMBOLS
+_tx_initialize_low_level
+_tx_initialize_high_level
+_tx_thread_system_state
+_tx_thread_preempt_disable

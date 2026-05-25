@@ -1,0 +1,375 @@
+ARM GAS  /tmp/ccbQbhBa.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"tx_trace_initialize.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/tx_trace_initialize.c"
+  25              		.section	.text._tx_trace_initialize,"ax",%progbits
+  26              		.align	1
+  27              		.global	_tx_trace_initialize
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_tx_trace_initialize:
+  33              	.LFB8:
+   1:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  12:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  13:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**   Trace                                                               */
+  19:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  23:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  25:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+ARM GAS  /tmp/ccbQbhBa.s 			page 2
+
+
+  26:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  28:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #include "tx_trace.h"
+  30:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #ifdef TX_ENABLE_EVENT_TRACE
+  31:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  32:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  33:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the start of the trace buffer control structure.   */
+  34:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  35:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_HEADER                   *_tx_trace_header_ptr;
+  36:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  37:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  38:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the start of the trace object registry area in the trace buffer.  */
+  39:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  40:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_OBJECT_ENTRY             *_tx_trace_registry_start_ptr;
+  41:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  42:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  43:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the end of the trace object registry area in the trace buffer.  */
+  44:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  45:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_OBJECT_ENTRY             *_tx_trace_registry_end_ptr;
+  46:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  47:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  48:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the starting entry of the actual trace event area of the trace buffer.  */
+  49:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  50:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_BUFFER_ENTRY             *_tx_trace_buffer_start_ptr;
+  51:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  52:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  53:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the ending entry of the actual trace event area of the trace buffer.  */
+  54:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  55:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_BUFFER_ENTRY             *_tx_trace_buffer_end_ptr;
+  56:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  57:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  58:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the pointer to the current entry of the actual trace event area of the trace buffer.  */
+  59:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  60:../Middlewares/threadx/common/src/tx_trace_initialize.c **** TX_TRACE_BUFFER_ENTRY             *_tx_trace_buffer_current_ptr;
+  61:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  62:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  63:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the trace event enable bits, where each bit represents a type of event that can be enable
+  64:../Middlewares/threadx/common/src/tx_trace_initialize.c ****    or disabled dynamically by the application.  */
+  65:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  66:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                            _tx_trace_event_enable_bits;
+  67:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  68:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  69:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define a counter that is used in environments that don't have a timer source. This counter
+  70:../Middlewares/threadx/common/src/tx_trace_initialize.c ****    is incremented on each use giving each event a unique timestamp.  */
+  71:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  72:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                             _tx_trace_simulated_time;
+  73:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  74:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  75:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the function pointer used to call the application when the trace buffer wraps. If NULL,
+  76:../Middlewares/threadx/common/src/tx_trace_initialize.c ****    the application has not registered a callback function.  */
+  77:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  78:../Middlewares/threadx/common/src/tx_trace_initialize.c **** VOID                             (*_tx_trace_full_notify_function)(VOID *buffer);
+  79:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  80:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  81:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the total number of registry entries.  */
+  82:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+ARM GAS  /tmp/ccbQbhBa.s 			page 3
+
+
+  83:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                             _tx_trace_total_registry_entries;
+  84:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  85:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  86:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define a counter that is used to track the number of available registry entries.  */
+  87:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  88:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                             _tx_trace_available_registry_entries;
+  89:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  90:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  91:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define an index that represents the start of the registry search.  */
+  92:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  93:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                             _tx_trace_registry_search_start;
+  94:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  95:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #endif
+  96:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  97:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+  98:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+  99:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 100:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  FUNCTION                                               RELEASE        */
+ 101:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 102:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    _tx_trace_initialize                                PORTABLE C      */
+ 103:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                           6.1          */
+ 104:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  AUTHOR                                                                */
+ 105:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 106:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    William E. Lamie, Microsoft Corporation                             */
+ 107:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 108:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  DESCRIPTION                                                           */
+ 109:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 110:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    This function initializes the various control data structures for   */
+ 111:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    the trace component.                                                */
+ 112:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 113:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  INPUT                                                                 */
+ 114:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 115:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    None                                                                */
+ 116:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 117:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  OUTPUT                                                                */
+ 118:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 119:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    None                                                                */
+ 120:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 121:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  CALLS                                                                 */
+ 122:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 123:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    None                                                                */
+ 124:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 125:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  CALLED BY                                                             */
+ 126:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 127:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    _tx_initialize_high_level         High level initialization         */
+ 128:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 129:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  RELEASE HISTORY                                                       */
+ 130:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 131:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*    DATE              NAME                      DESCRIPTION             */
+ 132:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 133:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+ 134:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
+ 135:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                            resulting in version 6.1    */
+ 136:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /*                                                                        */
+ 137:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
+ 138:../Middlewares/threadx/common/src/tx_trace_initialize.c **** VOID  _tx_trace_initialize(VOID)
+ 139:../Middlewares/threadx/common/src/tx_trace_initialize.c **** {
+ARM GAS  /tmp/ccbQbhBa.s 			page 4
+
+
+  34              		.loc 1 139 1 view -0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 0, uses_anonymous_args = 0
+  38              		@ link register save eliminated.
+ 140:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+ 141:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #ifdef TX_ENABLE_EVENT_TRACE
+ 142:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #ifndef TX_DISABLE_REDUNDANT_CLEARING
+ 143:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
+ 144:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     /* Initialize all the pointers to the trace buffer to NULL.  */
+ 145:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_header_ptr =          TX_NULL;
+  39              		.loc 1 145 5 view .LVU1
+  40              		.loc 1 145 26 is_stmt 0 view .LVU2
+  41 0000 0023     		movs	r3, #0
+  42 0002 064A     		ldr	r2, .L2
+  43 0004 1360     		str	r3, [r2]
+ 146:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_registry_start_ptr =  TX_NULL;
+  44              		.loc 1 146 5 is_stmt 1 view .LVU3
+  45              		.loc 1 146 34 is_stmt 0 view .LVU4
+  46 0006 064A     		ldr	r2, .L2+4
+  47 0008 1360     		str	r3, [r2]
+ 147:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_registry_end_ptr =    TX_NULL;
+  48              		.loc 1 147 5 is_stmt 1 view .LVU5
+  49              		.loc 1 147 32 is_stmt 0 view .LVU6
+  50 000a 064A     		ldr	r2, .L2+8
+  51 000c 1360     		str	r3, [r2]
+ 148:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_buffer_start_ptr =    TX_NULL;
+  52              		.loc 1 148 5 is_stmt 1 view .LVU7
+  53              		.loc 1 148 32 is_stmt 0 view .LVU8
+  54 000e 064A     		ldr	r2, .L2+12
+  55 0010 1360     		str	r3, [r2]
+ 149:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_buffer_end_ptr =      TX_NULL;
+  56              		.loc 1 149 5 is_stmt 1 view .LVU9
+  57              		.loc 1 149 30 is_stmt 0 view .LVU10
+  58 0012 064A     		ldr	r2, .L2+16
+  59 0014 1360     		str	r3, [r2]
+ 150:../Middlewares/threadx/common/src/tx_trace_initialize.c ****     _tx_trace_buffer_current_ptr =  TX_NULL;
+  60              		.loc 1 150 5 is_stmt 1 view .LVU11
+  61              		.loc 1 150 34 is_stmt 0 view .LVU12
+  62 0016 064A     		ldr	r2, .L2+20
+  63 0018 1360     		str	r3, [r2]
+ 151:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #endif
+ 152:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #endif
+ 153:../Middlewares/threadx/common/src/tx_trace_initialize.c **** }
+  64              		.loc 1 153 1 view .LVU13
+  65 001a 7047     		bx	lr
+  66              	.L3:
+  67              		.align	2
+  68              	.L2:
+  69 001c 00000000 		.word	_tx_trace_header_ptr
+  70 0020 00000000 		.word	_tx_trace_registry_start_ptr
+  71 0024 00000000 		.word	_tx_trace_registry_end_ptr
+  72 0028 00000000 		.word	_tx_trace_buffer_start_ptr
+  73 002c 00000000 		.word	_tx_trace_buffer_end_ptr
+  74 0030 00000000 		.word	_tx_trace_buffer_current_ptr
+  75              		.cfi_endproc
+  76              	.LFE8:
+ARM GAS  /tmp/ccbQbhBa.s 			page 5
+
+
+  78              		.global	_tx_trace_registry_search_start
+  79              		.section	.bss._tx_trace_registry_search_start,"aw",%nobits
+  80              		.align	2
+  83              	_tx_trace_registry_search_start:
+  84 0000 00000000 		.space	4
+  85              		.global	_tx_trace_available_registry_entries
+  86              		.section	.bss._tx_trace_available_registry_entries,"aw",%nobits
+  87              		.align	2
+  90              	_tx_trace_available_registry_entries:
+  91 0000 00000000 		.space	4
+  92              		.global	_tx_trace_total_registry_entries
+  93              		.section	.bss._tx_trace_total_registry_entries,"aw",%nobits
+  94              		.align	2
+  97              	_tx_trace_total_registry_entries:
+  98 0000 00000000 		.space	4
+  99              		.global	_tx_trace_full_notify_function
+ 100              		.section	.bss._tx_trace_full_notify_function,"aw",%nobits
+ 101              		.align	2
+ 104              	_tx_trace_full_notify_function:
+ 105 0000 00000000 		.space	4
+ 106              		.global	_tx_trace_simulated_time
+ 107              		.section	.bss._tx_trace_simulated_time,"aw",%nobits
+ 108              		.align	2
+ 111              	_tx_trace_simulated_time:
+ 112 0000 00000000 		.space	4
+ 113              		.global	_tx_trace_event_enable_bits
+ 114              		.section	.bss._tx_trace_event_enable_bits,"aw",%nobits
+ 115              		.align	2
+ 118              	_tx_trace_event_enable_bits:
+ 119 0000 00000000 		.space	4
+ 120              		.global	_tx_trace_buffer_current_ptr
+ 121              		.section	.bss._tx_trace_buffer_current_ptr,"aw",%nobits
+ 122              		.align	2
+ 125              	_tx_trace_buffer_current_ptr:
+ 126 0000 00000000 		.space	4
+ 127              		.global	_tx_trace_buffer_end_ptr
+ 128              		.section	.bss._tx_trace_buffer_end_ptr,"aw",%nobits
+ 129              		.align	2
+ 132              	_tx_trace_buffer_end_ptr:
+ 133 0000 00000000 		.space	4
+ 134              		.global	_tx_trace_buffer_start_ptr
+ 135              		.section	.bss._tx_trace_buffer_start_ptr,"aw",%nobits
+ 136              		.align	2
+ 139              	_tx_trace_buffer_start_ptr:
+ 140 0000 00000000 		.space	4
+ 141              		.global	_tx_trace_registry_end_ptr
+ 142              		.section	.bss._tx_trace_registry_end_ptr,"aw",%nobits
+ 143              		.align	2
+ 146              	_tx_trace_registry_end_ptr:
+ 147 0000 00000000 		.space	4
+ 148              		.global	_tx_trace_registry_start_ptr
+ 149              		.section	.bss._tx_trace_registry_start_ptr,"aw",%nobits
+ 150              		.align	2
+ 153              	_tx_trace_registry_start_ptr:
+ 154 0000 00000000 		.space	4
+ 155              		.global	_tx_trace_header_ptr
+ 156              		.section	.bss._tx_trace_header_ptr,"aw",%nobits
+ARM GAS  /tmp/ccbQbhBa.s 			page 6
+
+
+ 157              		.align	2
+ 160              	_tx_trace_header_ptr:
+ 161 0000 00000000 		.space	4
+ 162              		.text
+ 163              	.Letext0:
+ 164              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+ 165              		.file 3 "../Middlewares/threadx/common/inc/tx_trace.h"
+ARM GAS  /tmp/ccbQbhBa.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tx_trace_initialize.c
+     /tmp/ccbQbhBa.s:26     .text._tx_trace_initialize:00000000 $t
+     /tmp/ccbQbhBa.s:32     .text._tx_trace_initialize:00000000 _tx_trace_initialize
+     /tmp/ccbQbhBa.s:69     .text._tx_trace_initialize:0000001c $d
+     /tmp/ccbQbhBa.s:160    .bss._tx_trace_header_ptr:00000000 _tx_trace_header_ptr
+     /tmp/ccbQbhBa.s:153    .bss._tx_trace_registry_start_ptr:00000000 _tx_trace_registry_start_ptr
+     /tmp/ccbQbhBa.s:146    .bss._tx_trace_registry_end_ptr:00000000 _tx_trace_registry_end_ptr
+     /tmp/ccbQbhBa.s:139    .bss._tx_trace_buffer_start_ptr:00000000 _tx_trace_buffer_start_ptr
+     /tmp/ccbQbhBa.s:132    .bss._tx_trace_buffer_end_ptr:00000000 _tx_trace_buffer_end_ptr
+     /tmp/ccbQbhBa.s:125    .bss._tx_trace_buffer_current_ptr:00000000 _tx_trace_buffer_current_ptr
+     /tmp/ccbQbhBa.s:83     .bss._tx_trace_registry_search_start:00000000 _tx_trace_registry_search_start
+     /tmp/ccbQbhBa.s:80     .bss._tx_trace_registry_search_start:00000000 $d
+     /tmp/ccbQbhBa.s:90     .bss._tx_trace_available_registry_entries:00000000 _tx_trace_available_registry_entries
+     /tmp/ccbQbhBa.s:87     .bss._tx_trace_available_registry_entries:00000000 $d
+     /tmp/ccbQbhBa.s:97     .bss._tx_trace_total_registry_entries:00000000 _tx_trace_total_registry_entries
+     /tmp/ccbQbhBa.s:94     .bss._tx_trace_total_registry_entries:00000000 $d
+     /tmp/ccbQbhBa.s:104    .bss._tx_trace_full_notify_function:00000000 _tx_trace_full_notify_function
+     /tmp/ccbQbhBa.s:101    .bss._tx_trace_full_notify_function:00000000 $d
+     /tmp/ccbQbhBa.s:111    .bss._tx_trace_simulated_time:00000000 _tx_trace_simulated_time
+     /tmp/ccbQbhBa.s:108    .bss._tx_trace_simulated_time:00000000 $d
+     /tmp/ccbQbhBa.s:118    .bss._tx_trace_event_enable_bits:00000000 _tx_trace_event_enable_bits
+     /tmp/ccbQbhBa.s:115    .bss._tx_trace_event_enable_bits:00000000 $d
+     /tmp/ccbQbhBa.s:122    .bss._tx_trace_buffer_current_ptr:00000000 $d
+     /tmp/ccbQbhBa.s:129    .bss._tx_trace_buffer_end_ptr:00000000 $d
+     /tmp/ccbQbhBa.s:136    .bss._tx_trace_buffer_start_ptr:00000000 $d
+     /tmp/ccbQbhBa.s:143    .bss._tx_trace_registry_end_ptr:00000000 $d
+     /tmp/ccbQbhBa.s:150    .bss._tx_trace_registry_start_ptr:00000000 $d
+     /tmp/ccbQbhBa.s:157    .bss._tx_trace_header_ptr:00000000 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+                           .group:00000000 wm4.tx_trace.h.77.bb51149367e9195b9dec1539d7828ce8
+ARM GAS  /tmp/ccbQbhBa.s 			page 8
+
+
+
+NO UNDEFINED SYMBOLS

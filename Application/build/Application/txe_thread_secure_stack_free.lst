@@ -1,0 +1,216 @@
+ARM GAS  /tmp/cckFKI07.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"txe_thread_secure_stack_free.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c"
+  25              		.section	.text._txe_thread_secure_stack_free,"ax",%progbits
+  26              		.align	1
+  27              		.global	_txe_thread_secure_stack_free
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_txe_thread_secure_stack_free:
+  33              	.LVL0:
+  34              	.LFB8:
+   1:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+   2:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+   3:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+   5:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  10:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  11:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  12:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  13:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  14:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  15:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**                                                                       */
+  16:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**                                                                       */
+  18:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**   Thread                                                              */
+  19:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**                                                                       */
+  20:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  21:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  22:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  23:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+ARM GAS  /tmp/cckFKI07.s 			page 2
+
+
+  25:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  26:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  28:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #include "tx_initialize.h"
+  30:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #include "tx_thread.h"
+  31:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  32:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  33:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  34:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  FUNCTION                                               RELEASE        */
+  35:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  36:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    _txe_thread_secure_stack_free                       Cortex-M55      */
+  37:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                           6.1          */
+  38:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  AUTHOR                                                                */
+  39:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  40:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    Scott Larson, Microsoft Corporation                                 */
+  41:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  42:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  DESCRIPTION                                                           */
+  43:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  44:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    This function checks for errors in the secure stack free            */
+  45:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    function call.                                                      */
+  46:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  47:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  INPUT                                                                 */
+  48:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  49:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    thread_ptr                            Thread control block pointer  */
+  50:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  51:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  OUTPUT                                                                */
+  52:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  53:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    TX_THREAD_ERROR                       Invalid thread pointer        */
+  54:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    TX_CALLER_ERROR                       Invalid caller of function    */
+  55:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    status                                Actual completion status      */
+  56:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  57:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  CALLS                                                                 */
+  58:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  59:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    _tx_thread_secure_stack_free          Actual stack free function    */
+  60:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  61:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  CALLED BY                                                             */
+  62:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  63:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    Application Code                                                    */
+  64:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  65:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  RELEASE HISTORY                                                       */
+  66:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  67:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*    DATE              NAME                      DESCRIPTION             */
+  68:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  69:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*  09-30-2020     Scott Larson             Initial Version 6.1           */
+  70:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /*                                                                        */
+  71:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** /**************************************************************************/
+  72:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** UINT    _txe_thread_secure_stack_free(TX_THREAD *thread_ptr)
+  73:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** {
+  35              		.loc 1 73 1 view -0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 0
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  39              		@ link register save eliminated.
+  74:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #if defined(TX_SINGLE_MODE_SECURE) || defined(TX_SINGLE_MODE_NON_SECURE)
+  75:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     return(TX_FEATURE_NOT_ENABLED);
+  40              		.loc 1 75 5 view .LVU1
+ARM GAS  /tmp/cckFKI07.s 			page 3
+
+
+  76:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #else
+  77:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** UINT    status;
+  78:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     
+  79:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Default status to success.  */
+  80:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     status =  TX_SUCCESS;
+  81:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     
+  82:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Check for an invalid thread pointer.  */
+  83:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     if (thread_ptr == TX_NULL)
+  84:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     {
+  85:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  86:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         /* Thread pointer is invalid, return appropriate error code.  */
+  87:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         status =  TX_THREAD_ERROR;
+  88:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     }
+  89:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  90:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Now check for invalid thread ID.  */
+  91:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     else if (thread_ptr -> tx_thread_id != TX_THREAD_ID)
+  92:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     {
+  93:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+  94:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         /* Thread pointer is invalid, return appropriate error code.  */
+  95:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         status =  TX_THREAD_ERROR;
+  96:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     }
+  97:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     
+  98:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Check for interrupt call.  */
+  99:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     if (TX_THREAD_GET_SYSTEM_STATE() != ((ULONG) 0))
+ 100:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     {
+ 101:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         /* Is call from an interrupt and not initialization?  */
+ 102:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         if (TX_THREAD_GET_SYSTEM_STATE() < TX_INITIALIZE_IN_PROGRESS)
+ 103:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         {
+ 104:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****             /* Invalid caller of this function, return appropriate error code.  */
+ 105:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****             status =  TX_CALLER_ERROR;
+ 106:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         }
+ 107:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     }
+ 108:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     
+ 109:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Determine if everything is okay.  */
+ 110:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     if (status == TX_SUCCESS)
+ 111:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     {
+ 112:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+ 113:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         /* Call actual secure stack allocate function.  */
+ 114:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****         status =  _tx_thread_secure_stack_free(thread_ptr);
+ 115:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     }
+ 116:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** 
+ 117:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     /* Return completion status.  */
+ 118:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c ****     return(status);
+ 119:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** #endif
+ 120:../Middlewares/threadx/ports/cortex_m55/gnu/src/txe_thread_secure_stack_free.c **** }
+  41              		.loc 1 120 1 is_stmt 0 view .LVU2
+  42 0000 FF20     		movs	r0, #255
+  43              	.LVL1:
+  44              		.loc 1 120 1 view .LVU3
+  45 0002 7047     		bx	lr
+  46              		.cfi_endproc
+  47              	.LFE8:
+  49              		.text
+  50              	.Letext0:
+  51              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+  52              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
+ARM GAS  /tmp/cckFKI07.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 txe_thread_secure_stack_free.c
+     /tmp/cckFKI07.s:26     .text._txe_thread_secure_stack_free:00000000 $t
+     /tmp/cckFKI07.s:32     .text._txe_thread_secure_stack_free:00000000 _txe_thread_secure_stack_free
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_initialize.h.51.e1963fa1b2d5f240125caf44b0e61d2d
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+
+NO UNDEFINED SYMBOLS

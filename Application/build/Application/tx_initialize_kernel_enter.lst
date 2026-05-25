@@ -1,0 +1,330 @@
+ARM GAS  /tmp/ccTdU1gQ.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"tx_initialize_kernel_enter.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c"
+  25              		.section	.text._tx_initialize_kernel_enter,"ax",%progbits
+  26              		.align	1
+  27              		.global	_tx_initialize_kernel_enter
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_tx_initialize_kernel_enter:
+  33              	.LFB8:
+   1:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  12:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  13:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**   Initialize                                                          */
+  19:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  23:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  25:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ARM GAS  /tmp/ccTdU1gQ.s 			page 2
+
+
+  26:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  28:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #include "tx_initialize.h"
+  30:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #include "tx_thread.h"
+  31:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #include "tx_timer.h"
+  32:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  33:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #if defined(TX_ENABLE_EXECUTION_CHANGE_NOTIFY) || defined(TX_EXECUTION_PROFILE_ENABLE)
+  34:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** extern VOID _tx_execution_initialize(VOID);
+  35:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #endif
+  36:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  37:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /* Define any port-specific scheduling data structures.  */
+  38:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  39:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** TX_PORT_SPECIFIC_DATA
+  40:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  41:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  42:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #ifdef TX_SAFETY_CRITICAL
+  43:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** TX_SAFETY_CRITICAL_EXCEPTION_HANDLER
+  44:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #endif
+  45:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  46:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  47:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+  48:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  49:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  FUNCTION                                               RELEASE        */
+  50:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  51:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    _tx_initialize_kernel_enter                         PORTABLE C      */
+  52:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                           6.3.0        */
+  53:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  AUTHOR                                                                */
+  54:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  55:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    William E. Lamie, Microsoft Corporation                             */
+  56:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  57:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  DESCRIPTION                                                           */
+  58:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  59:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    This function is the first ThreadX function called during           */
+  60:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    initialization.  It is called from the application's "main()"       */
+  61:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    function.  It is important to note that this routine never          */
+  62:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    returns.  The processing of this function is relatively simple:     */
+  63:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    it calls several ThreadX initialization functions (if needed),      */
+  64:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    calls the application define function, and then invokes the         */
+  65:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    scheduler.                                                          */
+  66:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  67:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  INPUT                                                                 */
+  68:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  69:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    None                                                                */
+  70:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  71:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  OUTPUT                                                                */
+  72:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  73:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    None                                                                */
+  74:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  75:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  CALLS                                                                 */
+  76:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  77:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    _tx_initialize_low_level          Low-level initialization          */
+  78:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    _tx_initialize_high_level         High-level initialization         */
+  79:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    tx_application_define             Application define function       */
+  80:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    _tx_thread_scheduler              ThreadX scheduling loop           */
+  81:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  82:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  CALLED BY                                                             */
+ARM GAS  /tmp/ccTdU1gQ.s 			page 3
+
+
+  83:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  84:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    main                              Application main program          */
+  85:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  86:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  RELEASE HISTORY                                                       */
+  87:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  88:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*    DATE              NAME                      DESCRIPTION             */
+  89:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+  90:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  05-19-2020      William E. Lamie        Initial Version 6.0           */
+  91:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  09-30-2020      Yuxin Zhou              Modified comment(s),          */
+  92:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            resulting in version 6.1    */
+  93:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  04-25-2022      Scott Larson            Modified comment(s),          */
+  94:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            added EPK initialization,   */
+  95:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            resulting in version 6.1.11 */
+  96:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*  10-31-2023      Xiuwen Cai              Modified comment(s),          */
+  97:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            added random generator      */
+  98:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            initialization,             */
+  99:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                            resulting in version 6.3.0  */
+ 100:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /*                                                                        */
+ 101:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** /**************************************************************************/
+ 102:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** VOID  _tx_initialize_kernel_enter(VOID)
+ 103:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** {
+  34              		.loc 1 103 1 view -0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 105:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Determine if the compiler has pre-initialized ThreadX.  */
+ 106:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     if (_tx_thread_system_state != TX_INITIALIZE_ALMOST_DONE)
+  38              		.loc 1 106 5 view .LVU1
+ 103:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  39              		.loc 1 103 1 is_stmt 0 view .LVU2
+  40 0000 10B5     		push	{r4, lr}
+  41              		.cfi_def_cfa_offset 8
+  42              		.cfi_offset 4, -8
+  43              		.cfi_offset 14, -4
+  44              		.loc 1 106 33 view .LVU3
+  45 0002 0E4C     		ldr	r4, .L6
+  46 0004 2368     		ldr	r3, [r4]
+  47              		.loc 1 106 8 view .LVU4
+  48 0006 13F10F3F 		cmn	r3, #252645135
+  49 000a 0AD0     		beq	.L2
+ 107:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     {
+ 108:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 109:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* No, the initialization still needs to take place.  */
+ 110:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 111:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* Ensure that the system state variable is set to indicate
+ 112:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****            initialization is in progress.  Note that this variable is
+ 113:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****            later used to represent interrupt nesting.  */
+ 114:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         _tx_thread_system_state =  TX_INITIALIZE_IN_PROGRESS;
+  50              		.loc 1 114 9 is_stmt 1 view .LVU5
+  51              		.loc 1 114 33 is_stmt 0 view .LVU6
+  52 000c 4FF0F033 		mov	r3, #-252645136
+  53 0010 2360     		str	r3, [r4]
+ 115:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 116:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* Call any port specific preprocessing.  */
+ 117:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         TX_PORT_SPECIFIC_PRE_INITIALIZATION
+ 118:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ARM GAS  /tmp/ccTdU1gQ.s 			page 4
+
+
+ 119:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* Invoke the low-level initialization to handle all processor specific
+ 120:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****            initialization issues.  */
+ 121:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         _tx_initialize_low_level();
+  54              		.loc 1 121 9 is_stmt 1 view .LVU7
+  55 0012 FFF7FEFF 		bl	_tx_initialize_low_level
+  56              	.LVL0:
+ 122:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 123:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* Invoke the high-level initialization to exercise all of the
+ 124:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****            ThreadX components and the application's initialization
+ 125:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****            function.  */
+ 126:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         _tx_initialize_high_level();
+  57              		.loc 1 126 9 view .LVU8
+  58 0016 FFF7FEFF 		bl	_tx_initialize_high_level
+  59              	.LVL1:
+ 127:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 128:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         /* Call any port specific post-processing.  */
+ 129:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****         TX_PORT_SPECIFIC_POST_INITIALIZATION
+  60              		.loc 1 129 9 view .LVU9
+  61 001a 094A     		ldr	r2, .L6+4
+  62 001c 1368     		ldr	r3, [r2]
+  63 001e 0133     		adds	r3, r3, #1
+  64 0020 1360     		str	r3, [r2]
+  65              	.L2:
+ 130:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     }
+ 131:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 132:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Optional processing extension.  */
+ 133:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     TX_INITIALIZE_KERNEL_ENTER_EXTENSION
+ 134:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 135:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Ensure that the system state variable is set to indicate
+ 136:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****        initialization is in progress.  Note that this variable is
+ 137:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****        later used to represent interrupt nesting.  */
+ 138:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     _tx_thread_system_state =  TX_INITIALIZE_IN_PROGRESS;
+  66              		.loc 1 138 5 view .LVU10
+  67              		.loc 1 138 29 is_stmt 0 view .LVU11
+  68 0022 4FF0F033 		mov	r3, #-252645136
+  69 0026 2360     		str	r3, [r4]
+ 139:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 140:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Optional random number generator initialization.  */
+ 141:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     TX_INITIALIZE_RANDOM_GENERATOR_INITIALIZATION
+ 142:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 143:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Call the application provided initialization function.  Pass the
+ 144:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****        first available memory address to it.  */
+ 145:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     tx_application_define(_tx_initialize_unused_memory);
+  70              		.loc 1 145 5 is_stmt 1 view .LVU12
+  71 0028 064B     		ldr	r3, .L6+8
+  72 002a 1868     		ldr	r0, [r3]
+  73 002c FFF7FEFF 		bl	tx_application_define
+  74              	.LVL2:
+ 146:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 147:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Set the system state in preparation for entering the thread
+ 148:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****        scheduler.  */
+ 149:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     _tx_thread_system_state =  TX_INITIALIZE_IS_FINISHED;
+  75              		.loc 1 149 5 view .LVU13
+  76              		.loc 1 149 29 is_stmt 0 view .LVU14
+  77 0030 0023     		movs	r3, #0
+  78 0032 2360     		str	r3, [r4]
+ 150:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ARM GAS  /tmp/ccTdU1gQ.s 			page 5
+
+
+ 151:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Call any port specific pre-scheduler processing.  */
+ 152:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     TX_PORT_SPECIFIC_PRE_SCHEDULER_INITIALIZATION
+ 153:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 154:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #if defined(TX_ENABLE_EXECUTION_CHANGE_NOTIFY) || defined(TX_EXECUTION_PROFILE_ENABLE)
+ 155:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Initialize Execution Profile Kit.  */
+ 156:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     _tx_execution_initialize();
+ 157:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #endif
+ 158:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 159:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* Enter the scheduling loop to start executing threads!  */
+ 160:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     _tx_thread_schedule();
+  79              		.loc 1 160 5 is_stmt 1 view .LVU15
+ 161:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 162:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #ifdef TX_SAFETY_CRITICAL
+ 163:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+ 164:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     /* If we ever get here, raise safety critical exception.  */
+ 165:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c ****     TX_SAFETY_CRITICAL_EXCEPTION(__FILE__, __LINE__, 0);
+ 166:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** #endif
+ 167:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** }
+  80              		.loc 1 167 1 is_stmt 0 view .LVU16
+  81 0034 BDE81040 		pop	{r4, lr}
+  82              		.cfi_restore 14
+  83              		.cfi_restore 4
+  84              		.cfi_def_cfa_offset 0
+ 160:../Middlewares/threadx/common/src/tx_initialize_kernel_enter.c **** 
+  85              		.loc 1 160 5 view .LVU17
+  86 0038 FFF7FEBF 		b	_tx_thread_schedule
+  87              	.LVL3:
+  88              	.L7:
+  89              		.align	2
+  90              	.L6:
+  91 003c 00000000 		.word	_tx_thread_system_state
+  92 0040 00000000 		.word	_tx_thread_preempt_disable
+  93 0044 00000000 		.word	_tx_initialize_unused_memory
+  94              		.cfi_endproc
+  95              	.LFE8:
+  97              		.text
+  98              	.Letext0:
+  99              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+ 100              		.file 3 "../Middlewares/threadx/common/inc/tx_initialize.h"
+ 101              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
+ 102              		.file 5 "../Middlewares/threadx/common/inc/tx_api.h"
+ARM GAS  /tmp/ccTdU1gQ.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tx_initialize_kernel_enter.c
+     /tmp/ccTdU1gQ.s:26     .text._tx_initialize_kernel_enter:00000000 $t
+     /tmp/ccTdU1gQ.s:32     .text._tx_initialize_kernel_enter:00000000 _tx_initialize_kernel_enter
+     /tmp/ccTdU1gQ.s:91     .text._tx_initialize_kernel_enter:0000003c $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_initialize.h.51.e1963fa1b2d5f240125caf44b0e61d2d
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+                           .group:00000000 wm4.tx_timer.h.51.b883a0ddd0951b922baa8ab45496c096
+
+UNDEFINED SYMBOLS
+_tx_initialize_low_level
+_tx_initialize_high_level
+tx_application_define
+_tx_thread_schedule
+_tx_thread_system_state
+_tx_thread_preempt_disable
+_tx_initialize_unused_memory

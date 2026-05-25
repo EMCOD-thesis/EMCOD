@@ -1,0 +1,222 @@
+ARM GAS  /tmp/ccmerrUL.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"txe_thread_suspend.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/txe_thread_suspend.c"
+  25              		.section	.text._txe_thread_suspend,"ax",%progbits
+  26              		.align	1
+  27              		.global	_txe_thread_suspend
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_txe_thread_suspend:
+  33              	.LVL0:
+  34              	.LFB8:
+   1:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  12:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  13:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**   Thread                                                              */
+  19:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  23:../Middlewares/threadx/common/src/txe_thread_suspend.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+ARM GAS  /tmp/ccmerrUL.s 			page 2
+
+
+  25:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  26:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  28:../Middlewares/threadx/common/src/txe_thread_suspend.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/txe_thread_suspend.c **** #include "tx_thread.h"
+  30:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  31:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  32:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  33:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  34:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  FUNCTION                                               RELEASE        */
+  35:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  36:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    _txe_thread_suspend                                 PORTABLE C      */
+  37:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                           6.1          */
+  38:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  AUTHOR                                                                */
+  39:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  40:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    William E. Lamie, Microsoft Corporation                             */
+  41:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  42:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  DESCRIPTION                                                           */
+  43:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  44:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    This function checks for errors in the thread suspend function      */
+  45:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    call.                                                               */
+  46:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  47:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  INPUT                                                                 */
+  48:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  49:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    thread_ptr                            Pointer to thread to suspend  */
+  50:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  51:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  OUTPUT                                                                */
+  52:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  53:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    TX_THREAD_ERROR                       Invalid thread pointer        */
+  54:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    TX_CALLER_ERROR                       Invalid caller of function    */
+  55:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    status                                Actual completion status      */
+  56:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  57:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  CALLS                                                                 */
+  58:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  59:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    _tx_thread_suspend                    Actual thread suspension      */
+  60:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  61:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  CALLED BY                                                             */
+  62:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  63:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    Application code                                                    */
+  64:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  65:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  RELEASE HISTORY                                                       */
+  66:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  67:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*    DATE              NAME                      DESCRIPTION             */
+  68:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  69:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+  70:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
+  71:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                            resulting in version 6.1    */
+  72:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /*                                                                        */
+  73:../Middlewares/threadx/common/src/txe_thread_suspend.c **** /**************************************************************************/
+  74:../Middlewares/threadx/common/src/txe_thread_suspend.c **** UINT  _txe_thread_suspend(TX_THREAD *thread_ptr)
+  75:../Middlewares/threadx/common/src/txe_thread_suspend.c **** {
+  35              		.loc 1 75 1 view -0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 0
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  39              		@ link register save eliminated.
+  76:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+ARM GAS  /tmp/ccmerrUL.s 			page 3
+
+
+  77:../Middlewares/threadx/common/src/txe_thread_suspend.c **** UINT    status;
+  40              		.loc 1 77 1 view .LVU1
+  78:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  79:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  80:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     /* Check for an invalid thread pointer.  */
+  81:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     if (thread_ptr == TX_NULL)
+  41              		.loc 1 81 5 view .LVU2
+  42              		.loc 1 81 8 is_stmt 0 view .LVU3
+  43 0000 28B1     		cbz	r0, .L1
+  82:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     {
+  83:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  84:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         /* Thread pointer is invalid, return appropriate error code.  */
+  85:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         status =  TX_THREAD_ERROR;
+  86:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     }
+  87:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  88:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     /* Now check for invalid thread ID.  */
+  89:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     else if (thread_ptr -> tx_thread_id != TX_THREAD_ID)
+  44              		.loc 1 89 10 is_stmt 1 view .LVU4
+  45              		.loc 1 89 13 is_stmt 0 view .LVU5
+  46 0002 0268     		ldr	r2, [r0]
+  47 0004 034B     		ldr	r3, .L6
+  48 0006 9A42     		cmp	r2, r3
+  49 0008 01D1     		bne	.L1
+  90:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     {
+  91:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  92:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         /* Thread pointer is invalid, return appropriate error code.  */
+  93:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         status =  TX_THREAD_ERROR;
+  94:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     }
+  95:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     else
+  96:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     {
+  97:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+  98:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         /* Call actual thread suspend function.  */
+  99:../Middlewares/threadx/common/src/txe_thread_suspend.c ****         status =  _tx_thread_suspend(thread_ptr);
+  50              		.loc 1 99 9 is_stmt 1 view .LVU6
+  51              		.loc 1 99 19 is_stmt 0 view .LVU7
+  52 000a FFF7FEBF 		b	_tx_thread_suspend
+  53              	.LVL1:
+  54              	.L1:
+ 100:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     }
+ 101:../Middlewares/threadx/common/src/txe_thread_suspend.c **** 
+ 102:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     /* Return completion status.  */
+ 103:../Middlewares/threadx/common/src/txe_thread_suspend.c ****     return(status);
+ 104:../Middlewares/threadx/common/src/txe_thread_suspend.c **** }
+  55              		.loc 1 104 1 view .LVU8
+  56 000e 0E20     		movs	r0, #14
+  57              	.LVL2:
+  58              		.loc 1 104 1 view .LVU9
+  59 0010 7047     		bx	lr
+  60              	.L7:
+  61 0012 00BF     		.align	2
+  62              	.L6:
+  63 0014 44524854 		.word	1414025796
+  64              		.cfi_endproc
+  65              	.LFE8:
+  67              		.text
+  68              	.Letext0:
+  69              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+ARM GAS  /tmp/ccmerrUL.s 			page 4
+
+
+  70              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
+ARM GAS  /tmp/ccmerrUL.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 txe_thread_suspend.c
+     /tmp/ccmerrUL.s:26     .text._txe_thread_suspend:00000000 $t
+     /tmp/ccmerrUL.s:32     .text._txe_thread_suspend:00000000 _txe_thread_suspend
+     /tmp/ccmerrUL.s:63     .text._txe_thread_suspend:00000014 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+
+UNDEFINED SYMBOLS
+_tx_thread_suspend

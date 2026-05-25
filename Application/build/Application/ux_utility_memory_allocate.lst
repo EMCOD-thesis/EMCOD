@@ -1,0 +1,850 @@
+ARM GAS  /tmp/ccVB1bgI.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"ux_utility_memory_allocate.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c"
+  25              		.section	.text._ux_utility_memory_allocate,"ax",%progbits
+  26              		.align	1
+  27              		.global	_ux_utility_memory_allocate
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_ux_utility_memory_allocate:
+  33              	.LVL0:
+  34              	.LFB3:
+   1:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+   2:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+   3:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+   5:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*       and in the root directory of this software.                      */
+   9:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  10:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  11:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  12:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  13:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  14:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  15:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**                                                                       */
+  16:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /** USBX Component                                                        */
+  17:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**                                                                       */
+  18:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**   Utility                                                             */
+  19:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**                                                                       */
+  20:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  21:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /* Include necessary system files.  */
+ARM GAS  /tmp/ccVB1bgI.s 			page 2
+
+
+  25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  26:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #define UX_SOURCE_CODE
+  27:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  28:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #include "ux_api.h"
+  29:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  30:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  31:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  32:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  FUNCTION                                               RELEASE        */
+  33:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  34:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    _ux_utility_memory_allocate                         PORTABLE C      */
+  35:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                           6.3.0        */
+  36:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  AUTHOR                                                                */
+  37:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  38:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    Chaoqiong Xiao, Microsoft Corporation                               */
+  39:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  40:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  DESCRIPTION                                                           */
+  41:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  42:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    This function allocates a block of memory for the specified size    */
+  43:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    and alignment.                                                      */
+  44:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  45:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  INPUT                                                                 */
+  46:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  47:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    memory_alignment                      Memory alignment required     */
+  48:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    memory_cache_flag                     Memory pool source            */
+  49:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    memory_size_requested                 Number of bytes required      */
+  50:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  51:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  OUTPUT                                                                */
+  52:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  53:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    Pointer to block of memory                                          */
+  54:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  55:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  CALLS                                                                 */
+  56:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  57:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    _ux_utility_memory_free_block_best_get Get best fit block of memory */
+  58:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    _ux_utility_memory_set                 Set block of memory          */
+  59:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  60:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  CALLED BY                                                             */
+  61:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  62:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    USBX Components                                                     */
+  63:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  64:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  RELEASE HISTORY                                                       */
+  65:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  66:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*    DATE              NAME                      DESCRIPTION             */
+  67:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  68:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  05-19-2020     Chaoqiong Xiao           Initial Version 6.0           */
+  69:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  09-30-2020     Chaoqiong Xiao           Modified comment(s),          */
+  70:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            verified memset and memcpy  */
+  71:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            cases,                      */
+  72:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            resulting in version 6.1    */
+  73:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  01-31-2022     Chaoqiong Xiao           Modified comment(s),          */
+  74:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            added standalone support,   */
+  75:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            resulting in version 6.1.10 */
+  76:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  04-25-2022     Chaoqiong Xiao           Modified comment(s),          */
+  77:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            internal clean up,          */
+  78:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            resulting in version 6.1.11 */
+  79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*  10-31-2023     Chaoqiong Xiao           Modified comment(s),          */
+  80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            refined memory management,  */
+  81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            fixed issue in 64-bit env,  */
+ARM GAS  /tmp/ccVB1bgI.s 			page 3
+
+
+  82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                            resulting in version 6.3.0  */
+  83:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /*                                                                        */
+  84:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** /**************************************************************************/
+  85:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** VOID  *_ux_utility_memory_allocate(ULONG memory_alignment, ULONG memory_cache_flag,
+  86:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****                                    ULONG memory_size_requested)
+  87:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** {
+  35              		.loc 1 87 1 view -0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 0
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  88:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UX_MEMORY_BYTE_POOL *pool_ptr;
+  39              		.loc 1 88 1 view .LVU1
+  89:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UCHAR               *current_ptr;
+  40              		.loc 1 89 1 view .LVU2
+  90:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UCHAR               *work_ptr;
+  41              		.loc 1 90 1 view .LVU3
+  91:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UCHAR               *next_ptr;
+  42              		.loc 1 91 1 view .LVU4
+  92:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** ALIGN_TYPE          *free_ptr;
+  43              		.loc 1 92 1 view .LVU5
+  93:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UCHAR               **this_block_link_ptr;
+  44              		.loc 1 93 1 view .LVU6
+  94:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UCHAR               **next_block_link_ptr;
+  45              		.loc 1 94 1 view .LVU7
+  95:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** ULONG               available_bytes;
+  46              		.loc 1 95 1 view .LVU8
+  96:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+  97:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** ALIGN_TYPE          int_memory_buffer;
+  47              		.loc 1 97 1 view .LVU9
+  98:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #ifdef UX_ENABLE_MEMORY_STATISTICS
+  99:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UINT                index;
+ 100:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #endif
+ 101:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 102:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Get the pool ptr */
+ 103:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_cache_flag == UX_REGULAR_MEMORY)
+  48              		.loc 1 103 5 view .LVU10
+  87:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UX_MEMORY_BYTE_POOL *pool_ptr;
+  49              		.loc 1 87 1 is_stmt 0 view .LVU11
+  50 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  51              		.cfi_def_cfa_offset 24
+  52              		.cfi_offset 3, -24
+  53              		.cfi_offset 4, -20
+  54              		.cfi_offset 5, -16
+  55              		.cfi_offset 6, -12
+  56              		.cfi_offset 7, -8
+  57              		.cfi_offset 14, -4
+  87:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** UX_MEMORY_BYTE_POOL *pool_ptr;
+  58              		.loc 1 87 1 view .LVU12
+  59 0002 0646     		mov	r6, r0
+  60              		.loc 1 103 8 view .LVU13
+  61 0004 E1B9     		cbnz	r1, .L2
+ 104:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 105:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr = _ux_system -> ux_system_memory_byte_pool[UX_MEMORY_BYTE_POOL_REGULAR];
+  62              		.loc 1 105 9 is_stmt 1 view .LVU14
+  63              		.loc 1 105 18 is_stmt 0 view .LVU15
+  64 0006 2F4B     		ldr	r3, .L24
+  65 0008 1B68     		ldr	r3, [r3]
+ARM GAS  /tmp/ccVB1bgI.s 			page 4
+
+
+  66 000a 1C68     		ldr	r4, [r3]
+  67              	.LVL1:
+  68              	.L3:
+ 106:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 107:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     else if (memory_cache_flag == UX_CACHE_SAFE_MEMORY)
+ 108:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 109:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr = _ux_system -> ux_system_memory_byte_pool[UX_MEMORY_BYTE_POOL_CACHE_SAFE];
+ 110:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 111:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     else
+ 112:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 113:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         return(UX_NULL);
+ 114:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 115:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 116:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Check if pool_ptr is NX_NULL */
+ 117:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (pool_ptr == UX_NULL)
+  69              		.loc 1 117 5 is_stmt 1 view .LVU16
+  70              		.loc 1 117 8 is_stmt 0 view .LVU17
+  71 000c ACB1     		cbz	r4, .L4
+ 118:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 119:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         return(UX_NULL);
+ 120:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 121:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 122:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Check if the memory size requested is 0.  */
+ 123:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_size_requested == 0)
+  72              		.loc 1 123 5 is_stmt 1 view .LVU18
+  73              		.loc 1 123 8 is_stmt 0 view .LVU19
+  74 000e A2B1     		cbz	r2, .L4
+ 124:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 125:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         return(UX_NULL);
+ 126:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 127:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 128:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Get the mutex as this is a critical section.  */
+ 129:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     _ux_system_mutex_on(&_ux_system -> ux_system_mutex);
+  75              		.loc 1 129 5 is_stmt 1 view .LVU20
+  76              		.loc 1 129 5 view .LVU21
+  77              		.loc 1 129 5 view .LVU22
+ 130:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 131:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #ifdef UX_ENFORCE_SAFE_ALIGNMENT
+ 132:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 133:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Check if safe alignment requested, in this case switch to UX_NO_ALIGN.  */
+ 134:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_alignment == UX_SAFE_ALIGN)
+ 135:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 136:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 137:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* We will use the memory_size_requested for the alignment.
+ 138:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****            But we check to see if we have a minimum or maximum alignment.  */
+ 139:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         if (memory_size_requested < UX_ALIGN_MIN)
+ 140:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 141:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             /* No need to bother about alignment for small packets sizes.  */
+ 142:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_NO_ALIGN;
+ 143:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 144:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check if we are over the maximum.  */
+ 145:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested > UX_MAX_SCATTER_GATHER_ALIGNMENT)
+ 146:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 147:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             /* We are over the max alignment required. Use the maximum instead.  */
+ 148:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_MAX_SCATTER_GATHER_ALIGNMENT - 1;
+ 149:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 150:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* We are not over the maximum, so approximate the alignment according to the size of the m
+ARM GAS  /tmp/ccVB1bgI.s 			page 5
+
+
+ 151:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             Check range for alignment on 4096 bytes.  */
+ 152:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_2048 + 1)
+ 153:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_4096;
+ 154:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 155:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 2048 bytes.  */
+ 156:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_1024 + 1)
+ 157:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_2048;
+ 158:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 159:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 1024 bytes.  */
+ 160:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_512 + 1)
+ 161:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_1024;
+ 162:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 163:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 512 bytes.  */
+ 164:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_256 + 1)
+ 165:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_512;
+ 166:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 167:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 256 bytes.  */
+ 168:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_128 + 1)
+ 169:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_256;
+ 170:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 171:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 128 bytes.  */
+ 172:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_64 + 1)
+ 173:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_128;
+ 174:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 175:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 64 bytes.  */
+ 176:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_32 + 1)
+ 177:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_64;
+ 178:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 179:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 32 bytes.  */
+ 180:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_16 + 1)
+ 181:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_32;
+ 182:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 183:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Check range for alignment on 16 bytes.  */
+ 184:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else if (memory_size_requested >= UX_ALIGN_8 + 1)
+ 185:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_16;
+ 186:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 187:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         else
+ 188:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****             memory_alignment = UX_ALIGN_MIN;
+ 189:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 190:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 191:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #else
+ 192:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 193:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Check if safe alignment requested, in this case switch to UX_NO_ALIGN.  */
+ 194:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_alignment == UX_SAFE_ALIGN)
+  78              		.loc 1 194 5 view .LVU23
+  79              		.loc 1 194 8 is_stmt 0 view .LVU24
+  80 0010 731C     		adds	r3, r6, #1
+  81 0012 1BD0     		beq	.L13
+ 195:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         memory_alignment = UX_NO_ALIGN;
+ 196:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 197:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #endif
+ 198:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 199:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Ensure the alignment meats the minimum.  */
+ 200:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_alignment < UX_ALIGN_MIN)
+  82              		.loc 1 200 5 is_stmt 1 view .LVU25
+  83              		.loc 1 200 8 is_stmt 0 view .LVU26
+  84 0014 072E     		cmp	r6, #7
+ARM GAS  /tmp/ccVB1bgI.s 			page 6
+
+
+  85 0016 38BF     		it	cc
+  86 0018 0726     		movcc	r6, #7
+  87              	.L5:
+  88              	.LVL2:
+ 201:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         memory_alignment =  UX_ALIGN_MIN;
+ 202:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 203:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* We need to make sure that the next memory block buffer is 8-byte aligned too. We
+ 204:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        do this by first adjusting the requested memory to be 8-byte aligned. One problem
+ 205:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        now is that the memory block might not be a size that is a multiple of 8, so we need
+ 206:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        to add the amount of memory required such that the memory buffer after the block has
+ 207:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        the correct alignment. For example, if the memory block has a size of 12, then we need
+ 208:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        to make sure it is placed on an 8-byte alignment that is after a 8-byte alignment so
+ 209:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****        that the memory right after the memory block is 8-byte aligned (16).  */
+ 210:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     memory_size_requested =  (memory_size_requested + UX_ALIGN_MIN) & (~(ULONG)UX_ALIGN_MIN);
+  89              		.loc 1 210 5 is_stmt 1 view .LVU27
+  90              		.loc 1 210 53 is_stmt 0 view .LVU28
+  91 001a 0732     		adds	r2, r2, #7
+  92              	.LVL3:
+ 211:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     memory_size_requested += (((ULONG)(UX_MEMORY_BLOCK_HEADER_SIZE + UX_ALIGN_MIN) & (~(ULONG)UX_AL
+ 212:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 213:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_alignment <= UX_ALIGN_MIN)
+  93              		.loc 1 213 8 view .LVU29
+  94 001c 072E     		cmp	r6, #7
+ 210:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     memory_size_requested += (((ULONG)(UX_MEMORY_BLOCK_HEADER_SIZE + UX_ALIGN_MIN) & (~(ULONG)UX_AL
+  95              		.loc 1 210 27 view .LVU30
+  96 001e 22F00705 		bic	r5, r2, #7
+  97              	.LVL4:
+ 211:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     memory_size_requested += (((ULONG)(UX_MEMORY_BLOCK_HEADER_SIZE + UX_ALIGN_MIN) & (~(ULONG)UX_AL
+  98              		.loc 1 211 5 is_stmt 1 view .LVU31
+  99              		.loc 1 213 5 view .LVU32
+ 214:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         current_ptr = _ux_utility_memory_byte_pool_search(pool_ptr, memory_size_requested);
+ 100              		.loc 1 214 9 view .LVU33
+ 101              		.loc 1 214 23 is_stmt 0 view .LVU34
+ 102 0022 0CBF     		ite	eq
+ 103 0024 2946     		moveq	r1, r5
+ 104              	.LVL5:
+ 215:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     else
+ 216:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         current_ptr = _ux_utility_memory_byte_pool_search(pool_ptr, memory_size_requested + memory_
+ 105              		.loc 1 216 9 is_stmt 1 view .LVU35
+ 106              		.loc 1 216 23 is_stmt 0 view .LVU36
+ 107 0026 7119     		addne	r1, r6, r5
+ 108 0028 2046     		mov	r0, r4
+ 109 002a FFF7FEFF 		bl	_ux_utility_memory_byte_pool_search
+ 110              	.LVL6:
+ 217:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 218:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Check if we found a memory block.  */
+ 219:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (current_ptr == UX_NULL)
+ 111              		.loc 1 219 5 is_stmt 1 view .LVU37
+ 112              		.loc 1 219 8 is_stmt 0 view .LVU38
+ 113 002e 78B9     		cbnz	r0, .L8
+ 220:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 221:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 222:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* We could not find a memory block.  */
+ 223:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         _ux_system_mutex_off(&_ux_system -> ux_system_mutex);
+ 114              		.loc 1 223 9 is_stmt 1 view .LVU39
+ 115              		.loc 1 223 9 view .LVU40
+ 116              		.loc 1 223 9 view .LVU41
+ARM GAS  /tmp/ccVB1bgI.s 			page 7
+
+
+ 224:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 225:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         UX_TRACE_IN_LINE_INSERT(UX_TRACE_ERROR, UX_MEMORY_INSUFFICIENT, memory_size_requested, 0, 0
+ 226:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 227:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Error trap. */
+ 228:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         _ux_system_error_handler(UX_SYSTEM_LEVEL_THREAD, UX_SYSTEM_CONTEXT_UTILITY, UX_MEMORY_INSUF
+ 117              		.loc 1 228 9 view .LVU42
+ 118 0030 1222     		movs	r2, #18
+ 119 0032 0821     		movs	r1, #8
+ 120 0034 0220     		movs	r0, #2
+ 121              	.LVL7:
+ 122              		.loc 1 228 9 is_stmt 0 view .LVU43
+ 123 0036 FFF7FEFF 		bl	_ux_system_error_handler
+ 124              	.LVL8:
+ 229:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 230:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         return(UX_NULL);
+ 125              		.loc 1 230 9 is_stmt 1 view .LVU44
+ 126              	.L4:
+ 113:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 127              		.loc 1 113 15 is_stmt 0 view .LVU45
+ 128 003a 0024     		movs	r4, #0
+ 129              	.L1:
+ 231:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 232:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 233:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Pickup the next block's pointer.  */
+ 234:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     this_block_link_ptr =  UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(current_ptr);
+ 235:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     next_ptr =             *this_block_link_ptr;
+ 236:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 237:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Calculate the number of bytes available in this block.  */
+ 238:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     available_bytes =   UX_UCHAR_POINTER_DIF(next_ptr, current_ptr);
+ 239:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     available_bytes =   available_bytes - UX_MEMORY_BLOCK_HEADER_SIZE;
+ 240:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 241:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Get the memory buffer for this block.  */
+ 242:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     int_memory_buffer = (ALIGN_TYPE) (UX_UCHAR_POINTER_ADD(current_ptr, UX_MEMORY_BLOCK_HEADER_SIZE
+ 243:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 244:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* In case we are not aligned  */
+ 245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if ((int_memory_buffer & memory_alignment) != 0)
+ 246:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 247:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 248:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* No, we need to align the memory buffer.  */
+ 249:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer += (ALIGN_TYPE)UX_MEMORY_BLOCK_HEADER_SIZE;
+ 250:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer += memory_alignment;
+ 251:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer &=  ~((ALIGN_TYPE) memory_alignment);
+ 252:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer -= (ALIGN_TYPE)UX_MEMORY_BLOCK_HEADER_SIZE;
+ 253:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 254:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Setup the new free block.  */
+ 255:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         next_ptr = (UCHAR *)int_memory_buffer;
+ 256:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 257:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Setup the new free block.  */
+ 258:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         next_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(next_ptr);
+ 259:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *next_block_link_ptr =  *this_block_link_ptr;
+ 260:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 261:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         free_ptr =              UX_UCHAR_TO_ALIGN_TYPE_POINTER_CONVERT(work_ptr);
+ 262:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *free_ptr =             UX_BYTE_BLOCK_FREE;
+ 263:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 264:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Increase the total fragment counter.  */
+ 265:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr -> ux_byte_pool_fragments++;
+ 266:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ARM GAS  /tmp/ccVB1bgI.s 			page 8
+
+
+ 267:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Update the current pointer to point at the newly created block.  */
+ 268:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *this_block_link_ptr =  next_ptr;
+ 269:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 270:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Calculate the available bytes.  */
+ 271:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         available_bytes -=  UX_UCHAR_POINTER_DIF(next_ptr, current_ptr);
+ 272:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 273:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Set Current pointer to the aligned memory buffer.  */
+ 274:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         current_ptr = next_ptr;
+ 275:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 276:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 277:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Now we are aligned, determine if we need to split this block.  */
+ 278:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if ((available_bytes - memory_size_requested) >= ((ULONG) UX_BYTE_BLOCK_MIN))
+ 279:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 280:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 281:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Split the block.  */
+ 282:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         next_ptr =  UX_UCHAR_POINTER_ADD(current_ptr, (memory_size_requested + UX_MEMORY_BLOCK_HEAD
+ 283:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 284:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Setup the new free block.  */
+ 285:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         next_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(next_ptr);
+ 286:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         this_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(current_ptr);
+ 287:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *next_block_link_ptr =  *this_block_link_ptr;
+ 288:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 289:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         free_ptr =              UX_UCHAR_TO_ALIGN_TYPE_POINTER_CONVERT(work_ptr);
+ 290:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *free_ptr =             UX_BYTE_BLOCK_FREE;
+ 291:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 292:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Increase the total fragment counter.  */
+ 293:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr -> ux_byte_pool_fragments++;
+ 294:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 295:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Update the current pointer to point at the newly created block.  */
+ 296:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *this_block_link_ptr =  next_ptr;
+ 297:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 298:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Set available equal to memory size for subsequent calculation.  */
+ 299:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         available_bytes =  memory_size_requested;
+ 300:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 301:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 302:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* In any case, mark the current block as allocated.  */
+ 303:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     work_ptr =              UX_UCHAR_POINTER_ADD(current_ptr, (sizeof(UCHAR *)));
+ 304:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     this_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(work_ptr);
+ 305:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     *this_block_link_ptr =  UX_BYTE_POOL_TO_UCHAR_POINTER_CONVERT(pool_ptr);
+ 306:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 307:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Reduce the number of available bytes in the pool.  */
+ 308:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     pool_ptr -> ux_byte_pool_available =  pool_ptr -> ux_byte_pool_available - (available_bytes + U
+ 309:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 310:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Determine if the search pointer needs to be updated. This is only done
+ 311:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         if the search pointer matches the block to be returned.  */
+ 312:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (current_ptr == pool_ptr -> ux_byte_pool_search)
+ 313:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 314:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 315:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         /* Yes, update the search pointer to the next block.  */
+ 316:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         this_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(current_ptr);
+ 317:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr -> ux_byte_pool_search =  *this_block_link_ptr;
+ 318:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 319:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 320:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Adjust the pointer for the application.  */
+ 321:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     work_ptr =  UX_UCHAR_POINTER_ADD(current_ptr, UX_MEMORY_BLOCK_HEADER_SIZE);
+ 322:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 323:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Clear the memory block.  */
+ARM GAS  /tmp/ccVB1bgI.s 			page 9
+
+
+ 324:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     _ux_utility_memory_set(work_ptr, 0, available_bytes); /* Use case of memset is verified. */
+ 325:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 326:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #ifdef UX_ENABLE_MEMORY_STATISTICS
+ 327:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 328:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Update allocate count, total size.  */
+ 329:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (memory_cache_flag == UX_REGULAR_MEMORY)
+ 330:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         index = UX_MEMORY_BYTE_POOL_REGULAR;
+ 331:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     else
+ 332:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         index = UX_MEMORY_BYTE_POOL_CACHE_SAFE;
+ 333:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 334:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Update allocate count, total size.  */
+ 335:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     _ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_count ++;
+ 336:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     _ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_total += (available_bytes
+ 337:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 338:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (_ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_max_count < _ux_syste
+ 339:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         _ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_max_count = _ux_syste
+ 340:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 341:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (_ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_max_total < _ux_syste
+ 342:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         _ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_alloc_max_total = _ux_syste
+ 343:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 344:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Log max usage of memory pool.  */
+ 345:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     if (_ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_min_free > _ux_system -> ux
+ 346:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         _ux_system -> ux_system_memory_byte_pool[index] -> ux_byte_pool_min_free = _ux_system -> ux
+ 347:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** #endif
+ 348:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 349:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     /* Release the protection.  */
+ 350:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     _ux_system_mutex_off(&_ux_system -> ux_system_mutex);
+ 351:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 352:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     return(work_ptr);
+ 353:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** }
+ 130              		.loc 1 353 1 view .LVU46
+ 131 003c 2046     		mov	r0, r4
+ 132 003e F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 133              	.LVL9:
+ 134              	.L2:
+ 107:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 135              		.loc 1 107 10 is_stmt 1 view .LVU47
+ 107:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 136              		.loc 1 107 13 is_stmt 0 view .LVU48
+ 137 0040 0129     		cmp	r1, #1
+ 138 0042 FAD1     		bne	.L4
+ 109:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 139              		.loc 1 109 9 is_stmt 1 view .LVU49
+ 109:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 140              		.loc 1 109 18 is_stmt 0 view .LVU50
+ 141 0044 1F4B     		ldr	r3, .L24
+ 142 0046 1B68     		ldr	r3, [r3]
+ 143 0048 5C68     		ldr	r4, [r3, #4]
+ 144 004a DFE7     		b	.L3
+ 145              	.LVL10:
+ 146              	.L13:
+ 201:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 147              		.loc 1 201 26 view .LVU51
+ 148 004c 0726     		movs	r6, #7
+ 149 004e E4E7     		b	.L5
+ 150              	.LVL11:
+ 151              	.L8:
+ARM GAS  /tmp/ccVB1bgI.s 			page 10
+
+
+ 234:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     next_ptr =             *this_block_link_ptr;
+ 152              		.loc 1 234 5 is_stmt 1 view .LVU52
+ 235:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 153              		.loc 1 235 5 view .LVU53
+ 235:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 154              		.loc 1 235 14 is_stmt 0 view .LVU54
+ 155 0050 0768     		ldr	r7, [r0]
+ 156              	.LVL12:
+ 238:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     available_bytes =   available_bytes - UX_MEMORY_BLOCK_HEADER_SIZE;
+ 157              		.loc 1 238 5 is_stmt 1 view .LVU55
+ 242:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 158              		.loc 1 242 39 is_stmt 0 view .LVU56
+ 159 0052 00F10801 		add	r1, r0, #8
+ 238:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     available_bytes =   available_bytes - UX_MEMORY_BLOCK_HEADER_SIZE;
+ 160              		.loc 1 238 25 view .LVU57
+ 161 0056 3A1A     		subs	r2, r7, r0
+ 162              	.LVL13:
+ 239:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 163              		.loc 1 239 5 is_stmt 1 view .LVU58
+ 245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 164              		.loc 1 245 8 is_stmt 0 view .LVU59
+ 165 0058 0E42     		tst	r6, r1
+ 239:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 166              		.loc 1 239 21 view .LVU60
+ 167 005a A2F10802 		sub	r2, r2, #8
+ 168              	.LVL14:
+ 242:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 169              		.loc 1 242 5 is_stmt 1 view .LVU61
+ 245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 170              		.loc 1 245 5 view .LVU62
+ 245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 171              		.loc 1 245 8 is_stmt 0 view .LVU63
+ 172 005e 11D0     		beq	.L10
+ 249:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer += memory_alignment;
+ 173              		.loc 1 249 9 is_stmt 1 view .LVU64
+ 174              	.LVL15:
+ 250:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer &=  ~((ALIGN_TYPE) memory_alignment);
+ 175              		.loc 1 250 9 view .LVU65
+ 250:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer &=  ~((ALIGN_TYPE) memory_alignment);
+ 176              		.loc 1 250 27 is_stmt 0 view .LVU66
+ 177 0060 06F10803 		add	r3, r6, #8
+ 178 0064 0B44     		add	r3, r3, r1
+ 179              	.LVL16:
+ 251:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer -= (ALIGN_TYPE)UX_MEMORY_BLOCK_HEADER_SIZE;
+ 180              		.loc 1 251 9 is_stmt 1 view .LVU67
+ 251:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         int_memory_buffer -= (ALIGN_TYPE)UX_MEMORY_BLOCK_HEADER_SIZE;
+ 181              		.loc 1 251 27 is_stmt 0 view .LVU68
+ 182 0066 23EA0603 		bic	r3, r3, r6
+ 183              	.LVL17:
+ 252:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 184              		.loc 1 252 9 is_stmt 1 view .LVU69
+ 255:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 185              		.loc 1 255 9 view .LVU70
+ 252:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 186              		.loc 1 252 27 is_stmt 0 view .LVU71
+ 187 006a A3F10801 		sub	r1, r3, #8
+ 188              	.LVL18:
+ARM GAS  /tmp/ccVB1bgI.s 			page 11
+
+
+ 258:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *next_block_link_ptr =  *this_block_link_ptr;
+ 189              		.loc 1 258 9 is_stmt 1 view .LVU72
+ 259:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 190              		.loc 1 259 9 view .LVU73
+ 259:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 191              		.loc 1 259 30 is_stmt 0 view .LVU74
+ 192 006e 43F8087C 		str	r7, [r3, #-8]
+ 260:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         free_ptr =              UX_UCHAR_TO_ALIGN_TYPE_POINTER_CONVERT(work_ptr);
+ 193              		.loc 1 260 9 is_stmt 1 view .LVU75
+ 194              	.LVL19:
+ 261:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *free_ptr =             UX_BYTE_BLOCK_FREE;
+ 195              		.loc 1 261 9 view .LVU76
+ 262:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 196              		.loc 1 262 9 view .LVU77
+ 262:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 197              		.loc 1 262 19 is_stmt 0 view .LVU78
+ 198 0072 154B     		ldr	r3, .L24+4
+ 199 0074 4B60     		str	r3, [r1, #4]
+ 265:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 200              		.loc 1 265 9 is_stmt 1 view .LVU79
+ 265:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 201              		.loc 1 265 43 is_stmt 0 view .LVU80
+ 202 0076 6368     		ldr	r3, [r4, #4]
+ 203 0078 0133     		adds	r3, r3, #1
+ 204 007a 6360     		str	r3, [r4, #4]
+ 268:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 205              		.loc 1 268 9 is_stmt 1 view .LVU81
+ 268:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 206              		.loc 1 268 30 is_stmt 0 view .LVU82
+ 207 007c 0160     		str	r1, [r0]
+ 271:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 208              		.loc 1 271 9 is_stmt 1 view .LVU83
+ 271:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 209              		.loc 1 271 29 is_stmt 0 view .LVU84
+ 210 007e 081A     		subs	r0, r1, r0
+ 211              	.LVL20:
+ 271:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 212              		.loc 1 271 25 view .LVU85
+ 213 0080 121A     		subs	r2, r2, r0
+ 214              	.LVL21:
+ 274:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 215              		.loc 1 274 9 is_stmt 1 view .LVU86
+ 274:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 216              		.loc 1 274 21 is_stmt 0 view .LVU87
+ 217 0082 0846     		mov	r0, r1
+ 218              	.LVL22:
+ 219              	.L10:
+ 278:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 220              		.loc 1 278 5 is_stmt 1 view .LVU88
+ 278:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 221              		.loc 1 278 26 is_stmt 0 view .LVU89
+ 222 0084 531B     		subs	r3, r2, r5
+ 278:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 223              		.loc 1 278 8 view .LVU90
+ 224 0086 132B     		cmp	r3, #19
+ 225 0088 0BD9     		bls	.L11
+ 282:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ARM GAS  /tmp/ccVB1bgI.s 			page 12
+
+
+ 226              		.loc 1 282 9 is_stmt 1 view .LVU91
+ 287:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 227              		.loc 1 287 33 is_stmt 0 view .LVU92
+ 228 008a 0168     		ldr	r1, [r0]
+ 229              	.LVL23:
+ 282:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 230              		.loc 1 282 21 view .LVU93
+ 231 008c 05F10803 		add	r3, r5, #8
+ 282:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 232              		.loc 1 282 18 view .LVU94
+ 233 0090 C218     		adds	r2, r0, r3
+ 234              	.LVL24:
+ 285:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         this_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(current_ptr);
+ 235              		.loc 1 285 9 is_stmt 1 view .LVU95
+ 286:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *next_block_link_ptr =  *this_block_link_ptr;
+ 236              		.loc 1 286 9 view .LVU96
+ 287:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 237              		.loc 1 287 9 view .LVU97
+ 287:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         work_ptr =              UX_UCHAR_POINTER_ADD(next_ptr, (sizeof(UCHAR *)));
+ 238              		.loc 1 287 30 is_stmt 0 view .LVU98
+ 239 0092 C150     		str	r1, [r0, r3]
+ 288:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         free_ptr =              UX_UCHAR_TO_ALIGN_TYPE_POINTER_CONVERT(work_ptr);
+ 240              		.loc 1 288 9 is_stmt 1 view .LVU99
+ 241              	.LVL25:
+ 289:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         *free_ptr =             UX_BYTE_BLOCK_FREE;
+ 242              		.loc 1 289 9 view .LVU100
+ 290:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 243              		.loc 1 290 9 view .LVU101
+ 290:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 244              		.loc 1 290 19 is_stmt 0 view .LVU102
+ 245 0094 0C4B     		ldr	r3, .L24+4
+ 246 0096 5360     		str	r3, [r2, #4]
+ 293:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 247              		.loc 1 293 9 is_stmt 1 view .LVU103
+ 293:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 248              		.loc 1 293 43 is_stmt 0 view .LVU104
+ 249 0098 6368     		ldr	r3, [r4, #4]
+ 250 009a 0133     		adds	r3, r3, #1
+ 251 009c 6360     		str	r3, [r4, #4]
+ 296:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 252              		.loc 1 296 9 is_stmt 1 view .LVU105
+ 296:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 253              		.loc 1 296 30 is_stmt 0 view .LVU106
+ 254 009e 0260     		str	r2, [r0]
+ 299:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 255              		.loc 1 299 9 is_stmt 1 view .LVU107
+ 256              	.LVL26:
+ 299:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 257              		.loc 1 299 25 is_stmt 0 view .LVU108
+ 258 00a0 2A46     		mov	r2, r5
+ 259              	.LVL27:
+ 260              	.L11:
+ 303:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     this_block_link_ptr =   UX_UCHAR_TO_INDIRECT_UCHAR_POINTER_CONVERT(work_ptr);
+ 261              		.loc 1 303 5 is_stmt 1 view .LVU109
+ 304:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     *this_block_link_ptr =  UX_BYTE_POOL_TO_UCHAR_POINTER_CONVERT(pool_ptr);
+ 262              		.loc 1 304 5 view .LVU110
+ 305:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ARM GAS  /tmp/ccVB1bgI.s 			page 13
+
+
+ 263              		.loc 1 305 5 view .LVU111
+ 308:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 264              		.loc 1 308 78 is_stmt 0 view .LVU112
+ 265 00a2 2368     		ldr	r3, [r4]
+ 305:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 266              		.loc 1 305 26 view .LVU113
+ 267 00a4 4460     		str	r4, [r0, #4]
+ 308:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 268              		.loc 1 308 5 is_stmt 1 view .LVU114
+ 308:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 269              		.loc 1 308 78 is_stmt 0 view .LVU115
+ 270 00a6 083B     		subs	r3, r3, #8
+ 271 00a8 9B1A     		subs	r3, r3, r2
+ 308:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 272              		.loc 1 308 40 view .LVU116
+ 273 00aa 2360     		str	r3, [r4]
+ 312:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 274              		.loc 1 312 5 is_stmt 1 view .LVU117
+ 312:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 275              		.loc 1 312 8 is_stmt 0 view .LVU118
+ 276 00ac A368     		ldr	r3, [r4, #8]
+ 324:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 277              		.loc 1 324 5 view .LVU119
+ 278 00ae 0021     		movs	r1, #0
+ 312:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     {
+ 279              		.loc 1 312 8 view .LVU120
+ 280 00b0 8342     		cmp	r3, r0
+ 316:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****         pool_ptr -> ux_byte_pool_search =  *this_block_link_ptr;
+ 281              		.loc 1 316 9 is_stmt 1 view .LVU121
+ 282              	.LVL28:
+ 317:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 283              		.loc 1 317 9 view .LVU122
+ 317:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 284              		.loc 1 317 44 is_stmt 0 view .LVU123
+ 285 00b2 04BF     		itt	eq
+ 286 00b4 0368     		ldreq	r3, [r0]
+ 317:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c ****     }
+ 287              		.loc 1 317 41 view .LVU124
+ 288 00b6 A360     		streq	r3, [r4, #8]
+ 321:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 289              		.loc 1 321 5 is_stmt 1 view .LVU125
+ 321:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 290              		.loc 1 321 14 is_stmt 0 view .LVU126
+ 291 00b8 00F10804 		add	r4, r0, #8
+ 292              	.LVL29:
+ 324:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 293              		.loc 1 324 5 is_stmt 1 view .LVU127
+ 294 00bc 2046     		mov	r0, r4
+ 295              	.LVL30:
+ 324:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 296              		.loc 1 324 5 is_stmt 0 view .LVU128
+ 297 00be FFF7FEFF 		bl	_ux_utility_memory_set
+ 298              	.LVL31:
+ 350:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 299              		.loc 1 350 5 is_stmt 1 view .LVU129
+ 350:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 300              		.loc 1 350 5 view .LVU130
+ARM GAS  /tmp/ccVB1bgI.s 			page 14
+
+
+ 350:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** 
+ 301              		.loc 1 350 5 view .LVU131
+ 352:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** }
+ 302              		.loc 1 352 5 view .LVU132
+ 352:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_utility_memory_allocate.c **** }
+ 303              		.loc 1 352 11 is_stmt 0 view .LVU133
+ 304 00c2 BBE7     		b	.L1
+ 305              	.L25:
+ 306              		.align	2
+ 307              	.L24:
+ 308 00c4 00000000 		.word	_ux_system
+ 309 00c8 EEEEFFFF 		.word	-4370
+ 310              		.cfi_endproc
+ 311              	.LFE3:
+ 313              		.text
+ 314              	.Letext0:
+ 315              		.file 2 "../STM32Cube_FW_N6/Middlewares/ST/usbx/ports/generic/inc/ux_port.h"
+ 316              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
+ 317              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
+ 318              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
+ARM GAS  /tmp/ccVB1bgI.s 			page 15
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 ux_utility_memory_allocate.c
+     /tmp/ccVB1bgI.s:26     .text._ux_utility_memory_allocate:00000000 $t
+     /tmp/ccVB1bgI.s:32     .text._ux_utility_memory_allocate:00000000 _ux_utility_memory_allocate
+     /tmp/ccVB1bgI.s:308    .text._ux_utility_memory_allocate:000000c4 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdio.h.31.7c0e28c411445f3f9c5b11accf882760
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.stddef.h.200.ddb4176c6beb7e84f4fc90107f5448c9
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4.stddef.h.39.1701de33ba710abd106167c689c6bc7c
+                           .group:00000000 wm4.stdarg.h.34.3a23a216c0c293b3d2ea2e89281481e6
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.stdio.h.67.0cf8a9c281ab0b348aef5c02e7e48825
+                           .group:00000000 wm4.stdio.h.2.4aa87247282eca6c8f36f9de33d8df1a
+                           .group:00000000 wm4.stdio.h.87.a1e20d2651f9bfb66e51bfbe849db00a
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4._intsup.h.10.48bafbb683905c4daa4565a85aeeb264
+                           .group:00000000 wm4._stdint.h.10.c24fa3af3bc1706662bb5593a907e841
+                           .group:00000000 wm4.stdint.h.23.d53047a68f4a85177f80b422d52785ed
+                           .group:00000000 wm4.ux_port.h.89.ae1c293eff4e595cc9e7c7479e747a1e
+                           .group:00000000 wm4.ux_api.h.182.effb4a50eb02f24d1d1ad0a575ebbb0c
+                           .group:00000000 wm4.ux_utility.h.69.3aa9e2ccef0e2a41f2d49c9bf54d4b38
+                           .group:00000000 wm4.ux_system.h.63.42f8c9cffcc26e0f12b75458b49daed3
+
+UNDEFINED SYMBOLS
+_ux_utility_memory_byte_pool_search
+_ux_system_error_handler
+_ux_utility_memory_set
+_ux_system

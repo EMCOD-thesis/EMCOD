@@ -1,0 +1,267 @@
+ARM GAS  /tmp/ccR5wvpg.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"txe_queue_info_get.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/txe_queue_info_get.c"
+  25              		.section	.text._txe_queue_info_get,"ax",%progbits
+  26              		.align	1
+  27              		.global	_txe_queue_info_get
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_txe_queue_info_get:
+  33              	.LVL0:
+  34              	.LFB8:
+   1:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  12:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  13:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**   Queue                                                               */
+  19:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  23:../Middlewares/threadx/common/src/txe_queue_info_get.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+ARM GAS  /tmp/ccR5wvpg.s 			page 2
+
+
+  25:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  26:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  28:../Middlewares/threadx/common/src/txe_queue_info_get.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/txe_queue_info_get.c **** #include "tx_queue.h"
+  30:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  31:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  32:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  33:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  34:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  FUNCTION                                               RELEASE        */
+  35:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  36:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    _txe_queue_info_get                                 PORTABLE C      */
+  37:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                           6.1          */
+  38:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  AUTHOR                                                                */
+  39:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  40:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    William E. Lamie, Microsoft Corporation                             */
+  41:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  42:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  DESCRIPTION                                                           */
+  43:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  44:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    This function checks for errors in the queue information get        */
+  45:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    service.                                                            */
+  46:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  47:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  INPUT                                                                 */
+  48:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  49:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    queue_ptr                         Pointer to queue control block    */
+  50:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    name                              Destination for the queue name    */
+  51:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    enqueued                          Destination for enqueued count    */
+  52:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    available_storage                 Destination for available storage */
+  53:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    first_suspended                   Destination for pointer of first  */
+  54:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                        thread suspended on this queue  */
+  55:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    suspended_count                   Destination for suspended count   */
+  56:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    next_queue                        Destination for pointer to next   */
+  57:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                        queue on the created list       */
+  58:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  59:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  OUTPUT                                                                */
+  60:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  61:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    TX_QUEUE_ERROR                    Invalid queue pointer             */
+  62:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    status                            Completion status                 */
+  63:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  64:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  CALLS                                                                 */
+  65:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  66:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    _tx_queue_info_get                Actual information get service    */
+  67:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  68:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  CALLED BY                                                             */
+  69:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  70:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    Application Code                                                    */
+  71:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  72:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  RELEASE HISTORY                                                       */
+  73:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  74:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*    DATE              NAME                      DESCRIPTION             */
+  75:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  76:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+  77:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
+  78:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                            resulting in version 6.1    */
+  79:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /*                                                                        */
+  80:../Middlewares/threadx/common/src/txe_queue_info_get.c **** /**************************************************************************/
+  81:../Middlewares/threadx/common/src/txe_queue_info_get.c **** UINT  _txe_queue_info_get(TX_QUEUE *queue_ptr, CHAR **name, ULONG *enqueued, ULONG *available_stora
+ARM GAS  /tmp/ccR5wvpg.s 			page 3
+
+
+  82:../Middlewares/threadx/common/src/txe_queue_info_get.c ****                     TX_THREAD **first_suspended, ULONG *suspended_count, TX_QUEUE **next_queue)
+  83:../Middlewares/threadx/common/src/txe_queue_info_get.c **** {
+  35              		.loc 1 83 1 view -0
+  36              		.cfi_startproc
+  37              		@ args = 12, pretend = 0, frame = 0
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  39              		@ link register save eliminated.
+  84:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  85:../Middlewares/threadx/common/src/txe_queue_info_get.c **** UINT    status;
+  40              		.loc 1 85 1 view .LVU1
+  86:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  87:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  88:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     /* Check for an invalid queue pointer.  */
+  89:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     if (queue_ptr == TX_NULL)
+  41              		.loc 1 89 5 view .LVU2
+  83:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  42              		.loc 1 83 1 is_stmt 0 view .LVU3
+  43 0000 F0B4     		push	{r4, r5, r6, r7}
+  44              		.cfi_def_cfa_offset 16
+  45              		.cfi_offset 4, -16
+  46              		.cfi_offset 5, -12
+  47              		.cfi_offset 6, -8
+  48              		.cfi_offset 7, -4
+  83:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  49              		.loc 1 83 1 view .LVU4
+  50 0002 069F     		ldr	r7, [sp, #24]
+  51 0004 DDE90456 		ldrd	r5, r6, [sp, #16]
+  52              		.loc 1 89 8 view .LVU5
+  53 0008 50B1     		cbz	r0, .L1
+  90:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     {
+  91:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  92:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         /* Queue pointer is invalid, return appropriate error code.  */
+  93:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         status =  TX_QUEUE_ERROR;
+  94:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     }
+  95:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+  96:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     /* Now check for a valid queue ID.  */
+  97:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     else if (queue_ptr -> tx_queue_id != TX_QUEUE_ID)
+  54              		.loc 1 97 10 is_stmt 1 view .LVU6
+  55              		.loc 1 97 13 is_stmt 0 view .LVU7
+  56 000a D0F800C0 		ldr	ip, [r0]
+  57 000e 064C     		ldr	r4, .L6
+  58 0010 A445     		cmp	ip, r4
+  59 0012 05D1     		bne	.L1
+  98:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     {
+  99:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+ 100:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         /* Queue pointer is invalid, return appropriate error code.  */
+ 101:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         status =  TX_QUEUE_ERROR;
+ 102:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     }
+ 103:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     else
+ 104:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     {
+ 105:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+ 106:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         /* Otherwise, call the actual queue information get service.  */
+ 107:../Middlewares/threadx/common/src/txe_queue_info_get.c ****         status =  _tx_queue_info_get(queue_ptr, name, enqueued, available_storage, first_suspended,
+  60              		.loc 1 107 9 is_stmt 1 view .LVU8
+  61              		.loc 1 107 19 is_stmt 0 view .LVU9
+  62 0014 CDE90567 		strd	r6, r7, [sp, #20]
+  63              	.LVL1:
+ARM GAS  /tmp/ccR5wvpg.s 			page 4
+
+
+  64              		.loc 1 107 19 view .LVU10
+  65 0018 0495     		str	r5, [sp, #16]
+  66              	.LVL2:
+ 108:../Middlewares/threadx/common/src/txe_queue_info_get.c ****                                                                     suspended_count, next_queue);
+ 109:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     }
+ 110:../Middlewares/threadx/common/src/txe_queue_info_get.c **** 
+ 111:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     /* Return completion status.  */
+ 112:../Middlewares/threadx/common/src/txe_queue_info_get.c ****     return(status);
+ 113:../Middlewares/threadx/common/src/txe_queue_info_get.c **** }
+  67              		.loc 1 113 1 view .LVU11
+  68 001a F0BC     		pop	{r4, r5, r6, r7}
+  69              		.cfi_remember_state
+  70              		.cfi_restore 7
+  71              		.cfi_restore 6
+  72              		.cfi_restore 5
+  73              		.cfi_restore 4
+  74              		.cfi_def_cfa_offset 0
+ 107:../Middlewares/threadx/common/src/txe_queue_info_get.c ****                                                                     suspended_count, next_queue);
+  75              		.loc 1 107 19 view .LVU12
+  76 001c FFF7FEBF 		b	_tx_queue_info_get
+  77              	.LVL3:
+  78              	.L1:
+  79              		.cfi_restore_state
+  80              		.loc 1 113 1 view .LVU13
+  81 0020 0920     		movs	r0, #9
+  82              	.LVL4:
+  83              		.loc 1 113 1 view .LVU14
+  84 0022 F0BC     		pop	{r4, r5, r6, r7}
+  85              		.cfi_restore 7
+  86              		.cfi_restore 6
+  87              		.cfi_restore 5
+  88              		.cfi_restore 4
+  89              		.cfi_def_cfa_offset 0
+  90              	.LVL5:
+  91              		.loc 1 113 1 view .LVU15
+  92 0024 7047     		bx	lr
+  93              	.L7:
+  94 0026 00BF     		.align	2
+  95              	.L6:
+  96 0028 55455551 		.word	1364542805
+  97              		.cfi_endproc
+  98              	.LFE8:
+ 100              		.text
+ 101              	.Letext0:
+ 102              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+ 103              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
+ARM GAS  /tmp/ccR5wvpg.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 txe_queue_info_get.c
+     /tmp/ccR5wvpg.s:26     .text._txe_queue_info_get:00000000 $t
+     /tmp/ccR5wvpg.s:32     .text._txe_queue_info_get:00000000 _txe_queue_info_get
+     /tmp/ccR5wvpg.s:96     .text._txe_queue_info_get:00000028 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_queue.h.51.60d18a0c5a48880a6986db6c40123596
+
+UNDEFINED SYMBOLS
+_tx_queue_info_get

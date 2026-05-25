@@ -1,0 +1,1416 @@
+ARM GAS  /tmp/cc9owemA.s 			page 1
+
+
+   1              		.arch armv8.1-m.main
+   2              		.fpu fpv5-d16
+   3              		.arch_extension dsp
+   4              		.arch_extension fp
+   5              		.arch_extension fp.dp
+   6              		.arch_extension mve
+   7              		.arch_extension mve.fp
+   8              		.eabi_attribute 5, "cortex-m55"
+   9              		.eabi_attribute 28, 1
+  10              		.eabi_attribute 20, 1
+  11              		.eabi_attribute 21, 1
+  12              		.eabi_attribute 23, 3
+  13              		.eabi_attribute 24, 1
+  14              		.eabi_attribute 25, 1
+  15              		.eabi_attribute 26, 1
+  16              		.eabi_attribute 30, 4
+  17              		.eabi_attribute 34, 1
+  18              		.eabi_attribute 38, 1
+  19              		.eabi_attribute 18, 4
+  20              		.file	"tx_semaphore_put.c"
+  21              		.text
+  22              	.Ltext0:
+  23              		.cfi_sections	.debug_frame
+  24              		.file 1 "../Middlewares/threadx/common/src/tx_semaphore_put.c"
+  25              		.section	.text._tx_semaphore_put,"ax",%progbits
+  26              		.align	1
+  27              		.global	_tx_semaphore_put
+  28              		.syntax unified
+  29              		.thumb
+  30              		.thumb_func
+  32              	_tx_semaphore_put:
+  33              	.LVL0:
+  34              	.LFB8:
+   1:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+   2:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+   3:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+   5:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  10:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  11:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  12:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  13:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  14:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  15:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**                                                                       */
+  16:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**                                                                       */
+  18:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**   Semaphore                                                           */
+  19:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**                                                                       */
+  20:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  21:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  22:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  23:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #define TX_SOURCE_CODE
+  24:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ARM GAS  /tmp/cc9owemA.s 			page 2
+
+
+  25:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  26:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /* Include necessary system files.  */
+  27:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  28:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #include "tx_api.h"
+  29:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #include "tx_trace.h"
+  30:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #include "tx_thread.h"
+  31:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #include "tx_semaphore.h"
+  32:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  33:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  34:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  35:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  36:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  FUNCTION                                               RELEASE        */
+  37:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  38:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    _tx_semaphore_put                                   PORTABLE C      */
+  39:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                           6.1          */
+  40:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  AUTHOR                                                                */
+  41:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  42:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    William E. Lamie, Microsoft Corporation                             */
+  43:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  44:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  DESCRIPTION                                                           */
+  45:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  46:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    This function puts an instance into the specified counting          */
+  47:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    semaphore.                                                          */
+  48:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  49:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  INPUT                                                                 */
+  50:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  51:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    semaphore_ptr                     Pointer to semaphore control block*/
+  52:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  53:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  OUTPUT                                                                */
+  54:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  55:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    TX_SUCCESS                        Success completion status         */
+  56:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  57:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  CALLS                                                                 */
+  58:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  59:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    _tx_thread_system_resume          Resume thread service             */
+  60:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    _tx_thread_system_ni_resume       Non-interruptable resume thread   */
+  61:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  62:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  CALLED BY                                                             */
+  63:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  64:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    Application Code                                                    */
+  65:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  66:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  RELEASE HISTORY                                                       */
+  67:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  68:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*    DATE              NAME                      DESCRIPTION             */
+  69:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  70:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+  71:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
+  72:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                            resulting in version 6.1    */
+  73:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /*                                                                        */
+  74:../Middlewares/threadx/common/src/tx_semaphore_put.c **** /**************************************************************************/
+  75:../Middlewares/threadx/common/src/tx_semaphore_put.c **** UINT  _tx_semaphore_put(TX_SEMAPHORE *semaphore_ptr)
+  76:../Middlewares/threadx/common/src/tx_semaphore_put.c **** {
+  35              		.loc 1 76 1 view -0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 8
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  77:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ARM GAS  /tmp/cc9owemA.s 			page 3
+
+
+  78:../Middlewares/threadx/common/src/tx_semaphore_put.c **** TX_INTERRUPT_SAVE_AREA
+  39              		.loc 1 78 1 view .LVU1
+  79:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  80:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
+  81:../Middlewares/threadx/common/src/tx_semaphore_put.c **** VOID            (*semaphore_put_notify)(struct TX_SEMAPHORE_STRUCT *notify_semaphore_ptr);
+  40              		.loc 1 81 1 view .LVU2
+  82:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+  83:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  84:../Middlewares/threadx/common/src/tx_semaphore_put.c **** TX_THREAD       *thread_ptr;
+  41              		.loc 1 84 1 view .LVU3
+  85:../Middlewares/threadx/common/src/tx_semaphore_put.c **** UINT            suspended_count;
+  42              		.loc 1 85 1 view .LVU4
+  86:../Middlewares/threadx/common/src/tx_semaphore_put.c **** TX_THREAD       *next_thread;
+  43              		.loc 1 86 1 view .LVU5
+  87:../Middlewares/threadx/common/src/tx_semaphore_put.c **** TX_THREAD       *previous_thread;
+  44              		.loc 1 87 1 view .LVU6
+  88:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  89:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  90:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Disable interrupts to put an instance back to the semaphore.  */
+  91:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     TX_DISABLE
+  45              		.loc 1 91 5 view .LVU7
+  46              	.LBB15:
+  47              	.LBI15:
+  48              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
+   1:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+   2:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+   3:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
+   4:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+   5:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       This software is licensed under the Microsoft Software License   */
+   6:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
+   7:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
+   8:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       and in the root directory of this software.                      */
+   9:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  10:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  11:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  12:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  13:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  14:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  15:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
+  16:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /** ThreadX Component                                                     */
+  17:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
+  18:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**   Port Specific                                                       */
+  19:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
+  20:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  21:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  22:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  23:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  24:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  25:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  26:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  PORT SPECIFIC C INFORMATION                            RELEASE        */
+  27:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  28:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    tx_port.h                                         Cortex-M55/GNU    */
+  29:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                           6.2.1        */
+  30:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  31:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  AUTHOR                                                                */
+  32:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  33:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    Scott Larson, Microsoft Corporation                                 */
+ARM GAS  /tmp/cc9owemA.s 			page 4
+
+
+  34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  35:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  DESCRIPTION                                                           */
+  36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
+  38:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    real-time kernel function identically on a variety of different     */
+  39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
+  40:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    in an "int" data type vary between microprocessor architectures and */
+  41:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    even C compilers for the same microprocessor.  ThreadX does not     */
+  42:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    directly use native C data types.  Instead, ThreadX creates its     */
+  43:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    own special types that can be mapped to actual data types by this   */
+  44:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    file to guarantee consistency in the interface and functionality.   */
+  45:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  46:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file replaces the previous Cortex-M55 files. It unifies        */
+  47:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    the Cortex-M55 compilers into one common file.                      */
+  48:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  49:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  RELEASE HISTORY                                                       */
+  50:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  51:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    DATE              NAME                      DESCRIPTION             */
+  52:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  53:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  09-30-2020      Scott Larson            Initial Version 6.1           */
+  54:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  03-02-2021      Scott Larson            Modified comment(s), added    */
+  55:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            ULONG64_DEFINED,            */
+  56:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.5  */
+  57:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  06-02-2021      Scott Larson            Modified comment(s), removed  */
+  58:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            unneeded header file, funcs */
+  59:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            set_control and get_control */
+  60:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            changed to inline,          */
+  61:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            added symbol to enable      */
+  62:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack error handler,        */
+  63:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.7  */
+  64:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  10-15-2021      Scott Larson            Modified comment(s), improved */
+  65:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack check error handling, */
+  66:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.9  */
+  67:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  01-31-2022      Scott Larson            Modified comment(s), unified  */
+  68:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            this file across compilers, */
+  69:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            fixed predefined macro,     */
+  70:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.10 */
+  71:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  04-25-2022      Scott Larson            Modified comments and added   */
+  72:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            volatile to registers,      */
+  73:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.11 */
+  74:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  07-29-2022      Scott Larson            Modified comments and changed */
+  75:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            secure stack initialization */
+  76:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            macro to port-specific,     */
+  77:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            described BASEPRI usage,    */
+  78:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.12 */
+  79:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  03-08-2023      Scott Larson            Removed unneeded #include,    */
+  80:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.2.1  */
+  81:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
+  82:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
+  83:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  84:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_PORT_H
+  85:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_H
+  86:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  87:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if the optional ThreadX user define file should be used.  */
+  88:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_INCLUDE_USER_DEFINE_FILE
+  89:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  90:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Yes, include the user defines in tx_user.h. The defines in this file may
+ARM GAS  /tmp/cc9owemA.s 			page 5
+
+
+  91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
+  92:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
+  94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
+  95:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
+  97:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+  98:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <stdlib.h>
+  99:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <string.h>
+ 100:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 101:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__
+ 102:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <intrinsics.h>                         /* IAR Intrinsics */
+ 103:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define __asm__                 __asm           /* Define to make all inline asm from each compiler
+ 104:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_control_get         __get_CONTROL
+ 105:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_control_set         __set_CONTROL
+ 106:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_ipsr_get            __get_IPSR
+ 107:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
+ 108:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <yvals.h>
+ 109:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
+ 110:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* __ICCARM__ */
+ 111:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 112:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 113:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define ThreadX basic types for this port.  */
+ 114:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 115:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define VOID                                    void
+ 116:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef char                                    CHAR;
+ 117:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned char                           UCHAR;
+ 118:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef int                                     INT;
+ 119:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned int                            UINT;
+ 120:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef long                                    LONG;
+ 121:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long                           ULONG;
+ 122:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long long                      ULONG64;
+ 123:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef short                                   SHORT;
+ 124:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned short                          USHORT;
+ 125:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define ULONG64_DEFINED
+ 126:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 127:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Function prototypes for this port. */
+ 128:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** struct  TX_THREAD_STRUCT;
+ 129:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _txe_thread_secure_stack_allocate(struct TX_THREAD_STRUCT *thread_ptr, ULONG stack_size);
+ 130:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _txe_thread_secure_stack_free(struct TX_THREAD_STRUCT *thread_ptr);
+ 131:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _tx_thread_secure_stack_allocate(struct TX_THREAD_STRUCT *tx_thread, ULONG stack_size);
+ 132:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _tx_thread_secure_stack_free(struct TX_THREAD_STRUCT *tx_thread);
+ 133:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 134:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the system API mappings based on the error checking
+ 135:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    selected by the user.  Note: this section is only applicable to
+ 136:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    application source code, hence the conditional that turns off this
+ 137:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    stuff when the include file is processed by the ThreadX source. */
+ 138:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 139:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_SOURCE_CODE
+ 140:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 141:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 142:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if error checking is desired.  If so, map API functions
+ 143:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    to the appropriate error checking front-ends.  Otherwise, map API
+ 144:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    functions to the core functions that actually perform the work.
+ 145:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    Note: error checking is enabled by default.  */
+ 146:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 147:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_DISABLE_ERROR_CHECKING
+ARM GAS  /tmp/cc9owemA.s 			page 6
+
+
+ 148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 149:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services without error checking.  */
+ 150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
+ 152:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _tx_thread_secure_stack_free
+ 153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 154:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 155:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 156:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services with error checking.  */
+ 157:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 158:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _txe_thread_secure_stack_allocate
+ 159:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _txe_thread_secure_stack_free
+ 160:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 161:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_DISABLE_ERROR_CHECKING */
+ 162:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_SOURCE_CODE */
+ 163:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 164:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* This port has a usage fault handler in _tx_initialize_low_level for stack exceptions.  */
+ 165:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_THREAD_STACK_ERROR_HANDLING
+ 166:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 167:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the priority levels for ThreadX.  Legal values range
+ 168:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    from 32 to 1024 and MUST be evenly divisible by 32.  */
+ 169:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 170:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MAX_PRIORITIES
+ 171:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MAX_PRIORITIES                       32
+ 172:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 173:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 174:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 175:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the minimum stack for a ThreadX thread on this processor. If the size supplied during
+ 176:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    thread creation is less than this value, the thread create call will return an error.  */
+ 177:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 178:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MINIMUM_STACK
+ 179:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MINIMUM_STACK                        200         /* Minimum stack size for this port  */
+ 180:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 181:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 182:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 183:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the system timer thread's default stack size and priority.  These are only applicable
+ 184:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    if TX_TIMER_PROCESS_IN_ISR is not defined.  */
+ 185:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 186:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TIMER_THREAD_STACK_SIZE
+ 187:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_STACK_SIZE              1024        /* Default timer thread stack size  */
+ 188:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 189:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 190:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TIMER_THREAD_PRIORITY
+ 191:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_PRIORITY                0           /* Default timer thread priority    */
+ 192:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 193:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 194:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* By default, ThreadX for Cortex-M uses the PRIMASK register to enable/disable interrupts.
+ 195:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** If using BASEPRI is desired, define the following two symbols for both c and assembly files:
+ 196:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** TX_PORT_USE_BASEPRI - This tells ThreadX to use BASEPRI instead of PRIMASK.
+ 197:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** TX_PORT_BASEPRI = (priority_mask << (8 - number_priority_bits)) - this defines the maximum priority
+ 198:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** Any interrupt with a higher priority than priority_mask will not be masked, thus the interrupt will
+ 199:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
+ 200:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 201:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define various constants for the ThreadX Cortex-M port.  */
+ 202:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 203:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INT_DISABLE                          1           /* Disable interrupts               */
+ 204:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INT_ENABLE                           0           /* Enable interrupts                */
+ARM GAS  /tmp/cc9owemA.s 			page 7
+
+
+ 205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 206:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
+ 208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
+ 209:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    source constants would be:
+ 210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 211:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    *((volatile ULONG *) 0x0a800024)
+ 212:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0x0000FFFFUL
+ 213:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 214:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
+ 215:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 216:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
+ 217:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TRACE_TIME_SOURCE
+ 218:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    *((volatile ULONG *) 0xE0001004)
+ 219:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 220:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 221:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG   _tx_misra_time_stamp_get(VOID);
+ 222:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    _tx_misra_time_stamp_get()
+ 223:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 224:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 225:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TRACE_TIME_MASK
+ 226:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0xFFFFFFFFUL
+ 227:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 228:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 229:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 230:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port specific options for the _tx_build_options variable. This variable indicates
+ 231:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    how the ThreadX library was built.  */
+ 232:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 233:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_BUILD_OPTIONS          (0)
+ 234:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 235:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 236:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the in-line initialization constant so that modules with in-line
+ 237:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    initialization capabilities can prevent their initialization from being
+ 238:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    a function call.  */
+ 239:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 240:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_MISRA_ENABLE
+ 241:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_DISABLE_INLINE
+ 242:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 243:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INLINE_INITIALIZATION
+ 244:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 245:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 246:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 247:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine whether or not stack checking is enabled. By default, ThreadX stack checking is
+ 248:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    disabled. When the following is defined, ThreadX thread stack checking is enabled.  If stack
+ 249:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    checking is enabled (TX_ENABLE_STACK_CHECKING is defined), the TX_DISABLE_STACK_FILLING
+ 250:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    define is negated, thereby forcing the stack fill which is necessary for the stack checking
+ 251:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    logic.  */
+ 252:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 253:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
+ 254:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_ENABLE_STACK_CHECKING
+ 255:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #undef TX_DISABLE_STACK_FILLING
+ 256:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 257:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 258:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 259:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 260:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_THREAD control block extensions for this port. The main reason
+ 261:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for the multiple macros is so that backward compatibility can be maintained with
+ARM GAS  /tmp/cc9owemA.s 			page 8
+
+
+ 262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
+ 263:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
+ 265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
+ 266:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
+ 268:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* IAR library support */
+ 269:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 270:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in non-secure zone with calls to secure zone. */
+ 271:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_secure_stack_context;    \
+ 272:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                         VOID    *tx_thread_iar_tls_pointer;
+ 273:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 274:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
+ 275:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_iar_tls_pointer;
+ 276:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 277:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 278:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 279:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* No IAR library support */
+ 280:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 281:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in non-secure zone with calls to secure zone. */
+ 282:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_secure_stack_context;
+ 283:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 284:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
+ 285:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2
+ 286:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 287:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 288:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
+ 289:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 290:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_3
+ 291:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 292:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 293:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port extensions of the remaining ThreadX objects.  */
+ 294:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 295:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_EXTENSION
+ 296:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_EXTENSION
+ 297:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_EXTENSION
+ 298:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_EXTENSION
+ 299:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_EXTENSION
+ 300:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_EXTENSION
+ 301:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_EXTENSION
+ 302:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 303:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 304:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the user extension field of the thread control block.  Nothing
+ 305:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    additional is needed for this port so it is defined as white space.  */
+ 306:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 307:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_THREAD_USER_EXTENSION
+ 308:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_USER_EXTENSION
+ 309:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 310:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 311:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 312:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the macros for processing extensions in tx_thread_create, tx_thread_delete,
+ 313:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    tx_thread_shell_entry, and tx_thread_terminate.  */
+ 314:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
+ 315:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    *_tx_iar_create_per_thread_tls_area(void);
+ 316:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    _tx_iar_destroy_per_thread_tls_area(void *tls_ptr);
+ 317:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    __iar_Initlocks(void);
+ 318:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)                      thread_ptr -> tx_thread_iar_tls
+ARM GAS  /tmp/cc9owemA.s 			page 9
+
+
+ 319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 320:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
+ 322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
+ 323:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     if(thread_ptr -> tx_thread_secu
+ 324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 325:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
+ 326:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
+ 327:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 328:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_PRE_SCHEDULER_INITIALIZATION               do {__iar_Initlocks();} while(0
+ 329:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 330:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* No IAR library support. */
+ 331:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)
+ 332:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 333:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      if(thread_ptr -> tx_thread_secu
+ 334:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 335:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)
+ 336:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 337:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
+ 338:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 339:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 340:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the size of the secure stack for the timer thread and use the extension to allocate the s
+ 341:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_SECURE_STACK_SIZE       256
+ 342:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_INITIALIZE_EXTENSION(status)   _tx_thread_secure_stack_allocate(&_tx_timer_thread,
+ 343:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 344:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 345:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 346:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if defined(__ARMVFP__) || defined(__ARM_PCS_VFP) || defined(__ARM_FP) || defined(__TARGET_FPU_VFP)
+ 347:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 348:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_MISRA_ENABLE
+ 349:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 350:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_control_get(void);
+ 351:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_control_set(ULONG value);
+ 352:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_fpccr_get(void);
+ 353:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_vfp_touch(void);
+ 354:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 355:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* TX_MISRA_ENABLE not defined */
+ 356:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 357:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __GNUC__ /* GCC and ARM Compiler 6 */
+ 358:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 359:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline ULONG _tx_control_get(void)
+ 360:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 361:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  control_value;
+ 362:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 363:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MRS  %0,CONTROL ": "=r" (control_value) );
+ 364:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(control_value);
+ 365:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 366:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 367:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void _tx_control_set(ULONG control_value)
+ 368:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 369:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MSR  CONTROL,%0": : "r" (control_value): "memory" );
+ 370:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 371:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 372:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* __GNUC__ */
+ 373:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 374:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Touch VFP register in order to flush. Works for AC6/GCC/IAR compilers. */
+ 375:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_VFP_TOUCH()  __asm__ volatile ("VMOV.F32 s0, s0");
+ARM GAS  /tmp/cc9owemA.s 			page 10
+
+
+ 376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 377:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
+ 378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
+ 380:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    in order to ensure no lazy stacking will occur. */
+ 381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 382:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
+ 383:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 384:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)   {                                              
+ 385:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_vfp_state;                          
+ 386:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_control_get();         
+ 387:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_vfp_state & ~((ULONG) 0
+ 388:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_control_set(_tx_vfp_state);            
+ 389:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
+ 390:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 391:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 392:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)   {                                              
+ 393:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_vfp_state;                          
+ 394:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_misra_control_get();   
+ 395:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_vfp_state & ~((ULONG) 0
+ 396:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_misra_control_set(_tx_vfp_state);      
+ 397:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
+ 398:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 399:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 400:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A thread can be terminated by another thread, so we first check if it's self-terminating and not
+ 401:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    If so, deactivate the FPU via CONTROL.FPCA. Otherwise we are in an interrupt or another thread i
+ 402:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    this one, so if the FPCCR.LSPACT bit is set, we need to save the CONTROL.FPCA state, touch the F
+ 403:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    the lazy FPU save, then restore the CONTROL.FPCA state. */
+ 404:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 405:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
+ 406:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 407:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
+ 408:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
+ 409:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
+ 410:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
+ 411:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
+ 412:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_vfp_state;                      
+ 413:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_control_get();     
+ 414:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_vfp_state & ~((ULON
+ 415:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_control_set(_tx_vfp_state);        
+ 416:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
+ 417:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         else                                       
+ 418:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
+ 419:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_fpccr;                          
+ 420:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_fpccr = *((volatile ULONG *) 0xE000
+ 421:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_fpccr = _tx_fpccr & ((ULONG) 0x01);
+ 422:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             if (_tx_fpccr == ((ULONG) 0x01))       
+ 423:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             {                                      
+ 424:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
+ 425:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_control_get(); 
+ 426:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_vfp_state & ((U
+ 427:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 TX_VFP_TOUCH();                    
+ 428:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 if (_tx_vfp_state == ((ULONG) 0))  
+ 429:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 {                                  
+ 430:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_control_get
+ 431:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_vfp_state &
+ 432:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_control_set(_tx_vfp_state);
+ARM GAS  /tmp/cc9owemA.s 			page 11
+
+
+ 433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
+ 434:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
+ 435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
+ 436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
+ 437:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 439:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
+ 440:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
+ 441:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
+ 442:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
+ 443:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
+ 444:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_vfp_state;                      
+ 445:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_misra_control_get()
+ 446:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_vfp_state & ~((ULON
+ 447:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_misra_control_set(_tx_vfp_state);  
+ 448:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
+ 449:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         else                                       
+ 450:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
+ 451:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_fpccr;                          
+ 452:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_fpccr = _tx_misra_fpccr_get();     
+ 453:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_fpccr = _tx_fpccr & ((ULONG) 0x01);
+ 454:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             if (_tx_fpccr == ((ULONG) 0x01))       
+ 455:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             {                                      
+ 456:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
+ 457:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_misra_control_g
+ 458:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_vfp_state & ((U
+ 459:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_misra_vfp_touch();             
+ 460:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 if (_tx_vfp_state == ((ULONG) 0))  
+ 461:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 {                                  
+ 462:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_misra_contr
+ 463:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_vfp_state &
+ 464:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_misra_control_set(_tx_vfp_s
+ 465:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
+ 466:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
+ 467:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
+ 468:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
+ 469:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 470:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 471:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* No VFP in use */
+ 472:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 473:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)
+ 474:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)
+ 475:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 476:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* defined(__ARMVFP__) || defined(__ARM_PCS_VFP) || defined(__ARM_FP) || defined(__TARGET_F
+ 477:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 478:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 479:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object creation extensions for the remaining objects.  */
+ 480:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 481:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_CREATE_EXTENSION(pool_ptr)
+ 482:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_CREATE_EXTENSION(pool_ptr)
+ 483:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_CREATE_EXTENSION(group_ptr)
+ 484:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_CREATE_EXTENSION(mutex_ptr)
+ 485:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_CREATE_EXTENSION(queue_ptr)
+ 486:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_CREATE_EXTENSION(semaphore_ptr)
+ 487:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_CREATE_EXTENSION(timer_ptr)
+ 488:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 489:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ARM GAS  /tmp/cc9owemA.s 			page 12
+
+
+ 490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
+ 491:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
+ 493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
+ 494:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_DELETE_EXTENSION(group_ptr)
+ 495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
+ 496:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_DELETE_EXTENSION(queue_ptr)
+ 497:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_DELETE_EXTENSION(semaphore_ptr)
+ 498:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_DELETE_EXTENSION(timer_ptr)
+ 499:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 500:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 501:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the get system state macro.  */
+ 502:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 503:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_THREAD_GET_SYSTEM_STATE
+ 504:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
+ 505:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 506:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if defined(__GNUC__) /* GCC and AC6 */
+ 507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT _tx_ipsr_get(void)
+ 508:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 509:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT ipsr_value;
+ 510:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MRS  %0,IPSR ": "=r" (ipsr_value) );
+ 511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(ipsr_value);
+ 512:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 513:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* GCC and AC6 IPSR_get function. */
+ 514:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 515:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_GET_SYSTEM_STATE()        (_tx_thread_system_state | _tx_ipsr_get())
+ 516:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 517:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* TX_MISRA_ENABLE is defined, use MISRA function. */
+ 518:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG   _tx_misra_ipsr_get(VOID);
+ 519:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_GET_SYSTEM_STATE()        (_tx_thread_system_state | _tx_misra_ipsr_get())
+ 520:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
+ 521:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_THREAD_GET_SYSTEM_STATE */
+ 522:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 523:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 524:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the check for whether or not to call the _tx_thread_system_return function.  A non-zero v
+ 525:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    indicates that _tx_thread_system_return should not be called. This overrides the definition in t
+ 526:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for Cortex-M since so we don't waste time checking the _tx_thread_system_state variable that is 
+ 527:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    zero after initialization for Cortex-M ports. */
+ 528:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 529:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_THREAD_SYSTEM_RETURN_CHECK
+ 530:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_SYSTEM_RETURN_CHECK(c)    (c) = ((ULONG) _tx_thread_preempt_disable);
+ 531:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 532:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 533:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
+ 534:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Initialize secure stacks for threads calling secure functions. */
+ 535:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** extern void    _tx_thread_secure_stack_initialize(void);
+ 536:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_PRE_INITIALIZATION             _tx_thread_secure_stack_initialize();
+ 537:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 538:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 539:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the macro to ensure _tx_thread_preempt_disable is set early in initialization in order to
+ 540:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    prevent early scheduling on Cortex-M parts.  */
+ 541:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 542:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_POST_INITIALIZATION    _tx_thread_preempt_disable++;
+ 543:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 544:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 545:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 546:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ARM GAS  /tmp/cc9owemA.s 			page 13
+
+
+ 547:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_DISABLE_INLINE
+ 548:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
+ 550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
+ 551:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       (b) = (UINT) __CLZ(__RBIT((m)));
+ 552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
+ 553:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       __asm__ volatile (" RBIT %0,%1 ": "=r" (m) : "r" (m
+ 554:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                 __asm__ volatile (" CLZ  %0,%1 ": "=r" (b) : "r" (m
+ 555:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 556:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #error "Compiler not supported."
+ 557:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 558:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 559:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 560:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 561:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the interrupt disable/restore macros. */
+ 562:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT __get_interrupt_posture(void)
+ 564:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT posture;
+ 566:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
+ 567:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("MRS  %0, BASEPRI ": "=r" (posture));
+ 568:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("MRS  %0, PRIMASK ": "=r" (posture));
+ 570:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(posture);
+ 572:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 573:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 574:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
+ 575:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __set_basepri_value(UINT basepri_value)
+ 576:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 577:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("MSR  BASEPRI,%0 ": : "r" (basepri_value));
+ 578:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 579:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 580:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __enable_interrupts(void)
+ 581:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 582:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("CPSIE  i": : : "memory");
+ 583:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 584:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 585:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __restore_interrupt(UINT int_posture)
+ 587:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 588:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
+ 589:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __set_basepri_value(int_posture);
+ 590:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("MSR  PRIMASK,%0": : "r" (int_posture): "memory");
+ 592:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 593:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 594:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 595:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT __disable_interrupts(void)
+  49              		.loc 2 595 55 view .LVU8
+  50              	.LBB16:
+ 596:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 597:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT int_posture;
+  51              		.loc 2 597 1 view .LVU9
+ 598:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 599:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     int_posture = __get_interrupt_posture();
+  52              		.loc 2 599 5 view .LVU10
+ARM GAS  /tmp/cc9owemA.s 			page 14
+
+
+  53              	.LBB17:
+  54              	.LBI17:
+ 563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+  55              		.loc 2 563 55 view .LVU11
+  56              	.LBB18:
+ 565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
+  57              		.loc 2 565 1 view .LVU12
+ 569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+  58              		.loc 2 569 5 view .LVU13
+  59              	.LBE18:
+  60              	.LBE17:
+  61              	.LBE16:
+  62              	.LBE15:
+  76:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  63              		.loc 1 76 1 is_stmt 0 view .LVU14
+  64 0000 73B5     		push	{r0, r1, r4, r5, r6, lr}
+  65              		.cfi_def_cfa_offset 24
+  66              		.cfi_offset 4, -16
+  67              		.cfi_offset 5, -12
+  68              		.cfi_offset 6, -8
+  69              		.cfi_offset 14, -4
+  76:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  70              		.loc 1 76 1 view .LVU15
+  71 0002 0446     		mov	r4, r0
+  72              	.LBB22:
+  73              	.LBB21:
+  74              	.LBB20:
+  75              	.LBB19:
+ 569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+  76              		.loc 2 569 5 view .LVU16
+  77              		.syntax unified
+  78              	@ 569 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
+  79 0004 EFF31085 		MRS  r5, PRIMASK 
+  80              	@ 0 "" 2
+  81              	.LVL1:
+ 571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+  82              		.loc 2 571 5 is_stmt 1 view .LVU17
+ 571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+  83              		.loc 2 571 5 is_stmt 0 view .LVU18
+  84              		.thumb
+  85              		.syntax unified
+  86              	.LBE19:
+  87              	.LBE20:
+ 600:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
+ 601:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
+ 602:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __set_basepri_value(TX_PORT_BASEPRI);
+ 603:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
+ 604:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("CPSID i" : : : "memory");
+  88              		.loc 2 604 5 is_stmt 1 view .LVU19
+  89              		.syntax unified
+  90              	@ 604 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
+  91 0008 72B6     		CPSID i
+  92              	@ 0 "" 2
+ 605:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
+  93              		.loc 2 606 5 view .LVU20
+  94              	.LVL2:
+ARM GAS  /tmp/cc9owemA.s 			page 15
+
+
+  95              		.loc 2 606 5 is_stmt 0 view .LVU21
+  96              		.thumb
+  97              		.syntax unified
+  98              	.LBE21:
+  99              	.LBE22:
+ 100              	.LBB23:
+  92:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  93:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifdef TX_SEMAPHORE_ENABLE_PERFORMANCE_INFO
+  94:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  95:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Increment the total semaphore put counter.  */
+  96:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     _tx_semaphore_performance_put_count++;
+  97:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+  98:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Increment the number of puts on this semaphore.  */
+  99:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     semaphore_ptr -> tx_semaphore_performance_put_count++;
+ 100:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 101:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 102:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* If trace is enabled, insert this event into the trace buffer.  */
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     TX_TRACE_IN_LINE_INSERT(TX_TRACE_SEMAPHORE_PUT, semaphore_ptr, semaphore_ptr -> tx_semaphore_co
+ 101              		.loc 1 103 5 is_stmt 1 view .LVU22
+ 102              		.loc 1 103 5 view .LVU23
+ 103              		.loc 1 103 5 view .LVU24
+ 104              		.loc 1 103 5 view .LVU25
+ 105              		.loc 1 103 5 view .LVU26
+ 106 000a 354E     		ldr	r6, .L27
+ 107 000c 3368     		ldr	r3, [r6]
+ 108              	.LVL3:
+ 109              		.loc 1 103 5 view .LVU27
+ 110 000e 002B     		cmp	r3, #0
+ 111 0010 31D0     		beq	.L3
+ 112              		.loc 1 103 5 is_stmt 0 discriminator 1 view .LVU28
+ 113 0012 344A     		ldr	r2, .L27+4
+ 114 0014 1268     		ldr	r2, [r2]
+ 115 0016 1206     		lsls	r2, r2, #24
+ 116 0018 2DD5     		bpl	.L3
+ 117              		.loc 1 103 5 is_stmt 1 discriminator 2 view .LVU29
+ 118              	.LBB24:
+ 119              	.LBI24:
+ 507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 120              		.loc 2 507 55 view .LVU30
+ 121              	.LBB25:
+ 509:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MRS  %0,IPSR ": "=r" (ipsr_value) );
+ 122              		.loc 2 509 1 view .LVU31
+ 510:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(ipsr_value);
+ 123              		.loc 2 510 5 view .LVU32
+ 124              		.syntax unified
+ 125              	@ 510 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
+ 126 001a EFF30580 		 MRS  r0,IPSR 
+ 127              	@ 0 "" 2
+ 128              	.LVL4:
+ 511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 129              		.loc 2 511 5 view .LVU33
+ 511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
+ 130              		.loc 2 511 5 is_stmt 0 view .LVU34
+ 131              		.thumb
+ 132              		.syntax unified
+ 133              	.LBE25:
+ 134              	.LBE24:
+ARM GAS  /tmp/cc9owemA.s 			page 16
+
+
+ 135              		.loc 1 103 5 discriminator 1 view .LVU35
+ 136 001e 324A     		ldr	r2, .L27+8
+ 137 0020 3249     		ldr	r1, .L27+12
+ 138 0022 1268     		ldr	r2, [r2]
+ 139              	.LVL5:
+ 140              		.loc 1 103 5 is_stmt 1 discriminator 1 view .LVU36
+ 141 0024 0968     		ldr	r1, [r1]
+ 142              	.LVL6:
+ 143              		.loc 1 103 5 discriminator 1 view .LVU37
+ 144 0026 0243     		orrs	r2, r2, r0
+ 145              	.LVL7:
+ 146              		.loc 1 103 5 is_stmt 0 discriminator 1 view .LVU38
+ 147 0028 33D1     		bne	.L5
+ 148              		.loc 1 103 5 is_stmt 1 discriminator 3 view .LVU39
+ 149              	.LVL8:
+ 150              		.loc 1 103 5 view .LVU40
+ 151              		.loc 1 103 5 is_stmt 0 discriminator 3 view .LVU41
+ 152 002a C86B     		ldr	r0, [r1, #60]
+ 153 002c CA6A     		ldr	r2, [r1, #44]
+ 154              	.LVL9:
+ 155              		.loc 1 103 5 discriminator 3 view .LVU42
+ 156 002e 42EA0042 		orr	r2, r2, r0, lsl #16
+ 157 0032 42F00042 		orr	r2, r2, #-2147483648
+ 158              	.LVL10:
+ 159              	.L6:
+ 160              		.loc 1 103 5 is_stmt 1 discriminator 9 view .LVU43
+ 161 0036 C3E90012 		strd	r1, r2, [r3]
+ 162              		.loc 1 103 5 view .LVU44
+ 163              		.loc 1 103 5 is_stmt 0 discriminator 9 view .LVU45
+ 164 003a 5822     		movs	r2, #88
+ 165              	.LVL11:
+ 166              		.loc 1 103 5 discriminator 9 view .LVU46
+ 167 003c 9A60     		str	r2, [r3, #8]
+ 168              		.loc 1 103 5 is_stmt 1 view .LVU47
+ 169              		.loc 1 103 5 is_stmt 0 discriminator 9 view .LVU48
+ 170 003e 2C4A     		ldr	r2, .L27+16
+ 171 0040 5268     		ldr	r2, [r2, #4]
+ 172 0042 C3E90324 		strd	r2, r4, [r3, #12]
+ 173              		.loc 1 103 5 is_stmt 1 view .LVU49
+ 174              		.loc 1 103 5 is_stmt 0 discriminator 9 view .LVU50
+ 175 0046 A268     		ldr	r2, [r4, #8]
+ 176 0048 2033     		adds	r3, r3, #32
+ 177              	.LVL12:
+ 178              		.loc 1 103 5 discriminator 9 view .LVU51
+ 179 004a 43F80C2C 		str	r2, [r3, #-12]
+ 180              		.loc 1 103 5 is_stmt 1 view .LVU52
+ 181              		.loc 1 103 5 is_stmt 0 discriminator 9 view .LVU53
+ 182 004e 2269     		ldr	r2, [r4, #16]
+ 183 0050 43F8082C 		str	r2, [r3, #-8]
+ 184              		.loc 1 103 5 is_stmt 1 view .LVU54
+ 185              		.loc 1 103 5 is_stmt 0 discriminator 9 view .LVU55
+ 186 0054 01AA     		add	r2, sp, #4
+ 187 0056 43F8042C 		str	r2, [r3, #-4]
+ 188              		.loc 1 103 5 is_stmt 1 view .LVU56
+ 189              	.LVL13:
+ 190              		.loc 1 103 5 view .LVU57
+ 191              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU58
+ARM GAS  /tmp/cc9owemA.s 			page 17
+
+
+ 192 005a 264A     		ldr	r2, .L27+20
+ 193 005c 1068     		ldr	r0, [r2]
+ 194              		.loc 1 103 5 discriminator 9 view .LVU59
+ 195 005e 264A     		ldr	r2, .L27+24
+ 196 0060 1268     		ldr	r2, [r2]
+ 197 0062 9A42     		cmp	r2, r3
+ 198 0064 1FD8     		bhi	.L7
+ 199              		.loc 1 103 5 is_stmt 1 discriminator 10 view .LVU60
+ 200 0066 254B     		ldr	r3, .L27+28
+ 201              	.LVL14:
+ 202              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU61
+ 203 0068 1B68     		ldr	r3, [r3]
+ 204              	.LVL15:
+ 205              		.loc 1 103 5 is_stmt 1 view .LVU62
+ 206              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU63
+ 207 006a 3360     		str	r3, [r6]
+ 208              	.LVL16:
+ 209              		.loc 1 103 5 is_stmt 1 view .LVU64
+ 210              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU65
+ 211 006c 0362     		str	r3, [r0, #32]
+ 212              		.loc 1 103 5 is_stmt 1 view .LVU66
+ 213              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU67
+ 214 006e 244B     		ldr	r3, .L27+32
+ 215              	.LVL17:
+ 216              		.loc 1 103 5 discriminator 10 view .LVU68
+ 217 0070 1B68     		ldr	r3, [r3]
+ 218 0072 03B1     		cbz	r3, .L3
+ 219              		.loc 1 103 5 is_stmt 1 discriminator 12 view .LVU69
+ 220 0074 9847     		blx	r3
+ 221              	.LVL18:
+ 222              	.L3:
+ 223              		.loc 1 103 5 is_stmt 0 discriminator 12 view .LVU70
+ 224              	.LBE23:
+ 104:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 105:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Log this kernel call.  */
+ 106:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     TX_EL_SEMAPHORE_PUT_INSERT
+ 107:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 108:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Pickup the number of suspended threads.  */
+ 109:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     suspended_count =  semaphore_ptr -> tx_semaphore_suspended_count;
+ 225              		.loc 1 109 5 is_stmt 1 view .LVU71
+ 226              		.loc 1 109 21 is_stmt 0 view .LVU72
+ 227 0076 2369     		ldr	r3, [r4, #16]
+ 228              	.LVL19:
+ 110:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 111:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Determine if there are any threads suspended on the semaphore.  */
+ 112:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     if (suspended_count == TX_NO_SUSPENSIONS)
+ 229              		.loc 1 112 5 is_stmt 1 view .LVU73
+ 113:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     {
+ 114:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 115:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Increment the semaphore count.  */
+ 116:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         semaphore_ptr -> tx_semaphore_count++;
+ 117:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 118:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
+ 119:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 120:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Pickup the application notify function.  */
+ 121:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         semaphore_put_notify =  semaphore_ptr -> tx_semaphore_put_notify;
+ 230              		.loc 1 121 30 is_stmt 0 view .LVU74
+ARM GAS  /tmp/cc9owemA.s 			page 18
+
+
+ 231 0078 E669     		ldr	r6, [r4, #28]
+ 112:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     {
+ 232              		.loc 1 112 8 view .LVU75
+ 233 007a BBB9     		cbnz	r3, .L8
+ 116:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 234              		.loc 1 116 9 is_stmt 1 view .LVU76
+ 116:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 235              		.loc 1 116 44 is_stmt 0 view .LVU77
+ 236 007c A368     		ldr	r3, [r4, #8]
+ 237              	.LVL20:
+ 116:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 238              		.loc 1 116 44 view .LVU78
+ 239 007e 0133     		adds	r3, r3, #1
+ 240 0080 A360     		str	r3, [r4, #8]
+ 241              		.loc 1 121 9 is_stmt 1 view .LVU79
+ 242              	.LVL21:
+ 122:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 123:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 124:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Restore interrupts.  */
+ 125:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         TX_RESTORE
+ 243              		.loc 1 125 9 view .LVU80
+ 244              	.LBB26:
+ 245              	.LBI26:
+ 586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 246              		.loc 2 586 55 view .LVU81
+ 247              	.LBB27:
+ 591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 248              		.loc 2 591 5 view .LVU82
+ 249              		.syntax unified
+ 250              	@ 591 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
+ 251 0082 85F31088 		MSR  PRIMASK,r5
+ 252              	@ 0 "" 2
+ 253              	.LVL22:
+ 591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 254              		.loc 2 591 5 is_stmt 0 view .LVU83
+ 255              		.thumb
+ 256              		.syntax unified
+ 257              	.LBE27:
+ 258              	.LBE26:
+ 126:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 127:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
+ 128:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 129:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Determine if notification is required.  */
+ 130:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         if (semaphore_put_notify != TX_NULL)
+ 259              		.loc 1 130 9 is_stmt 1 view .LVU84
+ 260              	.L26:
+ 131:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 132:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 133:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Yes, call the appropriate notify callback function.  */
+ 134:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             (semaphore_put_notify)(semaphore_ptr);
+ 135:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 136:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 137:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     }
+ 138:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     else
+ 139:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     {
+ 140:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 141:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* A thread is suspended on this semaphore.  */
+ARM GAS  /tmp/cc9owemA.s 			page 19
+
+
+ 142:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 143:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Pickup the pointer to the first suspended thread.  */
+ 144:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         thread_ptr =  semaphore_ptr -> tx_semaphore_suspension_list;
+ 145:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 146:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Remove the suspended thread from the list.  */
+ 147:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 148:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* See if this is the only suspended thread on the list.  */
+ 149:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         suspended_count--;
+ 150:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         if (suspended_count == TX_NO_SUSPENSIONS)
+ 151:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 152:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 153:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Yes, the only suspended thread.  */
+ 154:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 155:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Update the head pointer.  */
+ 156:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             semaphore_ptr -> tx_semaphore_suspension_list =  TX_NULL;
+ 157:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 158:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         else
+ 159:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 160:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 161:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* At least one more thread is on the same expiration list.  */
+ 162:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 163:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Update the list head pointer.  */
+ 164:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             next_thread =                                     thread_ptr -> tx_thread_suspended_nex
+ 165:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             semaphore_ptr -> tx_semaphore_suspension_list =   next_thread;
+ 166:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 167:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Update the links of the adjacent threads.  */
+ 168:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             previous_thread =                               thread_ptr -> tx_thread_suspended_previ
+ 169:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             next_thread -> tx_thread_suspended_previous =   previous_thread;
+ 170:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             previous_thread -> tx_thread_suspended_next =   next_thread;
+ 171:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 172:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 173:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Decrement the suspension count.  */
+ 174:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         semaphore_ptr -> tx_semaphore_suspended_count =  suspended_count;
+ 175:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 176:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Prepare for resumption of the first thread.  */
+ 177:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 178:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Clear cleanup routine to avoid timeout.  */
+ 179:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         thread_ptr -> tx_thread_suspend_cleanup =  TX_NULL;
+ 180:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 181:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
+ 182:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 183:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Pickup the application notify function.  */
+ 184:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         semaphore_put_notify =  semaphore_ptr -> tx_semaphore_put_notify;
+ 185:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 186:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 187:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Put return status into the thread control block.  */
+ 188:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         thread_ptr -> tx_thread_suspend_status =  TX_SUCCESS;
+ 189:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 190:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifdef TX_NOT_INTERRUPTABLE
+ 191:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 192:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Resume the thread!  */
+ 193:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         _tx_thread_system_ni_resume(thread_ptr);
+ 194:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 195:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Restore interrupts.  */
+ 196:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         TX_RESTORE
+ 197:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #else
+ 198:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ARM GAS  /tmp/cc9owemA.s 			page 20
+
+
+ 199:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Temporarily disable preemption.  */
+ 200:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         _tx_thread_preempt_disable++;
+ 201:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 202:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Restore interrupts.  */
+ 203:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         TX_RESTORE
+ 204:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 205:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Resume thread.  */
+ 206:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         _tx_thread_system_resume(thread_ptr);
+ 207:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 208:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 209:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
+ 210:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 211:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Determine if notification is required.  */
+ 212:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         if (semaphore_put_notify != TX_NULL)
+ 261              		.loc 1 212 9 view .LVU85
+ 262              		.loc 1 212 12 is_stmt 0 view .LVU86
+ 263 0086 0EB1     		cbz	r6, .L10
+ 213:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 214:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 215:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             /* Yes, call the appropriate notify callback function.  */
+ 216:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             (semaphore_put_notify)(semaphore_ptr);
+ 264              		.loc 1 216 13 is_stmt 1 view .LVU87
+ 265 0088 2046     		mov	r0, r4
+ 266 008a B047     		blx	r6
+ 267              	.LVL23:
+ 268              	.L10:
+ 217:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 218:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 219:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     }
+ 220:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 221:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     /* Return successful completion.  */
+ 222:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     return(TX_SUCCESS);
+ 269              		.loc 1 222 5 view .LVU88
+ 223:../Middlewares/threadx/common/src/tx_semaphore_put.c **** }
+ 270              		.loc 1 223 1 is_stmt 0 view .LVU89
+ 271 008c 0020     		movs	r0, #0
+ 272 008e 02B0     		add	sp, sp, #8
+ 273              		.cfi_remember_state
+ 274              		.cfi_def_cfa_offset 16
+ 275              		@ sp needed
+ 276 0090 70BD     		pop	{r4, r5, r6, pc}
+ 277              	.LVL24:
+ 278              	.L5:
+ 279              		.cfi_restore_state
+ 280              	.LBB28:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 281              		.loc 1 103 5 is_stmt 1 discriminator 4 view .LVU90
+ 282 0092 B2F1F03F 		cmp	r2, #-252645136
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 283              		.loc 1 103 5 discriminator 6 view .LVU91
+ 284 0096 35BF     		itete	cc
+ 285 0098 0A46     		movcc	r2, r1
+ 286              	.LVL25:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 287              		.loc 1 103 5 view .LVU92
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 288              		.loc 1 103 5 is_stmt 0 discriminator 7 view .LVU93
+ARM GAS  /tmp/cc9owemA.s 			page 21
+
+
+ 289 009a 4FF0F031 		movcs	r1, #-252645136
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 290              		.loc 1 103 5 discriminator 6 view .LVU94
+ 291 009e 4FF0FF31 		movcc	r1, #-1
+ 292              	.LVL26:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 293              		.loc 1 103 5 discriminator 7 view .LVU95
+ 294 00a2 0022     		movcs	r2, #0
+ 295 00a4 C7E7     		b	.L6
+ 296              	.LVL27:
+ 297              	.L7:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 298              		.loc 1 103 5 is_stmt 1 discriminator 11 view .LVU96
+ 299 00a6 3360     		str	r3, [r6]
+ 300              	.LVL28:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 301              		.loc 1 103 5 view .LVU97
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 302              		.loc 1 103 5 is_stmt 0 discriminator 11 view .LVU98
+ 303 00a8 0362     		str	r3, [r0, #32]
+ 304 00aa E4E7     		b	.L3
+ 305              	.LVL29:
+ 306              	.L8:
+ 103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 307              		.loc 1 103 5 discriminator 11 view .LVU99
+ 308              	.LBE28:
+ 144:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 309              		.loc 1 144 9 is_stmt 1 view .LVU100
+ 144:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 310              		.loc 1 144 37 is_stmt 0 view .LVU101
+ 311 00ac E268     		ldr	r2, [r4, #12]
+ 150:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 312              		.loc 1 150 12 view .LVU102
+ 313 00ae 013B     		subs	r3, r3, #1
+ 314              	.LVL30:
+ 164:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             semaphore_ptr -> tx_semaphore_suspension_list =   next_thread;
+ 315              		.loc 1 164 25 view .LVU103
+ 316 00b0 1DBF     		ittte	ne
+ 317 00b2 116F     		ldrne	r1, [r2, #112]
+ 168:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             next_thread -> tx_thread_suspended_previous =   previous_thread;
+ 318              		.loc 1 168 29 view .LVU104
+ 319 00b4 506F     		ldrne	r0, [r2, #116]
+ 165:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 320              		.loc 1 165 59 view .LVU105
+ 321 00b6 E160     		strne	r1, [r4, #12]
+ 156:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 322              		.loc 1 156 59 view .LVU106
+ 323 00b8 E360     		streq	r3, [r4, #12]
+ 169:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             previous_thread -> tx_thread_suspended_next =   next_thread;
+ 324              		.loc 1 169 57 view .LVU107
+ 325 00ba 1CBF     		itt	ne
+ 326 00bc 4867     		strne	r0, [r1, #116]
+ 170:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 327              		.loc 1 170 57 view .LVU108
+ 328 00be 0167     		strne	r1, [r0, #112]
+ 174:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 329              		.loc 1 174 55 view .LVU109
+ARM GAS  /tmp/cc9owemA.s 			page 22
+
+
+ 330 00c0 2361     		str	r3, [r4, #16]
+ 331              	.LVL31:
+ 179:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 332              		.loc 1 179 49 view .LVU110
+ 333 00c2 0023     		movs	r3, #0
+ 334              	.LVL32:
+ 144:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 335              		.loc 1 144 20 view .LVU111
+ 336 00c4 0192     		str	r2, [sp, #4]
+ 149:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         if (suspended_count == TX_NO_SUSPENSIONS)
+ 337              		.loc 1 149 9 is_stmt 1 view .LVU112
+ 338              	.LVL33:
+ 150:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         {
+ 339              		.loc 1 150 9 view .LVU113
+ 156:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 340              		.loc 1 156 13 view .LVU114
+ 164:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             semaphore_ptr -> tx_semaphore_suspension_list =   next_thread;
+ 341              		.loc 1 164 13 view .LVU115
+ 165:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 342              		.loc 1 165 13 view .LVU116
+ 168:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             next_thread -> tx_thread_suspended_previous =   previous_thread;
+ 343              		.loc 1 168 13 view .LVU117
+ 169:../Middlewares/threadx/common/src/tx_semaphore_put.c ****             previous_thread -> tx_thread_suspended_next =   next_thread;
+ 344              		.loc 1 169 13 view .LVU118
+ 170:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         }
+ 345              		.loc 1 170 13 view .LVU119
+ 174:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 346              		.loc 1 174 9 view .LVU120
+ 179:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 347              		.loc 1 179 9 view .LVU121
+ 179:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 348              		.loc 1 179 49 is_stmt 0 view .LVU122
+ 349 00c6 9366     		str	r3, [r2, #104]
+ 184:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 350              		.loc 1 184 9 is_stmt 1 view .LVU123
+ 351              	.LVL34:
+ 188:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 352              		.loc 1 188 9 view .LVU124
+ 188:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 353              		.loc 1 188 48 is_stmt 0 view .LVU125
+ 354 00c8 C2F88430 		str	r3, [r2, #132]
+ 200:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 355              		.loc 1 200 9 is_stmt 1 view .LVU126
+ 200:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 356              		.loc 1 200 35 is_stmt 0 view .LVU127
+ 357 00cc 0D4A     		ldr	r2, .L27+36
+ 358 00ce 1368     		ldr	r3, [r2]
+ 359 00d0 0133     		adds	r3, r3, #1
+ 360 00d2 1360     		str	r3, [r2]
+ 203:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
+ 361              		.loc 1 203 9 is_stmt 1 view .LVU128
+ 362              	.LVL35:
+ 363              	.LBB29:
+ 364              	.LBI29:
+ 586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
+ 365              		.loc 2 586 55 view .LVU129
+ 366              	.LBB30:
+ARM GAS  /tmp/cc9owemA.s 			page 23
+
+
+ 591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 367              		.loc 2 591 5 view .LVU130
+ 368              		.syntax unified
+ 369              	@ 591 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
+ 370 00d4 85F31088 		MSR  PRIMASK,r5
+ 371              	@ 0 "" 2
+ 372              	.LVL36:
+ 591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
+ 373              		.loc 2 591 5 is_stmt 0 view .LVU131
+ 374              		.thumb
+ 375              		.syntax unified
+ 376              	.LBE30:
+ 377              	.LBE29:
+ 206:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 378              		.loc 1 206 9 is_stmt 1 view .LVU132
+ 379 00d8 0198     		ldr	r0, [sp, #4]
+ 380              	.LVL37:
+ 206:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 381              		.loc 1 206 9 is_stmt 0 view .LVU133
+ 382 00da FFF7FEFF 		bl	_tx_thread_system_resume
+ 383              	.LVL38:
+ 206:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #endif
+ 384              		.loc 1 206 9 view .LVU134
+ 385 00de D2E7     		b	.L26
+ 386              	.L28:
+ 387              		.align	2
+ 388              	.L27:
+ 389 00e0 00000000 		.word	_tx_trace_buffer_current_ptr
+ 390 00e4 00000000 		.word	_tx_trace_event_enable_bits
+ 391 00e8 00000000 		.word	_tx_thread_system_state
+ 392 00ec 00000000 		.word	_tx_thread_current_ptr
+ 393 00f0 001000E0 		.word	-536866816
+ 394 00f4 00000000 		.word	_tx_trace_header_ptr
+ 395 00f8 00000000 		.word	_tx_trace_buffer_end_ptr
+ 396 00fc 00000000 		.word	_tx_trace_buffer_start_ptr
+ 397 0100 00000000 		.word	_tx_trace_full_notify_function
+ 398 0104 00000000 		.word	_tx_thread_preempt_disable
+ 399              		.cfi_endproc
+ 400              	.LFE8:
+ 402              		.text
+ 403              	.Letext0:
+ 404              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
+ 405              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
+ 406              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
+ARM GAS  /tmp/cc9owemA.s 			page 24
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tx_semaphore_put.c
+     /tmp/cc9owemA.s:26     .text._tx_semaphore_put:00000000 $t
+     /tmp/cc9owemA.s:32     .text._tx_semaphore_put:00000000 _tx_semaphore_put
+     /tmp/cc9owemA.s:389    .text._tx_semaphore_put:000000e0 $d
+                           .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
+                           .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
+                           .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
+                           .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
+                           .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
+                           .group:00000000 wm4.features.h.22.4b93ad64e0d80833c46a20ecae380bb0
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.stddef.h.200.7df09ddbfbefc5947db7aca5a0fd7644
+                           .group:00000000 wm4.stddef.h.39.613e674cf2e6f142dfe584123421de07
+                           .group:00000000 wm4._default_types.h.6.959254cf5f09734ea7516c89e8bb21bd
+                           .group:00000000 wm4.cdefs.h.49.56fd742369e655e7e8a7e365e706e208
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141
+                           .group:00000000 wm4.string.h.177.59a005921fa78485abc80a0267de5752
+                           .group:00000000 wm4.tx_port.h.115.294deb9dc65e442684b838abd8efd62b
+                           .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
+                           .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
+                           .group:00000000 wm4.tx_trace.h.77.bb51149367e9195b9dec1539d7828ce8
+                           .group:00000000 wm4.tx_semaphore.h.51.932a6123e1ac16b9ce7fdbcdc224dd39
+
+UNDEFINED SYMBOLS
+_tx_thread_system_resume
+_tx_trace_buffer_current_ptr
+_tx_trace_event_enable_bits
+_tx_thread_system_state
+_tx_thread_current_ptr
+_tx_trace_header_ptr
+_tx_trace_buffer_end_ptr
+_tx_trace_buffer_start_ptr
+_tx_trace_full_notify_function
+_tx_thread_preempt_disable
