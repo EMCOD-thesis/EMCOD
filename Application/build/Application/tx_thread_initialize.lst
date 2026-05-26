@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1rVKuD.s 			page 1
+ARM GAS  /tmp/ccXJHhVM.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
   23:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
   25:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
-ARM GAS  /tmp/cc1rVKuD.s 			page 2
+ARM GAS  /tmp/ccXJHhVM.s 			page 2
 
 
   26:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #ifndef TX_MISRA_ENABLE
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
   80:../Middlewares/threadx/common/src/tx_thread_initialize.c ****    or more threads at the associated thread priority are ready.  */
   81:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
   82:../Middlewares/threadx/common/src/tx_thread_initialize.c **** ULONG           _tx_thread_priority_maps[TX_MAX_PRIORITIES/32];
-ARM GAS  /tmp/cc1rVKuD.s 			page 3
+ARM GAS  /tmp/ccXJHhVM.s 			page 3
 
 
   83:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  137:../Middlewares/threadx/common/src/tx_thread_initialize.c ****    termination. This pointer is setup during mutex initialization.  */
  138:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  139:../Middlewares/threadx/common/src/tx_thread_initialize.c **** VOID            (*_tx_thread_mutex_release)(TX_THREAD *thread_ptr);
-ARM GAS  /tmp/cc1rVKuD.s 			page 4
+ARM GAS  /tmp/ccXJHhVM.s 			page 4
 
 
  140:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  194:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  195:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  196:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /* Define the total number of thread suspensions. Each time a thread enters a 
-ARM GAS  /tmp/cc1rVKuD.s 			page 5
+ARM GAS  /tmp/ccXJHhVM.s 			page 5
 
 
  197:../Middlewares/threadx/common/src/tx_thread_initialize.c ****    suspended state this variable is incremented.  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  251:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  252:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  253:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /* Define the total number of non-idle system thread returns. Each time a thread returns to 
-ARM GAS  /tmp/cc1rVKuD.s 			page 6
+ARM GAS  /tmp/ccXJHhVM.s 			page 6
 
 
  254:../Middlewares/threadx/common/src/tx_thread_initialize.c ****    a non-idle system (another thread is ready to run) this variable is incremented.  */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  308:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /*    DATE              NAME                      DESCRIPTION             */
  309:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /*                                                                        */
  310:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
-ARM GAS  /tmp/cc1rVKuD.s 			page 7
+ARM GAS  /tmp/ccXJHhVM.s 			page 7
 
 
  311:../Middlewares/threadx/common/src/tx_thread_initialize.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  347:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  348:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
  349:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #ifndef TX_DISABLE_REDUNDANT_CLEARING
-ARM GAS  /tmp/cc1rVKuD.s 			page 8
+ARM GAS  /tmp/ccXJHhVM.s 			page 8
 
 
  350:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  368:../Middlewares/threadx/common/src/tx_thread_initialize.c ****     _tx_thread_application_stack_error_handler =  TX_NULL;
  369:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #endif
  370:../Middlewares/threadx/common/src/tx_thread_initialize.c **** 
-ARM GAS  /tmp/cc1rVKuD.s 			page 9
+ARM GAS  /tmp/ccXJHhVM.s 			page 9
 
 
  371:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #ifdef TX_THREAD_ENABLE_PERFORMANCE_INFO
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  395:../Middlewares/threadx/common/src/tx_thread_initialize.c ****                             | (((ULONG) 1) << 31)
  396:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #endif
  397:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #ifdef TX_INLINE_THREAD_RESUME_SUSPEND
-ARM GAS  /tmp/cc1rVKuD.s 			page 10
+ARM GAS  /tmp/ccXJHhVM.s 			page 10
 
 
  398:../Middlewares/threadx/common/src/tx_thread_initialize.c ****                             | (((ULONG) 1) << 30)
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  103              		.loc 1 392 23 view .LVU31
  104 0044 1360     		str	r3, [r2]
  447:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #endif
-ARM GAS  /tmp/cc1rVKuD.s 			page 11
+ARM GAS  /tmp/ccXJHhVM.s 			page 11
 
 
  448:../Middlewares/threadx/common/src/tx_thread_initialize.c **** #if defined(TX_ENABLE_EXECUTION_CHANGE_NOTIFY) || defined(TX_EXECUTION_PROFILE_ENABLE)
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  152 0000 00000000 		.space	4
  153              		.global	_tx_thread_preempt_disable
  154              		.section	.bss._tx_thread_preempt_disable,"aw",%nobits
-ARM GAS  /tmp/cc1rVKuD.s 			page 12
+ARM GAS  /tmp/ccXJHhVM.s 			page 12
 
 
  155              		.align	2
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  225              		.align	2
  228              	_tx_thread_system_stack_ptr:
  229 0000 00000000 		.space	4
-ARM GAS  /tmp/cc1rVKuD.s 			page 13
+ARM GAS  /tmp/ccXJHhVM.s 			page 13
 
 
  230              		.global	_tx_version_id
@@ -741,44 +741,44 @@ ARM GAS  /tmp/cc1rVKuD.s 			page 1
  241              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  242              		.file 5 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/string.h"
  243              		.file 6 "<built-in>"
-ARM GAS  /tmp/cc1rVKuD.s 			page 14
+ARM GAS  /tmp/ccXJHhVM.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_initialize.c
-     /tmp/cc1rVKuD.s:26     .text._tx_thread_initialize:00000000 $t
-     /tmp/cc1rVKuD.s:32     .text._tx_thread_initialize:00000000 _tx_thread_initialize
-     /tmp/cc1rVKuD.s:110    .text._tx_thread_initialize:00000048 $d
-     /tmp/cc1rVKuD.s:221    .bss._tx_thread_current_ptr:00000000 _tx_thread_current_ptr
-     /tmp/cc1rVKuD.s:214    .bss._tx_thread_execute_ptr:00000000 _tx_thread_execute_ptr
-     /tmp/cc1rVKuD.s:165    .bss._tx_thread_priority_list:00000000 _tx_thread_priority_list
-     /tmp/cc1rVKuD.s:186    .bss._tx_thread_priority_maps:00000000 _tx_thread_priority_maps
-     /tmp/cc1rVKuD.s:179    .bss._tx_thread_preempted_maps:00000000 _tx_thread_preempted_maps
-     /tmp/cc1rVKuD.s:172    .bss._tx_thread_highest_priority:00000000 _tx_thread_highest_priority
-     /tmp/cc1rVKuD.s:207    .bss._tx_thread_created_ptr:00000000 _tx_thread_created_ptr
-     /tmp/cc1rVKuD.s:144    .bss._tx_build_options:00000000 _tx_build_options
-     /tmp/cc1rVKuD.s:200    .bss._tx_thread_created_count:00000000 _tx_thread_created_count
-     /tmp/cc1rVKuD.s:158    .bss._tx_thread_preempt_disable:00000000 _tx_thread_preempt_disable
-     /tmp/cc1rVKuD.s:151    .bss._tx_thread_mutex_release:00000000 _tx_thread_mutex_release
-     /tmp/cc1rVKuD.s:137    .bss._tx_thread_application_stack_error_handler:00000000 _tx_thread_application_stack_error_handler
-     /tmp/cc1rVKuD.s:129    .rodata._tx_thread_special_string:00000000 _tx_thread_special_string
-     /tmp/cc1rVKuD.s:134    .bss._tx_thread_application_stack_error_handler:00000000 $d
-     /tmp/cc1rVKuD.s:141    .bss._tx_build_options:00000000 $d
-     /tmp/cc1rVKuD.s:148    .bss._tx_thread_mutex_release:00000000 $d
-     /tmp/cc1rVKuD.s:155    .bss._tx_thread_preempt_disable:00000000 $d
-     /tmp/cc1rVKuD.s:162    .bss._tx_thread_priority_list:00000000 $d
-     /tmp/cc1rVKuD.s:169    .bss._tx_thread_highest_priority:00000000 $d
-     /tmp/cc1rVKuD.s:176    .bss._tx_thread_preempted_maps:00000000 $d
-     /tmp/cc1rVKuD.s:183    .bss._tx_thread_priority_maps:00000000 $d
-     /tmp/cc1rVKuD.s:193    .data._tx_thread_system_state:00000000 _tx_thread_system_state
-     /tmp/cc1rVKuD.s:190    .data._tx_thread_system_state:00000000 $d
-     /tmp/cc1rVKuD.s:197    .bss._tx_thread_created_count:00000000 $d
-     /tmp/cc1rVKuD.s:204    .bss._tx_thread_created_ptr:00000000 $d
-     /tmp/cc1rVKuD.s:211    .bss._tx_thread_execute_ptr:00000000 $d
-     /tmp/cc1rVKuD.s:218    .bss._tx_thread_current_ptr:00000000 $d
-     /tmp/cc1rVKuD.s:228    .bss._tx_thread_system_stack_ptr:00000000 _tx_thread_system_stack_ptr
-     /tmp/cc1rVKuD.s:225    .bss._tx_thread_system_stack_ptr:00000000 $d
-     /tmp/cc1rVKuD.s:234    .data._tx_version_id:00000000 _tx_version_id
+     /tmp/ccXJHhVM.s:26     .text._tx_thread_initialize:00000000 $t
+     /tmp/ccXJHhVM.s:32     .text._tx_thread_initialize:00000000 _tx_thread_initialize
+     /tmp/ccXJHhVM.s:110    .text._tx_thread_initialize:00000048 $d
+     /tmp/ccXJHhVM.s:221    .bss._tx_thread_current_ptr:00000000 _tx_thread_current_ptr
+     /tmp/ccXJHhVM.s:214    .bss._tx_thread_execute_ptr:00000000 _tx_thread_execute_ptr
+     /tmp/ccXJHhVM.s:165    .bss._tx_thread_priority_list:00000000 _tx_thread_priority_list
+     /tmp/ccXJHhVM.s:186    .bss._tx_thread_priority_maps:00000000 _tx_thread_priority_maps
+     /tmp/ccXJHhVM.s:179    .bss._tx_thread_preempted_maps:00000000 _tx_thread_preempted_maps
+     /tmp/ccXJHhVM.s:172    .bss._tx_thread_highest_priority:00000000 _tx_thread_highest_priority
+     /tmp/ccXJHhVM.s:207    .bss._tx_thread_created_ptr:00000000 _tx_thread_created_ptr
+     /tmp/ccXJHhVM.s:144    .bss._tx_build_options:00000000 _tx_build_options
+     /tmp/ccXJHhVM.s:200    .bss._tx_thread_created_count:00000000 _tx_thread_created_count
+     /tmp/ccXJHhVM.s:158    .bss._tx_thread_preempt_disable:00000000 _tx_thread_preempt_disable
+     /tmp/ccXJHhVM.s:151    .bss._tx_thread_mutex_release:00000000 _tx_thread_mutex_release
+     /tmp/ccXJHhVM.s:137    .bss._tx_thread_application_stack_error_handler:00000000 _tx_thread_application_stack_error_handler
+     /tmp/ccXJHhVM.s:129    .rodata._tx_thread_special_string:00000000 _tx_thread_special_string
+     /tmp/ccXJHhVM.s:134    .bss._tx_thread_application_stack_error_handler:00000000 $d
+     /tmp/ccXJHhVM.s:141    .bss._tx_build_options:00000000 $d
+     /tmp/ccXJHhVM.s:148    .bss._tx_thread_mutex_release:00000000 $d
+     /tmp/ccXJHhVM.s:155    .bss._tx_thread_preempt_disable:00000000 $d
+     /tmp/ccXJHhVM.s:162    .bss._tx_thread_priority_list:00000000 $d
+     /tmp/ccXJHhVM.s:169    .bss._tx_thread_highest_priority:00000000 $d
+     /tmp/ccXJHhVM.s:176    .bss._tx_thread_preempted_maps:00000000 $d
+     /tmp/ccXJHhVM.s:183    .bss._tx_thread_priority_maps:00000000 $d
+     /tmp/ccXJHhVM.s:193    .data._tx_thread_system_state:00000000 _tx_thread_system_state
+     /tmp/ccXJHhVM.s:190    .data._tx_thread_system_state:00000000 $d
+     /tmp/ccXJHhVM.s:197    .bss._tx_thread_created_count:00000000 $d
+     /tmp/ccXJHhVM.s:204    .bss._tx_thread_created_ptr:00000000 $d
+     /tmp/ccXJHhVM.s:211    .bss._tx_thread_execute_ptr:00000000 $d
+     /tmp/ccXJHhVM.s:218    .bss._tx_thread_current_ptr:00000000 $d
+     /tmp/ccXJHhVM.s:228    .bss._tx_thread_system_stack_ptr:00000000 _tx_thread_system_stack_ptr
+     /tmp/ccXJHhVM.s:225    .bss._tx_thread_system_stack_ptr:00000000 $d
+     /tmp/ccXJHhVM.s:234    .data._tx_version_id:00000000 _tx_version_id
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
@@ -801,7 +801,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
                            .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
                            .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
-ARM GAS  /tmp/cc1rVKuD.s 			page 15
+ARM GAS  /tmp/ccXJHhVM.s 			page 15
 
 
                            .group:00000000 wm4.stddef.h.173.1cea4f16a943c8e875db6791959c3141

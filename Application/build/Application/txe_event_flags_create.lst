@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccKj1alR.s 			page 1
+ARM GAS  /tmp/ccRBNdPk.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
   22:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
   23:../Middlewares/threadx/common/src/txe_event_flags_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 2
+ARM GAS  /tmp/ccRBNdPk.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
   79:../Middlewares/threadx/common/src/txe_event_flags_create.c **** /*                                                                        */
   80:../Middlewares/threadx/common/src/txe_event_flags_create.c **** /**************************************************************************/
   81:../Middlewares/threadx/common/src/txe_event_flags_create.c **** UINT  _txe_event_flags_create(TX_EVENT_FLAGS_GROUP *group_ptr, CHAR *name_ptr, UINT event_control_b
-ARM GAS  /tmp/ccKj1alR.s 			page 3
+ARM GAS  /tmp/ccRBNdPk.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/txe_event_flags_create.c **** {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  105:../Middlewares/threadx/common/src/txe_event_flags_create.c ****     /* Now check for proper control block size.  */
  106:../Middlewares/threadx/common/src/txe_event_flags_create.c ****     else if (event_control_block_size != (sizeof(TX_EVENT_FLAGS_GROUP)))
  107:../Middlewares/threadx/common/src/txe_event_flags_create.c ****     {
-ARM GAS  /tmp/ccKj1alR.s 			page 4
+ARM GAS  /tmp/ccRBNdPk.s 			page 4
 
 
  108:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  162:../Middlewares/threadx/common/src/txe_event_flags_create.c ****         else
  163:../Middlewares/threadx/common/src/txe_event_flags_create.c ****         {
  164:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 5
+ARM GAS  /tmp/ccRBNdPk.s 			page 5
 
 
  165:../Middlewares/threadx/common/src/txe_event_flags_create.c **** #ifndef TX_TIMER_PROCESS_IN_ISR
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
   75              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
    1:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
    2:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccKj1alR.s 			page 6
+ARM GAS  /tmp/ccRBNdPk.s 			page 6
 
 
    3:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       Copyright (c) Microsoft Corporation. All rights reserved.        */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
   57:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  06-02-2021      Scott Larson            Modified comment(s), removed  */
   58:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            unneeded header file, funcs */
   59:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            set_control and get_control */
-ARM GAS  /tmp/ccKj1alR.s 			page 7
+ARM GAS  /tmp/ccRBNdPk.s 			page 7
 
 
   60:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            changed to inline,          */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  114:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  115:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define VOID                                    void
  116:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef char                                    CHAR;
-ARM GAS  /tmp/ccKj1alR.s 			page 8
+ARM GAS  /tmp/ccRBNdPk.s 			page 8
 
 
  117:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned char                           UCHAR;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  171:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MAX_PRIORITIES                       32
  172:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  173:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 9
+ARM GAS  /tmp/ccRBNdPk.s 			page 9
 
 
  174:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  228:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  229:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  230:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port specific options for the _tx_build_options variable. This variable indicates
-ARM GAS  /tmp/ccKj1alR.s 			page 10
+ARM GAS  /tmp/ccRBNdPk.s 			page 10
 
 
  231:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    how the ThreadX library was built.  */
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  285:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2
  286:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  287:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 11
+ARM GAS  /tmp/ccRBNdPk.s 			page 11
 
 
  288:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  342:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_INITIALIZE_EXTENSION(status)   _tx_thread_secure_stack_allocate(&_tx_timer_thread,
  343:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  344:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 12
+ARM GAS  /tmp/ccRBNdPk.s 			page 12
 
 
  345:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  399:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  400:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A thread can be terminated by another thread, so we first check if it's self-terminating and not
  401:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    If so, deactivate the FPU via CONTROL.FPCA. Otherwise we are in an interrupt or another thread i
-ARM GAS  /tmp/ccKj1alR.s 			page 13
+ARM GAS  /tmp/ccRBNdPk.s 			page 13
 
 
  402:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    this one, so if the FPCCR.LSPACT bit is set, we need to save the CONTROL.FPCA state, touch the F
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  456:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
  457:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_misra_control_g
  458:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_vfp_state & ((U
-ARM GAS  /tmp/ccKj1alR.s 			page 14
+ARM GAS  /tmp/ccRBNdPk.s 			page 14
 
 
  459:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_misra_vfp_touch();             
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  513:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* GCC and AC6 IPSR_get function. */
  514:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  515:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_GET_SYSTEM_STATE()        (_tx_thread_system_state | _tx_ipsr_get())
-ARM GAS  /tmp/ccKj1alR.s 			page 15
+ARM GAS  /tmp/ccRBNdPk.s 			page 15
 
 
  516:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  570:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(posture);
  572:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
-ARM GAS  /tmp/ccKj1alR.s 			page 16
+ARM GAS  /tmp/ccRBNdPk.s 			page 16
 
 
  573:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  601:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
  602:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __set_basepri_value(TX_PORT_BASEPRI);
  603:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/ccKj1alR.s 			page 17
+ARM GAS  /tmp/ccRBNdPk.s 			page 17
 
 
  604:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("CPSID i" : : : "memory");
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  126:../Middlewares/threadx/common/src/txe_event_flags_create.c ****         {
  139              		.loc 1 126 9 is_stmt 1 view .LVU36
  126:../Middlewares/threadx/common/src/txe_event_flags_create.c ****         {
-ARM GAS  /tmp/ccKj1alR.s 			page 18
+ARM GAS  /tmp/ccRBNdPk.s 			page 18
 
 
  140              		.loc 1 126 33 is_stmt 0 discriminator 1 view .LVU37
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  181 0038 72B6     		CPSID i
  182              	@ 0 "" 2
  183              		.loc 2 606 5 view .LVU51
-ARM GAS  /tmp/ccKj1alR.s 			page 19
+ARM GAS  /tmp/ccRBNdPk.s 			page 19
 
 
  184              	.LVL12:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  225              		.loc 1 171 16 view .LVU65
  226 004e 1A68     		ldr	r2, [r3]
   95:../Middlewares/threadx/common/src/txe_event_flags_create.c **** 
-ARM GAS  /tmp/ccKj1alR.s 			page 20
+ARM GAS  /tmp/ccRBNdPk.s 			page 20
 
 
  227              		.loc 1 95 12 view .LVU66
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  268              		.syntax unified
  269              	@ 510 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
  270 0066 EFF30582 		 MRS  r2,IPSR 
-ARM GAS  /tmp/ccKj1alR.s 			page 21
+ARM GAS  /tmp/ccRBNdPk.s 			page 21
 
 
  271              	@ 0 "" 2
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  126:../Middlewares/threadx/common/src/txe_event_flags_create.c ****         {
  313              		.loc 1 126 67 is_stmt 1 discriminator 2 view .LVU93
  314 0084 D2E7     		b	.L5
-ARM GAS  /tmp/ccKj1alR.s 			page 22
+ARM GAS  /tmp/ccRBNdPk.s 			page 22
 
 
  315              	.LVL27:
@@ -1289,14 +1289,14 @@ ARM GAS  /tmp/ccKj1alR.s 			page 1
  338              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  339              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
  340              		.file 6 "../Middlewares/threadx/common/inc/tx_event_flags.h"
-ARM GAS  /tmp/ccKj1alR.s 			page 23
+ARM GAS  /tmp/ccRBNdPk.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_event_flags_create.c
-     /tmp/ccKj1alR.s:26     .text._txe_event_flags_create:00000000 $t
-     /tmp/ccKj1alR.s:32     .text._txe_event_flags_create:00000000 _txe_event_flags_create
-     /tmp/ccKj1alR.s:326    .text._txe_event_flags_create:0000008c $d
+     /tmp/ccRBNdPk.s:26     .text._txe_event_flags_create:00000000 $t
+     /tmp/ccRBNdPk.s:32     .text._txe_event_flags_create:00000000 _txe_event_flags_create
+     /tmp/ccRBNdPk.s:326    .text._txe_event_flags_create:0000008c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

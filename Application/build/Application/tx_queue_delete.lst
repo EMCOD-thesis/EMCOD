@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccVzmOrC.s 			page 1
+ARM GAS  /tmp/ccnpXGzW.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
   22:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
   23:../Middlewares/threadx/common/src/tx_queue_delete.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 2
+ARM GAS  /tmp/ccnpXGzW.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 8
   38              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccVzmOrC.s 			page 3
+ARM GAS  /tmp/ccnpXGzW.s 			page 3
 
 
   78:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
   33:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    Scott Larson, Microsoft Corporation                                 */
   34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   35:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  DESCRIPTION                                                           */
-ARM GAS  /tmp/ccVzmOrC.s 			page 4
+ARM GAS  /tmp/ccnpXGzW.s 			page 4
 
 
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
   90:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Yes, include the user defines in tx_user.h. The defines in this file may
   91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
   92:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 5
+ARM GAS  /tmp/ccnpXGzW.s 			page 5
 
 
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  147:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_DISABLE_ERROR_CHECKING
  148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  149:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services without error checking.  */
-ARM GAS  /tmp/ccVzmOrC.s 			page 6
+ARM GAS  /tmp/ccnpXGzW.s 			page 6
 
 
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  204:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INT_ENABLE                           0           /* Enable interrupts                */
  205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  206:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 7
+ARM GAS  /tmp/ccnpXGzW.s 			page 7
 
 
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  261:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for the multiple macros is so that backward compatibility can be maintained with
  262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
  263:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 8
+ARM GAS  /tmp/ccnpXGzW.s 			page 8
 
 
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  318:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)                      thread_ptr -> tx_thread_iar_tls
  319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  320:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
-ARM GAS  /tmp/ccVzmOrC.s 			page 9
+ARM GAS  /tmp/ccnpXGzW.s 			page 9
 
 
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  375:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_VFP_TOUCH()  __asm__ volatile ("VMOV.F32 s0, s0");
  376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  377:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
-ARM GAS  /tmp/ccVzmOrC.s 			page 10
+ARM GAS  /tmp/ccnpXGzW.s 			page 10
 
 
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  432:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_control_set(_tx_vfp_state);
  433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
  434:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
-ARM GAS  /tmp/ccVzmOrC.s 			page 11
+ARM GAS  /tmp/ccnpXGzW.s 			page 11
 
 
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  489:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
  491:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 12
+ARM GAS  /tmp/ccnpXGzW.s 			page 12
 
 
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  546:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  547:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_DISABLE_INLINE
  548:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 13
+ARM GAS  /tmp/ccnpXGzW.s 			page 13
 
 
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
   52              		.loc 2 599 5 view .LVU10
   53              	.LBB27:
   54              	.LBI27:
-ARM GAS  /tmp/ccVzmOrC.s 			page 14
+ARM GAS  /tmp/ccnpXGzW.s 			page 14
 
 
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
   95              		.loc 2 606 5 view .LVU20
   96              	.LVL2:
-ARM GAS  /tmp/ccVzmOrC.s 			page 15
+ARM GAS  /tmp/ccnpXGzW.s 			page 15
 
 
   97              		.loc 2 606 5 is_stmt 0 view .LVU21
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  143 0026 0968     		ldr	r1, [r1]
  144              	.LVL6:
  145              		.loc 1 92 5 discriminator 1 view .LVU37
-ARM GAS  /tmp/ccVzmOrC.s 			page 16
+ARM GAS  /tmp/ccnpXGzW.s 			page 16
 
 
  146 0028 0243     		orrs	r2, r2, r0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  200              		.loc 1 92 5 is_stmt 0 discriminator 10 view .LVU60
  201 0062 1B68     		ldr	r3, [r3]
  202              	.LVL14:
-ARM GAS  /tmp/ccVzmOrC.s 			page 17
+ARM GAS  /tmp/ccnpXGzW.s 			page 17
 
 
  203              		.loc 1 92 5 is_stmt 1 view .LVU61
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  110:../Middlewares/threadx/common/src/tx_queue_delete.c ****     if (_tx_queue_created_count == TX_EMPTY)
  239              		.loc 1 110 5 is_stmt 1 view .LVU77
  240 0082 2F4A     		ldr	r2, .L20+40
-ARM GAS  /tmp/ccVzmOrC.s 			page 18
+ARM GAS  /tmp/ccnpXGzW.s 			page 18
 
 
  241              		.loc 1 110 8 is_stmt 0 view .LVU78
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  268              		.loc 1 92 5 is_stmt 1 discriminator 11 view .LVU87
  269 009e 2B60     		str	r3, [r5]
  270              	.LVL23:
-ARM GAS  /tmp/ccVzmOrC.s 			page 19
+ARM GAS  /tmp/ccnpXGzW.s 			page 19
 
 
   92:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  140:../Middlewares/threadx/common/src/tx_queue_delete.c ****     suspended_count =                        queue_ptr -> tx_queue_suspended_count;
  303              		.loc 1 140 21 view .LVU103
  304 00b8 E76A     		ldr	r7, [r4, #44]
-ARM GAS  /tmp/ccVzmOrC.s 			page 20
+ARM GAS  /tmp/ccnpXGzW.s 			page 20
 
 
  135:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  149:../Middlewares/threadx/common/src/tx_queue_delete.c ****     {
  150:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
  151:../Middlewares/threadx/common/src/tx_queue_delete.c ****         /* Decrement the suspension count.  */
-ARM GAS  /tmp/ccVzmOrC.s 			page 21
+ARM GAS  /tmp/ccnpXGzW.s 			page 21
 
 
  152:../Middlewares/threadx/common/src/tx_queue_delete.c ****         suspended_count--;
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  349              		.loc 2 595 55 view .LVU122
  350              	.LBB40:
  597:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccVzmOrC.s 			page 22
+ARM GAS  /tmp/ccnpXGzW.s 			page 22
 
 
  351              		.loc 2 597 1 view .LVU123
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  391              		.loc 2 586 55 view .LVU136
  392              	.LBB44:
  591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccVzmOrC.s 			page 23
+ARM GAS  /tmp/ccnpXGzW.s 			page 23
 
 
  393              		.loc 2 591 5 view .LVU137
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  432              	.LBB48:
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
  433              		.loc 2 565 1 view .LVU149
-ARM GAS  /tmp/ccVzmOrC.s 			page 24
+ARM GAS  /tmp/ccnpXGzW.s 			page 24
 
 
  569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  180:../Middlewares/threadx/common/src/tx_queue_delete.c **** 
  475              		.loc 1 180 9 is_stmt 1 view .LVU165
  476              	.LVL41:
-ARM GAS  /tmp/ccVzmOrC.s 			page 25
+ARM GAS  /tmp/ccnpXGzW.s 			page 25
 
 
  477              	.LBB49:
@@ -1493,14 +1493,14 @@ ARM GAS  /tmp/ccVzmOrC.s 			page 1
  521              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  522              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
  523              		.file 6 "../Middlewares/threadx/common/inc/tx_queue.h"
-ARM GAS  /tmp/ccVzmOrC.s 			page 26
+ARM GAS  /tmp/ccnpXGzW.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_queue_delete.c
-     /tmp/ccVzmOrC.s:26     .text._tx_queue_delete:00000000 $t
-     /tmp/ccVzmOrC.s:32     .text._tx_queue_delete:00000000 _tx_queue_delete
-     /tmp/ccVzmOrC.s:503    .text._tx_queue_delete:00000118 $d
+     /tmp/ccnpXGzW.s:26     .text._tx_queue_delete:00000000 $t
+     /tmp/ccnpXGzW.s:32     .text._tx_queue_delete:00000000 _tx_queue_delete
+     /tmp/ccnpXGzW.s:503    .text._tx_queue_delete:00000118 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

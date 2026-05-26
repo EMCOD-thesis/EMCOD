@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccGiYxKI.s 			page 1
+ARM GAS  /tmp/ccYZ5GUT.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
   22:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
   23:../Middlewares/threadx/common/src/txe_semaphore_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
-ARM GAS  /tmp/ccGiYxKI.s 			page 2
+ARM GAS  /tmp/ccYZ5GUT.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
   79:../Middlewares/threadx/common/src/txe_semaphore_create.c **** /*                                                                        */
   80:../Middlewares/threadx/common/src/txe_semaphore_create.c **** /**************************************************************************/
   81:../Middlewares/threadx/common/src/txe_semaphore_create.c **** UINT  _txe_semaphore_create(TX_SEMAPHORE *semaphore_ptr, CHAR *name_ptr, ULONG initial_count, UINT 
-ARM GAS  /tmp/ccGiYxKI.s 			page 3
+ARM GAS  /tmp/ccYZ5GUT.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/txe_semaphore_create.c **** {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  106:../Middlewares/threadx/common/src/txe_semaphore_create.c ****     else if (semaphore_control_block_size != (sizeof(TX_SEMAPHORE)))
  107:../Middlewares/threadx/common/src/txe_semaphore_create.c ****     {
  108:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
-ARM GAS  /tmp/ccGiYxKI.s 			page 4
+ARM GAS  /tmp/ccYZ5GUT.s 			page 4
 
 
  109:../Middlewares/threadx/common/src/txe_semaphore_create.c ****         /* Semaphore pointer is invalid, return appropriate error code.  */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  159:../Middlewares/threadx/common/src/txe_semaphore_create.c ****             /* Semaphore is already created, return appropriate error code.  */
  160:../Middlewares/threadx/common/src/txe_semaphore_create.c ****             status =  TX_SEMAPHORE_ERROR;
  161:../Middlewares/threadx/common/src/txe_semaphore_create.c ****         }
-ARM GAS  /tmp/ccGiYxKI.s 			page 5
+ARM GAS  /tmp/ccYZ5GUT.s 			page 5
 
 
  162:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  106:../Middlewares/threadx/common/src/txe_semaphore_create.c ****     {
   72              		.loc 1 106 13 is_stmt 0 view .LVU14
   73 000e 202B     		cmp	r3, #32
-ARM GAS  /tmp/ccGiYxKI.s 			page 6
+ARM GAS  /tmp/ccYZ5GUT.s 			page 6
 
 
   74 0010 FBD1     		bne	.L4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
   49:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  RELEASE HISTORY                                                       */
   50:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   51:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    DATE              NAME                      DESCRIPTION             */
-ARM GAS  /tmp/ccGiYxKI.s 			page 7
+ARM GAS  /tmp/ccYZ5GUT.s 			page 7
 
 
   52:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  106:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_ipsr_get            __get_IPSR
  107:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
  108:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <yvals.h>
-ARM GAS  /tmp/ccGiYxKI.s 			page 8
+ARM GAS  /tmp/ccYZ5GUT.s 			page 8
 
 
  109:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  163:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  164:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* This port has a usage fault handler in _tx_initialize_low_level for stack exceptions.  */
  165:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_THREAD_STACK_ERROR_HANDLING
-ARM GAS  /tmp/ccGiYxKI.s 			page 9
+ARM GAS  /tmp/ccYZ5GUT.s 			page 9
 
 
  166:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  220:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  221:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG   _tx_misra_time_stamp_get(VOID);
  222:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    _tx_misra_time_stamp_get()
-ARM GAS  /tmp/ccGiYxKI.s 			page 10
+ARM GAS  /tmp/ccYZ5GUT.s 			page 10
 
 
  223:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  277:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  278:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  279:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* No IAR library support */
-ARM GAS  /tmp/ccGiYxKI.s 			page 11
+ARM GAS  /tmp/ccYZ5GUT.s 			page 11
 
 
  280:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  334:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  335:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)
  336:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccGiYxKI.s 			page 12
+ARM GAS  /tmp/ccYZ5GUT.s 			page 12
 
 
  337:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  391:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  392:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)   {                                              
  393:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_vfp_state;                          
-ARM GAS  /tmp/ccGiYxKI.s 			page 13
+ARM GAS  /tmp/ccYZ5GUT.s 			page 13
 
 
  394:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_misra_control_get();   
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  448:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  449:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         else                                       
  450:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
-ARM GAS  /tmp/ccGiYxKI.s 			page 14
+ARM GAS  /tmp/ccYZ5GUT.s 			page 14
 
 
  451:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_fpccr;                          
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  505:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  506:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if defined(__GNUC__) /* GCC and AC6 */
  507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT _tx_ipsr_get(void)
-ARM GAS  /tmp/ccGiYxKI.s 			page 15
+ARM GAS  /tmp/ccYZ5GUT.s 			page 15
 
 
  508:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  562:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT __get_interrupt_posture(void)
  564:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
-ARM GAS  /tmp/ccGiYxKI.s 			page 16
+ARM GAS  /tmp/ccYZ5GUT.s 			page 16
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT posture;
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
   94              		.loc 2 571 5 view .LVU22
  571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
   95              		.loc 2 571 5 is_stmt 0 view .LVU23
-ARM GAS  /tmp/ccGiYxKI.s 			page 17
+ARM GAS  /tmp/ccYZ5GUT.s 			page 17
 
 
   96              		.thumb
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  135              		.thumb
  136              		.syntax unified
  137              	.LBE25:
-ARM GAS  /tmp/ccGiYxKI.s 			page 18
+ARM GAS  /tmp/ccYZ5GUT.s 			page 18
 
 
  138              	.LBE24:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  177              		.loc 2 571 5 view .LVU49
  571:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  178              		.loc 2 571 5 is_stmt 0 view .LVU50
-ARM GAS  /tmp/ccGiYxKI.s 			page 19
+ARM GAS  /tmp/ccYZ5GUT.s 			page 19
 
 
  179              		.thumb
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  223 004c DDD0     		beq	.L4
  168:../Middlewares/threadx/common/src/txe_semaphore_create.c **** 
  224              		.loc 1 168 13 is_stmt 1 view .LVU63
-ARM GAS  /tmp/ccGiYxKI.s 			page 20
+ARM GAS  /tmp/ccYZ5GUT.s 			page 20
 
 
  225              	.LVL17:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  265              	.LBI34:
  507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  266              		.loc 2 507 55 view .LVU78
-ARM GAS  /tmp/ccGiYxKI.s 			page 21
+ARM GAS  /tmp/ccYZ5GUT.s 			page 21
 
 
  267              	.LBB35:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  139:../Middlewares/threadx/common/src/txe_semaphore_create.c ****             }
  311              		.loc 1 139 32 is_stmt 0 view .LVU90
  312 0080 6D69     		ldr	r5, [r5, #20]
-ARM GAS  /tmp/ccGiYxKI.s 			page 22
+ARM GAS  /tmp/ccYZ5GUT.s 			page 22
 
 
  313              	.LVL26:
@@ -1293,14 +1293,14 @@ ARM GAS  /tmp/ccGiYxKI.s 			page 1
  339              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  340              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
  341              		.file 6 "../Middlewares/threadx/common/inc/tx_semaphore.h"
-ARM GAS  /tmp/ccGiYxKI.s 			page 23
+ARM GAS  /tmp/ccYZ5GUT.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_semaphore_create.c
-     /tmp/ccGiYxKI.s:26     .text._txe_semaphore_create:00000000 $t
-     /tmp/ccGiYxKI.s:32     .text._txe_semaphore_create:00000000 _txe_semaphore_create
-     /tmp/ccGiYxKI.s:327    .text._txe_semaphore_create:00000088 $d
+     /tmp/ccYZ5GUT.s:26     .text._txe_semaphore_create:00000000 $t
+     /tmp/ccYZ5GUT.s:32     .text._txe_semaphore_create:00000000 _txe_semaphore_create
+     /tmp/ccYZ5GUT.s:327    .text._txe_semaphore_create:00000088 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

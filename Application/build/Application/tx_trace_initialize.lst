@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccf97bV2.s 			page 1
+ARM GAS  /tmp/ccF4wNXu.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
   23:../Middlewares/threadx/common/src/tx_trace_initialize.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
   25:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
-ARM GAS  /tmp/ccf97bV2.s 			page 2
+ARM GAS  /tmp/ccF4wNXu.s 			page 2
 
 
   26:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Include necessary system files.  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
   80:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
   81:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /* Define the total number of registry entries.  */
   82:../Middlewares/threadx/common/src/tx_trace_initialize.c **** 
-ARM GAS  /tmp/ccf97bV2.s 			page 3
+ARM GAS  /tmp/ccF4wNXu.s 			page 3
 
 
   83:../Middlewares/threadx/common/src/tx_trace_initialize.c **** ULONG                             _tx_trace_total_registry_entries;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
  137:../Middlewares/threadx/common/src/tx_trace_initialize.c **** /**************************************************************************/
  138:../Middlewares/threadx/common/src/tx_trace_initialize.c **** VOID  _tx_trace_initialize(VOID)
  139:../Middlewares/threadx/common/src/tx_trace_initialize.c **** {
-ARM GAS  /tmp/ccf97bV2.s 			page 4
+ARM GAS  /tmp/ccF4wNXu.s 			page 4
 
 
   34              		.loc 1 139 1 view -0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
   74 0030 00000000 		.word	_tx_trace_buffer_current_ptr
   75              		.cfi_endproc
   76              	.LFE8:
-ARM GAS  /tmp/ccf97bV2.s 			page 5
+ARM GAS  /tmp/ccF4wNXu.s 			page 5
 
 
   78              		.global	_tx_trace_registry_search_start
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
  154 0000 00000000 		.space	4
  155              		.global	_tx_trace_header_ptr
  156              		.section	.bss._tx_trace_header_ptr,"aw",%nobits
-ARM GAS  /tmp/ccf97bV2.s 			page 6
+ARM GAS  /tmp/ccF4wNXu.s 			page 6
 
 
  157              		.align	2
@@ -308,38 +308,38 @@ ARM GAS  /tmp/ccf97bV2.s 			page 1
  163              	.Letext0:
  164              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
  165              		.file 3 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/ccf97bV2.s 			page 7
+ARM GAS  /tmp/ccF4wNXu.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_trace_initialize.c
-     /tmp/ccf97bV2.s:26     .text._tx_trace_initialize:00000000 $t
-     /tmp/ccf97bV2.s:32     .text._tx_trace_initialize:00000000 _tx_trace_initialize
-     /tmp/ccf97bV2.s:69     .text._tx_trace_initialize:0000001c $d
-     /tmp/ccf97bV2.s:160    .bss._tx_trace_header_ptr:00000000 _tx_trace_header_ptr
-     /tmp/ccf97bV2.s:153    .bss._tx_trace_registry_start_ptr:00000000 _tx_trace_registry_start_ptr
-     /tmp/ccf97bV2.s:146    .bss._tx_trace_registry_end_ptr:00000000 _tx_trace_registry_end_ptr
-     /tmp/ccf97bV2.s:139    .bss._tx_trace_buffer_start_ptr:00000000 _tx_trace_buffer_start_ptr
-     /tmp/ccf97bV2.s:132    .bss._tx_trace_buffer_end_ptr:00000000 _tx_trace_buffer_end_ptr
-     /tmp/ccf97bV2.s:125    .bss._tx_trace_buffer_current_ptr:00000000 _tx_trace_buffer_current_ptr
-     /tmp/ccf97bV2.s:83     .bss._tx_trace_registry_search_start:00000000 _tx_trace_registry_search_start
-     /tmp/ccf97bV2.s:80     .bss._tx_trace_registry_search_start:00000000 $d
-     /tmp/ccf97bV2.s:90     .bss._tx_trace_available_registry_entries:00000000 _tx_trace_available_registry_entries
-     /tmp/ccf97bV2.s:87     .bss._tx_trace_available_registry_entries:00000000 $d
-     /tmp/ccf97bV2.s:97     .bss._tx_trace_total_registry_entries:00000000 _tx_trace_total_registry_entries
-     /tmp/ccf97bV2.s:94     .bss._tx_trace_total_registry_entries:00000000 $d
-     /tmp/ccf97bV2.s:104    .bss._tx_trace_full_notify_function:00000000 _tx_trace_full_notify_function
-     /tmp/ccf97bV2.s:101    .bss._tx_trace_full_notify_function:00000000 $d
-     /tmp/ccf97bV2.s:111    .bss._tx_trace_simulated_time:00000000 _tx_trace_simulated_time
-     /tmp/ccf97bV2.s:108    .bss._tx_trace_simulated_time:00000000 $d
-     /tmp/ccf97bV2.s:118    .bss._tx_trace_event_enable_bits:00000000 _tx_trace_event_enable_bits
-     /tmp/ccf97bV2.s:115    .bss._tx_trace_event_enable_bits:00000000 $d
-     /tmp/ccf97bV2.s:122    .bss._tx_trace_buffer_current_ptr:00000000 $d
-     /tmp/ccf97bV2.s:129    .bss._tx_trace_buffer_end_ptr:00000000 $d
-     /tmp/ccf97bV2.s:136    .bss._tx_trace_buffer_start_ptr:00000000 $d
-     /tmp/ccf97bV2.s:143    .bss._tx_trace_registry_end_ptr:00000000 $d
-     /tmp/ccf97bV2.s:150    .bss._tx_trace_registry_start_ptr:00000000 $d
-     /tmp/ccf97bV2.s:157    .bss._tx_trace_header_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:26     .text._tx_trace_initialize:00000000 $t
+     /tmp/ccF4wNXu.s:32     .text._tx_trace_initialize:00000000 _tx_trace_initialize
+     /tmp/ccF4wNXu.s:69     .text._tx_trace_initialize:0000001c $d
+     /tmp/ccF4wNXu.s:160    .bss._tx_trace_header_ptr:00000000 _tx_trace_header_ptr
+     /tmp/ccF4wNXu.s:153    .bss._tx_trace_registry_start_ptr:00000000 _tx_trace_registry_start_ptr
+     /tmp/ccF4wNXu.s:146    .bss._tx_trace_registry_end_ptr:00000000 _tx_trace_registry_end_ptr
+     /tmp/ccF4wNXu.s:139    .bss._tx_trace_buffer_start_ptr:00000000 _tx_trace_buffer_start_ptr
+     /tmp/ccF4wNXu.s:132    .bss._tx_trace_buffer_end_ptr:00000000 _tx_trace_buffer_end_ptr
+     /tmp/ccF4wNXu.s:125    .bss._tx_trace_buffer_current_ptr:00000000 _tx_trace_buffer_current_ptr
+     /tmp/ccF4wNXu.s:83     .bss._tx_trace_registry_search_start:00000000 _tx_trace_registry_search_start
+     /tmp/ccF4wNXu.s:80     .bss._tx_trace_registry_search_start:00000000 $d
+     /tmp/ccF4wNXu.s:90     .bss._tx_trace_available_registry_entries:00000000 _tx_trace_available_registry_entries
+     /tmp/ccF4wNXu.s:87     .bss._tx_trace_available_registry_entries:00000000 $d
+     /tmp/ccF4wNXu.s:97     .bss._tx_trace_total_registry_entries:00000000 _tx_trace_total_registry_entries
+     /tmp/ccF4wNXu.s:94     .bss._tx_trace_total_registry_entries:00000000 $d
+     /tmp/ccF4wNXu.s:104    .bss._tx_trace_full_notify_function:00000000 _tx_trace_full_notify_function
+     /tmp/ccF4wNXu.s:101    .bss._tx_trace_full_notify_function:00000000 $d
+     /tmp/ccF4wNXu.s:111    .bss._tx_trace_simulated_time:00000000 _tx_trace_simulated_time
+     /tmp/ccF4wNXu.s:108    .bss._tx_trace_simulated_time:00000000 $d
+     /tmp/ccF4wNXu.s:118    .bss._tx_trace_event_enable_bits:00000000 _tx_trace_event_enable_bits
+     /tmp/ccF4wNXu.s:115    .bss._tx_trace_event_enable_bits:00000000 $d
+     /tmp/ccF4wNXu.s:122    .bss._tx_trace_buffer_current_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:129    .bss._tx_trace_buffer_end_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:136    .bss._tx_trace_buffer_start_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:143    .bss._tx_trace_registry_end_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:150    .bss._tx_trace_registry_start_ptr:00000000 $d
+     /tmp/ccF4wNXu.s:157    .bss._tx_trace_header_ptr:00000000 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
@@ -368,7 +368,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.tx_api.h.143.a8f6e7c0fde9aa86e8b6e86681771d37
                            .group:00000000 wm4.tx_thread.h.58.aca505065ec84c0c978a4a3ba538ff60
                            .group:00000000 wm4.tx_trace.h.77.bb51149367e9195b9dec1539d7828ce8
-ARM GAS  /tmp/ccf97bV2.s 			page 8
+ARM GAS  /tmp/ccF4wNXu.s 			page 8
 
 
 

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccrw27Ew.s 			page 1
+ARM GAS  /tmp/ccZJ4wyI.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
   22:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
   23:../Middlewares/threadx/common/src/txe_mutex_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
-ARM GAS  /tmp/ccrw27Ew.s 			page 2
+ARM GAS  /tmp/ccZJ4wyI.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
   79:../Middlewares/threadx/common/src/txe_mutex_create.c **** /*                                            resulting in version 6.1    */
   80:../Middlewares/threadx/common/src/txe_mutex_create.c **** /*                                                                        */
   81:../Middlewares/threadx/common/src/txe_mutex_create.c **** /**************************************************************************/
-ARM GAS  /tmp/ccrw27Ew.s 			page 3
+ARM GAS  /tmp/ccZJ4wyI.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/txe_mutex_create.c **** UINT  _txe_mutex_create(TX_MUTEX *mutex_ptr, CHAR *name_ptr, UINT inherit, UINT mutex_control_block
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
   65              	.LVL2:
   66              	.L1:
  104:../Middlewares/threadx/common/src/txe_mutex_create.c ****     }
-ARM GAS  /tmp/ccrw27Ew.s 			page 4
+ARM GAS  /tmp/ccZJ4wyI.s 			page 4
 
 
  105:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  159:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
  160:../Middlewares/threadx/common/src/txe_mutex_create.c ****             /* Mutex is already created, return appropriate error code.  */
  161:../Middlewares/threadx/common/src/txe_mutex_create.c ****             status =  TX_MUTEX_ERROR;
-ARM GAS  /tmp/ccrw27Ew.s 			page 5
+ARM GAS  /tmp/ccZJ4wyI.s 			page 5
 
 
  162:../Middlewares/threadx/common/src/txe_mutex_create.c ****         }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  216:../Middlewares/threadx/common/src/txe_mutex_create.c ****         /* Call actual mutex create function.  */
  217:../Middlewares/threadx/common/src/txe_mutex_create.c ****         status =  _tx_mutex_create(mutex_ptr, name_ptr, inherit);
  218:../Middlewares/threadx/common/src/txe_mutex_create.c ****     }
-ARM GAS  /tmp/ccrw27Ew.s 			page 6
+ARM GAS  /tmp/ccZJ4wyI.s 			page 6
 
 
  219:../Middlewares/threadx/common/src/txe_mutex_create.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
   38:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    real-time kernel function identically on a variety of different     */
-ARM GAS  /tmp/ccrw27Ew.s 			page 7
+ARM GAS  /tmp/ccZJ4wyI.s 			page 7
 
 
   39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
   95:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccrw27Ew.s 			page 8
+ARM GAS  /tmp/ccZJ4wyI.s 			page 8
 
 
   96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
  152:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _tx_thread_secure_stack_free
-ARM GAS  /tmp/ccrw27Ew.s 			page 9
+ARM GAS  /tmp/ccZJ4wyI.s 			page 9
 
 
  153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
  209:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    source constants would be:
-ARM GAS  /tmp/ccrw27Ew.s 			page 10
+ARM GAS  /tmp/ccZJ4wyI.s 			page 10
 
 
  210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
  266:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccrw27Ew.s 			page 11
+ARM GAS  /tmp/ccZJ4wyI.s 			page 11
 
 
  267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
  323:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     if(thread_ptr -> tx_thread_secu
-ARM GAS  /tmp/ccrw27Ew.s 			page 12
+ARM GAS  /tmp/ccZJ4wyI.s 			page 12
 
 
  324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
  380:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    in order to ensure no lazy stacking will occur. */
-ARM GAS  /tmp/ccrw27Ew.s 			page 13
+ARM GAS  /tmp/ccZJ4wyI.s 			page 13
 
 
  381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  437:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/ccrw27Ew.s 			page 14
+ARM GAS  /tmp/ccZJ4wyI.s 			page 14
 
 
  438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
  494:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_DELETE_EXTENSION(group_ptr)
-ARM GAS  /tmp/ccrw27Ew.s 			page 15
+ARM GAS  /tmp/ccZJ4wyI.s 			page 15
 
 
  495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
  550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
  551:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       (b) = (UINT) __CLZ(__RBIT((m)));
-ARM GAS  /tmp/ccrw27Ew.s 			page 16
+ARM GAS  /tmp/ccZJ4wyI.s 			page 16
 
 
  552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
   85              		.loc 2 563 55 view .LVU19
   86              	.LBB23:
-ARM GAS  /tmp/ccrw27Ew.s 			page 17
+ARM GAS  /tmp/ccZJ4wyI.s 			page 17
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  125              	.LBI24:
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  126              		.loc 2 586 55 view .LVU32
-ARM GAS  /tmp/ccrw27Ew.s 			page 18
+ARM GAS  /tmp/ccZJ4wyI.s 			page 18
 
 
  127              	.LBB25:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  168              		.loc 2 563 55 view .LVU46
  169              	.LBB29:
-ARM GAS  /tmp/ccrw27Ew.s 			page 19
+ARM GAS  /tmp/ccZJ4wyI.s 			page 19
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  213              		.thumb
  214              		.syntax unified
  215              	.LBE31:
-ARM GAS  /tmp/ccrw27Ew.s 			page 20
+ARM GAS  /tmp/ccZJ4wyI.s 			page 20
 
 
  216              	.LBE30:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  256              		.loc 2 511 5 view .LVU74
  511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
-ARM GAS  /tmp/ccrw27Ew.s 			page 21
+ARM GAS  /tmp/ccZJ4wyI.s 			page 21
 
 
  257              		.loc 2 511 5 is_stmt 0 view .LVU75
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  217:../Middlewares/threadx/common/src/txe_mutex_create.c ****     }
  298              		.loc 1 217 19 is_stmt 0 view .LVU89
  299 007c 2A46     		mov	r2, r5
-ARM GAS  /tmp/ccrw27Ew.s 			page 22
+ARM GAS  /tmp/ccZJ4wyI.s 			page 22
 
 
  300 007e 3946     		mov	r1, r7
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  345 00a4 00000000 		.word	_tx_thread_current_ptr
  346 00a8 00000000 		.word	_tx_timer_thread
  347 00ac 00000000 		.word	_tx_thread_system_state
-ARM GAS  /tmp/ccrw27Ew.s 			page 23
+ARM GAS  /tmp/ccZJ4wyI.s 			page 23
 
 
  348              		.cfi_endproc
@@ -1329,14 +1329,14 @@ ARM GAS  /tmp/ccrw27Ew.s 			page 1
  354              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  355              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
  356              		.file 6 "../Middlewares/threadx/common/inc/tx_mutex.h"
-ARM GAS  /tmp/ccrw27Ew.s 			page 24
+ARM GAS  /tmp/ccZJ4wyI.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_mutex_create.c
-     /tmp/ccrw27Ew.s:26     .text._txe_mutex_create:00000000 $t
-     /tmp/ccrw27Ew.s:32     .text._txe_mutex_create:00000000 _txe_mutex_create
-     /tmp/ccrw27Ew.s:342    .text._txe_mutex_create:00000098 $d
+     /tmp/ccZJ4wyI.s:26     .text._txe_mutex_create:00000000 $t
+     /tmp/ccZJ4wyI.s:32     .text._txe_mutex_create:00000000 _txe_mutex_create
+     /tmp/ccZJ4wyI.s:342    .text._txe_mutex_create:00000098 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

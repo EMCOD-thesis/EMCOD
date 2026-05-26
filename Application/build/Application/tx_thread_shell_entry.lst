@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdSjI3U.s 			page 1
+ARM GAS  /tmp/ccfKuqTx.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
   23:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
   25:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
-ARM GAS  /tmp/ccdSjI3U.s 			page 2
+ARM GAS  /tmp/ccfKuqTx.s 			page 2
 
 
   26:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** /* Include necessary system files.  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
   36              		@ args = 0, pretend = 0, frame = 0
   37              		@ frame_needed = 0, uses_anonymous_args = 0
   78:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
-ARM GAS  /tmp/ccdSjI3U.s 			page 3
+ARM GAS  /tmp/ccfKuqTx.s 			page 3
 
 
   79:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** TX_INTERRUPT_SAVE_AREA
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
   17:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
   18:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**   Port Specific                                                       */
   19:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
-ARM GAS  /tmp/ccdSjI3U.s 			page 4
+ARM GAS  /tmp/ccfKuqTx.s 			page 4
 
 
   20:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
   74:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  07-29-2022      Scott Larson            Modified comments and changed */
   75:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            secure stack initialization */
   76:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            macro to port-specific,     */
-ARM GAS  /tmp/ccdSjI3U.s 			page 5
+ARM GAS  /tmp/ccfKuqTx.s 			page 5
 
 
   77:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            described BASEPRI usage,    */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  131:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _tx_thread_secure_stack_allocate(struct TX_THREAD_STRUCT *tx_thread, ULONG stack_size);
  132:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _tx_thread_secure_stack_free(struct TX_THREAD_STRUCT *tx_thread);
  133:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccdSjI3U.s 			page 6
+ARM GAS  /tmp/ccfKuqTx.s 			page 6
 
 
  134:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the system API mappings based on the error checking
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  188:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  189:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  190:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TIMER_THREAD_PRIORITY
-ARM GAS  /tmp/ccdSjI3U.s 			page 7
+ARM GAS  /tmp/ccfKuqTx.s 			page 7
 
 
  191:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_PRIORITY                0           /* Default timer thread priority    */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  245:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  246:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  247:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine whether or not stack checking is enabled. By default, ThreadX stack checking is
-ARM GAS  /tmp/ccdSjI3U.s 			page 8
+ARM GAS  /tmp/ccfKuqTx.s 			page 8
 
 
  248:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    disabled. When the following is defined, ThreadX thread stack checking is enabled.  If stack
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  302:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  303:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  304:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the user extension field of the thread control block.  Nothing
-ARM GAS  /tmp/ccdSjI3U.s 			page 9
+ARM GAS  /tmp/ccfKuqTx.s 			page 9
 
 
  305:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    additional is needed for this port so it is defined as white space.  */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  359:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline ULONG _tx_control_get(void)
  360:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  361:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  control_value;
-ARM GAS  /tmp/ccdSjI3U.s 			page 10
+ARM GAS  /tmp/ccfKuqTx.s 			page 10
 
 
  362:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  416:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  417:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         else                                       
  418:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
-ARM GAS  /tmp/ccdSjI3U.s 			page 11
+ARM GAS  /tmp/ccfKuqTx.s 			page 11
 
 
  419:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_fpccr;                          
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  473:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)
  474:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)
  475:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccdSjI3U.s 			page 12
+ARM GAS  /tmp/ccfKuqTx.s 			page 12
 
 
  476:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* defined(__ARMVFP__) || defined(__ARM_PCS_VFP) || defined(__ARM_FP) || defined(__TARGET_F
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  530:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_SYSTEM_RETURN_CHECK(c)    (c) = ((ULONG) _tx_thread_preempt_disable);
  531:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  532:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccdSjI3U.s 			page 13
+ARM GAS  /tmp/ccfKuqTx.s 			page 13
 
 
  533:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  587:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  588:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
  589:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __set_basepri_value(int_posture);
-ARM GAS  /tmp/ccdSjI3U.s 			page 14
+ARM GAS  /tmp/ccfKuqTx.s 			page 14
 
 
  590:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
   89              	.LBE21:
   97:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
   98:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     /* Pickup the entry/exit application callback routine.  */
-ARM GAS  /tmp/ccdSjI3U.s 			page 15
+ARM GAS  /tmp/ccfKuqTx.s 			page 15
 
 
   99:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     entry_exit_notify =  thread_ptr -> tx_thread_entry_exit_notify;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  116:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     /* Suspend thread with a "completed" state.  */
  117:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
  118:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     /* Determine if the application is using mutexes.  */
-ARM GAS  /tmp/ccdSjI3U.s 			page 16
+ARM GAS  /tmp/ccfKuqTx.s 			page 16
 
 
  119:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     if (_tx_thread_mutex_release != TX_NULL)
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  159              		.loc 2 604 5 is_stmt 1 view .LVU43
  160              		.syntax unified
  161              	@ 604 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
-ARM GAS  /tmp/ccdSjI3U.s 			page 17
+ARM GAS  /tmp/ccfKuqTx.s 			page 17
 
 
  162 0030 72B6     		CPSID i
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  138:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
  174              		.loc 1 138 35 view .LVU48
  175 0034 0121     		movs	r1, #1
-ARM GAS  /tmp/ccdSjI3U.s 			page 18
+ARM GAS  /tmp/ccfKuqTx.s 			page 18
 
 
  171:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  214              	.LBB33:
  177:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
  178:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     /* Perform any additional activities for tool or user purpose.  */
-ARM GAS  /tmp/ccdSjI3U.s 			page 19
+ARM GAS  /tmp/ccfKuqTx.s 			page 19
 
 
  179:../Middlewares/threadx/common/src/tx_thread_shell_entry.c ****     TX_THREAD_COMPLETED_EXTENSION(thread_ptr)
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  259              	.LBE33:
  180:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
  181:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** #ifndef TX_DISABLE_NOTIFY_CALLBACKS
-ARM GAS  /tmp/ccdSjI3U.s 			page 20
+ARM GAS  /tmp/ccfKuqTx.s 			page 20
 
 
  182:../Middlewares/threadx/common/src/tx_thread_shell_entry.c **** 
@@ -1198,17 +1198,17 @@ ARM GAS  /tmp/ccdSjI3U.s 			page 1
  292              	.Letext0:
  293              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  294              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/ccdSjI3U.s 			page 21
+ARM GAS  /tmp/ccfKuqTx.s 			page 21
 
 
-ARM GAS  /tmp/ccdSjI3U.s 			page 22
+ARM GAS  /tmp/ccfKuqTx.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_shell_entry.c
-     /tmp/ccdSjI3U.s:26     .text._tx_thread_shell_entry:00000000 $t
-     /tmp/ccdSjI3U.s:32     .text._tx_thread_shell_entry:00000000 _tx_thread_shell_entry
-     /tmp/ccdSjI3U.s:285    .text._tx_thread_shell_entry:00000068 $d
+     /tmp/ccfKuqTx.s:26     .text._tx_thread_shell_entry:00000000 $t
+     /tmp/ccfKuqTx.s:32     .text._tx_thread_shell_entry:00000000 _tx_thread_shell_entry
+     /tmp/ccfKuqTx.s:285    .text._tx_thread_shell_entry:00000068 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

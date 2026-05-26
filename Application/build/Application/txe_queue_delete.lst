@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBUTTe2.s 			page 1
+ARM GAS  /tmp/ccCwVjcb.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
   22:../Middlewares/threadx/common/src/txe_queue_delete.c **** 
   23:../Middlewares/threadx/common/src/txe_queue_delete.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_queue_delete.c **** 
-ARM GAS  /tmp/ccBUTTe2.s 			page 2
+ARM GAS  /tmp/ccCwVjcb.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_queue_delete.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
   37              		@ args = 0, pretend = 0, frame = 0
   38              		@ frame_needed = 0, uses_anonymous_args = 0
   39              		@ link register save eliminated.
-ARM GAS  /tmp/ccBUTTe2.s 			page 3
+ARM GAS  /tmp/ccCwVjcb.s 			page 3
 
 
   77:../Middlewares/threadx/common/src/txe_queue_delete.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
    7:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
    8:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       and in the root directory of this software.                      */
    9:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccBUTTe2.s 			page 4
+ARM GAS  /tmp/ccCwVjcb.s 			page 4
 
 
   10:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
   64:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  10-15-2021      Scott Larson            Modified comment(s), improved */
   65:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack check error handling, */
   66:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.9  */
-ARM GAS  /tmp/ccBUTTe2.s 			page 5
+ARM GAS  /tmp/ccCwVjcb.s 			page 5
 
 
   67:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  01-31-2022      Scott Larson            Modified comment(s), unified  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  121:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long                           ULONG;
  122:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long long                      ULONG64;
  123:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef short                                   SHORT;
-ARM GAS  /tmp/ccBUTTe2.s 			page 6
+ARM GAS  /tmp/ccCwVjcb.s 			page 6
 
 
  124:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned short                          USHORT;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  178:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MINIMUM_STACK
  179:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MINIMUM_STACK                        200         /* Minimum stack size for this port  */
  180:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccBUTTe2.s 			page 7
+ARM GAS  /tmp/ccCwVjcb.s 			page 7
 
 
  181:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  235:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  236:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the in-line initialization constant so that modules with in-line
  237:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    initialization capabilities can prevent their initialization from being
-ARM GAS  /tmp/ccBUTTe2.s 			page 8
+ARM GAS  /tmp/ccCwVjcb.s 			page 8
 
 
  238:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    a function call.  */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  292:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  293:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port extensions of the remaining ThreadX objects.  */
  294:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccBUTTe2.s 			page 9
+ARM GAS  /tmp/ccCwVjcb.s 			page 9
 
 
  295:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_EXTENSION
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  349:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  350:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_control_get(void);
  351:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_control_set(ULONG value);
-ARM GAS  /tmp/ccBUTTe2.s 			page 10
+ARM GAS  /tmp/ccCwVjcb.s 			page 10
 
 
  352:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_fpccr_get(void);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  406:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  407:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
  408:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
-ARM GAS  /tmp/ccBUTTe2.s 			page 11
+ARM GAS  /tmp/ccCwVjcb.s 			page 11
 
 
  409:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  463:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_vfp_state &
  464:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_misra_control_set(_tx_vfp_s
  465:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
-ARM GAS  /tmp/ccBUTTe2.s 			page 12
+ARM GAS  /tmp/ccCwVjcb.s 			page 12
 
 
  466:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(ipsr_value);
   65              		.loc 2 511 5 view .LVU12
   66              		.loc 2 511 5 is_stmt 0 view .LVU13
-ARM GAS  /tmp/ccBUTTe2.s 			page 13
+ARM GAS  /tmp/ccCwVjcb.s 			page 13
 
 
   67              		.thumb
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
   91              		.loc 1 138 9 view .LVU22
   92              		.loc 1 138 19 is_stmt 0 view .LVU23
   93 0020 FFF7FEBF 		b	_tx_queue_delete
-ARM GAS  /tmp/ccBUTTe2.s 			page 14
+ARM GAS  /tmp/ccCwVjcb.s 			page 14
 
 
   94              	.LVL5:
@@ -818,14 +818,14 @@ ARM GAS  /tmp/ccBUTTe2.s 			page 1
  121              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  122              		.file 4 "../Middlewares/threadx/common/inc/tx_timer.h"
  123              		.file 5 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/ccBUTTe2.s 			page 15
+ARM GAS  /tmp/ccCwVjcb.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_queue_delete.c
-     /tmp/ccBUTTe2.s:26     .text._txe_queue_delete:00000000 $t
-     /tmp/ccBUTTe2.s:32     .text._txe_queue_delete:00000000 _txe_queue_delete
-     /tmp/ccBUTTe2.s:112    .text._txe_queue_delete:0000002c $d
+     /tmp/ccCwVjcb.s:26     .text._txe_queue_delete:00000000 $t
+     /tmp/ccCwVjcb.s:32     .text._txe_queue_delete:00000000 _txe_queue_delete
+     /tmp/ccCwVjcb.s:112    .text._txe_queue_delete:0000002c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccrNzBtR.s 			page 1
+ARM GAS  /tmp/ccNbHWFg.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   22:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
   23:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
-ARM GAS  /tmp/ccrNzBtR.s 			page 2
+ARM GAS  /tmp/ccNbHWFg.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   79:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** /**************************************************************************/
   80:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** UINT  _tx_semaphore_info_get(TX_SEMAPHORE *semaphore_ptr, CHAR **name, ULONG *current_value,
   81:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****                     TX_THREAD **first_suspended, ULONG *suspended_count,
-ARM GAS  /tmp/ccrNzBtR.s 			page 3
+ARM GAS  /tmp/ccNbHWFg.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****                     TX_SEMAPHORE **next_semaphore)
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   38:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    real-time kernel function identically on a variety of different     */
   39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
   40:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    in an "int" data type vary between microprocessor architectures and */
-ARM GAS  /tmp/ccrNzBtR.s 			page 4
+ARM GAS  /tmp/ccNbHWFg.s 			page 4
 
 
   41:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    even C compilers for the same microprocessor.  ThreadX does not     */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   95:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
   97:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccrNzBtR.s 			page 5
+ARM GAS  /tmp/ccNbHWFg.s 			page 5
 
 
   98:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <stdlib.h>
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  152:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _tx_thread_secure_stack_free
  153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  154:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/ccrNzBtR.s 			page 6
+ARM GAS  /tmp/ccNbHWFg.s 			page 6
 
 
  155:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  209:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    source constants would be:
  210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  211:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    *((volatile ULONG *) 0x0a800024)
-ARM GAS  /tmp/ccrNzBtR.s 			page 7
+ARM GAS  /tmp/ccNbHWFg.s 			page 7
 
 
  212:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0x0000FFFFUL
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  266:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
  268:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* IAR library support */
-ARM GAS  /tmp/ccrNzBtR.s 			page 8
+ARM GAS  /tmp/ccNbHWFg.s 			page 8
 
 
  269:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  323:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     if(thread_ptr -> tx_thread_secu
  324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  325:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
-ARM GAS  /tmp/ccrNzBtR.s 			page 9
+ARM GAS  /tmp/ccNbHWFg.s 			page 9
 
 
  326:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  380:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    in order to ensure no lazy stacking will occur. */
  381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  382:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
-ARM GAS  /tmp/ccrNzBtR.s 			page 10
+ARM GAS  /tmp/ccNbHWFg.s 			page 10
 
 
  383:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  437:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  439:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
-ARM GAS  /tmp/ccrNzBtR.s 			page 11
+ARM GAS  /tmp/ccNbHWFg.s 			page 11
 
 
  440:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  494:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_DELETE_EXTENSION(group_ptr)
  495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
  496:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_DELETE_EXTENSION(queue_ptr)
-ARM GAS  /tmp/ccrNzBtR.s 			page 12
+ARM GAS  /tmp/ccNbHWFg.s 			page 12
 
 
  497:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_DELETE_EXTENSION(semaphore_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  551:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       (b) = (UINT) __CLZ(__RBIT((m)));
  552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
  553:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       __asm__ volatile (" RBIT %0,%1 ": "=r" (m) : "r" (m
-ARM GAS  /tmp/ccrNzBtR.s 			page 13
+ARM GAS  /tmp/ccNbHWFg.s 			page 13
 
 
  554:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                 __asm__ volatile (" CLZ  %0,%1 ": "=r" (b) : "r" (m
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   51              	.LBB16:
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
   52              		.loc 2 565 1 view .LVU7
-ARM GAS  /tmp/ccrNzBtR.s 			page 14
+ARM GAS  /tmp/ccNbHWFg.s 			page 14
 
 
  569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
   96 0014 72B6     		CPSID i
   97              	@ 0 "" 2
  605:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccrNzBtR.s 			page 15
+ARM GAS  /tmp/ccNbHWFg.s 			page 15
 
 
  606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  143              	.LBE22:
  144              		.loc 1 92 5 discriminator 1 view .LVU32
  145 002a 2A4B     		ldr	r3, .L35+8
-ARM GAS  /tmp/ccrNzBtR.s 			page 16
+ARM GAS  /tmp/ccNbHWFg.s 			page 16
 
 
  146 002c 2A49     		ldr	r1, .L35+12
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  200 0062 1B68     		ldr	r3, [r3]
  201 0064 A342     		cmp	r3, r4
  202 0066 2ED8     		bhi	.L7
-ARM GAS  /tmp/ccrNzBtR.s 			page 17
+ARM GAS  /tmp/ccNbHWFg.s 			page 17
 
 
  203              		.loc 1 92 5 is_stmt 1 discriminator 10 view .LVU55
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  110:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
  111:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****         *current_value =  semaphore_ptr -> tx_semaphore_count;
  240              		.loc 1 111 9 is_stmt 1 view .LVU72
-ARM GAS  /tmp/ccrNzBtR.s 			page 18
+ARM GAS  /tmp/ccNbHWFg.s 			page 18
 
 
  241              		.loc 1 111 41 is_stmt 0 view .LVU73
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  133:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****     }
  134:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
  135:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****     /* Restore interrupts.  */
-ARM GAS  /tmp/ccrNzBtR.s 			page 19
+ARM GAS  /tmp/ccNbHWFg.s 			page 19
 
 
  136:../Middlewares/threadx/common/src/tx_semaphore_info_get.c ****     TX_RESTORE
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  314              	.L7:
   92:../Middlewares/threadx/common/src/tx_semaphore_info_get.c **** 
  315              		.loc 1 92 5 is_stmt 1 discriminator 11 view .LVU101
-ARM GAS  /tmp/ccrNzBtR.s 			page 20
+ARM GAS  /tmp/ccNbHWFg.s 			page 20
 
 
  316 00c6 1460     		str	r4, [r2]
@@ -1169,14 +1169,14 @@ ARM GAS  /tmp/ccrNzBtR.s 			page 1
  340              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  341              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  342              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/ccrNzBtR.s 			page 21
+ARM GAS  /tmp/ccNbHWFg.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_semaphore_info_get.c
-     /tmp/ccrNzBtR.s:26     .text._tx_semaphore_info_get:00000000 $t
-     /tmp/ccrNzBtR.s:32     .text._tx_semaphore_info_get:00000000 _tx_semaphore_info_get
-     /tmp/ccrNzBtR.s:325    .text._tx_semaphore_info_get:000000cc $d
+     /tmp/ccNbHWFg.s:26     .text._tx_semaphore_info_get:00000000 $t
+     /tmp/ccNbHWFg.s:32     .text._tx_semaphore_info_get:00000000 _tx_semaphore_info_get
+     /tmp/ccNbHWFg.s:325    .text._tx_semaphore_info_get:000000cc $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

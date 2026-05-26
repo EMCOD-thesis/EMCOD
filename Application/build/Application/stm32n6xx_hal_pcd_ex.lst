@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccnuYntB.s 			page 1
+ARM GAS  /tmp/ccOcpxoC.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
   22:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
   23:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** /* Includes ------------------------------------------------------------------*/
   24:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** #include "stm32n6xx_hal.h"
-ARM GAS  /tmp/ccnuYntB.s 			page 2
+ARM GAS  /tmp/ccOcpxoC.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
   40              		.loc 1 73 3 view .LVU2
   74:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
   75:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   /*  TXn min size = 16 words. (n  : Transmit FIFO index)
-ARM GAS  /tmp/ccnuYntB.s 			page 3
+ARM GAS  /tmp/ccOcpxoC.s 			page 3
 
 
   76:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****       When a TxFIFO is not used, the Configuration should be as follows:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  101:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   }
  102:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
  103:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   return HAL_OK;
-ARM GAS  /tmp/ccnuYntB.s 			page 4
+ARM GAS  /tmp/ccOcpxoC.s 			page 4
 
 
   68              		.loc 1 103 3 is_stmt 1 view .LVU13
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
   96:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****     }
  108              		.loc 1 96 17 view .LVU27
  109 003c 03EB1543 		add	r3, r3, r5, lsr #16
-ARM GAS  /tmp/ccnuYntB.s 			page 5
+ARM GAS  /tmp/ccOcpxoC.s 			page 5
 
 
  110              	.LVL13:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  150              		.thumb
  151              		.thumb_func
  153              	HAL_PCDEx_ActivateLPM:
-ARM GAS  /tmp/ccnuYntB.s 			page 6
+ARM GAS  /tmp/ccOcpxoC.s 			page 6
 
 
  154              	.LVL16:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  132:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
  133:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   return HAL_OK;
  192              		.loc 1 133 3 is_stmt 1 view .LVU53
-ARM GAS  /tmp/ccnuYntB.s 			page 7
+ARM GAS  /tmp/ccOcpxoC.s 			page 7
 
 
  134:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** }
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  234 0012 536D     		ldr	r3, [r2, #84]
  235              		.loc 1 147 17 view .LVU67
  236 0014 23F08053 		bic	r3, r3, #268435456
-ARM GAS  /tmp/ccnuYntB.s 			page 8
+ARM GAS  /tmp/ccOcpxoC.s 			page 8
 
 
  237 0018 23F00303 		bic	r3, r3, #3
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  186:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   else
  187:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   {
  188:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****     /* start secondary detection to check connection to Charging Downstream
-ARM GAS  /tmp/ccnuYntB.s 			page 9
+ARM GAS  /tmp/ccOcpxoC.s 			page 9
 
 
  189:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****     Port or Dedicated Charging Port */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  243:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** {
  255              		.loc 1 243 1 is_stmt 1 view -0
  256              		.cfi_startproc
-ARM GAS  /tmp/ccnuYntB.s 			page 10
+ARM GAS  /tmp/ccOcpxoC.s 			page 10
 
 
  257              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  256:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   * @param  hpcd PCD handle
  257:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   * @retval HAL status
  258:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****   */
-ARM GAS  /tmp/ccnuYntB.s 			page 11
+ARM GAS  /tmp/ccOcpxoC.s 			page 11
 
 
  259:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** HAL_StatusTypeDef HAL_PCDEx_DeActivateBCD(PCD_HandleTypeDef *hpcd)
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  339              		.syntax unified
  340              		.thumb
  341              		.thumb_func
-ARM GAS  /tmp/ccnuYntB.s 			page 12
+ARM GAS  /tmp/ccOcpxoC.s 			page 12
 
 
  343              	HAL_PCDEx_LPM_Callback:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  372 0000 7047     		bx	lr
  373              		.cfi_endproc
  374              	.LFE891:
-ARM GAS  /tmp/ccnuYntB.s 			page 13
+ARM GAS  /tmp/ccOcpxoC.s 			page 13
 
 
  376              		.section	.text.HAL_PCDEx_BCD_VBUSDetect,"ax",%progbits
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  418              		.loc 1 164 15 view .LVU117
  419 0016 A363     		str	r3, [r4, #56]
  167:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
-ARM GAS  /tmp/ccnuYntB.s 			page 14
+ARM GAS  /tmp/ccOcpxoC.s 			page 14
 
 
  420              		.loc 1 167 3 is_stmt 1 view .LVU118
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  458              		.loc 1 216 3 is_stmt 1 view .LVU134
  216:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c **** 
  459              		.loc 1 216 9 is_stmt 0 view .LVU135
-ARM GAS  /tmp/ccnuYntB.s 			page 15
+ARM GAS  /tmp/ccOcpxoC.s 			page 15
 
 
  460 0046 2846     		mov	r0, r5
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  192:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pcd_ex.c ****     HAL_Delay(50U);
  499              		.loc 1 192 17 view .LVU151
  500 0076 43F48003 		orr	r3, r3, #4194304
-ARM GAS  /tmp/ccnuYntB.s 			page 16
+ARM GAS  /tmp/ccOcpxoC.s 			page 16
 
 
  501 007a A363     		str	r3, [r4, #56]
@@ -933,29 +933,29 @@ ARM GAS  /tmp/ccnuYntB.s 			page 1
  525              		.file 6 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_usb.h"
  526              		.file 7 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pcd.h"
  527              		.file 8 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h"
-ARM GAS  /tmp/ccnuYntB.s 			page 17
+ARM GAS  /tmp/ccOcpxoC.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32n6xx_hal_pcd_ex.c
-     /tmp/ccnuYntB.s:26     .text.HAL_PCDEx_SetTxFiFo:00000000 $t
-     /tmp/ccnuYntB.s:32     .text.HAL_PCDEx_SetTxFiFo:00000000 HAL_PCDEx_SetTxFiFo
-     /tmp/ccnuYntB.s:118    .text.HAL_PCDEx_SetRxFiFo:00000000 $t
-     /tmp/ccnuYntB.s:124    .text.HAL_PCDEx_SetRxFiFo:00000000 HAL_PCDEx_SetRxFiFo
-     /tmp/ccnuYntB.s:147    .text.HAL_PCDEx_ActivateLPM:00000000 $t
-     /tmp/ccnuYntB.s:153    .text.HAL_PCDEx_ActivateLPM:00000000 HAL_PCDEx_ActivateLPM
-     /tmp/ccnuYntB.s:199    .text.HAL_PCDEx_DeActivateLPM:00000000 $t
-     /tmp/ccnuYntB.s:205    .text.HAL_PCDEx_DeActivateLPM:00000000 HAL_PCDEx_DeActivateLPM
-     /tmp/ccnuYntB.s:246    .text.HAL_PCDEx_ActivateBCD:00000000 $t
-     /tmp/ccnuYntB.s:252    .text.HAL_PCDEx_ActivateBCD:00000000 HAL_PCDEx_ActivateBCD
-     /tmp/ccnuYntB.s:292    .text.HAL_PCDEx_DeActivateBCD:00000000 $t
-     /tmp/ccnuYntB.s:298    .text.HAL_PCDEx_DeActivateBCD:00000000 HAL_PCDEx_DeActivateBCD
-     /tmp/ccnuYntB.s:337    .text.HAL_PCDEx_LPM_Callback:00000000 $t
-     /tmp/ccnuYntB.s:343    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
-     /tmp/ccnuYntB.s:359    .text.HAL_PCDEx_BCD_Callback:00000000 $t
-     /tmp/ccnuYntB.s:365    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
-     /tmp/ccnuYntB.s:377    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 $t
-     /tmp/ccnuYntB.s:383    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 HAL_PCDEx_BCD_VBUSDetect
+     /tmp/ccOcpxoC.s:26     .text.HAL_PCDEx_SetTxFiFo:00000000 $t
+     /tmp/ccOcpxoC.s:32     .text.HAL_PCDEx_SetTxFiFo:00000000 HAL_PCDEx_SetTxFiFo
+     /tmp/ccOcpxoC.s:118    .text.HAL_PCDEx_SetRxFiFo:00000000 $t
+     /tmp/ccOcpxoC.s:124    .text.HAL_PCDEx_SetRxFiFo:00000000 HAL_PCDEx_SetRxFiFo
+     /tmp/ccOcpxoC.s:147    .text.HAL_PCDEx_ActivateLPM:00000000 $t
+     /tmp/ccOcpxoC.s:153    .text.HAL_PCDEx_ActivateLPM:00000000 HAL_PCDEx_ActivateLPM
+     /tmp/ccOcpxoC.s:199    .text.HAL_PCDEx_DeActivateLPM:00000000 $t
+     /tmp/ccOcpxoC.s:205    .text.HAL_PCDEx_DeActivateLPM:00000000 HAL_PCDEx_DeActivateLPM
+     /tmp/ccOcpxoC.s:246    .text.HAL_PCDEx_ActivateBCD:00000000 $t
+     /tmp/ccOcpxoC.s:252    .text.HAL_PCDEx_ActivateBCD:00000000 HAL_PCDEx_ActivateBCD
+     /tmp/ccOcpxoC.s:292    .text.HAL_PCDEx_DeActivateBCD:00000000 $t
+     /tmp/ccOcpxoC.s:298    .text.HAL_PCDEx_DeActivateBCD:00000000 HAL_PCDEx_DeActivateBCD
+     /tmp/ccOcpxoC.s:337    .text.HAL_PCDEx_LPM_Callback:00000000 $t
+     /tmp/ccOcpxoC.s:343    .text.HAL_PCDEx_LPM_Callback:00000000 HAL_PCDEx_LPM_Callback
+     /tmp/ccOcpxoC.s:359    .text.HAL_PCDEx_BCD_Callback:00000000 $t
+     /tmp/ccOcpxoC.s:365    .text.HAL_PCDEx_BCD_Callback:00000000 HAL_PCDEx_BCD_Callback
+     /tmp/ccOcpxoC.s:377    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 $t
+     /tmp/ccOcpxoC.s:383    .text.HAL_PCDEx_BCD_VBUSDetect:00000000 HAL_PCDEx_BCD_VBUSDetect
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.stm32n6xx_hal_conf.h.21.d32f04f7ae387b70d8c80735cac3eea9
                            .group:00000000 wm4.stddef.h.39.811583f327f35b0df7808fda70b062a0
@@ -993,7 +993,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
                            .group:00000000 wm4.reent.h.78.6d702f69a6d6435d2dbe915b10150b1a
                            .group:00000000 wm4.math.h.13.47cfc34cae8a1153323939c4d32cf7c2
-ARM GAS  /tmp/ccnuYntB.s 			page 18
+ARM GAS  /tmp/ccOcpxoC.s 			page 18
 
 
                            .group:00000000 wm4.stm32n6xx_hal_def.h.63.3a8f01490e8852464e9fcb69092e9c75

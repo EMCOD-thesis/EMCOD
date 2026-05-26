@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPkpx2H.s 			page 1
+ARM GAS  /tmp/ccsR0kkH.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c **** 
-ARM GAS  /tmp/ccPkpx2H.s 			page 2
+ARM GAS  /tmp/ccsR0kkH.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
   35              		.loc 1 78 1 view -0
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 48
-ARM GAS  /tmp/ccPkpx2H.s 			page 3
+ARM GAS  /tmp/ccsR0kkH.s 			page 3
 
 
   38              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
   97:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c **** 
   98:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     /* Build all the fields of the Class Command.  */
   99:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     class_command.ux_slave_class_command_request   =    UX_SLAVE_CLASS_COMMAND_QUERY;
-ARM GAS  /tmp/ccPkpx2H.s 			page 4
+ARM GAS  /tmp/ccsR0kkH.s 			page 4
 
 
  100:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     class_command.ux_slave_class_command_interface =   (VOID *)interface_ptr;
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
   86              		.loc 1 100 5 is_stmt 1 view .LVU19
  101:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     class_command.ux_slave_class_command_subclass  =   interface_ptr -> ux_slave_interface_descript
   87              		.loc 1 101 102 is_stmt 0 view .LVU20
-ARM GAS  /tmp/ccPkpx2H.s 			page 5
+ARM GAS  /tmp/ccsR0kkH.s 			page 5
 
 
   88 001e 427C     		ldrb	r2, [r0, #17]	@ zero_extendqisi2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
  114:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     {
  124              		.loc 1 114 5 is_stmt 1 view .LVU39
  114:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_interface_start.c ****     {
-ARM GAS  /tmp/ccPkpx2H.s 			page 6
+ARM GAS  /tmp/ccsR0kkH.s 			page 6
 
 
  125              		.loc 1 114 8 is_stmt 0 view .LVU40
@@ -351,14 +351,14 @@ ARM GAS  /tmp/ccPkpx2H.s 			page 1
  161              		.file 2 "../STM32Cube_FW_N6/Middlewares/ST/usbx/ports/generic/inc/ux_port.h"
  162              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  163              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
-ARM GAS  /tmp/ccPkpx2H.s 			page 7
+ARM GAS  /tmp/ccsR0kkH.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_interface_start.c
-     /tmp/ccPkpx2H.s:26     .text._ux_device_stack_interface_start:00000000 $t
-     /tmp/ccPkpx2H.s:32     .text._ux_device_stack_interface_start:00000000 _ux_device_stack_interface_start
-     /tmp/ccPkpx2H.s:155    .text._ux_device_stack_interface_start:00000054 $d
+     /tmp/ccsR0kkH.s:26     .text._ux_device_stack_interface_start:00000000 $t
+     /tmp/ccsR0kkH.s:32     .text._ux_device_stack_interface_start:00000000 _ux_device_stack_interface_start
+     /tmp/ccsR0kkH.s:155    .text._ux_device_stack_interface_start:00000054 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu8RXAi.s 			page 1
+ARM GAS  /tmp/cc42ai50.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
   22:../Middlewares/threadx/common/src/txe_semaphore_get.c **** 
   23:../Middlewares/threadx/common/src/txe_semaphore_get.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_semaphore_get.c **** 
-ARM GAS  /tmp/ccu8RXAi.s 			page 2
+ARM GAS  /tmp/cc42ai50.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_semaphore_get.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
   38              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccu8RXAi.s 			page 3
+ARM GAS  /tmp/cc42ai50.s 			page 3
 
 
   39              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
   57              	.LBI4:
   58              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
    1:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
-ARM GAS  /tmp/ccu8RXAi.s 			page 4
+ARM GAS  /tmp/cc42ai50.s 			page 4
 
 
    2:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
   56:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.5  */
   57:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  06-02-2021      Scott Larson            Modified comment(s), removed  */
   58:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            unneeded header file, funcs */
-ARM GAS  /tmp/ccu8RXAi.s 			page 5
+ARM GAS  /tmp/cc42ai50.s 			page 5
 
 
   59:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            set_control and get_control */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  113:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define ThreadX basic types for this port.  */
  114:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  115:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define VOID                                    void
-ARM GAS  /tmp/ccu8RXAi.s 			page 6
+ARM GAS  /tmp/cc42ai50.s 			page 6
 
 
  116:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef char                                    CHAR;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  170:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MAX_PRIORITIES
  171:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MAX_PRIORITIES                       32
  172:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccu8RXAi.s 			page 7
+ARM GAS  /tmp/cc42ai50.s 			page 7
 
 
  173:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  227:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  228:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  229:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccu8RXAi.s 			page 8
+ARM GAS  /tmp/cc42ai50.s 			page 8
 
 
  230:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port specific options for the _tx_build_options variable. This variable indicates
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  284:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
  285:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2
  286:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccu8RXAi.s 			page 9
+ARM GAS  /tmp/cc42ai50.s 			page 9
 
 
  287:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  341:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_SECURE_STACK_SIZE       256
  342:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_INITIALIZE_EXTENSION(status)   _tx_thread_secure_stack_allocate(&_tx_timer_thread,
  343:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccu8RXAi.s 			page 10
+ARM GAS  /tmp/cc42ai50.s 			page 10
 
 
  344:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  398:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  399:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  400:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A thread can be terminated by another thread, so we first check if it's self-terminating and not
-ARM GAS  /tmp/ccu8RXAi.s 			page 11
+ARM GAS  /tmp/cc42ai50.s 			page 11
 
 
  401:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    If so, deactivate the FPU via CONTROL.FPCA. Otherwise we are in an interrupt or another thread i
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  455:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             {                                      
  456:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
  457:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_misra_control_g
-ARM GAS  /tmp/ccu8RXAi.s 			page 12
+ARM GAS  /tmp/cc42ai50.s 			page 12
 
 
  458:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_vfp_state & ((U
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
   61              		.loc 2 509 1 view .LVU12
  510:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MRS  %0,IPSR ": "=r" (ipsr_value) );
   62              		.loc 2 510 5 view .LVU13
-ARM GAS  /tmp/ccu8RXAi.s 			page 13
+ARM GAS  /tmp/cc42ai50.s 			page 13
 
 
   63              		.syntax unified
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  135:../Middlewares/threadx/common/src/txe_semaphore_get.c **** #endif
  136:../Middlewares/threadx/common/src/txe_semaphore_get.c ****         }
  137:../Middlewares/threadx/common/src/txe_semaphore_get.c ****     }
-ARM GAS  /tmp/ccu8RXAi.s 			page 14
+ARM GAS  /tmp/cc42ai50.s 			page 14
 
 
  138:../Middlewares/threadx/common/src/txe_semaphore_get.c **** 
@@ -828,14 +828,14 @@ ARM GAS  /tmp/ccu8RXAi.s 			page 1
  125              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  126              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  127              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
-ARM GAS  /tmp/ccu8RXAi.s 			page 15
+ARM GAS  /tmp/cc42ai50.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_semaphore_get.c
-     /tmp/ccu8RXAi.s:26     .text._txe_semaphore_get:00000000 $t
-     /tmp/ccu8RXAi.s:32     .text._txe_semaphore_get:00000000 _txe_semaphore_get
-     /tmp/ccu8RXAi.s:116    .text._txe_semaphore_get:00000030 $d
+     /tmp/cc42ai50.s:26     .text._txe_semaphore_get:00000000 $t
+     /tmp/cc42ai50.s:32     .text._txe_semaphore_get:00000000 _txe_semaphore_get
+     /tmp/cc42ai50.s:116    .text._txe_semaphore_get:00000030 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

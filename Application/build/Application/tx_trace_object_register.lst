@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu5lD74.s 			page 1
+ARM GAS  /tmp/cc8X2vvc.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
   22:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
   23:../Middlewares/threadx/common/src/tx_trace_object_register.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
-ARM GAS  /tmp/ccu5lD74.s 			page 2
+ARM GAS  /tmp/cc8X2vvc.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
   79:../Middlewares/threadx/common/src/tx_trace_object_register.c **** /**************************************************************************/
   80:../Middlewares/threadx/common/src/tx_trace_object_register.c **** VOID  _tx_trace_object_register(UCHAR object_type, VOID *object_ptr, CHAR *object_name, ULONG param
   81:../Middlewares/threadx/common/src/tx_trace_object_register.c **** {
-ARM GAS  /tmp/ccu5lD74.s 			page 3
+ARM GAS  /tmp/cc8X2vvc.s 			page 3
 
 
   35              		.loc 1 81 1 view -0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  100:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
  101:../Middlewares/threadx/common/src/tx_trace_object_register.c ****         /* Determine if there are available entries in the registry.  */
  102:../Middlewares/threadx/common/src/tx_trace_object_register.c ****         if (_tx_trace_available_registry_entries != ((ULONG) 0))
-ARM GAS  /tmp/ccu5lD74.s 			page 4
+ARM GAS  /tmp/cc8X2vvc.s 			page 4
 
 
   69              		.loc 1 102 9 view .LVU13
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  117:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 work_ptr =   TX_UCHAR_POINTER_ADD(work_ptr, ((sizeof(TX_TRACE_OBJECT_ENTRY))*i));
  101              		.loc 1 117 17 view .LVU27
  102              		.loc 1 118 17 view .LVU28
-ARM GAS  /tmp/ccu5lD74.s 			page 5
+ARM GAS  /tmp/cc8X2vvc.s 			page 5
 
 
  103              		.loc 1 118 30 is_stmt 0 view .LVU29
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  149:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 /* Is this entry available?  */
  150:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 if (entry_ptr -> tx_trace_object_entry_available == TX_TRUE)
  127              		.loc 1 150 17 is_stmt 1 view .LVU40
-ARM GAS  /tmp/ccu5lD74.s 			page 6
+ARM GAS  /tmp/cc8X2vvc.s 			page 6
 
 
  128              		.loc 1 150 20 is_stmt 0 view .LVU41
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  175:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
  176:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 /* Determine if we have wrapped the list.  */
  177:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 if (i >= entries)
-ARM GAS  /tmp/ccu5lD74.s 			page 7
+ARM GAS  /tmp/cc8X2vvc.s 			page 7
 
 
  157              		.loc 1 177 17 is_stmt 1 view .LVU54
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  208:../Middlewares/threadx/common/src/tx_trace_object_register.c **** 
  209:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 /* Build a pointer to the found entry.  */
  210:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 work_ptr =   TX_OBJECT_TO_UCHAR_POINTER_CONVERT(_tx_trace_registry_start_ptr);
-ARM GAS  /tmp/ccu5lD74.s 			page 8
+ARM GAS  /tmp/cc8X2vvc.s 			page 8
 
 
  211:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 work_ptr =   TX_UCHAR_POINTER_ADD(work_ptr, ((sizeof(TX_TRACE_OBJECT_ENTRY))*found)
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  215 009c 5160     		str	r1, [r2, #4]
  218:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 entry_ptr -> tx_trace_object_entry_param_2 =         parameter_2;
  216              		.loc 1 218 17 is_stmt 1 view .LVU81
-ARM GAS  /tmp/ccu5lD74.s 			page 9
+ARM GAS  /tmp/cc8X2vvc.s 			page 9
 
 
  217              		.loc 1 219 17 view .LVU82
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  248              		.loc 1 222 99 discriminator 2 view .LVU98
  249 00bc 03F10103 		add	r3, r3, #1
  250              	.LVL25:
-ARM GAS  /tmp/ccu5lD74.s 			page 10
+ARM GAS  /tmp/cc8X2vvc.s 			page 10
 
 
  222:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                 {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  276              		.loc 1 258 66 view .LVU110
  277 00d2 63F07F03 		orneq	r3, r3, #127
  278 00d6 04BF     		itt	eq
-ARM GAS  /tmp/ccu5lD74.s 			page 11
+ARM GAS  /tmp/cc8X2vvc.s 			page 11
 
 
  279 00d8 9370     		strbeq	r3, [r2, #2]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  295              	.LVL32:
  296              	.L13:
  297              		.cfi_restore_state
-ARM GAS  /tmp/ccu5lD74.s 			page 12
+ARM GAS  /tmp/cc8X2vvc.s 			page 12
 
 
  127:../Middlewares/threadx/common/src/tx_trace_object_register.c ****                     loop_break =  TX_TRUE;
@@ -704,14 +704,14 @@ ARM GAS  /tmp/ccu5lD74.s 			page 1
  332              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
  333              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  334              		.file 4 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/ccu5lD74.s 			page 13
+ARM GAS  /tmp/cc8X2vvc.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_trace_object_register.c
-     /tmp/ccu5lD74.s:26     .text._tx_trace_object_register:00000000 $t
-     /tmp/ccu5lD74.s:32     .text._tx_trace_object_register:00000000 _tx_trace_object_register
-     /tmp/ccu5lD74.s:323    .text._tx_trace_object_register:000000f0 $d
+     /tmp/cc8X2vvc.s:26     .text._tx_trace_object_register:00000000 $t
+     /tmp/cc8X2vvc.s:32     .text._tx_trace_object_register:00000000 _tx_trace_object_register
+     /tmp/cc8X2vvc.s:323    .text._tx_trace_object_register:000000f0 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

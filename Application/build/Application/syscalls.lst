@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccKCpmEs.s 			page 1
+ARM GAS  /tmp/ccfoIPb3.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
   34              		.loc 1 22 1 view -0
   35              		.cfi_startproc
   36              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccKCpmEs.s 			page 2
+ARM GAS  /tmp/ccfoIPb3.s 			page 2
 
 
   37              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
   82              		.loc 1 31 1 is_stmt 0 view .LVU9
   83 0000 08B5     		push	{r3, lr}
   84              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccKCpmEs.s 			page 3
+ARM GAS  /tmp/ccfoIPb3.s 			page 3
 
 
   85              		.cfi_offset 3, -8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  130              	.LBB7:
  131              	.LBB6:
   34:Src/syscalls.c ****   return -1;
-ARM GAS  /tmp/ccKCpmEs.s 			page 4
+ARM GAS  /tmp/ccfoIPb3.s 			page 4
 
 
  132              		.loc 1 34 3 view .LVU21
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
   45:Src/syscalls.c ****   (void)file;
  175              		.loc 1 45 1 view .LVU33
  176 0002 0D46     		mov	r5, r1
-ARM GAS  /tmp/ccKCpmEs.s 			page 5
+ARM GAS  /tmp/ccfoIPb3.s 			page 5
 
 
  177 0004 1446     		mov	r4, r2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
   59:Src/syscalls.c ****   (void)file;
  220              		.loc 1 59 3 view .LVU44
   60:Src/syscalls.c ****   int DataIdx;
-ARM GAS  /tmp/ccKCpmEs.s 			page 6
+ARM GAS  /tmp/ccfoIPb3.s 			page 6
 
 
  221              		.loc 1 60 3 view .LVU45
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  263              		.global	_close
  264              		.syntax unified
  265              		.thumb
-ARM GAS  /tmp/ccKCpmEs.s 			page 7
+ARM GAS  /tmp/ccfoIPb3.s 			page 7
 
 
  266              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  308              		.loc 1 79 15 view .LVU68
  309 0006 4B60     		str	r3, [r1, #4]
   80:Src/syscalls.c ****   return 0;
-ARM GAS  /tmp/ccKCpmEs.s 			page 8
+ARM GAS  /tmp/ccfoIPb3.s 			page 8
 
 
  310              		.loc 1 80 3 is_stmt 1 view .LVU69
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  357              		.loc 1 92 3 view .LVU78
   93:Src/syscalls.c ****   (void)dir;
  358              		.loc 1 93 3 view .LVU79
-ARM GAS  /tmp/ccKCpmEs.s 			page 9
+ARM GAS  /tmp/ccfoIPb3.s 			page 9
 
 
   94:Src/syscalls.c ****   return 0;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  405              		.section	.text._wait,"ax",%progbits
  406              		.align	1
  407              		.global	_wait
-ARM GAS  /tmp/ccKCpmEs.s 			page 10
+ARM GAS  /tmp/ccfoIPb3.s 			page 10
 
 
  408              		.syntax unified
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  453              		.loc 1 114 3 view .LVU99
  115:Src/syscalls.c ****   errno = ENOENT;
  454              		.loc 1 115 3 view .LVU100
-ARM GAS  /tmp/ccKCpmEs.s 			page 11
+ARM GAS  /tmp/ccfoIPb3.s 			page 11
 
 
  113:Src/syscalls.c ****   (void)name;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  503              		.thumb_func
  505              	_stat:
  506              	.LVL33:
-ARM GAS  /tmp/ccKCpmEs.s 			page 12
+ARM GAS  /tmp/ccfoIPb3.s 			page 12
 
 
  507              	.LFB39:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  547              		.cfi_def_cfa_offset 8
  548              		.cfi_offset 3, -8
  549              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccKCpmEs.s 			page 13
+ARM GAS  /tmp/ccfoIPb3.s 			page 13
 
 
  550              		.loc 1 136 3 view .LVU124
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  598              		.syntax unified
  599              		.thumb
  600              		.thumb_func
-ARM GAS  /tmp/ccKCpmEs.s 			page 14
+ARM GAS  /tmp/ccfoIPb3.s 			page 14
 
 
  602              	_execve:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  644              		@ frame_needed = 0, uses_anonymous_args = 0
  645              		@ link register save eliminated.
  646              	.LVL40:
-ARM GAS  /tmp/ccKCpmEs.s 			page 15
+ARM GAS  /tmp/ccfoIPb3.s 			page 15
 
 
  647              	.L25:
@@ -880,53 +880,53 @@ ARM GAS  /tmp/ccKCpmEs.s 			page 1
  681              		.file 8 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/stat.h"
  682              		.file 9 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/times.h"
  683              		.file 10 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/errno.h"
-ARM GAS  /tmp/ccKCpmEs.s 			page 16
+ARM GAS  /tmp/ccfoIPb3.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 syscalls.c
-     /tmp/ccKCpmEs.s:26     .text.initialise_monitor_handles:00000000 $t
-     /tmp/ccKCpmEs.s:32     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
-     /tmp/ccKCpmEs.s:45     .text._getpid:00000000 $t
-     /tmp/ccKCpmEs.s:51     .text._getpid:00000000 _getpid
-     /tmp/ccKCpmEs.s:66     .text._kill:00000000 $t
-     /tmp/ccKCpmEs.s:72     .text._kill:00000000 _kill
-     /tmp/ccKCpmEs.s:101    .text._exit:00000000 $t
-     /tmp/ccKCpmEs.s:107    .text._exit:00000000 _exit
-     /tmp/ccKCpmEs.s:152    .text._read:00000000 $t
-     /tmp/ccKCpmEs.s:158    .text._read:00000000 _read
-     /tmp/ccKCpmEs.s:207    .text._write:00000000 $t
-     /tmp/ccKCpmEs.s:213    .text._write:00000000 _write
-     /tmp/ccKCpmEs.s:262    .text._close:00000000 $t
-     /tmp/ccKCpmEs.s:268    .text._close:00000000 _close
-     /tmp/ccKCpmEs.s:287    .text._fstat:00000000 $t
-     /tmp/ccKCpmEs.s:293    .text._fstat:00000000 _fstat
-     /tmp/ccKCpmEs.s:317    .text._isatty:00000000 $t
-     /tmp/ccKCpmEs.s:323    .text._isatty:00000000 _isatty
-     /tmp/ccKCpmEs.s:342    .text._lseek:00000000 $t
-     /tmp/ccKCpmEs.s:348    .text._lseek:00000000 _lseek
-     /tmp/ccKCpmEs.s:369    .text._open:00000000 $t
-     /tmp/ccKCpmEs.s:375    .text._open:00000000 _open
-     /tmp/ccKCpmEs.s:406    .text._wait:00000000 $t
-     /tmp/ccKCpmEs.s:412    .text._wait:00000000 _wait
-     /tmp/ccKCpmEs.s:440    .text._unlink:00000000 $t
-     /tmp/ccKCpmEs.s:446    .text._unlink:00000000 _unlink
-     /tmp/ccKCpmEs.s:474    .text._times:00000000 $t
-     /tmp/ccKCpmEs.s:480    .text._times:00000000 _times
-     /tmp/ccKCpmEs.s:499    .text._stat:00000000 $t
-     /tmp/ccKCpmEs.s:505    .text._stat:00000000 _stat
-     /tmp/ccKCpmEs.s:529    .text._link:00000000 $t
-     /tmp/ccKCpmEs.s:535    .text._link:00000000 _link
-     /tmp/ccKCpmEs.s:564    .text._fork:00000000 $t
-     /tmp/ccKCpmEs.s:570    .text._fork:00000000 _fork
-     /tmp/ccKCpmEs.s:596    .text._execve:00000000 $t
-     /tmp/ccKCpmEs.s:602    .text._execve:00000000 _execve
-     /tmp/ccKCpmEs.s:632    .text.assert_failed:00000000 $t
-     /tmp/ccKCpmEs.s:638    .text.assert_failed:00000000 assert_failed
-     /tmp/ccKCpmEs.s:662    .data.environ:00000000 environ
-     /tmp/ccKCpmEs.s:659    .data.environ:00000000 $d
-     /tmp/ccKCpmEs.s:669    .bss.__env:00000000 __env
-     /tmp/ccKCpmEs.s:666    .bss.__env:00000000 $d
+     /tmp/ccfoIPb3.s:26     .text.initialise_monitor_handles:00000000 $t
+     /tmp/ccfoIPb3.s:32     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
+     /tmp/ccfoIPb3.s:45     .text._getpid:00000000 $t
+     /tmp/ccfoIPb3.s:51     .text._getpid:00000000 _getpid
+     /tmp/ccfoIPb3.s:66     .text._kill:00000000 $t
+     /tmp/ccfoIPb3.s:72     .text._kill:00000000 _kill
+     /tmp/ccfoIPb3.s:101    .text._exit:00000000 $t
+     /tmp/ccfoIPb3.s:107    .text._exit:00000000 _exit
+     /tmp/ccfoIPb3.s:152    .text._read:00000000 $t
+     /tmp/ccfoIPb3.s:158    .text._read:00000000 _read
+     /tmp/ccfoIPb3.s:207    .text._write:00000000 $t
+     /tmp/ccfoIPb3.s:213    .text._write:00000000 _write
+     /tmp/ccfoIPb3.s:262    .text._close:00000000 $t
+     /tmp/ccfoIPb3.s:268    .text._close:00000000 _close
+     /tmp/ccfoIPb3.s:287    .text._fstat:00000000 $t
+     /tmp/ccfoIPb3.s:293    .text._fstat:00000000 _fstat
+     /tmp/ccfoIPb3.s:317    .text._isatty:00000000 $t
+     /tmp/ccfoIPb3.s:323    .text._isatty:00000000 _isatty
+     /tmp/ccfoIPb3.s:342    .text._lseek:00000000 $t
+     /tmp/ccfoIPb3.s:348    .text._lseek:00000000 _lseek
+     /tmp/ccfoIPb3.s:369    .text._open:00000000 $t
+     /tmp/ccfoIPb3.s:375    .text._open:00000000 _open
+     /tmp/ccfoIPb3.s:406    .text._wait:00000000 $t
+     /tmp/ccfoIPb3.s:412    .text._wait:00000000 _wait
+     /tmp/ccfoIPb3.s:440    .text._unlink:00000000 $t
+     /tmp/ccfoIPb3.s:446    .text._unlink:00000000 _unlink
+     /tmp/ccfoIPb3.s:474    .text._times:00000000 $t
+     /tmp/ccfoIPb3.s:480    .text._times:00000000 _times
+     /tmp/ccfoIPb3.s:499    .text._stat:00000000 $t
+     /tmp/ccfoIPb3.s:505    .text._stat:00000000 _stat
+     /tmp/ccfoIPb3.s:529    .text._link:00000000 $t
+     /tmp/ccfoIPb3.s:535    .text._link:00000000 _link
+     /tmp/ccfoIPb3.s:564    .text._fork:00000000 $t
+     /tmp/ccfoIPb3.s:570    .text._fork:00000000 _fork
+     /tmp/ccfoIPb3.s:596    .text._execve:00000000 $t
+     /tmp/ccfoIPb3.s:602    .text._execve:00000000 _execve
+     /tmp/ccfoIPb3.s:632    .text.assert_failed:00000000 $t
+     /tmp/ccfoIPb3.s:638    .text.assert_failed:00000000 assert_failed
+     /tmp/ccfoIPb3.s:662    .data.environ:00000000 environ
+     /tmp/ccfoIPb3.s:659    .data.environ:00000000 $d
+     /tmp/ccfoIPb3.s:669    .bss.__env:00000000 __env
+     /tmp/ccfoIPb3.s:666    .bss.__env:00000000 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
                            .group:00000000 wm4.newlib.h.27.b904f6f8971bd921b436e5701877de32
@@ -940,7 +940,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
                            .group:00000000 wm4.stddef.h.173.4903093a50a8482cb062b176ea61fac3
                            .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
-ARM GAS  /tmp/ccKCpmEs.s 			page 17
+ARM GAS  /tmp/ccfoIPb3.s 			page 17
 
 
                            .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03

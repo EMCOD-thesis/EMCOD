@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cci2MtAV.s 			page 1
+ARM GAS  /tmp/ccB5mCGr.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
-ARM GAS  /tmp/cci2MtAV.s 			page 2
+ARM GAS  /tmp/ccB5mCGr.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** /*                                                                        */ 
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** /*  05-19-2020     Chaoqiong Xiao           Initial Version 6.0           */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** /*  09-30-2020     Chaoqiong Xiao           Modified comment(s),          */
-ARM GAS  /tmp/cci2MtAV.s 			page 3
+ARM GAS  /tmp/ccB5mCGr.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** /*                                            resulting in version 6.1    */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  119:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
  120:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****     /* Get the pointer to the DCD.  */
  121:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****     dcd =  &_ux_system_slave -> ux_system_slave_dcd;
-ARM GAS  /tmp/cci2MtAV.s 			page 4
+ARM GAS  /tmp/ccB5mCGr.s 			page 4
 
 
   52              		.loc 1 121 5 view .LVU14
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
   89              	.LVL3:
  121:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
   90              		.loc 1 121 30 view .LVU28
-ARM GAS  /tmp/cci2MtAV.s 			page 5
+ARM GAS  /tmp/ccB5mCGr.s 			page 5
 
 
   91 001c 1668     		ldr	r6, [r2]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  133              		.loc 1 145 26 is_stmt 0 view .LVU46
  134 004c 48F02008 		orr	r8, r8, #32
  135              	.LVL13:
-ARM GAS  /tmp/cci2MtAV.s 			page 6
+ARM GAS  /tmp/ccB5mCGr.s 			page 6
 
 
  146:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****         }                   
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  199:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****         if (((request_type & UX_REQUEST_TYPE) == UX_REQUEST_TYPE_CLASS) ||
  137              		.loc 1 199 9 view .LVU48
  138              	.L4:
-ARM GAS  /tmp/cci2MtAV.s 			page 7
+ARM GAS  /tmp/ccB5mCGr.s 			page 7
 
 
  200:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             ((request_type & UX_REQUEST_TYPE) == UX_REQUEST_TYPE_VENDOR))
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  240:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****                         if ((request_index & 0xFF) != class_index)
  152              		.loc 1 240 44 view .LVU56
  153 005a E4B2     		uxtb	r4, r4
-ARM GAS  /tmp/cci2MtAV.s 			page 8
+ARM GAS  /tmp/ccB5mCGr.s 			page 8
 
 
  154              	.LVL16:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  244:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
  245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****                 /* Memorize the class in the command.  */
  246:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****                 class_command.ux_slave_class_command_class_ptr = class_ptr;
-ARM GAS  /tmp/cci2MtAV.s 			page 9
+ARM GAS  /tmp/ccB5mCGr.s 			page 9
 
 
  191              		.loc 1 246 17 is_stmt 1 view .LVU72
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  222              	.L13:
  267:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
  268:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             /* We are done for class/vendor request.  */
-ARM GAS  /tmp/cci2MtAV.s 			page 10
+ARM GAS  /tmp/ccB5mCGr.s 			page 10
 
 
  269:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             return(status);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  264              		.loc 1 167 17 is_stmt 1 view .LVU97
  167:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****                 {
  265              		.loc 1 167 20 is_stmt 0 view .LVU98
-ARM GAS  /tmp/cci2MtAV.s 			page 11
+ARM GAS  /tmp/ccB5mCGr.s 			page 11
 
 
  266 00e2 68B9     		cbnz	r0, .L7
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  294:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             dcd -> ux_slave_dcd_device_address =  request_value;
  295:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c **** 
  296:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             /* Force the new address.  */
-ARM GAS  /tmp/cci2MtAV.s 			page 12
+ARM GAS  /tmp/ccB5mCGr.s 			page 12
 
 
  297:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             status =  dcd -> ux_slave_dcd_function(dcd, UX_DCD_SET_DEVICE_ADDRESS, (VOID *) (ALIGN_
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  287              		.loc 1 350 1 is_stmt 0 view .LVU108
  288 00f8 2846     		mov	r0, r5
  289 00fa 11B0     		add	sp, sp, #68
-ARM GAS  /tmp/cci2MtAV.s 			page 13
+ARM GAS  /tmp/ccB5mCGr.s 			page 13
 
 
  290              		.cfi_remember_state
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  336              		.p2align 1
  337              	.L12:
  240:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****                             continue;
-ARM GAS  /tmp/cci2MtAV.s 			page 14
+ARM GAS  /tmp/ccB5mCGr.s 			page 14
 
 
  338              		.loc 1 240 25 view .LVU117
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  380              	.LVL43:
  283:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             break;
  381              		.loc 1 283 23 view .LVU130
-ARM GAS  /tmp/cci2MtAV.s 			page 15
+ARM GAS  /tmp/ccB5mCGr.s 			page 15
 
 
  382 017e F0E7     		b	.L54
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  423 01a0 FFF7FEFF 		bl	_ux_device_stack_descriptor_send
  424              	.LVL53:
  302:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             break;
-ARM GAS  /tmp/cci2MtAV.s 			page 16
+ARM GAS  /tmp/ccB5mCGr.s 			page 16
 
 
  425              		.loc 1 302 23 view .LVU144
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  465 01c0 FFF7FEFF 		bl	_ux_device_stack_alternate_setting_set
  466              	.LVL64:
  327:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_control_request_process.c ****             break;
-ARM GAS  /tmp/cci2MtAV.s 			page 17
+ARM GAS  /tmp/ccB5mCGr.s 			page 17
 
 
  467              		.loc 1 327 23 view .LVU159
@@ -994,16 +994,16 @@ ARM GAS  /tmp/cci2MtAV.s 			page 1
  494              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
  495              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
  496              		.file 6 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
-ARM GAS  /tmp/cci2MtAV.s 			page 18
+ARM GAS  /tmp/ccB5mCGr.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_control_request_process.c
-     /tmp/cci2MtAV.s:26     .text._ux_device_stack_control_request_process:00000000 $t
-     /tmp/cci2MtAV.s:32     .text._ux_device_stack_control_request_process:00000000 _ux_device_stack_control_request_process
-     /tmp/cci2MtAV.s:322    .text._ux_device_stack_control_request_process:00000120 $d
-     /tmp/cci2MtAV.s:336    .text._ux_device_stack_control_request_process:00000154 $t
-     /tmp/cci2MtAV.s:486    .text._ux_device_stack_control_request_process:000001d0 $d
+     /tmp/ccB5mCGr.s:26     .text._ux_device_stack_control_request_process:00000000 $t
+     /tmp/ccB5mCGr.s:32     .text._ux_device_stack_control_request_process:00000000 _ux_device_stack_control_request_process
+     /tmp/ccB5mCGr.s:322    .text._ux_device_stack_control_request_process:00000120 $d
+     /tmp/ccB5mCGr.s:336    .text._ux_device_stack_control_request_process:00000154 $t
+     /tmp/ccB5mCGr.s:486    .text._ux_device_stack_control_request_process:000001d0 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

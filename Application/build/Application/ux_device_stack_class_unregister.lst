@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1YzTmR.s 			page 1
+ARM GAS  /tmp/ccLiWtsM.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** 
-ARM GAS  /tmp/cc1YzTmR.s 			page 2
+ARM GAS  /tmp/ccLiWtsM.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** /**************************************************************************/
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** UINT  _ux_device_stack_class_unregister(UCHAR *class_name,
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****                         UINT (*class_entry_function)(struct UX_SLAVE_CLASS_COMMAND_STRUCT *))
-ARM GAS  /tmp/cc1YzTmR.s 			page 3
+ARM GAS  /tmp/ccLiWtsM.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
   66 0010 FFF7FEFF 		bl	_ux_utility_string_length_check
   67              	.LVL2:
  101:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****     if (status)
-ARM GAS  /tmp/cc1YzTmR.s 			page 4
+ARM GAS  /tmp/ccLiWtsM.s 			page 4
 
 
   68              		.loc 1 101 5 is_stmt 1 view .LVU13
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
  140:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****             }
  141:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****         }
  142:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** 
-ARM GAS  /tmp/cc1YzTmR.s 			page 5
+ARM GAS  /tmp/ccLiWtsM.s 			page 5
 
 
  143:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** #if UX_MAX_SLAVE_CLASS_DRIVER > 1
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
  119 0040 0994     		str	r4, [sp, #36]
  126:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****             
  120              		.loc 1 126 17 is_stmt 1 view .LVU31
-ARM GAS  /tmp/cc1YzTmR.s 			page 6
+ARM GAS  /tmp/ccLiWtsM.s 			page 6
 
 
  126:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c ****             
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
  166:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** /*    This function checks errors in device stack class unregister        */
  167:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** /*    function call.                                                      */
  168:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** /*                                                                        */
-ARM GAS  /tmp/cc1YzTmR.s 			page 7
+ARM GAS  /tmp/ccLiWtsM.s 			page 7
 
 
  169:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_unregister.c **** /*  INPUT                                                                 */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
  173 000a 7047     		bx	lr
  174              		.cfi_endproc
  175              	.LFE4:
-ARM GAS  /tmp/cc1YzTmR.s 			page 8
+ARM GAS  /tmp/ccLiWtsM.s 			page 8
 
 
  177              		.text
@@ -427,16 +427,16 @@ ARM GAS  /tmp/cc1YzTmR.s 			page 1
  180              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  181              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
  182              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
-ARM GAS  /tmp/cc1YzTmR.s 			page 9
+ARM GAS  /tmp/ccLiWtsM.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_class_unregister.c
-     /tmp/cc1YzTmR.s:26     .text._ux_device_stack_class_unregister:00000000 $t
-     /tmp/cc1YzTmR.s:32     .text._ux_device_stack_class_unregister:00000000 _ux_device_stack_class_unregister
-     /tmp/cc1YzTmR.s:140    .text._ux_device_stack_class_unregister:00000050 $d
-     /tmp/cc1YzTmR.s:145    .text._uxe_device_stack_class_unregister:00000000 $t
-     /tmp/cc1YzTmR.s:151    .text._uxe_device_stack_class_unregister:00000000 _uxe_device_stack_class_unregister
+     /tmp/ccLiWtsM.s:26     .text._ux_device_stack_class_unregister:00000000 $t
+     /tmp/ccLiWtsM.s:32     .text._ux_device_stack_class_unregister:00000000 _ux_device_stack_class_unregister
+     /tmp/ccLiWtsM.s:140    .text._ux_device_stack_class_unregister:00000050 $d
+     /tmp/ccLiWtsM.s:145    .text._uxe_device_stack_class_unregister:00000000 $t
+     /tmp/ccLiWtsM.s:151    .text._uxe_device_stack_class_unregister:00000000 _uxe_device_stack_class_unregister
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

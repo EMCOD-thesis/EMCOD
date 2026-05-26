@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccrlkHNE.s 			page 1
+ARM GAS  /tmp/ccrVETO1.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
   23:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** 
   25:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** 
-ARM GAS  /tmp/ccrlkHNE.s 			page 2
+ARM GAS  /tmp/ccrVETO1.s 			page 2
 
 
   26:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** /* Include necessary system files.  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
   76:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** ULONG           combined_flags;
   38              		.loc 1 76 1 view .LVU1
   77:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** TX_THREAD       *current_thread;
-ARM GAS  /tmp/ccrlkHNE.s 			page 3
+ARM GAS  /tmp/ccrVETO1.s 			page 3
 
 
   39              		.loc 1 77 1 view .LVU2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
   71              		.loc 1 97 12 view .LVU16
   72 0012 A342     		cmp	r3, r4
   73 0014 44D0     		beq	.L1
-ARM GAS  /tmp/ccrlkHNE.s 			page 4
+ARM GAS  /tmp/ccrVETO1.s 			page 4
 
 
   74              	.LBB41:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
   43:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    own special types that can be mapped to actual data types by this   */
   44:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    file to guarantee consistency in the interface and functionality.   */
   45:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccrlkHNE.s 			page 5
+ARM GAS  /tmp/ccrVETO1.s 			page 5
 
 
   46:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file replaces the previous Cortex-M55 files. It unifies        */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  100:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  101:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__
  102:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <intrinsics.h>                         /* IAR Intrinsics */
-ARM GAS  /tmp/ccrlkHNE.s 			page 6
+ARM GAS  /tmp/ccrVETO1.s 			page 6
 
 
  103:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define __asm__                 __asm           /* Define to make all inline asm from each compiler
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  157:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  158:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _txe_thread_secure_stack_allocate
  159:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _txe_thread_secure_stack_free
-ARM GAS  /tmp/ccrlkHNE.s 			page 7
+ARM GAS  /tmp/ccrVETO1.s 			page 7
 
 
  160:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  214:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
  215:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  216:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
-ARM GAS  /tmp/ccrlkHNE.s 			page 8
+ARM GAS  /tmp/ccrVETO1.s 			page 8
 
 
  217:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TRACE_TIME_SOURCE
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  271:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_secure_stack_context;    \
  272:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                         VOID    *tx_thread_iar_tls_pointer;
  273:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/ccrlkHNE.s 			page 9
+ARM GAS  /tmp/ccrVETO1.s 			page 9
 
 
  274:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  328:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_PRE_SCHEDULER_INITIALIZATION               do {__iar_Initlocks();} while(0
  329:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  330:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* No IAR library support. */
-ARM GAS  /tmp/ccrlkHNE.s 			page 10
+ARM GAS  /tmp/ccrVETO1.s 			page 10
 
 
  331:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  385:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_vfp_state;                          
  386:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_control_get();         
  387:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_vfp_state & ~((ULONG) 0
-ARM GAS  /tmp/ccrlkHNE.s 			page 11
+ARM GAS  /tmp/ccrVETO1.s 			page 11
 
 
  388:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_control_set(_tx_vfp_state);            
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  442:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
  443:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
  444:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_vfp_state;                      
-ARM GAS  /tmp/ccrlkHNE.s 			page 12
+ARM GAS  /tmp/ccrVETO1.s 			page 12
 
 
  445:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_misra_control_get()
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  499:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  500:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  501:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the get system state macro.  */
-ARM GAS  /tmp/ccrlkHNE.s 			page 13
+ARM GAS  /tmp/ccrVETO1.s 			page 13
 
 
  502:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  556:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #error "Compiler not supported."
  557:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  558:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccrlkHNE.s 			page 14
+ARM GAS  /tmp/ccrVETO1.s 			page 14
 
 
  559:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
   90              		.syntax unified
   91              	@ 569 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
   92 0016 EFF31083 		MRS  r3, PRIMASK 
-ARM GAS  /tmp/ccrlkHNE.s 			page 15
+ARM GAS  /tmp/ccrVETO1.s 			page 15
 
 
   93              	@ 0 "" 2
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  138 004e 8A42     		cmp	r2, r1
  139 0050 07D9     		bls	.L8
  140              	.L7:
-ARM GAS  /tmp/ccrlkHNE.s 			page 16
+ARM GAS  /tmp/ccrVETO1.s 			page 16
 
 
  141              		.loc 1 103 13 is_stmt 1 discriminator 12 view .LVU36
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  184              	.LBE51:
  185              	.LBE50:
  604:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/ccrlkHNE.s 			page 17
+ARM GAS  /tmp/ccrVETO1.s 			page 17
 
 
  186              		.loc 2 604 5 is_stmt 1 view .LVU50
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  234              		.loc 2 563 55 view .LVU63
  235              	.LBB57:
-ARM GAS  /tmp/ccrlkHNE.s 			page 18
+ARM GAS  /tmp/ccrVETO1.s 			page 18
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  107:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** #ifdef TX_THREAD_ENABLE_PERFORMANCE_INFO
  108:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c **** 
  109:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c ****             /* Determine if an idle system return is present.  */
-ARM GAS  /tmp/ccrlkHNE.s 			page 19
+ARM GAS  /tmp/ccrVETO1.s 			page 19
 
 
  110:../Middlewares/threadx/common/src/tx_thread_system_preempt_check.c ****             if (thread_ptr == TX_NULL)
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  304              		.loc 2 511 5 view .LVU85
  511:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  305              		.loc 2 511 5 is_stmt 0 view .LVU86
-ARM GAS  /tmp/ccrlkHNE.s 			page 20
+ARM GAS  /tmp/ccrVETO1.s 			page 20
 
 
  306              		.thumb
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  345              	.LVL22:
  346              	.LBB68:
  347              	.LBI68:
-ARM GAS  /tmp/ccrlkHNE.s 			page 21
+ARM GAS  /tmp/ccrVETO1.s 			page 21
 
 
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -1238,14 +1238,14 @@ ARM GAS  /tmp/ccrlkHNE.s 			page 1
  377              	.Letext0:
  378              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  379              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/ccrlkHNE.s 			page 22
+ARM GAS  /tmp/ccrVETO1.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_system_preempt_check.c
-     /tmp/ccrlkHNE.s:26     .text._tx_thread_system_preempt_check:00000000 $t
-     /tmp/ccrlkHNE.s:32     .text._tx_thread_system_preempt_check:00000000 _tx_thread_system_preempt_check
-     /tmp/ccrlkHNE.s:369    .text._tx_thread_system_preempt_check:000000a4 $d
+     /tmp/ccrVETO1.s:26     .text._tx_thread_system_preempt_check:00000000 $t
+     /tmp/ccrVETO1.s:32     .text._tx_thread_system_preempt_check:00000000 _tx_thread_system_preempt_check
+     /tmp/ccrVETO1.s:369    .text._tx_thread_system_preempt_check:000000a4 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

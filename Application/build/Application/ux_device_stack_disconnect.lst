@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0MAN15.s 			page 1
+ARM GAS  /tmp/ccp5ZsZp.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** 
-ARM GAS  /tmp/cc0MAN15.s 			page 2
+ARM GAS  /tmp/ccp5ZsZp.s 			page 2
 
 
   26:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** /* Include necessary system files.  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** /*                                                                        */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** /**************************************************************************/
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** UINT  _ux_device_stack_disconnect(VOID)
-ARM GAS  /tmp/cc0MAN15.s 			page 3
+ARM GAS  /tmp/ccp5ZsZp.s 			page 3
 
 
   83:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
  104:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c ****     /* If trace is enabled, register this object.  */
  105:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c ****     UX_TRACE_OBJECT_UNREGISTER(device);
   65              		.loc 1 105 39 view .LVU14
-ARM GAS  /tmp/cc0MAN15.s 			page 4
+ARM GAS  /tmp/ccp5ZsZp.s 			page 4
 
 
  106:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
  146:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c ****             interface_ptr =  next_interface;
  147:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c ****         }
  148:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** #endif
-ARM GAS  /tmp/cc0MAN15.s 			page 5
+ARM GAS  /tmp/ccp5ZsZp.s 			page 5
 
 
  149:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
  172:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c ****         _ux_system_slave -> ux_system_slave_change_function(UX_DEVICE_REMOVED);
  111              		.loc 1 172 9 is_stmt 1 view .LVU34
  112 0038 0A20     		movs	r0, #10
-ARM GAS  /tmp/cc0MAN15.s 			page 6
+ARM GAS  /tmp/ccp5ZsZp.s 			page 6
 
 
  113 003a 9847     		blx	r3
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
  150              	.L4:
  138:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** #endif
  151              		.loc 1 138 13 is_stmt 1 view .LVU49
-ARM GAS  /tmp/cc0MAN15.s 			page 7
+ARM GAS  /tmp/ccp5ZsZp.s 			page 7
 
 
  138:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_disconnect.c **** #endif
@@ -400,14 +400,14 @@ ARM GAS  /tmp/cc0MAN15.s 			page 1
  182              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  183              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  184              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
-ARM GAS  /tmp/cc0MAN15.s 			page 8
+ARM GAS  /tmp/ccp5ZsZp.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_disconnect.c
-     /tmp/cc0MAN15.s:26     .text._ux_device_stack_disconnect:00000000 $t
-     /tmp/cc0MAN15.s:32     .text._ux_device_stack_disconnect:00000000 _ux_device_stack_disconnect
-     /tmp/cc0MAN15.s:175    .text._ux_device_stack_disconnect:0000006c $d
+     /tmp/ccp5ZsZp.s:26     .text._ux_device_stack_disconnect:00000000 $t
+     /tmp/ccp5ZsZp.s:32     .text._ux_device_stack_disconnect:00000000 _ux_device_stack_disconnect
+     /tmp/ccp5ZsZp.s:175    .text._ux_device_stack_disconnect:0000006c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
