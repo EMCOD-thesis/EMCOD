@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9owemA.s 			page 1
+ARM GAS  /tmp/ccwMN5Aj.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
   22:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
   23:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
-ARM GAS  /tmp/cc9owemA.s 			page 2
+ARM GAS  /tmp/ccwMN5Aj.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
   37              		@ args = 0, pretend = 0, frame = 8
   38              		@ frame_needed = 0, uses_anonymous_args = 0
   77:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
-ARM GAS  /tmp/cc9owemA.s 			page 3
+ARM GAS  /tmp/ccwMN5Aj.s 			page 3
 
 
   78:../Middlewares/threadx/common/src/tx_semaphore_put.c **** TX_INTERRUPT_SAVE_AREA
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
   31:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  AUTHOR                                                                */
   32:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   33:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    Scott Larson, Microsoft Corporation                                 */
-ARM GAS  /tmp/cc9owemA.s 			page 4
+ARM GAS  /tmp/ccwMN5Aj.s 			page 4
 
 
   34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
   88:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_INCLUDE_USER_DEFINE_FILE
   89:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   90:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Yes, include the user defines in tx_user.h. The defines in this file may
-ARM GAS  /tmp/cc9owemA.s 			page 5
+ARM GAS  /tmp/ccwMN5Aj.s 			page 5
 
 
   91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  145:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    Note: error checking is enabled by default.  */
  146:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  147:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_DISABLE_ERROR_CHECKING
-ARM GAS  /tmp/cc9owemA.s 			page 6
+ARM GAS  /tmp/ccwMN5Aj.s 			page 6
 
 
  148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  202:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  203:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INT_DISABLE                          1           /* Disable interrupts               */
  204:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INT_ENABLE                           0           /* Enable interrupts                */
-ARM GAS  /tmp/cc9owemA.s 			page 7
+ARM GAS  /tmp/ccwMN5Aj.s 			page 7
 
 
  205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  259:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  260:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_THREAD control block extensions for this port. The main reason
  261:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for the multiple macros is so that backward compatibility can be maintained with
-ARM GAS  /tmp/cc9owemA.s 			page 8
+ARM GAS  /tmp/ccwMN5Aj.s 			page 8
 
 
  262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  316:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    _tx_iar_destroy_per_thread_tls_area(void *tls_ptr);
  317:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    __iar_Initlocks(void);
  318:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)                      thread_ptr -> tx_thread_iar_tls
-ARM GAS  /tmp/cc9owemA.s 			page 9
+ARM GAS  /tmp/ccwMN5Aj.s 			page 9
 
 
  319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  373:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  374:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Touch VFP register in order to flush. Works for AC6/GCC/IAR compilers. */
  375:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_VFP_TOUCH()  __asm__ volatile ("VMOV.F32 s0, s0");
-ARM GAS  /tmp/cc9owemA.s 			page 10
+ARM GAS  /tmp/ccwMN5Aj.s 			page 10
 
 
  376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  430:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_control_get
  431:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_vfp_state &
  432:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_control_set(_tx_vfp_state);
-ARM GAS  /tmp/cc9owemA.s 			page 11
+ARM GAS  /tmp/ccwMN5Aj.s 			page 11
 
 
  433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  487:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_CREATE_EXTENSION(timer_ptr)
  488:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  489:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc9owemA.s 			page 12
+ARM GAS  /tmp/ccwMN5Aj.s 			page 12
 
 
  490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  544:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  545:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  546:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc9owemA.s 			page 13
+ARM GAS  /tmp/ccwMN5Aj.s 			page 13
 
 
  547:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_DISABLE_INLINE
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  598:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  599:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     int_posture = __get_interrupt_posture();
   52              		.loc 2 599 5 view .LVU10
-ARM GAS  /tmp/cc9owemA.s 			page 14
+ARM GAS  /tmp/ccwMN5Aj.s 			page 14
 
 
   53              	.LBB17:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
   93              		.loc 2 606 5 view .LVU20
   94              	.LVL2:
-ARM GAS  /tmp/cc9owemA.s 			page 15
+ARM GAS  /tmp/ccwMN5Aj.s 			page 15
 
 
   95              		.loc 2 606 5 is_stmt 0 view .LVU21
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  132              		.syntax unified
  133              	.LBE25:
  134              	.LBE24:
-ARM GAS  /tmp/cc9owemA.s 			page 16
+ARM GAS  /tmp/ccwMN5Aj.s 			page 16
 
 
  135              		.loc 1 103 5 discriminator 1 view .LVU35
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  189              	.LVL13:
  190              		.loc 1 103 5 view .LVU57
  191              		.loc 1 103 5 is_stmt 0 discriminator 10 view .LVU58
-ARM GAS  /tmp/cc9owemA.s 			page 17
+ARM GAS  /tmp/ccwMN5Aj.s 			page 17
 
 
  192 005a 264A     		ldr	r2, .L27+20
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  120:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Pickup the application notify function.  */
  121:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         semaphore_put_notify =  semaphore_ptr -> tx_semaphore_put_notify;
  230              		.loc 1 121 30 is_stmt 0 view .LVU74
-ARM GAS  /tmp/cc9owemA.s 			page 18
+ARM GAS  /tmp/ccwMN5Aj.s 			page 18
 
 
  231 0078 E669     		ldr	r6, [r4, #28]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  139:../Middlewares/threadx/common/src/tx_semaphore_put.c ****     {
  140:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
  141:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* A thread is suspended on this semaphore.  */
-ARM GAS  /tmp/cc9owemA.s 			page 19
+ARM GAS  /tmp/ccwMN5Aj.s 			page 19
 
 
  142:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  196:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         TX_RESTORE
  197:../Middlewares/threadx/common/src/tx_semaphore_put.c **** #else
  198:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
-ARM GAS  /tmp/cc9owemA.s 			page 20
+ARM GAS  /tmp/ccwMN5Aj.s 			page 20
 
 
  199:../Middlewares/threadx/common/src/tx_semaphore_put.c ****         /* Temporarily disable preemption.  */
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  287              		.loc 1 103 5 view .LVU92
  103:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
  288              		.loc 1 103 5 is_stmt 0 discriminator 7 view .LVU93
-ARM GAS  /tmp/cc9owemA.s 			page 21
+ARM GAS  /tmp/ccwMN5Aj.s 			page 21
 
 
  289 009a 4FF0F031 		movcs	r1, #-252645136
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  328 00be 0167     		strne	r1, [r0, #112]
  174:../Middlewares/threadx/common/src/tx_semaphore_put.c **** 
  329              		.loc 1 174 55 view .LVU109
-ARM GAS  /tmp/cc9owemA.s 			page 22
+ARM GAS  /tmp/ccwMN5Aj.s 			page 22
 
 
  330 00c0 2361     		str	r3, [r4, #16]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  365              		.loc 2 586 55 view .LVU129
  366              	.LBB30:
-ARM GAS  /tmp/cc9owemA.s 			page 23
+ARM GAS  /tmp/ccwMN5Aj.s 			page 23
 
 
  591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -1365,14 +1365,14 @@ ARM GAS  /tmp/cc9owemA.s 			page 1
  404              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  405              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  406              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/cc9owemA.s 			page 24
+ARM GAS  /tmp/ccwMN5Aj.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_semaphore_put.c
-     /tmp/cc9owemA.s:26     .text._tx_semaphore_put:00000000 $t
-     /tmp/cc9owemA.s:32     .text._tx_semaphore_put:00000000 _tx_semaphore_put
-     /tmp/cc9owemA.s:389    .text._tx_semaphore_put:000000e0 $d
+     /tmp/ccwMN5Aj.s:26     .text._tx_semaphore_put:00000000 $t
+     /tmp/ccwMN5Aj.s:32     .text._tx_semaphore_put:00000000 _tx_semaphore_put
+     /tmp/ccwMN5Aj.s:389    .text._tx_semaphore_put:000000e0 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

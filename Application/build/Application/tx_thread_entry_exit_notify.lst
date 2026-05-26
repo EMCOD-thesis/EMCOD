@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc6FNTpL.s 			page 1
+ARM GAS  /tmp/cc80PKcV.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
   22:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c **** 
   23:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c **** 
-ARM GAS  /tmp/cc6FNTpL.s 			page 2
+ARM GAS  /tmp/cc80PKcV.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
   35              		.loc 1 78 1 view -0
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cc6FNTpL.s 			page 3
+ARM GAS  /tmp/cc80PKcV.s 			page 3
 
 
   38              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
   34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   35:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  DESCRIPTION                                                           */
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/cc6FNTpL.s 			page 4
+ARM GAS  /tmp/cc80PKcV.s 			page 4
 
 
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
   91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
   92:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
-ARM GAS  /tmp/cc6FNTpL.s 			page 5
+ARM GAS  /tmp/cc80PKcV.s 			page 5
 
 
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  149:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services without error checking.  */
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc6FNTpL.s 			page 6
+ARM GAS  /tmp/cc80PKcV.s 			page 6
 
 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  206:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
-ARM GAS  /tmp/cc6FNTpL.s 			page 7
+ARM GAS  /tmp/cc80PKcV.s 			page 7
 
 
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
  263:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
-ARM GAS  /tmp/cc6FNTpL.s 			page 8
+ARM GAS  /tmp/cc80PKcV.s 			page 8
 
 
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  320:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
-ARM GAS  /tmp/cc6FNTpL.s 			page 9
+ARM GAS  /tmp/cc80PKcV.s 			page 9
 
 
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  377:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc6FNTpL.s 			page 10
+ARM GAS  /tmp/cc80PKcV.s 			page 10
 
 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
  434:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
-ARM GAS  /tmp/cc6FNTpL.s 			page 11
+ARM GAS  /tmp/cc80PKcV.s 			page 11
 
 
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
  491:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
-ARM GAS  /tmp/cc6FNTpL.s 			page 12
+ARM GAS  /tmp/cc80PKcV.s 			page 12
 
 
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  547:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_DISABLE_INLINE
  548:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
-ARM GAS  /tmp/cc6FNTpL.s 			page 13
+ARM GAS  /tmp/cc80PKcV.s 			page 13
 
 
  550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
   48              	.LBB15:
   49              	.LBI15:
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
-ARM GAS  /tmp/cc6FNTpL.s 			page 14
+ARM GAS  /tmp/cc80PKcV.s 			page 14
 
 
   50              		.loc 2 563 55 view .LVU6
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
   91              		.loc 2 606 5 view .LVU15
   92              	.LVL2:
-ARM GAS  /tmp/cc6FNTpL.s 			page 15
+ARM GAS  /tmp/cc80PKcV.s 			page 15
 
 
   93              		.loc 2 606 5 is_stmt 0 view .LVU16
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  139              	.LVL6:
  140              		.loc 1 96 5 is_stmt 1 discriminator 1 view .LVU32
  141 0026 2468     		ldr	r4, [r4]
-ARM GAS  /tmp/cc6FNTpL.s 			page 16
+ARM GAS  /tmp/cc80PKcV.s 			page 16
 
 
  142              	.LVL7:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  196 0060 144B     		ldr	r3, .L15+28
  197              	.LVL14:
  198              		.loc 1 96 5 is_stmt 0 discriminator 10 view .LVU56
-ARM GAS  /tmp/cc6FNTpL.s 			page 17
+ARM GAS  /tmp/cc80PKcV.s 			page 17
 
 
  199 0062 1B68     		ldr	r3, [r3]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  106:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c **** 
  107:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c ****     /* Return success to caller.  */
  108:../Middlewares/threadx/common/src/tx_thread_entry_exit_notify.c ****     return(TX_SUCCESS);
-ARM GAS  /tmp/cc6FNTpL.s 			page 18
+ARM GAS  /tmp/cc80PKcV.s 			page 18
 
 
  241              		.loc 1 108 5 is_stmt 1 view .LVU72
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  284              	.LBE26:
  285              		.cfi_endproc
  286              	.LFE8:
-ARM GAS  /tmp/cc6FNTpL.s 			page 19
+ARM GAS  /tmp/cc80PKcV.s 			page 19
 
 
  288              		.text
@@ -1086,14 +1086,14 @@ ARM GAS  /tmp/cc6FNTpL.s 			page 1
  290              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  291              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  292              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/cc6FNTpL.s 			page 20
+ARM GAS  /tmp/cc80PKcV.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_entry_exit_notify.c
-     /tmp/cc6FNTpL.s:26     .text._tx_thread_entry_exit_notify:00000000 $t
-     /tmp/cc6FNTpL.s:32     .text._tx_thread_entry_exit_notify:00000000 _tx_thread_entry_exit_notify
-     /tmp/cc6FNTpL.s:275    .text._tx_thread_entry_exit_notify:00000098 $d
+     /tmp/cc80PKcV.s:26     .text._tx_thread_entry_exit_notify:00000000 $t
+     /tmp/cc80PKcV.s:32     .text._tx_thread_entry_exit_notify:00000000 _tx_thread_entry_exit_notify
+     /tmp/cc80PKcV.s:275    .text._tx_thread_entry_exit_notify:00000098 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

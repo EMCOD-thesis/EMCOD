@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccMkO3BU.s 			page 1
+ARM GAS  /tmp/ccvAo9HA.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
   22:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
   23:../Middlewares/threadx/common/src/txe_block_pool_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
-ARM GAS  /tmp/ccMkO3BU.s 			page 2
+ARM GAS  /tmp/ccvAo9HA.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
   79:../Middlewares/threadx/common/src/txe_block_pool_create.c **** /*                                                                        */
   80:../Middlewares/threadx/common/src/txe_block_pool_create.c **** /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
   81:../Middlewares/threadx/common/src/txe_block_pool_create.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
-ARM GAS  /tmp/ccMkO3BU.s 			page 3
+ARM GAS  /tmp/ccvAo9HA.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/txe_block_pool_create.c **** /*                                            resulting in version 6.1    */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
   64              		.loc 1 103 8 view .LVU11
   65 000e 0446     		mov	r4, r0
   66 0010 10B9     		cbnz	r0, .L2
-ARM GAS  /tmp/ccMkO3BU.s 			page 4
+ARM GAS  /tmp/ccvAo9HA.s 			page 4
 
 
   67              	.LVL2:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  152:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
  153:../Middlewares/threadx/common/src/txe_block_pool_create.c ****         /* Restore interrupts.  */
  154:../Middlewares/threadx/common/src/txe_block_pool_create.c ****         TX_RESTORE
-ARM GAS  /tmp/ccMkO3BU.s 			page 5
+ARM GAS  /tmp/ccvAo9HA.s 			page 5
 
 
  155:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  209:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
  210:../Middlewares/threadx/common/src/txe_block_pool_create.c ****                         /* Invalid caller of this function, return appropriate error code.  */
  211:../Middlewares/threadx/common/src/txe_block_pool_create.c ****                         status =  TX_CALLER_ERROR;
-ARM GAS  /tmp/ccMkO3BU.s 			page 6
+ARM GAS  /tmp/ccvAo9HA.s 			page 6
 
 
  212:../Middlewares/threadx/common/src/txe_block_pool_create.c ****                     }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
   23:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   24:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
   25:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccMkO3BU.s 			page 7
+ARM GAS  /tmp/ccvAo9HA.s 			page 7
 
 
   26:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  PORT SPECIFIC C INFORMATION                            RELEASE        */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
   80:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.2.1  */
   81:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   82:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
-ARM GAS  /tmp/ccMkO3BU.s 			page 8
+ARM GAS  /tmp/ccvAo9HA.s 			page 8
 
 
   83:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  137:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    stuff when the include file is processed by the ThreadX source. */
  138:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  139:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_SOURCE_CODE
-ARM GAS  /tmp/ccMkO3BU.s 			page 9
+ARM GAS  /tmp/ccvAo9HA.s 			page 9
 
 
  140:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  194:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* By default, ThreadX for Cortex-M uses the PRIMASK register to enable/disable interrupts.
  195:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** If using BASEPRI is desired, define the following two symbols for both c and assembly files:
  196:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** TX_PORT_USE_BASEPRI - This tells ThreadX to use BASEPRI instead of PRIMASK.
-ARM GAS  /tmp/ccMkO3BU.s 			page 10
+ARM GAS  /tmp/ccvAo9HA.s 			page 10
 
 
  197:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** TX_PORT_BASEPRI = (priority_mask << (8 - number_priority_bits)) - this defines the maximum priority
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  251:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    logic.  */
  252:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  253:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
-ARM GAS  /tmp/ccMkO3BU.s 			page 11
+ARM GAS  /tmp/ccvAo9HA.s 			page 11
 
 
  254:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_ENABLE_STACK_CHECKING
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  308:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_USER_EXTENSION
  309:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  310:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccMkO3BU.s 			page 12
+ARM GAS  /tmp/ccvAo9HA.s 			page 12
 
 
  311:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  365:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  366:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  367:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void _tx_control_set(ULONG control_value)
-ARM GAS  /tmp/ccMkO3BU.s 			page 13
+ARM GAS  /tmp/ccvAo9HA.s 			page 13
 
 
  368:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  422:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             if (_tx_fpccr == ((ULONG) 0x01))       
  423:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             {                                      
  424:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
-ARM GAS  /tmp/ccMkO3BU.s 			page 14
+ARM GAS  /tmp/ccvAo9HA.s 			page 14
 
 
  425:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_control_get(); 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  479:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object creation extensions for the remaining objects.  */
  480:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  481:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_CREATE_EXTENSION(pool_ptr)
-ARM GAS  /tmp/ccMkO3BU.s 			page 15
+ARM GAS  /tmp/ccvAo9HA.s 			page 15
 
 
  482:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_CREATE_EXTENSION(pool_ptr)
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  536:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_PRE_INITIALIZATION             _tx_thread_secure_stack_initialize();
  537:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  538:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccMkO3BU.s 			page 16
+ARM GAS  /tmp/ccvAo9HA.s 			page 16
 
 
  539:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the macro to ensure _tx_thread_preempt_disable is set early in initialization in order to
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  593:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  594:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  595:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline UINT __disable_interrupts(void)
-ARM GAS  /tmp/ccMkO3BU.s 			page 17
+ARM GAS  /tmp/ccvAo9HA.s 			page 17
 
 
   85              		.loc 2 595 55 view .LVU17
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  121 0024 1A68     		ldr	r2, [r3]
  122              	.LVL7:
  124:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
-ARM GAS  /tmp/ccMkO3BU.s 			page 18
+ARM GAS  /tmp/ccvAo9HA.s 			page 18
 
 
  123              		.loc 1 124 35 view .LVU30
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  148:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
  165              		.loc 1 148 9 is_stmt 1 view .LVU43
  166              	.LBB26:
-ARM GAS  /tmp/ccMkO3BU.s 			page 19
+ARM GAS  /tmp/ccvAo9HA.s 			page 19
 
 
  167              	.LBI26:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  209              	.LBI30:
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  210              		.loc 2 586 55 view .LVU58
-ARM GAS  /tmp/ccMkO3BU.s 			page 20
+ARM GAS  /tmp/ccvAo9HA.s 			page 20
 
 
  211              	.LBB31:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  249              		.loc 1 194 20 view .LVU74
  250 006a 1A68     		ldr	r2, [r3]
  100:../Middlewares/threadx/common/src/txe_block_pool_create.c **** 
-ARM GAS  /tmp/ccMkO3BU.s 			page 21
+ARM GAS  /tmp/ccvAo9HA.s 			page 21
 
 
  251              		.loc 1 100 12 view .LVU75
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  292              		.syntax unified
  293              	@ 510 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
  294 0082 EFF30582 		 MRS  r2,IPSR 
-ARM GAS  /tmp/ccMkO3BU.s 			page 22
+ARM GAS  /tmp/ccvAo9HA.s 			page 22
 
 
  295              	@ 0 "" 2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  339              	.L6:
  340              		.cfi_restore_state
  143:../Middlewares/threadx/common/src/txe_block_pool_create.c ****             }
-ARM GAS  /tmp/ccMkO3BU.s 			page 23
+ARM GAS  /tmp/ccvAo9HA.s 			page 23
 
 
  341              		.loc 1 143 17 is_stmt 1 view .LVU100
@@ -1368,14 +1368,14 @@ ARM GAS  /tmp/ccMkO3BU.s 			page 1
  379              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  380              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
  381              		.file 6 "../Middlewares/threadx/common/inc/tx_block_pool.h"
-ARM GAS  /tmp/ccMkO3BU.s 			page 24
+ARM GAS  /tmp/ccvAo9HA.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_block_pool_create.c
-     /tmp/ccMkO3BU.s:26     .text._txe_block_pool_create:00000000 $t
-     /tmp/ccMkO3BU.s:32     .text._txe_block_pool_create:00000000 _txe_block_pool_create
-     /tmp/ccMkO3BU.s:367    .text._txe_block_pool_create:000000b8 $d
+     /tmp/ccvAo9HA.s:26     .text._txe_block_pool_create:00000000 $t
+     /tmp/ccvAo9HA.s:32     .text._txe_block_pool_create:00000000 _txe_block_pool_create
+     /tmp/ccvAo9HA.s:367    .text._txe_block_pool_create:000000b8 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

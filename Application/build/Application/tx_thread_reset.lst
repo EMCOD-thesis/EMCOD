@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccC0sAM2.s 			page 1
+ARM GAS  /tmp/ccuG9N5C.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
   22:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
   23:../Middlewares/threadx/common/src/tx_thread_reset.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
-ARM GAS  /tmp/ccC0sAM2.s 			page 2
+ARM GAS  /tmp/ccuG9N5C.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
   37              		@ args = 0, pretend = 0, frame = 0
   38              		@ frame_needed = 0, uses_anonymous_args = 0
   77:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
-ARM GAS  /tmp/ccC0sAM2.s 			page 3
+ARM GAS  /tmp/ccuG9N5C.s 			page 3
 
 
   78:../Middlewares/threadx/common/src/tx_thread_reset.c **** TX_INTERRUPT_SAVE_AREA
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
   38:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    real-time kernel function identically on a variety of different     */
-ARM GAS  /tmp/ccC0sAM2.s 			page 4
+ARM GAS  /tmp/ccuG9N5C.s 			page 4
 
 
   39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
   95:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccC0sAM2.s 			page 5
+ARM GAS  /tmp/ccuG9N5C.s 			page 5
 
 
   96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
  152:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _tx_thread_secure_stack_free
-ARM GAS  /tmp/ccC0sAM2.s 			page 6
+ARM GAS  /tmp/ccuG9N5C.s 			page 6
 
 
  153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
  209:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    source constants would be:
-ARM GAS  /tmp/ccC0sAM2.s 			page 7
+ARM GAS  /tmp/ccuG9N5C.s 			page 7
 
 
  210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
  266:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccC0sAM2.s 			page 8
+ARM GAS  /tmp/ccuG9N5C.s 			page 8
 
 
  267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
  323:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     if(thread_ptr -> tx_thread_secu
-ARM GAS  /tmp/ccC0sAM2.s 			page 9
+ARM GAS  /tmp/ccuG9N5C.s 			page 9
 
 
  324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
  380:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    in order to ensure no lazy stacking will occur. */
-ARM GAS  /tmp/ccC0sAM2.s 			page 10
+ARM GAS  /tmp/ccuG9N5C.s 			page 10
 
 
  381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  437:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/ccC0sAM2.s 			page 11
+ARM GAS  /tmp/ccuG9N5C.s 			page 11
 
 
  438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
  494:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_DELETE_EXTENSION(group_ptr)
-ARM GAS  /tmp/ccC0sAM2.s 			page 12
+ARM GAS  /tmp/ccuG9N5C.s 			page 12
 
 
  495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
  550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
  551:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       (b) = (UINT) __CLZ(__RBIT((m)));
-ARM GAS  /tmp/ccC0sAM2.s 			page 13
+ARM GAS  /tmp/ccuG9N5C.s 			page 13
 
 
  552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
   53              		.loc 2 563 55 view .LVU9
   54              	.LBB22:
-ARM GAS  /tmp/ccC0sAM2.s 			page 14
+ARM GAS  /tmp/ccuG9N5C.s 			page 14
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
   95              		.loc 2 606 5 is_stmt 0 view .LVU19
   96              		.thumb
   97              		.syntax unified
-ARM GAS  /tmp/ccC0sAM2.s 			page 15
+ARM GAS  /tmp/ccuG9N5C.s 			page 15
 
 
   98              	.LBE25:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  121:../Middlewares/threadx/common/src/tx_thread_reset.c ****         /* Modify the thread status to prevent additional reset calls.  */
  122:../Middlewares/threadx/common/src/tx_thread_reset.c ****         thread_ptr -> tx_thread_state =  TX_NOT_DONE;
  119              		.loc 1 122 9 is_stmt 1 view .LVU27
-ARM GAS  /tmp/ccC0sAM2.s 			page 16
+ARM GAS  /tmp/ccuG9N5C.s 			page 16
 
 
  120              		.loc 1 122 39 is_stmt 0 view .LVU28
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  144:../Middlewares/threadx/common/src/tx_thread_reset.c ****         TX_DISABLE
  150              		.loc 1 144 9 view .LVU35
  151              	.LBB29:
-ARM GAS  /tmp/ccC0sAM2.s 			page 17
+ARM GAS  /tmp/ccuG9N5C.s 			page 17
 
 
  152              	.LBI29:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  191 003c 244E     		ldr	r6, .L17+8
  192              	.LBE33:
  147:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
-ARM GAS  /tmp/ccC0sAM2.s 			page 18
+ARM GAS  /tmp/ccuG9N5C.s 			page 18
 
 
  193              		.loc 1 147 39 view .LVU50
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  233              	.LBE37:
  161:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
  162:../Middlewares/threadx/common/src/tx_thread_reset.c ****     /* Return completion status to caller.  */
-ARM GAS  /tmp/ccC0sAM2.s 			page 19
+ARM GAS  /tmp/ccuG9N5C.s 			page 19
 
 
  163:../Middlewares/threadx/common/src/tx_thread_reset.c ****     return(status);
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  273 0062 C86B     		ldr	r0, [r1, #60]
  274 0064 CA6A     		ldr	r2, [r1, #44]
  275              	.LVL21:
-ARM GAS  /tmp/ccC0sAM2.s 			page 20
+ARM GAS  /tmp/ccuG9N5C.s 			page 20
 
 
  150:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  314 0094 13D8     		bhi	.L7
  150:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
  315              		.loc 1 150 9 is_stmt 1 discriminator 10 view .LVU95
-ARM GAS  /tmp/ccC0sAM2.s 			page 21
+ARM GAS  /tmp/ccuG9N5C.s 			page 21
 
 
  316 0096 144B     		ldr	r3, .L17+32
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  150:../Middlewares/threadx/common/src/tx_thread_reset.c **** 
  355              		.loc 1 150 9 discriminator 7 view .LVU111
  356 00ba 0022     		movcs	r2, #0
-ARM GAS  /tmp/ccC0sAM2.s 			page 22
+ARM GAS  /tmp/ccuG9N5C.s 			page 22
 
 
  357 00bc D7E7     		b	.L6
@@ -1307,14 +1307,14 @@ ARM GAS  /tmp/ccC0sAM2.s 			page 1
  395              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  396              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
  397              		.file 6 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/string.h"
-ARM GAS  /tmp/ccC0sAM2.s 			page 23
+ARM GAS  /tmp/ccuG9N5C.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_reset.c
-     /tmp/ccC0sAM2.s:26     .text._tx_thread_reset:00000000 $t
-     /tmp/ccC0sAM2.s:32     .text._tx_thread_reset:00000000 _tx_thread_reset
-     /tmp/ccC0sAM2.s:379    .text._tx_thread_reset:000000c8 $d
+     /tmp/ccuG9N5C.s:26     .text._tx_thread_reset:00000000 $t
+     /tmp/ccuG9N5C.s:32     .text._tx_thread_reset:00000000 _tx_thread_reset
+     /tmp/ccuG9N5C.s:379    .text._tx_thread_reset:000000c8 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

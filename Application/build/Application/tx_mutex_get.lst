@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccj4mTax.s 			page 1
+ARM GAS  /tmp/ccauCw19.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
   22:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
   23:../Middlewares/threadx/common/src/tx_mutex_get.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
-ARM GAS  /tmp/ccj4mTax.s 			page 2
+ARM GAS  /tmp/ccauCw19.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
   35              		.loc 1 78 1 view -0
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccj4mTax.s 			page 3
+ARM GAS  /tmp/ccauCw19.s 			page 3
 
 
   38              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
   28:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    tx_port.h                                         Cortex-M55/GNU    */
   29:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                           6.2.1        */
   30:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccj4mTax.s 			page 4
+ARM GAS  /tmp/ccauCw19.s 			page 4
 
 
   31:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  AUTHOR                                                                */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
   85:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_H
   86:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   87:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if the optional ThreadX user define file should be used.  */
-ARM GAS  /tmp/ccj4mTax.s 			page 5
+ARM GAS  /tmp/ccauCw19.s 			page 5
 
 
   88:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_INCLUDE_USER_DEFINE_FILE
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  142:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if error checking is desired.  If so, map API functions
  143:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    to the appropriate error checking front-ends.  Otherwise, map API
  144:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    functions to the core functions that actually perform the work.
-ARM GAS  /tmp/ccj4mTax.s 			page 6
+ARM GAS  /tmp/ccauCw19.s 			page 6
 
 
  145:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    Note: error checking is enabled by default.  */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  199:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
  200:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  201:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define various constants for the ThreadX Cortex-M port.  */
-ARM GAS  /tmp/ccj4mTax.s 			page 7
+ARM GAS  /tmp/ccauCw19.s 			page 7
 
 
  202:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  256:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  257:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  258:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccj4mTax.s 			page 8
+ARM GAS  /tmp/ccauCw19.s 			page 8
 
 
  259:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  313:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    tx_thread_shell_entry, and tx_thread_terminate.  */
  314:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
  315:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    *_tx_iar_create_per_thread_tls_area(void);
-ARM GAS  /tmp/ccj4mTax.s 			page 9
+ARM GAS  /tmp/ccauCw19.s 			page 9
 
 
  316:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    _tx_iar_destroy_per_thread_tls_area(void *tls_ptr);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  370:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  371:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  372:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* __GNUC__ */
-ARM GAS  /tmp/ccj4mTax.s 			page 10
+ARM GAS  /tmp/ccauCw19.s 			page 10
 
 
  373:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  427:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 TX_VFP_TOUCH();                    
  428:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 if (_tx_vfp_state == ((ULONG) 0))  
  429:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 {                                  
-ARM GAS  /tmp/ccj4mTax.s 			page 11
+ARM GAS  /tmp/ccauCw19.s 			page 11
 
 
  430:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_control_get
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  484:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_CREATE_EXTENSION(mutex_ptr)
  485:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_CREATE_EXTENSION(queue_ptr)
  486:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_CREATE_EXTENSION(semaphore_ptr)
-ARM GAS  /tmp/ccj4mTax.s 			page 12
+ARM GAS  /tmp/ccauCw19.s 			page 12
 
 
  487:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_CREATE_EXTENSION(timer_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  541:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  542:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_POST_INITIALIZATION    _tx_thread_preempt_disable++;
  543:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccj4mTax.s 			page 13
+ARM GAS  /tmp/ccauCw19.s 			page 13
 
 
  544:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  596:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  597:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT int_posture;
   53              		.loc 2 597 1 view .LVU11
-ARM GAS  /tmp/ccj4mTax.s 			page 14
+ARM GAS  /tmp/ccauCw19.s 			page 14
 
 
  598:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
   93              		.loc 2 604 5 is_stmt 1 view .LVU21
   94              		.syntax unified
   95              	@ 604 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
-ARM GAS  /tmp/ccj4mTax.s 			page 15
+ARM GAS  /tmp/ccauCw19.s 			page 15
 
 
   96 000a 72B6     		CPSID i
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  133              		.syntax unified
  134              	@ 510 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
  135 0024 EFF30581 		 MRS  r1,IPSR 
-ARM GAS  /tmp/ccj4mTax.s 			page 16
+ARM GAS  /tmp/ccauCw19.s 			page 16
 
 
  136              	@ 0 "" 2
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  188              		.loc 1 104 5 is_stmt 1 view .LVU56
  189              		.loc 1 104 5 is_stmt 0 discriminator 9 view .LVU57
  190 0056 A268     		ldr	r2, [r4, #8]
-ARM GAS  /tmp/ccj4mTax.s 			page 17
+ARM GAS  /tmp/ccauCw19.s 			page 17
 
 
  191 0058 43F8042C 		str	r2, [r3, #-4]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  235              		.loc 1 113 5 is_stmt 1 view .LVU76
  236              		.loc 1 113 8 is_stmt 0 view .LVU77
  237 007e 73BB     		cbnz	r3, .L8
-ARM GAS  /tmp/ccj4mTax.s 			page 18
+ARM GAS  /tmp/ccauCw19.s 			page 18
 
 
  114:../Middlewares/threadx/common/src/tx_mutex_get.c ****     {
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  264              		.loc 1 141 16 is_stmt 0 view .LVU92
  265 009a DBB1     		cbz	r3, .L11
  142:../Middlewares/threadx/common/src/tx_mutex_get.c ****             {
-ARM GAS  /tmp/ccj4mTax.s 			page 19
+ARM GAS  /tmp/ccauCw19.s 			page 19
 
 
  143:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  291              	.LBI32:
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  292              		.loc 2 586 55 view .LVU105
-ARM GAS  /tmp/ccj4mTax.s 			page 20
+ARM GAS  /tmp/ccauCw19.s 			page 20
 
 
  293              	.LBB33:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  193:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
  194:../Middlewares/threadx/common/src/tx_mutex_get.c ****         /* Determine if the request specifies suspension.  */
  195:../Middlewares/threadx/common/src/tx_mutex_get.c ****         if (wait_option != TX_NO_WAIT)
-ARM GAS  /tmp/ccj4mTax.s 			page 21
+ARM GAS  /tmp/ccauCw19.s 			page 21
 
 
  196:../Middlewares/threadx/common/src/tx_mutex_get.c ****         {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  250:../Middlewares/threadx/common/src/tx_mutex_get.c ****                 /* Setup cleanup information, i.e. this mutex control
  251:../Middlewares/threadx/common/src/tx_mutex_get.c ****                    block.  */
  252:../Middlewares/threadx/common/src/tx_mutex_get.c ****                 thread_ptr -> tx_thread_suspend_control_block =  (VOID *) mutex_ptr;
-ARM GAS  /tmp/ccj4mTax.s 			page 22
+ARM GAS  /tmp/ccauCw19.s 			page 22
 
 
  253:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  307:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
  308:../Middlewares/threadx/common/src/tx_mutex_get.c ****                         /* Remember the new priority inheritance priority.  */
  309:../Middlewares/threadx/common/src/tx_mutex_get.c ****                         mutex_owner -> tx_thread_inherit_priority =  thread_ptr -> tx_thread_priori
-ARM GAS  /tmp/ccj4mTax.s 			page 23
+ARM GAS  /tmp/ccauCw19.s 			page 23
 
 
  310:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     }
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  364:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     if (thread_ptr -> tx_thread_priority < mutex_owner -> tx_thread_inherit_priorit
  365:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     {
  366:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
-ARM GAS  /tmp/ccj4mTax.s 			page 24
+ARM GAS  /tmp/ccauCw19.s 			page 24
 
 
  367:../Middlewares/threadx/common/src/tx_mutex_get.c ****                         /* Remember the new priority inheritance priority.  */
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  328 00bc 35BF     		itete	cc
  329 00be 0246     		movcc	r2, r0
  330              	.LVL28:
-ARM GAS  /tmp/ccj4mTax.s 			page 25
+ARM GAS  /tmp/ccauCw19.s 			page 25
 
 
  104:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  183:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
  369              		.loc 1 183 46 is_stmt 0 view .LVU133
  370 00e4 0133     		adds	r3, r3, #1
-ARM GAS  /tmp/ccj4mTax.s 			page 26
+ARM GAS  /tmp/ccauCw19.s 			page 26
 
 
  371 00e6 A360     		str	r3, [r4, #8]
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  252:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
  411              		.loc 1 252 63 view .LVU148
  412 00fc C5E91A34 		strd	r3, r4, [r5, #104]
-ARM GAS  /tmp/ccj4mTax.s 			page 27
+ARM GAS  /tmp/ccauCw19.s 			page 27
 
 
  258:../Middlewares/threadx/common/src/tx_mutex_get.c **** #endif
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  345:../Middlewares/threadx/common/src/tx_mutex_get.c **** 
  448              		.loc 1 345 43 is_stmt 0 view .LVU168
  449 0124 0133     		adds	r3, r3, #1
-ARM GAS  /tmp/ccj4mTax.s 			page 28
+ARM GAS  /tmp/ccauCw19.s 			page 28
 
 
  450 0126 1360     		str	r3, [r2]
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  372:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     {
  489              		.loc 1 372 24 is_stmt 0 view .LVU184
  490 0142 C36A     		ldr	r3, [r0, #44]
-ARM GAS  /tmp/ccj4mTax.s 			page 29
+ARM GAS  /tmp/ccauCw19.s 			page 29
 
 
  368:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     }
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  528              		.loc 1 279 21 is_stmt 1 view .LVU201
  279:../Middlewares/threadx/common/src/tx_mutex_get.c ****                     next_thread -> tx_thread_suspended_previous =   thread_ptr;
  529              		.loc 1 279 65 is_stmt 0 view .LVU202
-ARM GAS  /tmp/ccj4mTax.s 			page 30
+ARM GAS  /tmp/ccauCw19.s 			page 30
 
 
  530 016a CCF87050 		str	r5, [ip, #112]
@@ -1770,14 +1770,14 @@ ARM GAS  /tmp/ccj4mTax.s 			page 1
  555              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  556              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
  557              		.file 6 "../Middlewares/threadx/common/inc/tx_mutex.h"
-ARM GAS  /tmp/ccj4mTax.s 			page 31
+ARM GAS  /tmp/ccauCw19.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_mutex_get.c
-     /tmp/ccj4mTax.s:26     .text._tx_mutex_get:00000000 $t
-     /tmp/ccj4mTax.s:32     .text._tx_mutex_get:00000000 _tx_mutex_get
-     /tmp/ccj4mTax.s:538    .text._tx_mutex_get:00000174 $d
+     /tmp/ccauCw19.s:26     .text._tx_mutex_get:00000000 $t
+     /tmp/ccauCw19.s:32     .text._tx_mutex_get:00000000 _tx_mutex_get
+     /tmp/ccauCw19.s:538    .text._tx_mutex_get:00000174 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

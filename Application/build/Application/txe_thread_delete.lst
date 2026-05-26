@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cccbV64J.s 			page 1
+ARM GAS  /tmp/ccsxEXGy.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
   22:../Middlewares/threadx/common/src/txe_thread_delete.c **** 
   23:../Middlewares/threadx/common/src/txe_thread_delete.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_thread_delete.c **** 
-ARM GAS  /tmp/cccbV64J.s 			page 2
+ARM GAS  /tmp/ccsxEXGy.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_thread_delete.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
   39              		@ link register save eliminated.
   75:../Middlewares/threadx/common/src/txe_thread_delete.c **** 
   76:../Middlewares/threadx/common/src/txe_thread_delete.c **** UINT        status;
-ARM GAS  /tmp/cccbV64J.s 			page 3
+ARM GAS  /tmp/ccsxEXGy.s 			page 3
 
 
   40              		.loc 1 76 1 view .LVU1
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
   46:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file replaces the previous Cortex-M55 files. It unifies        */
   47:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    the Cortex-M55 compilers into one common file.                      */
   48:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/cccbV64J.s 			page 4
+ARM GAS  /tmp/ccsxEXGy.s 			page 4
 
 
   49:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  RELEASE HISTORY                                                       */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  103:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define __asm__                 __asm           /* Define to make all inline asm from each compiler
  104:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_control_get         __get_CONTROL
  105:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_control_set         __set_CONTROL
-ARM GAS  /tmp/cccbV64J.s 			page 5
+ARM GAS  /tmp/ccsxEXGy.s 			page 5
 
 
  106:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define _tx_ipsr_get            __get_IPSR
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  160:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  161:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_DISABLE_ERROR_CHECKING */
  162:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_SOURCE_CODE */
-ARM GAS  /tmp/cccbV64J.s 			page 6
+ARM GAS  /tmp/ccsxEXGy.s 			page 6
 
 
  163:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  217:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TRACE_TIME_SOURCE
  218:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    *((volatile ULONG *) 0xE0001004)
  219:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/cccbV64J.s 			page 7
+ARM GAS  /tmp/ccsxEXGy.s 			page 7
 
 
  220:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  274:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
  275:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_iar_tls_pointer;
  276:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/cccbV64J.s 			page 8
+ARM GAS  /tmp/ccsxEXGy.s 			page 8
 
 
  277:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  331:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_CREATE_EXTENSION(thread_ptr)
  332:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
  333:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      if(thread_ptr -> tx_thread_secu
-ARM GAS  /tmp/cccbV64J.s 			page 9
+ARM GAS  /tmp/ccsxEXGy.s 			page 9
 
 
  334:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  388:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_control_set(_tx_vfp_state);            
  389:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  390:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/cccbV64J.s 			page 10
+ARM GAS  /tmp/ccsxEXGy.s 			page 10
 
 
  391:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  445:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_misra_control_get()
  446:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_vfp_state & ~((ULON
  447:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_misra_control_set(_tx_vfp_state);  
-ARM GAS  /tmp/cccbV64J.s 			page 11
+ARM GAS  /tmp/ccsxEXGy.s 			page 11
 
 
  448:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  502:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  503:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_THREAD_GET_SYSTEM_STATE
  504:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
-ARM GAS  /tmp/cccbV64J.s 			page 12
+ARM GAS  /tmp/ccsxEXGy.s 			page 12
 
 
  505:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
   98:../Middlewares/threadx/common/src/txe_thread_delete.c **** 
   99:../Middlewares/threadx/common/src/txe_thread_delete.c ****         /* Thread pointer is invalid, return appropriate error code.  */
  100:../Middlewares/threadx/common/src/txe_thread_delete.c ****         status =  TX_THREAD_ERROR;
-ARM GAS  /tmp/cccbV64J.s 			page 13
+ARM GAS  /tmp/ccsxEXGy.s 			page 13
 
 
  101:../Middlewares/threadx/common/src/txe_thread_delete.c ****     }
@@ -764,14 +764,14 @@ ARM GAS  /tmp/cccbV64J.s 			page 1
  102              	.Letext0:
  103              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  104              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/cccbV64J.s 			page 14
+ARM GAS  /tmp/ccsxEXGy.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_thread_delete.c
-     /tmp/cccbV64J.s:26     .text._txe_thread_delete:00000000 $t
-     /tmp/cccbV64J.s:32     .text._txe_thread_delete:00000000 _txe_thread_delete
-     /tmp/cccbV64J.s:96     .text._txe_thread_delete:00000024 $d
+     /tmp/ccsxEXGy.s:26     .text._txe_thread_delete:00000000 $t
+     /tmp/ccsxEXGy.s:32     .text._txe_thread_delete:00000000 _txe_thread_delete
+     /tmp/ccsxEXGy.s:96     .text._txe_thread_delete:00000024 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

@@ -24,8 +24,12 @@
 #include "tx_user.h"
 #endif
 
-SYSTEM_CLOCK        =     6000000
-SYSTICK_CYCLES      =     ((SYSTEM_CLOCK / 100) -1)
+#ifndef TX_TIMER_TICKS_PER_SECOND
+#define TX_TIMER_TICKS_PER_SECOND 100
+#endif
+
+SYSTEM_CLOCK = 800000000
+SYSTICK_CYCLES = ((SYSTEM_CLOCK / TX_TIMER_TICKS_PER_SECOND) - 1)
 
 /* Setup the stack and heap areas.  */
 

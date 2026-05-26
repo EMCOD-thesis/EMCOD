@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cckqPSla.s 			page 1
+ARM GAS  /tmp/ccdGvp4N.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   22:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
   23:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
-ARM GAS  /tmp/cckqPSla.s 			page 2
+ARM GAS  /tmp/ccdGvp4N.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   79:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** /*                                            resulting in version 6.1    */
   80:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** /*                                                                        */
   81:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** /**************************************************************************/
-ARM GAS  /tmp/cckqPSla.s 			page 3
+ARM GAS  /tmp/ccdGvp4N.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** UINT  _tx_event_flags_info_get(TX_EVENT_FLAGS_GROUP *group_ptr, CHAR **name, ULONG *current_flags,
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
   38:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    real-time kernel function identically on a variety of different     */
-ARM GAS  /tmp/cckqPSla.s 			page 4
+ARM GAS  /tmp/ccdGvp4N.s 			page 4
 
 
   39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
   95:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cckqPSla.s 			page 5
+ARM GAS  /tmp/ccdGvp4N.s 			page 5
 
 
   96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
  152:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_free       _tx_thread_secure_stack_free
-ARM GAS  /tmp/cckqPSla.s 			page 6
+ARM GAS  /tmp/ccdGvp4N.s 			page 6
 
 
  153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
  209:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    source constants would be:
-ARM GAS  /tmp/cckqPSla.s 			page 7
+ARM GAS  /tmp/ccdGvp4N.s 			page 7
 
 
  210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
  266:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cckqPSla.s 			page 8
+ARM GAS  /tmp/ccdGvp4N.s 			page 8
 
 
  267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
  323:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     if(thread_ptr -> tx_thread_secu
-ARM GAS  /tmp/cckqPSla.s 			page 9
+ARM GAS  /tmp/ccdGvp4N.s 			page 9
 
 
  324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
  380:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    in order to ensure no lazy stacking will occur. */
-ARM GAS  /tmp/cckqPSla.s 			page 10
+ARM GAS  /tmp/ccdGvp4N.s 			page 10
 
 
  381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  437:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/cckqPSla.s 			page 11
+ARM GAS  /tmp/ccdGvp4N.s 			page 11
 
 
  438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
  494:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_DELETE_EXTENSION(group_ptr)
-ARM GAS  /tmp/cckqPSla.s 			page 12
+ARM GAS  /tmp/ccdGvp4N.s 			page 12
 
 
  495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
  550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
  551:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       (b) = (UINT) __CLZ(__RBIT((m)));
-ARM GAS  /tmp/cckqPSla.s 			page 13
+ARM GAS  /tmp/ccdGvp4N.s 			page 13
 
 
  552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
   50              		.loc 2 563 55 view .LVU6
   51              	.LBB16:
-ARM GAS  /tmp/cckqPSla.s 			page 14
+ARM GAS  /tmp/ccdGvp4N.s 			page 14
 
 
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   94              		.syntax unified
   95              	@ 604 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
   96 0014 72B6     		CPSID i
-ARM GAS  /tmp/cckqPSla.s 			page 15
+ARM GAS  /tmp/ccdGvp4N.s 			page 15
 
 
   97              	@ 0 "" 2
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  141              		.syntax unified
  142              	.LBE23:
  143              	.LBE22:
-ARM GAS  /tmp/cckqPSla.s 			page 16
+ARM GAS  /tmp/ccdGvp4N.s 			page 16
 
 
  144              		.loc 1 94 5 discriminator 1 view .LVU32
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  198              		.loc 1 94 5 discriminator 9 view .LVU54
  199 0060 224B     		ldr	r3, .L35+24
  200 0062 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/cckqPSla.s 			page 17
+ARM GAS  /tmp/ccdGvp4N.s 			page 17
 
 
  201 0064 A342     		cmp	r3, r4
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  239 0082 05D0     		beq	.L9
  111:../Middlewares/threadx/common/src/tx_event_flags_info_get.c ****     {
  112:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
-ARM GAS  /tmp/cckqPSla.s 			page 18
+ARM GAS  /tmp/ccdGvp4N.s 			page 18
 
 
  113:../Middlewares/threadx/common/src/tx_event_flags_info_get.c ****         /* Pickup the current flags and apply delayed clearing.  */
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  134:../Middlewares/threadx/common/src/tx_event_flags_info_get.c ****     {
  135:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
  136:../Middlewares/threadx/common/src/tx_event_flags_info_get.c ****         *next_group =  group_ptr -> tx_event_flags_group_created_next;
-ARM GAS  /tmp/cckqPSla.s 			page 19
+ARM GAS  /tmp/ccdGvp4N.s 			page 19
 
 
  271              		.loc 1 136 9 is_stmt 1 view .LVU87
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
   94:../Middlewares/threadx/common/src/tx_event_flags_info_get.c **** 
  310              		.loc 1 94 5 discriminator 6 view .LVU100
  311 00c4 4FF0FF31 		movcc	r1, #-1
-ARM GAS  /tmp/cckqPSla.s 			page 20
+ARM GAS  /tmp/ccdGvp4N.s 			page 20
 
 
  312              	.LVL24:
@@ -1178,14 +1178,14 @@ ARM GAS  /tmp/cckqPSla.s 			page 1
  343              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  344              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  345              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/cckqPSla.s 			page 21
+ARM GAS  /tmp/ccdGvp4N.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_event_flags_info_get.c
-     /tmp/cckqPSla.s:26     .text._tx_event_flags_info_get:00000000 $t
-     /tmp/cckqPSla.s:32     .text._tx_event_flags_info_get:00000000 _tx_event_flags_info_get
-     /tmp/cckqPSla.s:328    .text._tx_event_flags_info_get:000000d4 $d
+     /tmp/ccdGvp4N.s:26     .text._tx_event_flags_info_get:00000000 $t
+     /tmp/ccdGvp4N.s:32     .text._tx_event_flags_info_get:00000000 _tx_event_flags_info_get
+     /tmp/ccdGvp4N.s:328    .text._tx_event_flags_info_get:000000d4 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccAFiAWg.s 			page 1
+ARM GAS  /tmp/ccESRc46.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
   22:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
   23:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
-ARM GAS  /tmp/ccAFiAWg.s 			page 2
+ARM GAS  /tmp/ccESRc46.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
   79:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** {
   35              		.loc 1 79 1 view -0
   36              		.cfi_startproc
-ARM GAS  /tmp/ccAFiAWg.s 			page 3
+ARM GAS  /tmp/ccESRc46.s 			page 3
 
 
   37              		@ args = 0, pretend = 0, frame = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
   28:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    tx_port.h                                         Cortex-M55/GNU    */
   29:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                           6.2.1        */
   30:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccAFiAWg.s 			page 4
+ARM GAS  /tmp/ccESRc46.s 			page 4
 
 
   31:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  AUTHOR                                                                */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
   85:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_H
   86:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   87:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if the optional ThreadX user define file should be used.  */
-ARM GAS  /tmp/ccAFiAWg.s 			page 5
+ARM GAS  /tmp/ccESRc46.s 			page 5
 
 
   88:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_INCLUDE_USER_DEFINE_FILE
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  142:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Determine if error checking is desired.  If so, map API functions
  143:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    to the appropriate error checking front-ends.  Otherwise, map API
  144:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    functions to the core functions that actually perform the work.
-ARM GAS  /tmp/ccAFiAWg.s 			page 6
+ARM GAS  /tmp/ccESRc46.s 			page 6
 
 
  145:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    Note: error checking is enabled by default.  */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  199:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
  200:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  201:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define various constants for the ThreadX Cortex-M port.  */
-ARM GAS  /tmp/ccAFiAWg.s 			page 7
+ARM GAS  /tmp/ccESRc46.s 			page 7
 
 
  202:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  256:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  257:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  258:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccAFiAWg.s 			page 8
+ARM GAS  /tmp/ccESRc46.s 			page 8
 
 
  259:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  313:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    tx_thread_shell_entry, and tx_thread_terminate.  */
  314:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
  315:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    *_tx_iar_create_per_thread_tls_area(void);
-ARM GAS  /tmp/ccAFiAWg.s 			page 9
+ARM GAS  /tmp/ccESRc46.s 			page 9
 
 
  316:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void    _tx_iar_destroy_per_thread_tls_area(void *tls_ptr);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  370:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  371:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  372:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* __GNUC__ */
-ARM GAS  /tmp/ccAFiAWg.s 			page 10
+ARM GAS  /tmp/ccESRc46.s 			page 10
 
 
  373:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  427:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 TX_VFP_TOUCH();                    
  428:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 if (_tx_vfp_state == ((ULONG) 0))  
  429:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 {                                  
-ARM GAS  /tmp/ccAFiAWg.s 			page 11
+ARM GAS  /tmp/ccESRc46.s 			page 11
 
 
  430:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_control_get
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  484:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_CREATE_EXTENSION(mutex_ptr)
  485:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_CREATE_EXTENSION(queue_ptr)
  486:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_CREATE_EXTENSION(semaphore_ptr)
-ARM GAS  /tmp/ccAFiAWg.s 			page 12
+ARM GAS  /tmp/ccESRc46.s 			page 12
 
 
  487:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_CREATE_EXTENSION(timer_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  541:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  542:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_POST_INITIALIZATION    _tx_thread_preempt_disable++;
  543:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccAFiAWg.s 			page 13
+ARM GAS  /tmp/ccESRc46.s 			page 13
 
 
  544:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  596:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  597:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT int_posture;
   50              		.loc 2 597 1 view .LVU8
-ARM GAS  /tmp/ccAFiAWg.s 			page 14
+ARM GAS  /tmp/ccESRc46.s 			page 14
 
 
  598:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
   89              	.LVL2:
   90              		.loc 2 606 5 is_stmt 0 view .LVU19
   91              		.thumb
-ARM GAS  /tmp/ccAFiAWg.s 			page 15
+ARM GAS  /tmp/ccESRc46.s 			page 15
 
 
   92              		.syntax unified
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  124              		.loc 1 117 24 view .LVU33
  125 0026 F2B1     		cbz	r2, .L4
  118:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                     {
-ARM GAS  /tmp/ccAFiAWg.s 			page 16
+ARM GAS  /tmp/ccESRc46.s 			page 16
 
 
  119:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** #else
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  155:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                             next_thread -> tx_thread_suspended_previous =   previous_thread;
  156:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                             previous_thread -> tx_thread_suspended_next =   next_thread;
  157:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
-ARM GAS  /tmp/ccAFiAWg.s 			page 17
+ARM GAS  /tmp/ccESRc46.s 			page 17
 
 
  158:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                             /* Determine if we need to update the head pointer.  */
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  171:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
  172:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                             /* Timeout condition and the thread is still suspended on the semaphore
  173:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                                Setup return error status and resume the thread.  */
-ARM GAS  /tmp/ccAFiAWg.s 			page 18
+ARM GAS  /tmp/ccESRc46.s 			page 18
 
 
  174:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  201              		.syntax unified
  202              	.LBE25:
  203              	.LBE24:
-ARM GAS  /tmp/ccAFiAWg.s 			page 19
+ARM GAS  /tmp/ccESRc46.s 			page 19
 
 
  198:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  243              	.LBE26:
  204:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** #endif
  205:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c ****                       }
-ARM GAS  /tmp/ccAFiAWg.s 			page 20
+ARM GAS  /tmp/ccESRc46.s 			page 20
 
 
  206:../Middlewares/threadx/common/src/tx_semaphore_cleanup.c **** #ifndef TX_NOT_INTERRUPTABLE
@@ -1187,14 +1187,14 @@ ARM GAS  /tmp/ccAFiAWg.s 			page 1
  274              	.Letext0:
  275              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  276              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/ccAFiAWg.s 			page 21
+ARM GAS  /tmp/ccESRc46.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_semaphore_cleanup.c
-     /tmp/ccAFiAWg.s:26     .text._tx_semaphore_cleanup:00000000 $t
-     /tmp/ccAFiAWg.s:32     .text._tx_semaphore_cleanup:00000000 _tx_semaphore_cleanup
-     /tmp/ccAFiAWg.s:267    .text._tx_semaphore_cleanup:0000006c $d
+     /tmp/ccESRc46.s:26     .text._tx_semaphore_cleanup:00000000 $t
+     /tmp/ccESRc46.s:32     .text._tx_semaphore_cleanup:00000000 _tx_semaphore_cleanup
+     /tmp/ccESRc46.s:267    .text._tx_semaphore_cleanup:0000006c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

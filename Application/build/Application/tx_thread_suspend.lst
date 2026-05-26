@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccXZBbem.s 			page 1
+ARM GAS  /tmp/ccfQzeS7.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   22:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #define TX_SOURCE_CODE
   23:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
   24:../Middlewares/threadx/common/src/tx_thread_suspend.c **** /* Include necessary system files.  */
-ARM GAS  /tmp/ccXZBbem.s 			page 2
+ARM GAS  /tmp/ccfQzeS7.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #include "tx_api.h"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   79:../Middlewares/threadx/common/src/tx_thread_suspend.c **** UINT  _tx_thread_suspend(TX_THREAD *thread_ptr)
   80:../Middlewares/threadx/common/src/tx_thread_suspend.c **** {
   35              		.loc 1 80 1 view -0
-ARM GAS  /tmp/ccXZBbem.s 			page 3
+ARM GAS  /tmp/ccfQzeS7.s 			page 3
 
 
   36              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   35:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  DESCRIPTION                                                           */
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccXZBbem.s 			page 4
+ARM GAS  /tmp/ccfQzeS7.s 			page 4
 
 
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
   92:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
-ARM GAS  /tmp/ccXZBbem.s 			page 5
+ARM GAS  /tmp/ccfQzeS7.s 			page 5
 
 
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  149:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services without error checking.  */
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 6
+ARM GAS  /tmp/ccfQzeS7.s 			page 6
 
 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  206:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
-ARM GAS  /tmp/ccXZBbem.s 			page 7
+ARM GAS  /tmp/ccfQzeS7.s 			page 7
 
 
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
  263:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
-ARM GAS  /tmp/ccXZBbem.s 			page 8
+ARM GAS  /tmp/ccfQzeS7.s 			page 8
 
 
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  320:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
-ARM GAS  /tmp/ccXZBbem.s 			page 9
+ARM GAS  /tmp/ccfQzeS7.s 			page 9
 
 
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  377:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 10
+ARM GAS  /tmp/ccfQzeS7.s 			page 10
 
 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
  434:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
-ARM GAS  /tmp/ccXZBbem.s 			page 11
+ARM GAS  /tmp/ccfQzeS7.s 			page 11
 
 
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
  491:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
-ARM GAS  /tmp/ccXZBbem.s 			page 12
+ARM GAS  /tmp/ccfQzeS7.s 			page 12
 
 
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  547:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_DISABLE_INLINE
  548:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  549:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the TX_LOWEST_SET_BIT_CALCULATE macro for each compiler. */
-ARM GAS  /tmp/ccXZBbem.s 			page 13
+ARM GAS  /tmp/ccfQzeS7.s 			page 13
 
 
  550:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__       /* IAR Compiler */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   50              	.LBB19:
   51              	.LBI19:
  563:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
-ARM GAS  /tmp/ccXZBbem.s 			page 14
+ARM GAS  /tmp/ccfQzeS7.s 			page 14
 
 
   52              		.loc 2 563 55 view .LVU8
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
   92              	.LVL2:
   93              		.loc 2 606 5 is_stmt 0 view .LVU18
   94              		.thumb
-ARM GAS  /tmp/ccXZBbem.s 			page 15
+ARM GAS  /tmp/ccfQzeS7.s 			page 15
 
 
   95              		.syntax unified
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  137              		.thumb
  138              		.syntax unified
  139              	.LBE27:
-ARM GAS  /tmp/ccXZBbem.s 			page 16
+ARM GAS  /tmp/ccfQzeS7.s 			page 16
 
 
  140              	.LBE26:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  194              		.loc 1 97 5 is_stmt 1 view .LVU58
  195              	.LVL13:
  196              		.loc 1 97 5 view .LVU59
-ARM GAS  /tmp/ccXZBbem.s 			page 17
+ARM GAS  /tmp/ccfQzeS7.s 			page 17
 
 
  197              		.loc 1 97 5 is_stmt 0 discriminator 10 view .LVU60
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  108:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  109:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         /* Determine if we are in a thread context.  */
  110:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         if (TX_THREAD_GET_SYSTEM_STATE() == ((ULONG) 0))
-ARM GAS  /tmp/ccXZBbem.s 			page 18
+ARM GAS  /tmp/ccfQzeS7.s 			page 18
 
 
  241              		.loc 1 110 9 is_stmt 1 view .LVU77
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  279              	.L14:
  280              	.LBE31:
  121:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                 {
-ARM GAS  /tmp/ccXZBbem.s 			page 19
+ARM GAS  /tmp/ccfQzeS7.s 			page 19
 
 
  122:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  174:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         }
  175:../Middlewares/threadx/common/src/tx_thread_suspend.c ****     }
  176:../Middlewares/threadx/common/src/tx_thread_suspend.c ****     else if (thread_ptr -> tx_thread_state == TX_TERMINATED)
-ARM GAS  /tmp/ccXZBbem.s 			page 20
+ARM GAS  /tmp/ccfQzeS7.s 			page 20
 
 
  177:../Middlewares/threadx/common/src/tx_thread_suspend.c ****     {
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  301              		.loc 1 209 11 is_stmt 0 view .LVU97
  302 00a0 019D     		ldr	r5, [sp, #4]
  303              	.L1:
-ARM GAS  /tmp/ccXZBbem.s 			page 21
+ARM GAS  /tmp/ccfQzeS7.s 			page 21
 
 
  210:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  264:../Middlewares/threadx/common/src/tx_thread_suspend.c ****     if (thread_ptr -> tx_thread_state == TX_READY)
  265:../Middlewares/threadx/common/src/tx_thread_suspend.c ****     {
  266:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 22
+ARM GAS  /tmp/ccfQzeS7.s 			page 22
 
 
  267:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         /* Initialize status to success.  */
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  321:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  322:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #ifdef TX_ENABLE_EVENT_TRACE
  323:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 23
+ARM GAS  /tmp/ccfQzeS7.s 			page 23
 
 
  324:../Middlewares/threadx/common/src/tx_thread_suspend.c ****             /* Save the time stamp for later comparison to verify that
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  378:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         /* Determine if there are any other bits set in this preempt map.  */
  379:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         if (_tx_thread_preempted_maps[MAP_INDEX] == ((ULONG) 0))
  380:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         {
-ARM GAS  /tmp/ccXZBbem.s 			page 24
+ARM GAS  /tmp/ccfQzeS7.s 			page 24
 
 
  381:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  435:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  436:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         /* No, clear the active bit to signify this preempted map has nothing set. 
  437:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         TX_DIV32_BIT_SET(priority, priority_bit)
-ARM GAS  /tmp/ccXZBbem.s 			page 25
+ARM GAS  /tmp/ccfQzeS7.s 			page 25
 
 
  438:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         _tx_thread_preempted_map_active =  _tx_thread_preempted_map_active & (~(pri
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  492:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                                next thread to execute. This can be used by the trace analysis tool 
  493:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                                track of next thread execution.  */
  494:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                             entry_ptr -> tx_trace_buffer_entry_information_field_4 =  0;
-ARM GAS  /tmp/ccXZBbem.s 			page 26
+ARM GAS  /tmp/ccfQzeS7.s 			page 26
 
 
  495:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         }
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  549:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  550:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                     /* Yes, there was a thread preempted when it was using preemption-threshold.  *
  551:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 27
+ARM GAS  /tmp/ccfQzeS7.s 			page 27
 
 
  552:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #ifndef TX_NOT_INTERRUPTABLE
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  606:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #ifdef TX_ENABLE_EVENT_TRACE
  607:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  608:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         /* Check that the event time stamp is unchanged.  A different
-ARM GAS  /tmp/ccXZBbem.s 			page 28
+ARM GAS  /tmp/ccfQzeS7.s 			page 28
 
 
  609:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                            timestamp means that a later event wrote over the thread
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  663:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  664:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         /* Set the index to the beginning.  */
  665:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                         _tx_thread_performance__execute_log_index =  ((UINT) 0);
-ARM GAS  /tmp/ccXZBbem.s 			page 29
+ARM GAS  /tmp/ccfQzeS7.s 			page 29
 
 
  666:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                     }
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  720:../Middlewares/threadx/common/src/tx_thread_suspend.c ****             if (_tx_thread_performance_execute_log[_tx_thread_performance__execute_log_index] != _t
  721:../Middlewares/threadx/common/src/tx_thread_suspend.c ****             {
  722:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
-ARM GAS  /tmp/ccXZBbem.s 			page 30
+ARM GAS  /tmp/ccfQzeS7.s 			page 30
 
 
  723:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                 /* Move to next entry.  */
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  777:../Middlewares/threadx/common/src/tx_thread_suspend.c **** #endif
  778:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  779:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                 /* Determine if preemption should take place. This is only possible if the current 
-ARM GAS  /tmp/ccXZBbem.s 			page 31
+ARM GAS  /tmp/ccfQzeS7.s 			page 31
 
 
  780:../Middlewares/threadx/common/src/tx_thread_suspend.c ****                    not the same as the execute thread pointer AND the system state and preempt disa
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  834:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  835:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         /* Just set the delayed suspension flag.  */
  836:../Middlewares/threadx/common/src/tx_thread_suspend.c ****         thread_ptr -> tx_thread_delayed_suspend =  TX_TRUE;
-ARM GAS  /tmp/ccXZBbem.s 			page 32
+ARM GAS  /tmp/ccfQzeS7.s 			page 32
 
 
  837:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  338              	.L8:
   97:../Middlewares/threadx/common/src/tx_thread_suspend.c **** 
  339              		.loc 1 97 5 discriminator 11 view .LVU107
-ARM GAS  /tmp/ccXZBbem.s 			page 33
+ARM GAS  /tmp/ccfQzeS7.s 			page 33
 
 
  340 00c2 032D     		cmp	r5, #3
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  379              		.loc 2 591 5 view .LVU123
  380              		.syntax unified
-ARM GAS  /tmp/ccXZBbem.s 			page 34
+ARM GAS  /tmp/ccfQzeS7.s 			page 34
 
 
  381              	@ 591 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
@@ -2021,14 +2021,14 @@ ARM GAS  /tmp/ccXZBbem.s 			page 1
  415              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  416              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  417              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/ccXZBbem.s 			page 35
+ARM GAS  /tmp/ccfQzeS7.s 			page 35
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_suspend.c
-     /tmp/ccXZBbem.s:26     .text._tx_thread_suspend:00000000 $t
-     /tmp/ccXZBbem.s:32     .text._tx_thread_suspend:00000000 _tx_thread_suspend
-     /tmp/ccXZBbem.s:400    .text._tx_thread_suspend:000000ec $d
+     /tmp/ccfQzeS7.s:26     .text._tx_thread_suspend:00000000 $t
+     /tmp/ccfQzeS7.s:32     .text._tx_thread_suspend:00000000 _tx_thread_suspend
+     /tmp/ccfQzeS7.s:400    .text._tx_thread_suspend:000000ec $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc7cpfyU.s 			page 1
+ARM GAS  /tmp/ccsWGaPX.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
   22:../Middlewares/threadx/common/src/txe_byte_release.c **** 
   23:../Middlewares/threadx/common/src/txe_byte_release.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_byte_release.c **** 
-ARM GAS  /tmp/cc7cpfyU.s 			page 2
+ARM GAS  /tmp/ccsWGaPX.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_byte_release.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
   38              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc7cpfyU.s 			page 3
+ARM GAS  /tmp/ccsWGaPX.s 			page 3
 
 
   39              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
   63 000c 0CBF     		ite	eq
   64 000e 1321     		moveq	r1, #19
   65 0010 0021     		movne	r1, #0
-ARM GAS  /tmp/cc7cpfyU.s 			page 4
+ARM GAS  /tmp/ccsWGaPX.s 			page 4
 
 
   66              	.LVL4:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
   41:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    even C compilers for the same microprocessor.  ThreadX does not     */
   42:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    directly use native C data types.  Instead, ThreadX creates its     */
   43:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    own special types that can be mapped to actual data types by this   */
-ARM GAS  /tmp/cc7cpfyU.s 			page 5
+ARM GAS  /tmp/ccsWGaPX.s 			page 5
 
 
   44:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    file to guarantee consistency in the interface and functionality.   */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
   98:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <stdlib.h>
   99:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <string.h>
  100:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc7cpfyU.s 			page 6
+ARM GAS  /tmp/ccsWGaPX.s 			page 6
 
 
  101:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __ICCARM__
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  155:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  156:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services with error checking.  */
  157:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc7cpfyU.s 			page 7
+ARM GAS  /tmp/ccsWGaPX.s 			page 7
 
 
  158:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _txe_thread_secure_stack_allocate
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  212:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0x0000FFFFUL
  213:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  214:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** */
-ARM GAS  /tmp/cc7cpfyU.s 			page 8
+ARM GAS  /tmp/ccsWGaPX.s 			page 8
 
 
  215:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  269:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
  270:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in non-secure zone with calls to secure zone. */
  271:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2           VOID    *tx_thread_secure_stack_context;    \
-ARM GAS  /tmp/cc7cpfyU.s 			page 9
+ARM GAS  /tmp/ccsWGaPX.s 			page 9
 
 
  272:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                         VOID    *tx_thread_iar_tls_pointer;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  326:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
  327:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  328:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_PRE_SCHEDULER_INITIALIZATION               do {__iar_Initlocks();} while(0
-ARM GAS  /tmp/cc7cpfyU.s 			page 10
+ARM GAS  /tmp/ccsWGaPX.s 			page 10
 
 
  329:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  383:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  384:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)   {                                              
  385:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_vfp_state;                          
-ARM GAS  /tmp/cc7cpfyU.s 			page 11
+ARM GAS  /tmp/ccsWGaPX.s 			page 11
 
 
  386:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_vfp_state = _tx_control_get();         
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  440:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
  441:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
  442:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
-ARM GAS  /tmp/cc7cpfyU.s 			page 12
+ARM GAS  /tmp/ccsWGaPX.s 			page 12
 
 
  443:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  497:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_DELETE_EXTENSION(semaphore_ptr)
  498:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_DELETE_EXTENSION(timer_ptr)
  499:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc7cpfyU.s 			page 13
+ARM GAS  /tmp/ccsWGaPX.s 			page 13
 
 
  500:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  106              		.loc 2 511 5 is_stmt 0 view .LVU26
  107              		.thumb
  108              		.syntax unified
-ARM GAS  /tmp/cc7cpfyU.s 			page 14
+ARM GAS  /tmp/ccsWGaPX.s 			page 14
 
 
  109              	.LBE9:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  135:../Middlewares/threadx/common/src/txe_byte_release.c **** }
  141              		.loc 1 135 11 is_stmt 0 view .LVU38
  142 0040 FAE7     		b	.L1
-ARM GAS  /tmp/cc7cpfyU.s 			page 15
+ARM GAS  /tmp/ccsWGaPX.s 			page 15
 
 
  143              	.L13:
@@ -854,14 +854,14 @@ ARM GAS  /tmp/cc7cpfyU.s 			page 1
  154              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  155              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  156              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
-ARM GAS  /tmp/cc7cpfyU.s 			page 16
+ARM GAS  /tmp/ccsWGaPX.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_byte_release.c
-     /tmp/cc7cpfyU.s:26     .text._txe_byte_release:00000000 $t
-     /tmp/cc7cpfyU.s:32     .text._txe_byte_release:00000000 _txe_byte_release
-     /tmp/cc7cpfyU.s:146    .text._txe_byte_release:00000044 $d
+     /tmp/ccsWGaPX.s:26     .text._txe_byte_release:00000000 $t
+     /tmp/ccsWGaPX.s:32     .text._txe_byte_release:00000000 _txe_byte_release
+     /tmp/ccsWGaPX.s:146    .text._txe_byte_release:00000044 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccsAe72Y.s 			page 1
+ARM GAS  /tmp/ccQ71DC5.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
   22:../Middlewares/threadx/common/src/txe_thread_preemption_change.c **** 
   23:../Middlewares/threadx/common/src/txe_thread_preemption_change.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_thread_preemption_change.c **** 
-ARM GAS  /tmp/ccsAe72Y.s 			page 2
+ARM GAS  /tmp/ccQ71DC5.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_thread_preemption_change.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
   35              		.loc 1 78 1 view -0
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccsAe72Y.s 			page 3
+ARM GAS  /tmp/ccQ71DC5.s 			page 3
 
 
   38              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
   61              	.LBB4:
   62              	.LBI4:
   63              		.file 2 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h"
-ARM GAS  /tmp/ccsAe72Y.s 			page 4
+ARM GAS  /tmp/ccQ71DC5.s 			page 4
 
 
    1:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
   55:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            ULONG64_DEFINED,            */
   56:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.5  */
   57:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  06-02-2021      Scott Larson            Modified comment(s), removed  */
-ARM GAS  /tmp/ccsAe72Y.s 			page 5
+ARM GAS  /tmp/ccQ71DC5.s 			page 5
 
 
   58:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            unneeded header file, funcs */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  112:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  113:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define ThreadX basic types for this port.  */
  114:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccsAe72Y.s 			page 6
+ARM GAS  /tmp/ccQ71DC5.s 			page 6
 
 
  115:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define VOID                                    void
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  169:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  170:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MAX_PRIORITIES
  171:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MAX_PRIORITIES                       32
-ARM GAS  /tmp/ccsAe72Y.s 			page 7
+ARM GAS  /tmp/ccQ71DC5.s 			page 7
 
 
  172:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  226:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0xFFFFFFFFUL
  227:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  228:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccsAe72Y.s 			page 8
+ARM GAS  /tmp/ccQ71DC5.s 			page 8
 
 
  229:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  283:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  284:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in only one zone. */
  285:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_2
-ARM GAS  /tmp/ccsAe72Y.s 			page 9
+ARM GAS  /tmp/ccQ71DC5.s 			page 9
 
 
  286:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  340:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the size of the secure stack for the timer thread and use the extension to allocate the s
  341:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_THREAD_SECURE_STACK_SIZE       256
  342:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_INITIALIZE_EXTENSION(status)   _tx_thread_secure_stack_allocate(&_tx_timer_thread,
-ARM GAS  /tmp/ccsAe72Y.s 			page 10
+ARM GAS  /tmp/ccQ71DC5.s 			page 10
 
 
  343:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  397:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  398:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  399:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccsAe72Y.s 			page 11
+ARM GAS  /tmp/ccQ71DC5.s 			page 11
 
 
  400:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A thread can be terminated by another thread, so we first check if it's self-terminating and not
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  454:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             if (_tx_fpccr == ((ULONG) 0x01))       
  455:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             {                                      
  456:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             ULONG _tx_vfp_state;                   
-ARM GAS  /tmp/ccsAe72Y.s 			page 12
+ARM GAS  /tmp/ccQ71DC5.s 			page 12
 
 
  457:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 _tx_vfp_state = _tx_misra_control_g
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  509:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT ipsr_value;
   66              		.loc 2 509 1 view .LVU11
  510:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile (" MRS  %0,IPSR ": "=r" (ipsr_value) );
-ARM GAS  /tmp/ccsAe72Y.s 			page 13
+ARM GAS  /tmp/ccQ71DC5.s 			page 13
 
 
   67              		.loc 2 510 5 view .LVU12
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
   97              		.cfi_restore 4
   98              		.cfi_def_cfa_offset 0
  126:../Middlewares/threadx/common/src/txe_thread_preemption_change.c ****     }
-ARM GAS  /tmp/ccsAe72Y.s 			page 14
+ARM GAS  /tmp/ccQ71DC5.s 			page 14
 
 
   99              		.loc 1 126 19 view .LVU21
@@ -838,20 +838,20 @@ ARM GAS  /tmp/ccsAe72Y.s 			page 1
  145              		.cfi_endproc
  146              	.LFE8:
  148              		.text
-ARM GAS  /tmp/ccsAe72Y.s 			page 15
+ARM GAS  /tmp/ccQ71DC5.s 			page 15
 
 
  149              	.Letext0:
  150              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  151              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
-ARM GAS  /tmp/ccsAe72Y.s 			page 16
+ARM GAS  /tmp/ccQ71DC5.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_thread_preemption_change.c
-     /tmp/ccsAe72Y.s:26     .text._txe_thread_preemption_change:00000000 $t
-     /tmp/ccsAe72Y.s:32     .text._txe_thread_preemption_change:00000000 _txe_thread_preemption_change
-     /tmp/ccsAe72Y.s:143    .text._txe_thread_preemption_change:0000003c $d
+     /tmp/ccQ71DC5.s:26     .text._txe_thread_preemption_change:00000000 $t
+     /tmp/ccQ71DC5.s:32     .text._txe_thread_preemption_change:00000000 _txe_thread_preemption_change
+     /tmp/ccQ71DC5.s:143    .text._txe_thread_preemption_change:0000003c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

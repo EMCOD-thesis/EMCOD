@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9v1niH.s 			page 1
+ARM GAS  /tmp/ccTboksz.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
   23:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** #include <stddef.h>
   24:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** #include <string.h>
   25:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** #include "cmw_camera.h"
-ARM GAS  /tmp/cc9v1niH.s 			page 2
+ARM GAS  /tmp/ccTboksz.s 			page 2
 
 
   26:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** #include "cmw_io.h"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
   56 000c 0088     		ldrh	r0, [r0]
   57              	.LVL2:
   58              		.loc 1 55 9 view .LVU9
-ARM GAS  /tmp/cc9v1niH.s 			page 3
+ARM GAS  /tmp/ccTboksz.s 			page 3
 
 
   59 000e A847     		blx	r5
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
   83:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** static int CMW_VD66GY_Write16(CMW_VD66GY_t *pObj, uint16_t addr, uint16_t value)
   84:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** {
   85:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   return pObj->WriteReg(pObj->Address, addr, (uint8_t *) &value, 2);
-ARM GAS  /tmp/cc9v1niH.s 			page 4
+ARM GAS  /tmp/ccTboksz.s 			page 4
 
 
   86:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  124              	.LBB7:
   47:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  125              		.loc 1 47 3 view .LVU26
-ARM GAS  /tmp/cc9v1niH.s 			page 5
+ARM GAS  /tmp/ccTboksz.s 			page 5
 
 
  126              	.LBE7:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  111:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   return CMW_VD66GY_Read16(p_ctx, addr, value);
  171              		.loc 1 111 3 view .LVU35
  172              		.loc 1 111 10 is_stmt 0 view .LVU36
-ARM GAS  /tmp/cc9v1niH.s 			page 6
+ARM GAS  /tmp/ccTboksz.s 			page 6
 
 
  173 0000 0438     		subs	r0, r0, #4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
   67:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  217              		.loc 1 67 3 view .LVU47
   69:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   if (ret)
-ARM GAS  /tmp/cc9v1niH.s 			page 7
+ARM GAS  /tmp/ccTboksz.s 			page 7
 
 
  218              		.loc 1 69 3 view .LVU48
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  261              		.cfi_startproc
  262              		@ args = 0, pretend = 0, frame = 8
  263              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc9v1niH.s 			page 8
+ARM GAS  /tmp/ccTboksz.s 			page 8
 
 
  123:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   CMW_VD66GY_t *p_ctx = container_of(ctx, CMW_VD66GY_t, ctx_driver);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  306              		.syntax unified
  307              		.thumb
  308              		.thumb_func
-ARM GAS  /tmp/cc9v1niH.s 			page 9
+ARM GAS  /tmp/ccTboksz.s 			page 9
 
 
  310              	VD6G_Write16:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  133:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  349              		.loc 1 133 1 view .LVU85
  350 0016 02B0     		add	sp, sp, #8
-ARM GAS  /tmp/cc9v1niH.s 			page 10
+ARM GAS  /tmp/ccTboksz.s 			page 10
 
 
  351              		.cfi_def_cfa_offset 8
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
   90:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  395              		.loc 1 90 10 is_stmt 0 view .LVU95
  396 000a 30F8040C 		ldrh	r0, [r0, #-4]
-ARM GAS  /tmp/cc9v1niH.s 			page 11
+ARM GAS  /tmp/ccTboksz.s 			page 11
 
 
  397              	.LVL31:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  145:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   const unsigned int chunk_size = 128;
  445              		.loc 1 145 3 view .LVU103
  146:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   uint16_t sz;
-ARM GAS  /tmp/cc9v1niH.s 			page 12
+ARM GAS  /tmp/ccTboksz.s 			page 12
 
 
  446              		.loc 1 146 3 view .LVU104
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  479 0032 0028     		cmp	r0, #0
  480 0034 ECD1     		bne	.L11
  154:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     addr += sz;
-ARM GAS  /tmp/cc9v1niH.s 			page 13
+ARM GAS  /tmp/ccTboksz.s 			page 13
 
 
  481              		.loc 1 154 5 is_stmt 1 view .LVU117
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  524              		.cfi_endproc
  525              	.LFE1486:
  527              		.section	.text.VD6G_Log,"ax",%progbits
-ARM GAS  /tmp/cc9v1niH.s 			page 14
+ARM GAS  /tmp/ccTboksz.s 			page 14
 
 
  528              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  197:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     *res = VD6G_RES_PORTRAIT_1120_720;
  198:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
  199:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   else if (width == 1120 && height == 1364)
-ARM GAS  /tmp/cc9v1niH.s 			page 15
+ARM GAS  /tmp/ccTboksz.s 			page 15
 
 
  200:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  254:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
  255:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     return CMW_ERROR_WRONG_PARAM;
  256:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
-ARM GAS  /tmp/cc9v1niH.s 			page 16
+ARM GAS  /tmp/ccTboksz.s 			page 16
 
 
  257:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  311:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   assert(vd66gy_config != NULL);
  312:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd66gy_config->line_len = 0;
  313:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd66gy_config->pixel_format = CMW_PIXEL_FORMAT_RAW10;
-ARM GAS  /tmp/cc9v1niH.s 			page 17
+ARM GAS  /tmp/ccTboksz.s 			page 17
 
 
  314:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  368:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  369:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  370:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** static int32_t CMW_VD66GY_DeInit(void *io_ctx)
-ARM GAS  /tmp/cc9v1niH.s 			page 18
+ARM GAS  /tmp/ccTboksz.s 			page 18
 
 
  371:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** {
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  425:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     analog_linear_gain = MDECIBEL_TO_LINEAR((double)(gain - dgain_min_mdB));
  426:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     digital_linear_gain = MDECIBEL_TO_LINEAR((double)dgain_min_mdB);
  427:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
-ARM GAS  /tmp/cc9v1niH.s 			page 19
+ARM GAS  /tmp/ccTboksz.s 			page 19
 
 
  428:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   else
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  482:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  483:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  484:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** /**
-ARM GAS  /tmp/cc9v1niH.s 			page 20
+ARM GAS  /tmp/ccTboksz.s 			page 20
 
 
  485:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   * @brief  Set the sensor white balance mode
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  539:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     return CMW_ERROR_WRONG_PARAM;
  540:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  541:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   /* Get sensor name */
-ARM GAS  /tmp/cc9v1niH.s 			page 21
+ARM GAS  /tmp/ccTboksz.s 			page 21
 
 
  542:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   if (sizeof(info->name) >= strlen(VD66GY_NAME) + 1)
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  596:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     case DCMIPP_PIPE1 :
  597:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****       ISP_IncMainFrameId(&((CMW_VD66GY_t *)io_ctx)->hIsp);
  598:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****       ISP_GatherStatistics(&((CMW_VD66GY_t *)io_ctx)->hIsp);
-ARM GAS  /tmp/cc9v1niH.s 			page 22
+ARM GAS  /tmp/ccTboksz.s 			page 22
 
 
  599:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****       break;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  591              		.cfi_offset 6, -12
  592              		.cfi_offset 7, -8
  593              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc9v1niH.s 			page 23
+ARM GAS  /tmp/ccTboksz.s 			page 23
 
 
  594 0002 2DED088B 		vpush.64	{d8, d9, d10, d11}
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  635              		.loc 1 410 6 is_stmt 0 view .LVU155
  636 002c 0028     		cmp	r0, #0
  637 002e 40F0B380 		bne	.L18
-ARM GAS  /tmp/cc9v1niH.s 			page 24
+ARM GAS  /tmp/ccTboksz.s 			page 24
 
 
  413:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   again_max_mdB = (uint32_t) LINEAR_TO_MDECIBEL(32 / (32 - again_regmax));
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  679              	.LVL58:
  415:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   dgain_max_mdB = (uint32_t) LINEAR_TO_MDECIBEL(FP58_TO_FLOAT(dgain_regmax));
  680              		.loc 1 415 3 is_stmt 1 view .LVU169
-ARM GAS  /tmp/cc9v1niH.s 			page 25
+ARM GAS  /tmp/ccTboksz.s 			page 25
 
 
  415:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   dgain_max_mdB = (uint32_t) LINEAR_TO_MDECIBEL(FP58_TO_FLOAT(dgain_regmax));
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  416:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  723              		.loc 1 416 30 discriminator 1 view .LVU182
  724 00f2 20EE0B0B 		vmul.f64	d0, d0, d11
-ARM GAS  /tmp/cc9v1niH.s 			page 26
+ARM GAS  /tmp/ccTboksz.s 			page 26
 
 
  418:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****       || (gain > dgain_max_mdB + again_max_mdB))
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  426:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
  764              		.loc 1 426 5 is_stmt 1 view .LVU198
  765              	.L24:
-ARM GAS  /tmp/cc9v1niH.s 			page 27
+ARM GAS  /tmp/ccTboksz.s 			page 27
 
 
  432:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  807 0186 CDED017A 		vstr.32	s15, [sp, #4]	@ int
  808 018a 9DF80430 		ldrb	r3, [sp, #4]	@ zero_extendqisi2
  439:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   if (ret)
-ARM GAS  /tmp/cc9v1niH.s 			page 28
+ARM GAS  /tmp/ccTboksz.s 			page 28
 
 
  809              		.loc 1 439 9 view .LVU212
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  854              		.loc 1 432 5 is_stmt 1 view .LVU221
  432:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
  855              		.loc 1 432 27 is_stmt 0 view .LVU222
-ARM GAS  /tmp/cc9v1niH.s 			page 29
+ARM GAS  /tmp/ccTboksz.s 			page 29
 
 
  856 01be 07EE905A 		vmov	s15, r5	@ int
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  906              		.thumb
  907              		.thumb_func
  909              	CMW_VD66GY_SetExposureMode:
-ARM GAS  /tmp/cc9v1niH.s 			page 30
+ARM GAS  /tmp/ccTboksz.s 			page 30
 
 
  910              	.LVL84:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  950              	.LFE1498:
  952              		.section	.text.CMW_VD66GY_SetWBRefMode,"ax",%progbits
  953              		.align	1
-ARM GAS  /tmp/cc9v1niH.s 			page 31
+ARM GAS  /tmp/ccTboksz.s 			page 31
 
 
  954              		.global	CMW_VD66GY_SetWBRefMode
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1001              	.LFB1500:
  511:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   int ret = CMW_ERROR_NONE;
  1002              		.loc 1 511 1 is_stmt 1 view -0
-ARM GAS  /tmp/cc9v1niH.s 			page 32
+ARM GAS  /tmp/ccTboksz.s 			page 32
 
 
  1003              		.cfi_startproc
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1048              		@ frame_needed = 0, uses_anonymous_args = 0
  531:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   uint16_t dgain_regmin, dgain_regmax;
  1049              		.loc 1 531 3 view .LVU264
-ARM GAS  /tmp/cc9v1niH.s 			page 33
+ARM GAS  /tmp/ccTboksz.s 			page 33
 
 
  532:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   uint32_t again_min_mdB, again_max_mdB;
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1091 001a 2046     		mov	r0, r4
  1092              	.LVL99:
  544:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
-ARM GAS  /tmp/cc9v1niH.s 			page 34
+ARM GAS  /tmp/ccTboksz.s 			page 34
 
 
  1093              		.loc 1 544 5 view .LVU278
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  566:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   if (ret)
  1130              		.loc 1 566 3 is_stmt 1 view .LVU296
  566:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   if (ret)
-ARM GAS  /tmp/cc9v1niH.s 			page 35
+ARM GAS  /tmp/ccTboksz.s 			page 35
 
 
  1131              		.loc 1 566 9 is_stmt 0 view .LVU297
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1172 009a 9FED2FAB 		vldr.64	d10, .L45
  1173 009e 20EE0B0B 		vmul.f64	d0, d0, d11
  1174 00a2 20EE0A0B 		vmul.f64	d0, d0, d10
-ARM GAS  /tmp/cc9v1niH.s 			page 36
+ARM GAS  /tmp/ccTboksz.s 			page 36
 
 
  571:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   dgain_min_mdB = (uint32_t) LINEAR_TO_MDECIBEL(FP58_TO_FLOAT(dgain_regmin));
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1217              	.LVL114:
  572:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   dgain_max_mdB = (uint32_t) LINEAR_TO_MDECIBEL(FP58_TO_FLOAT(dgain_regmax));
  1218              		.loc 1 572 30 discriminator 1 view .LVU323
-ARM GAS  /tmp/cc9v1niH.s 			page 37
+ARM GAS  /tmp/ccTboksz.s 			page 37
 
 
  1219 0106 29EE0B9B 		vmul.f64	d9, d9, d11
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  581:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     return ret;
  1257              		.loc 1 581 3 is_stmt 1 view .LVU340
  1258              	.L41:
-ARM GAS  /tmp/cc9v1niH.s 			page 38
+ARM GAS  /tmp/ccTboksz.s 			page 38
 
 
  585:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1309              		.loc 1 362 3 view .LVU346
  359:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   int ret = CMW_ERROR_NONE;
  1310              		.loc 1 359 1 is_stmt 0 view .LVU347
-ARM GAS  /tmp/cc9v1niH.s 			page 39
+ARM GAS  /tmp/ccTboksz.s 			page 39
 
 
  1311 0000 08B5     		push	{r3, lr}
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1355              		.loc 1 325 9 view .LVU359
  1356 0002 104B     		ldr	r3, .L57
  1357 0004 00F16C05 		add	r5, r0, #108
-ARM GAS  /tmp/cc9v1niH.s 			page 40
+ARM GAS  /tmp/ccTboksz.s 			page 40
 
 
  1358 0008 0093     		str	r3, [sp]
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  339:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****     return CMW_ERROR_PERIPH_FAILURE;
  1396              		.loc 1 339 5 is_stmt 1 view .LVU376
  1397 0030 2046     		mov	r0, r4
-ARM GAS  /tmp/cc9v1niH.s 			page 41
+ARM GAS  /tmp/ccTboksz.s 			page 41
 
 
  1398              	.LVL132:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1444 0000 38B5     		push	{r3, r4, r5, lr}
  1445              		.cfi_def_cfa_offset 16
  1446              		.cfi_offset 3, -16
-ARM GAS  /tmp/cc9v1niH.s 			page 42
+ARM GAS  /tmp/ccTboksz.s 			page 42
 
 
  1447              		.cfi_offset 4, -12
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  387:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
  1486              		.loc 1 387 3 is_stmt 1 view .LVU402
  387:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** }
-ARM GAS  /tmp/cc9v1niH.s 			page 43
+ARM GAS  /tmp/ccTboksz.s 			page 43
 
 
  1487              		.loc 1 387 10 is_stmt 0 view .LVU403
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1534              		.thumb
  1535              		.thumb_func
  1537              	CMW_VD66GY_Init:
-ARM GAS  /tmp/cc9v1niH.s 			page 44
+ARM GAS  /tmp/ccTboksz.s 			page 44
 
 
  1538              	.LVL147:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  243:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
  1578              		.loc 1 243 12 view .LVU428
  1579 0016 6FF00100 		mvn	r0, #1
-ARM GAS  /tmp/cc9v1niH.s 			page 45
+ARM GAS  /tmp/ccTboksz.s 			page 45
 
 
  1580              	.LVL152:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1622              	.L71:
  183:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
  1623              		.loc 1 183 20 discriminator 1 view .LVU441
-ARM GAS  /tmp/cc9v1niH.s 			page 46
+ARM GAS  /tmp/ccTboksz.s 			page 46
 
 
  1624              	.LBE40:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  191:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
  1667              		.loc 1 191 8 view .LVU453
  191:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
-ARM GAS  /tmp/cc9v1niH.s 			page 47
+ARM GAS  /tmp/ccTboksz.s 			page 47
 
 
  1668              		.loc 1 191 11 is_stmt 0 view .LVU454
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1707              	.LVL167:
  201:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   }
  1708              		.loc 1 201 10 view .LVU470
-ARM GAS  /tmp/cc9v1niH.s 			page 48
+ARM GAS  /tmp/ccTboksz.s 			page 48
 
 
  1709 008a E6E7     		b	.L86
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  284:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   config.patgen = VD6G_PATGEN_DISABLE;
  1746              		.loc 1 284 27 discriminator 1 view .LVU488
  1747 00a8 032B     		cmp	r3, #3
-ARM GAS  /tmp/cc9v1niH.s 			page 49
+ARM GAS  /tmp/ccTboksz.s 			page 49
 
 
  1748 00aa 28BF     		it	cs
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1783              		.loc 1 299 3 is_stmt 1 view .LVU507
  299:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
  1784              		.loc 1 299 6 is_stmt 0 view .LVU508
-ARM GAS  /tmp/cc9v1niH.s 			page 50
+ARM GAS  /tmp/ccTboksz.s 			page 50
 
 
  1785 00c6 95F82C30 		ldrb	r3, [r5, #44]	@ zero_extendqisi2
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  591:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   {
  1831              		.loc 1 591 3 view .LVU519
  1832 0000 0129     		cmp	r1, #1
-ARM GAS  /tmp/cc9v1niH.s 			page 51
+ARM GAS  /tmp/ccTboksz.s 			page 51
 
 
  588:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** #ifndef ISP_MW_TUNING_TOOL_SUPPORT
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1876              		.cfi_restore 14
  1877              		.cfi_restore 4
  1878              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/cc9v1niH.s 			page 52
+ARM GAS  /tmp/ccTboksz.s 			page 52
 
 
  1879              	.LVL183:
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1920              		.thumb_func
  1922              	CMW_VD66GY_SetDefaultSensorValues:
  1923              	.LVL187:
-ARM GAS  /tmp/cc9v1niH.s 			page 53
+ARM GAS  /tmp/ccTboksz.s 			page 53
 
 
  1924              	.LFB1491:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  1971              	.LVL190:
  1972              	.LFB1504:
  610:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
-ARM GAS  /tmp/cc9v1niH.s 			page 54
+ARM GAS  /tmp/ccTboksz.s 			page 54
 
 
  611:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** int32_t VD66GY_RegisterBusIO(CMW_VD66GY_t *io_ctx)
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2012              		@ args = 0, pretend = 0, frame = 8
  2013              		@ frame_needed = 0, uses_anonymous_args = 0
  628:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   uint16_t reg16;
-ARM GAS  /tmp/cc9v1niH.s 			page 55
+ARM GAS  /tmp/ccTboksz.s 			page 55
 
 
  2014              		.loc 1 628 3 view .LVU558
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2058              	.LFB1507:
  639:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** 
  640:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** static void CMW_VD66GY_PowerOn(CMW_VD66GY_t *io_ctx)
-ARM GAS  /tmp/cc9v1niH.s 			page 56
+ARM GAS  /tmp/ccTboksz.s 			page 56
 
 
  641:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c **** {
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2090 0012 2E4B     		ldr	r3, .L109+12
  2091 0014 0361     		str	r3, [r0, #16]
  661:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   io_ctx->ctx_driver.write8 = VD6G_Write8;
-ARM GAS  /tmp/cc9v1niH.s 			page 57
+ARM GAS  /tmp/ccTboksz.s 			page 57
 
 
  2092              		.loc 1 661 3 is_stmt 1 view .LVU587
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2134              		.loc 1 646 3 view .LVU604
  2135 003e C820     		movs	r0, #200
  2136 0040 FFF7FEFF 		bl	HAL_Delay
-ARM GAS  /tmp/cc9v1niH.s 			page 58
+ARM GAS  /tmp/ccTboksz.s 			page 58
 
 
  2137              	.LVL201:
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  693:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->Stop = CMW_VD66GY_Stop;
  694:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->SetGain = CMW_VD66GY_SetGain;
  695:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->SetExposure = CMW_VD66GY_SetExposure;
-ARM GAS  /tmp/cc9v1niH.s 			page 59
+ARM GAS  /tmp/ccTboksz.s 			page 59
 
 
  696:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->SetExposureMode = CMW_VD66GY_SetExposureMode;
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2202              	.LVL212:
  687:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->DeInit = CMW_VD66GY_DeInit;
  2203              		.loc 1 687 3 is_stmt 1 view .LVU624
-ARM GAS  /tmp/cc9v1niH.s 			page 60
+ARM GAS  /tmp/ccTboksz.s 			page 60
 
 
  687:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->DeInit = CMW_VD66GY_DeInit;
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  696:../Middlewares/stm32-mw-camera/sensors/cmw_vd66gy.c ****   vd6g_if->SetWBRefMode = CMW_VD66GY_SetWBRefMode;
  2240              		.loc 1 696 28 is_stmt 0 view .LVU643
  2241 00ac 174B     		ldr	r3, .L109+76
-ARM GAS  /tmp/cc9v1niH.s 			page 61
+ARM GAS  /tmp/ccTboksz.s 			page 61
 
 
  2242 00ae 2B65     		str	r3, [r5, #80]
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2291 0000 434D575F 		.ascii	"CMW_VD66GY_SetDefaultSensorValues\000"
  2291      56443636 
  2291      47595F53 
-ARM GAS  /tmp/cc9v1niH.s 			page 62
+ARM GAS  /tmp/ccTboksz.s 			page 62
 
 
  2291      65744465 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2342 007f 00000000 		.space	22
  2342      00000000 
  2342      00000000 
-ARM GAS  /tmp/cc9v1niH.s 			page 63
+ARM GAS  /tmp/ccTboksz.s 			page 63
 
 
  2342      00000000 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2374 0170 80B422FE 		.word	-31280000
  2375 0174 30D8BDFD 		.word	-37890000
  2376 0178 80EFEB08 		.word	149680000
-ARM GAS  /tmp/cc9v1niH.s 			page 64
+ARM GAS  /tmp/ccTboksz.s 			page 64
 
 
  2377 017c 618670FE 		.word	-26179999
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2431 0244 00000000 		.word	0
  2432 0248 00000000 		.word	0
  2433 024c 00000000 		.word	0
-ARM GAS  /tmp/cc9v1niH.s 			page 65
+ARM GAS  /tmp/ccTboksz.s 			page 65
 
 
  2434 0250 00000000 		.word	0
@@ -3889,79 +3889,79 @@ ARM GAS  /tmp/cc9v1niH.s 			page 1
  2479              		.file 22 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/assert.h"
  2480              		.file 23 "Inc/isp_param_conf.h"
  2481              		.file 24 "<built-in>"
-ARM GAS  /tmp/cc9v1niH.s 			page 66
+ARM GAS  /tmp/ccTboksz.s 			page 66
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 cmw_vd66gy.c
-     /tmp/cc9v1niH.s:26     .text.CMW_VD66GY_Read16:00000000 $t
-     /tmp/cc9v1niH.s:31     .text.CMW_VD66GY_Read16:00000000 CMW_VD66GY_Read16
-     /tmp/cc9v1niH.s:80     .text.VD6G_ShutdownPin:00000000 $t
-     /tmp/cc9v1niH.s:85     .text.VD6G_ShutdownPin:00000000 VD6G_ShutdownPin
-     /tmp/cc9v1niH.s:106    .text.VD6G_Read8:00000000 $t
-     /tmp/cc9v1niH.s:111    .text.VD6G_Read8:00000000 VD6G_Read8
-     /tmp/cc9v1niH.s:157    .text.VD6G_Read16:00000000 $t
-     /tmp/cc9v1niH.s:162    .text.VD6G_Read16:00000000 VD6G_Read16
-     /tmp/cc9v1niH.s:183    .text.VD6G_Read32:00000000 $t
-     /tmp/cc9v1niH.s:188    .text.VD6G_Read32:00000000 VD6G_Read32
-     /tmp/cc9v1niH.s:252    .text.VD6G_Write8:00000000 $t
-     /tmp/cc9v1niH.s:257    .text.VD6G_Write8:00000000 VD6G_Write8
-     /tmp/cc9v1niH.s:305    .text.VD6G_Write16:00000000 $t
-     /tmp/cc9v1niH.s:310    .text.VD6G_Write16:00000000 VD6G_Write16
-     /tmp/cc9v1niH.s:358    .text.VD6G_Write32:00000000 $t
-     /tmp/cc9v1niH.s:363    .text.VD6G_Write32:00000000 VD6G_Write32
-     /tmp/cc9v1niH.s:416    .text.VD6G_WriteArray:00000000 $t
-     /tmp/cc9v1niH.s:421    .text.VD6G_WriteArray:00000000 VD6G_WriteArray
-     /tmp/cc9v1niH.s:502    .text.VD6G_Delay:00000000 $t
-     /tmp/cc9v1niH.s:507    .text.VD6G_Delay:00000000 VD6G_Delay
-     /tmp/cc9v1niH.s:528    .text.VD6G_Log:00000000 $t
-     /tmp/cc9v1niH.s:533    .text.VD6G_Log:00000000 VD6G_Log
-     /tmp/cc9v1niH.s:547    .text.CMW_VD66GY_FrameEventCallback:00000000 $t
-     /tmp/cc9v1niH.s:552    .text.CMW_VD66GY_FrameEventCallback:00000000 CMW_VD66GY_FrameEventCallback
-     /tmp/cc9v1niH.s:566    .text.CMW_VD66GY_SetGain:00000000 $t
-     /tmp/cc9v1niH.s:572    .text.CMW_VD66GY_SetGain:00000000 CMW_VD66GY_SetGain
-     /tmp/cc9v1niH.s:866    .text.CMW_VD66GY_SetGain:000001d0 $d
-     /tmp/cc9v1niH.s:877    .text.CMW_VD66GY_SetExposure:00000000 $t
-     /tmp/cc9v1niH.s:883    .text.CMW_VD66GY_SetExposure:00000000 CMW_VD66GY_SetExposure
-     /tmp/cc9v1niH.s:903    .text.CMW_VD66GY_SetExposureMode:00000000 $t
-     /tmp/cc9v1niH.s:909    .text.CMW_VD66GY_SetExposureMode:00000000 CMW_VD66GY_SetExposureMode
-     /tmp/cc9v1niH.s:953    .text.CMW_VD66GY_SetWBRefMode:00000000 $t
-     /tmp/cc9v1niH.s:959    .text.CMW_VD66GY_SetWBRefMode:00000000 CMW_VD66GY_SetWBRefMode
-     /tmp/cc9v1niH.s:993    .text.CMW_VD66GY_ListWBRefModes:00000000 $t
-     /tmp/cc9v1niH.s:999    .text.CMW_VD66GY_ListWBRefModes:00000000 CMW_VD66GY_ListWBRefModes
-     /tmp/cc9v1niH.s:1036   .text.CMW_VD66GY_GetSensorInfo:00000000 $t
-     /tmp/cc9v1niH.s:1042   .text.CMW_VD66GY_GetSensorInfo:00000000 CMW_VD66GY_GetSensorInfo
-     /tmp/cc9v1niH.s:1288   .text.CMW_VD66GY_GetSensorInfo:00000158 $d
-     /tmp/cc9v1niH.s:1296   .text.CMW_VD66GY_Stop:00000000 $t
-     /tmp/cc9v1niH.s:1301   .text.CMW_VD66GY_Stop:00000000 CMW_VD66GY_Stop
-     /tmp/cc9v1niH.s:1334   .text.CMW_VD66GY_Start:00000000 $t
-     /tmp/cc9v1niH.s:1339   .text.CMW_VD66GY_Start:00000000 CMW_VD66GY_Start
-     /tmp/cc9v1niH.s:1424   .text.CMW_VD66GY_Start:00000044 $d
-     /tmp/cc9v1niH.s:2296   .rodata.ISP_IQParamCacheInit_VD66GY:00000000 ISP_IQParamCacheInit_VD66GY
-     /tmp/cc9v1niH.s:1429   .text.CMW_VD66GY_DeInit:00000000 $t
-     /tmp/cc9v1niH.s:1434   .text.CMW_VD66GY_DeInit:00000000 CMW_VD66GY_DeInit
-     /tmp/cc9v1niH.s:1493   .text.CMW_VD66GY_Run:00000000 $t
-     /tmp/cc9v1niH.s:1498   .text.CMW_VD66GY_Run:00000000 CMW_VD66GY_Run
-     /tmp/cc9v1niH.s:1532   .text.CMW_VD66GY_Init:00000000 $t
-     /tmp/cc9v1niH.s:1537   .text.CMW_VD66GY_Init:00000000 CMW_VD66GY_Init
-     /tmp/cc9v1niH.s:1814   .text.CMW_VD66GY_Init:000000e4 $d
-     /tmp/cc9v1niH.s:1819   .text.CMW_VD66GY_VsyncEventCallback:00000000 $t
-     /tmp/cc9v1niH.s:1824   .text.CMW_VD66GY_VsyncEventCallback:00000000 CMW_VD66GY_VsyncEventCallback
-     /tmp/cc9v1niH.s:1916   .text.CMW_VD66GY_SetDefaultSensorValues:00000000 $t
-     /tmp/cc9v1niH.s:1922   .text.CMW_VD66GY_SetDefaultSensorValues:00000000 CMW_VD66GY_SetDefaultSensorValues
-ARM GAS  /tmp/cc9v1niH.s 			page 67
+     /tmp/ccTboksz.s:26     .text.CMW_VD66GY_Read16:00000000 $t
+     /tmp/ccTboksz.s:31     .text.CMW_VD66GY_Read16:00000000 CMW_VD66GY_Read16
+     /tmp/ccTboksz.s:80     .text.VD6G_ShutdownPin:00000000 $t
+     /tmp/ccTboksz.s:85     .text.VD6G_ShutdownPin:00000000 VD6G_ShutdownPin
+     /tmp/ccTboksz.s:106    .text.VD6G_Read8:00000000 $t
+     /tmp/ccTboksz.s:111    .text.VD6G_Read8:00000000 VD6G_Read8
+     /tmp/ccTboksz.s:157    .text.VD6G_Read16:00000000 $t
+     /tmp/ccTboksz.s:162    .text.VD6G_Read16:00000000 VD6G_Read16
+     /tmp/ccTboksz.s:183    .text.VD6G_Read32:00000000 $t
+     /tmp/ccTboksz.s:188    .text.VD6G_Read32:00000000 VD6G_Read32
+     /tmp/ccTboksz.s:252    .text.VD6G_Write8:00000000 $t
+     /tmp/ccTboksz.s:257    .text.VD6G_Write8:00000000 VD6G_Write8
+     /tmp/ccTboksz.s:305    .text.VD6G_Write16:00000000 $t
+     /tmp/ccTboksz.s:310    .text.VD6G_Write16:00000000 VD6G_Write16
+     /tmp/ccTboksz.s:358    .text.VD6G_Write32:00000000 $t
+     /tmp/ccTboksz.s:363    .text.VD6G_Write32:00000000 VD6G_Write32
+     /tmp/ccTboksz.s:416    .text.VD6G_WriteArray:00000000 $t
+     /tmp/ccTboksz.s:421    .text.VD6G_WriteArray:00000000 VD6G_WriteArray
+     /tmp/ccTboksz.s:502    .text.VD6G_Delay:00000000 $t
+     /tmp/ccTboksz.s:507    .text.VD6G_Delay:00000000 VD6G_Delay
+     /tmp/ccTboksz.s:528    .text.VD6G_Log:00000000 $t
+     /tmp/ccTboksz.s:533    .text.VD6G_Log:00000000 VD6G_Log
+     /tmp/ccTboksz.s:547    .text.CMW_VD66GY_FrameEventCallback:00000000 $t
+     /tmp/ccTboksz.s:552    .text.CMW_VD66GY_FrameEventCallback:00000000 CMW_VD66GY_FrameEventCallback
+     /tmp/ccTboksz.s:566    .text.CMW_VD66GY_SetGain:00000000 $t
+     /tmp/ccTboksz.s:572    .text.CMW_VD66GY_SetGain:00000000 CMW_VD66GY_SetGain
+     /tmp/ccTboksz.s:866    .text.CMW_VD66GY_SetGain:000001d0 $d
+     /tmp/ccTboksz.s:877    .text.CMW_VD66GY_SetExposure:00000000 $t
+     /tmp/ccTboksz.s:883    .text.CMW_VD66GY_SetExposure:00000000 CMW_VD66GY_SetExposure
+     /tmp/ccTboksz.s:903    .text.CMW_VD66GY_SetExposureMode:00000000 $t
+     /tmp/ccTboksz.s:909    .text.CMW_VD66GY_SetExposureMode:00000000 CMW_VD66GY_SetExposureMode
+     /tmp/ccTboksz.s:953    .text.CMW_VD66GY_SetWBRefMode:00000000 $t
+     /tmp/ccTboksz.s:959    .text.CMW_VD66GY_SetWBRefMode:00000000 CMW_VD66GY_SetWBRefMode
+     /tmp/ccTboksz.s:993    .text.CMW_VD66GY_ListWBRefModes:00000000 $t
+     /tmp/ccTboksz.s:999    .text.CMW_VD66GY_ListWBRefModes:00000000 CMW_VD66GY_ListWBRefModes
+     /tmp/ccTboksz.s:1036   .text.CMW_VD66GY_GetSensorInfo:00000000 $t
+     /tmp/ccTboksz.s:1042   .text.CMW_VD66GY_GetSensorInfo:00000000 CMW_VD66GY_GetSensorInfo
+     /tmp/ccTboksz.s:1288   .text.CMW_VD66GY_GetSensorInfo:00000158 $d
+     /tmp/ccTboksz.s:1296   .text.CMW_VD66GY_Stop:00000000 $t
+     /tmp/ccTboksz.s:1301   .text.CMW_VD66GY_Stop:00000000 CMW_VD66GY_Stop
+     /tmp/ccTboksz.s:1334   .text.CMW_VD66GY_Start:00000000 $t
+     /tmp/ccTboksz.s:1339   .text.CMW_VD66GY_Start:00000000 CMW_VD66GY_Start
+     /tmp/ccTboksz.s:1424   .text.CMW_VD66GY_Start:00000044 $d
+     /tmp/ccTboksz.s:2296   .rodata.ISP_IQParamCacheInit_VD66GY:00000000 ISP_IQParamCacheInit_VD66GY
+     /tmp/ccTboksz.s:1429   .text.CMW_VD66GY_DeInit:00000000 $t
+     /tmp/ccTboksz.s:1434   .text.CMW_VD66GY_DeInit:00000000 CMW_VD66GY_DeInit
+     /tmp/ccTboksz.s:1493   .text.CMW_VD66GY_Run:00000000 $t
+     /tmp/ccTboksz.s:1498   .text.CMW_VD66GY_Run:00000000 CMW_VD66GY_Run
+     /tmp/ccTboksz.s:1532   .text.CMW_VD66GY_Init:00000000 $t
+     /tmp/ccTboksz.s:1537   .text.CMW_VD66GY_Init:00000000 CMW_VD66GY_Init
+     /tmp/ccTboksz.s:1814   .text.CMW_VD66GY_Init:000000e4 $d
+     /tmp/ccTboksz.s:1819   .text.CMW_VD66GY_VsyncEventCallback:00000000 $t
+     /tmp/ccTboksz.s:1824   .text.CMW_VD66GY_VsyncEventCallback:00000000 CMW_VD66GY_VsyncEventCallback
+     /tmp/ccTboksz.s:1916   .text.CMW_VD66GY_SetDefaultSensorValues:00000000 $t
+     /tmp/ccTboksz.s:1922   .text.CMW_VD66GY_SetDefaultSensorValues:00000000 CMW_VD66GY_SetDefaultSensorValues
+ARM GAS  /tmp/ccTboksz.s 			page 67
 
 
-     /tmp/cc9v1niH.s:1957   .text.CMW_VD66GY_SetDefaultSensorValues:0000001c $d
-     /tmp/cc9v1niH.s:2290   .rodata.__func__.0:00000000 __func__.0
-     /tmp/cc9v1niH.s:1964   .text.VD66GY_RegisterBusIO:00000000 $t
-     /tmp/cc9v1niH.s:1970   .text.VD66GY_RegisterBusIO:00000000 VD66GY_RegisterBusIO
-     /tmp/cc9v1niH.s:2001   .text.VD66GY_ReadID:00000000 $t
-     /tmp/cc9v1niH.s:2007   .text.VD66GY_ReadID:00000000 VD66GY_ReadID
-     /tmp/cc9v1niH.s:2050   .text.CMW_VD66GY_Probe:00000000 $t
-     /tmp/cc9v1niH.s:2056   .text.CMW_VD66GY_Probe:00000000 CMW_VD66GY_Probe
-     /tmp/cc9v1niH.s:2261   .text.CMW_VD66GY_Probe:000000c0 $d
-     /tmp/cc9v1niH.s:2293   .rodata.ISP_IQParamCacheInit_VD66GY:00000000 $d
+     /tmp/ccTboksz.s:1957   .text.CMW_VD66GY_SetDefaultSensorValues:0000001c $d
+     /tmp/ccTboksz.s:2290   .rodata.__func__.0:00000000 __func__.0
+     /tmp/ccTboksz.s:1964   .text.VD66GY_RegisterBusIO:00000000 $t
+     /tmp/ccTboksz.s:1970   .text.VD66GY_RegisterBusIO:00000000 VD66GY_RegisterBusIO
+     /tmp/ccTboksz.s:2001   .text.VD66GY_ReadID:00000000 $t
+     /tmp/ccTboksz.s:2007   .text.VD66GY_ReadID:00000000 VD66GY_ReadID
+     /tmp/ccTboksz.s:2050   .text.CMW_VD66GY_Probe:00000000 $t
+     /tmp/ccTboksz.s:2056   .text.CMW_VD66GY_Probe:00000000 CMW_VD66GY_Probe
+     /tmp/ccTboksz.s:2261   .text.CMW_VD66GY_Probe:000000c0 $d
+     /tmp/ccTboksz.s:2293   .rodata.ISP_IQParamCacheInit_VD66GY:00000000 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
                            .group:00000000 wm4.features.h.33.d554620bb17bd3b714c3fb5c268772bc
@@ -4009,7 +4009,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.stm32n6xx_hal_gpio.h.21.89d54af663b98eb8fc098192053f7eeb
                            .group:00000000 wm4.stm32n6xx_hal_gpio_ex.h.22.f7e795fb05a69a19b87d946b47c8db8b
                            .group:00000000 wm4.stm32n6xx_hal_rif.h.21.33f2c553a8a3fc14dca8c470b213ab19
-ARM GAS  /tmp/cc9v1niH.s 			page 68
+ARM GAS  /tmp/ccTboksz.s 			page 68
 
 
                            .group:00000000 wm4.stm32n6xx_hal_dma.h.21.61e48c5c2e8d25d22177834b232fe45c
@@ -4069,7 +4069,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.arm_math_types.h.116.3e44bd031718f65bdb345972ddc8cf86
                            .group:00000000 wm4.arm_mve.h.48.53b982d307987e8d8669fd51fdc5e583
                            .group:00000000 wm4.arm_math_types.h.605.32c5d7843b3dcaa8f5174feea7de7445
-ARM GAS  /tmp/cc9v1niH.s 			page 69
+ARM GAS  /tmp/ccTboksz.s 			page 69
 
 
                            .group:00000000 wm4.arm_math_memory.h.28.3ee75b06517df8378241b72d6c61e5b0

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccThsjTX.s 			page 1
+ARM GAS  /tmp/cc1PSUCC.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
   22:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
   23:../Middlewares/threadx/common/src/txe_thread_reset.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
-ARM GAS  /tmp/ccThsjTX.s 			page 2
+ARM GAS  /tmp/cc1PSUCC.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
   38              		@ frame_needed = 0, uses_anonymous_args = 0
   39              		@ link register save eliminated.
   76:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
-ARM GAS  /tmp/ccThsjTX.s 			page 3
+ARM GAS  /tmp/cc1PSUCC.s 			page 3
 
 
   77:../Middlewares/threadx/common/src/txe_thread_reset.c **** UINT        status;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
   84:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
   60              		.loc 1 84 12 view .LVU12
   61 000e 0B4B     		ldr	r3, .L8+8
-ARM GAS  /tmp/ccThsjTX.s 			page 4
+ARM GAS  /tmp/cc1PSUCC.s 			page 4
 
 
   62              	.LVL3:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
   34:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   35:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  DESCRIPTION                                                           */
   36:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
-ARM GAS  /tmp/ccThsjTX.s 			page 5
+ARM GAS  /tmp/cc1PSUCC.s 			page 5
 
 
   37:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    This file contains data type definitions that make the ThreadX      */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
   91:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    alternately be defined on the command line.  */
   92:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   93:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include "tx_user.h"
-ARM GAS  /tmp/ccThsjTX.s 			page 6
+ARM GAS  /tmp/cc1PSUCC.s 			page 6
 
 
   94:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif /* TX_INCLUDE_USER_DEFINE_FILE */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  148:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  149:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services without error checking.  */
  150:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccThsjTX.s 			page 7
+ARM GAS  /tmp/cc1PSUCC.s 			page 7
 
 
  151:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define tx_thread_secure_stack_allocate   _tx_thread_secure_stack_allocate
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  205:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  206:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  207:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the clock source for trace event entry time stamp. The following two item are port specif
-ARM GAS  /tmp/ccThsjTX.s 			page 8
+ARM GAS  /tmp/cc1PSUCC.s 			page 8
 
 
  208:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    For example, if the time source is at the address 0x0a800024 and is 16-bits in size, the clock
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  262:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    existing ThreadX kernel awareness modules.  */
  263:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  264:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_0
-ARM GAS  /tmp/ccThsjTX.s 			page 9
+ARM GAS  /tmp/cc1PSUCC.s 			page 9
 
 
  265:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  319:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  320:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
  321:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
-ARM GAS  /tmp/ccThsjTX.s 			page 10
+ARM GAS  /tmp/cc1PSUCC.s 			page 10
 
 
  322:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  376:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  377:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
  378:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccThsjTX.s 			page 11
+ARM GAS  /tmp/cc1PSUCC.s 			page 11
 
 
  379:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* A completed thread falls into _thread_shell_entry and we can simply deactivate the FPU via CONTR
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  433:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
  434:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
  435:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
-ARM GAS  /tmp/ccThsjTX.s 			page 12
+ARM GAS  /tmp/cc1PSUCC.s 			page 12
 
 
  436:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  490:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the ThreadX object deletion extensions for the remaining objects.  */
  491:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  492:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_DELETE_EXTENSION(pool_ptr)
-ARM GAS  /tmp/ccThsjTX.s 			page 13
+ARM GAS  /tmp/cc1PSUCC.s 			page 13
 
 
  493:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_DELETE_EXTENSION(pool_ptr)
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  126:../Middlewares/threadx/common/src/txe_thread_reset.c **** 
  127:../Middlewares/threadx/common/src/txe_thread_reset.c ****     /* Determine if everything is okay.  */
  128:../Middlewares/threadx/common/src/txe_thread_reset.c ****     if (status == TX_SUCCESS)
-ARM GAS  /tmp/ccThsjTX.s 			page 14
+ARM GAS  /tmp/cc1PSUCC.s 			page 14
 
 
  102              		.loc 1 128 5 is_stmt 1 view .LVU25
@@ -826,14 +826,14 @@ ARM GAS  /tmp/ccThsjTX.s 			page 1
  133              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  134              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  135              		.file 5 "../Middlewares/threadx/common/inc/tx_timer.h"
-ARM GAS  /tmp/ccThsjTX.s 			page 15
+ARM GAS  /tmp/cc1PSUCC.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_thread_reset.c
-     /tmp/ccThsjTX.s:26     .text._txe_thread_reset:00000000 $t
-     /tmp/ccThsjTX.s:32     .text._txe_thread_reset:00000000 _txe_thread_reset
-     /tmp/ccThsjTX.s:124    .text._txe_thread_reset:00000034 $d
+     /tmp/cc1PSUCC.s:26     .text._txe_thread_reset:00000000 $t
+     /tmp/cc1PSUCC.s:32     .text._txe_thread_reset:00000000 _txe_thread_reset
+     /tmp/cc1PSUCC.s:124    .text._txe_thread_reset:00000034 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

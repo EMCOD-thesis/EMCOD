@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccK2w4FS.s 			page 1
+ARM GAS  /tmp/ccVTPQFI.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
-ARM GAS  /tmp/ccK2w4FS.s 			page 2
+ARM GAS  /tmp/ccVTPQFI.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** /*                                            definitions, verified       */
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** /*                                            memset and memcpy cases,    */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** /*                                            resulting in version 6.1    */
-ARM GAS  /tmp/ccK2w4FS.s 			page 3
+ARM GAS  /tmp/ccVTPQFI.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** /*                                                                        */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
   66              		.loc 1 101 15 view .LVU10
   67 0010 3F22     		movs	r2, #63
   68              	.LVL3:
-ARM GAS  /tmp/ccK2w4FS.s 			page 4
+ARM GAS  /tmp/ccVTPQFI.s 			page 4
 
 
   89:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
   97 0032 0132     		adds	r2, r2, #1
   98 0034 FFF7FEFF 		bl	_ux_utility_memory_copy
   99              	.LVL7:
-ARM GAS  /tmp/ccK2w4FS.s 			page 5
+ARM GAS  /tmp/ccVTPQFI.s 			page 5
 
 
  126:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** #endif
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
  149:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c ****             if (status != UX_SUCCESS)
  123              		.loc 1 149 13 is_stmt 1 view .LVU37
  124              		.loc 1 149 16 is_stmt 0 view .LVU38
-ARM GAS  /tmp/ccK2w4FS.s 			page 6
+ARM GAS  /tmp/ccVTPQFI.s 			page 6
 
 
  125 004e 08B9     		cbnz	r0, .L1
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
  161              	_uxe_device_stack_class_register:
  162              	.LVL12:
  163              	.LFB4:
-ARM GAS  /tmp/ccK2w4FS.s 			page 7
+ARM GAS  /tmp/ccVTPQFI.s 			page 7
 
 
  168:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
  168              		@ link register save eliminated.
  218:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c **** 
  219:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c ****     /* Sanity checks.  */
-ARM GAS  /tmp/ccK2w4FS.s 			page 8
+ARM GAS  /tmp/ccVTPQFI.s 			page 8
 
 
  220:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_class_register.c ****     if ((class_name == UX_NULL) || (class_entry_function == UX_NULL))
@@ -477,16 +477,16 @@ ARM GAS  /tmp/ccK2w4FS.s 			page 1
  213              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  214              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  215              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
-ARM GAS  /tmp/ccK2w4FS.s 			page 9
+ARM GAS  /tmp/ccVTPQFI.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_class_register.c
-     /tmp/ccK2w4FS.s:26     .text._ux_device_stack_class_register:00000000 $t
-     /tmp/ccK2w4FS.s:32     .text._ux_device_stack_class_register:00000000 _ux_device_stack_class_register
-     /tmp/ccK2w4FS.s:150    .text._ux_device_stack_class_register:00000060 $d
-     /tmp/ccK2w4FS.s:155    .text._uxe_device_stack_class_register:00000000 $t
-     /tmp/ccK2w4FS.s:161    .text._uxe_device_stack_class_register:00000000 _uxe_device_stack_class_register
+     /tmp/ccVTPQFI.s:26     .text._ux_device_stack_class_register:00000000 $t
+     /tmp/ccVTPQFI.s:32     .text._ux_device_stack_class_register:00000000 _ux_device_stack_class_register
+     /tmp/ccVTPQFI.s:150    .text._ux_device_stack_class_register:00000060 $d
+     /tmp/ccVTPQFI.s:155    .text._uxe_device_stack_class_register:00000000 $t
+     /tmp/ccVTPQFI.s:161    .text._uxe_device_stack_class_register:00000000 _uxe_device_stack_class_register
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

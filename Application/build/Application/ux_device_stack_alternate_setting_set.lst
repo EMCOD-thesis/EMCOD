@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccH51WEt.s 			page 1
+ARM GAS  /tmp/ccPpiArt.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
-ARM GAS  /tmp/ccH51WEt.s 			page 2
+ARM GAS  /tmp/ccPpiArt.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** /*                                            memset and memcpy cases,    */
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** /*                                            resulting in version 6.1    */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** /*  10-15-2021     Chaoqiong Xiao           Modified comment(s),          */
-ARM GAS  /tmp/ccH51WEt.s 			page 3
+ARM GAS  /tmp/ccPpiArt.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** /*                                            calculated payload size,    */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  114:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     /* If trace is enabled, insert this event into the trace buffer.  */
  115:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     UX_TRACE_IN_LINE_INSERT(UX_TRACE_DEVICE_STACK_ALTERNATE_SETTING_SET, interface_value, alternate
  116:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
-ARM GAS  /tmp/ccH51WEt.s 			page 4
+ARM GAS  /tmp/ccPpiArt.s 			page 4
 
 
  117:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     /* Get the pointer to the device. */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
   94              		.loc 1 129 26 view .LVU32
   95 001e 46B9     		cbnz	r6, .L5
  130:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     {
-ARM GAS  /tmp/ccH51WEt.s 			page 5
+ARM GAS  /tmp/ccPpiArt.s 			page 5
 
 
  131:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  169:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     return(UX_FUNCTION_NOT_SUPPORTED);
  170:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** #else
  171:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
-ARM GAS  /tmp/ccH51WEt.s 			page 6
+ARM GAS  /tmp/ccPpiArt.s 			page 6
 
 
  172:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     /* Get the pointer to the DCD. */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  226:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     UX_INTERFACE_DESCRIPTOR_ENTRIES,
  227:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     (UCHAR *) &interface_descriptor);
  228:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
-ARM GAS  /tmp/ccH51WEt.s 			page 7
+ARM GAS  /tmp/ccPpiArt.s 			page 7
 
 
  229:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                         /* Check if this is the interface we are searching. */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  283:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                         
  284:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                 case UX_ENDPOINT_DESCRIPTOR_ITEM:
  285:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                         
-ARM GAS  /tmp/ccH51WEt.s 			page 8
+ARM GAS  /tmp/ccPpiArt.s 			page 8
 
 
  286:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     /* Find a free endpoint in the pool and hook it to the 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  340:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     /* Validate max transfer size and save it.  */
  341:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     UX_ASSERT(max_transfer_length <= UX_SLAVE_REQUEST_DATA_MAX_LENG
  342:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     transfer_request -> ux_slave_transfer_request_transfer_length =
-ARM GAS  /tmp/ccH51WEt.s 			page 9
+ARM GAS  /tmp/ccPpiArt.s 			page 9
 
 
  343:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  397:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                 
  398:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     /* We have found another descriptor embedded in the interface. 
  399:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     break;
-ARM GAS  /tmp/ccH51WEt.s 			page 10
+ARM GAS  /tmp/ccPpiArt.s 			page 10
 
 
  400:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                 }
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  454:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****         device_framework_length -=  descriptor_length;
  455:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
  456:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****         /* Point to the next descriptor.  */
-ARM GAS  /tmp/ccH51WEt.s 			page 11
+ARM GAS  /tmp/ccPpiArt.s 			page 11
 
 
  457:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****         device_framework +=  descriptor_length;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  146 0044 D7E93348 		ldrd	r4, r8, [r7, #204]
  147              	.LVL11:
  180:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     {
-ARM GAS  /tmp/ccH51WEt.s 			page 12
+ARM GAS  /tmp/ccPpiArt.s 			page 12
 
 
  148              		.loc 1 180 5 is_stmt 1 view .LVU53
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  187              	.LVL15:
  188              	.L28:
  461:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** #endif
-ARM GAS  /tmp/ccH51WEt.s 			page 13
+ARM GAS  /tmp/ccPpiArt.s 			page 13
 
 
  189              		.loc 1 461 11 is_stmt 0 view .LVU69
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  228 00b2 F569     		ldr	r5, [r6, #28]
  229              	.LVL20:
  238:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                             {
-ARM GAS  /tmp/ccH51WEt.s 			page 14
+ARM GAS  /tmp/ccPpiArt.s 			page 14
 
 
  230              		.loc 1 238 29 is_stmt 1 view .LVU85
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  416:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                             {
  269              		.loc 1 416 29 is_stmt 1 view .LVU101
  416:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                             {
-ARM GAS  /tmp/ccH51WEt.s 			page 15
+ARM GAS  /tmp/ccPpiArt.s 			page 15
 
 
  270              		.loc 1 416 32 is_stmt 0 view .LVU102
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  308              	.LVL29:
  245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c **** 
  309              		.loc 1 245 33 view .LVU119
-ARM GAS  /tmp/ccH51WEt.s 			page 16
+ARM GAS  /tmp/ccPpiArt.s 			page 16
 
 
  310 0104 2A46     		mov	r2, r5
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  349 0130 08BF     		it	eq
  350 0132 C846     		moveq	r8, r9
  351              	.LVL35:
-ARM GAS  /tmp/ccH51WEt.s 			page 17
+ARM GAS  /tmp/ccPpiArt.s 			page 17
 
 
  352              	.L13:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  390 0152 2046     		mov	r0, r4
  296:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                             break;
  391              		.loc 1 296 85 view .LVU151
-ARM GAS  /tmp/ccH51WEt.s 			page 18
+ARM GAS  /tmp/ccPpiArt.s 			page 18
 
 
  392 0154 43F80C2B 		str	r2, [r3], #12
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  429 0172 D1F84011 		ldr	r1, [r1, #320]
  430 0176 0229     		cmp	r1, #2
  431 0178 0CD1     		bne	.L20
-ARM GAS  /tmp/ccH51WEt.s 			page 19
+ARM GAS  /tmp/ccPpiArt.s 			page 19
 
 
  327:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                         (endpoint -> ux_slave_endpoint_descriptor.bmAttributes & 0x
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  468 0198 2A64     		str	r2, [r5, #64]
  345:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                         
  469              		.loc 1 345 37 is_stmt 1 view .LVU187
-ARM GAS  /tmp/ccH51WEt.s 			page 20
+ARM GAS  /tmp/ccPpiArt.s 			page 20
 
 
  348:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  372:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****                                     }
  505              		.loc 1 372 92 is_stmt 0 view .LVU207
  506 01b8 F561     		str	r5, [r6, #28]
-ARM GAS  /tmp/ccH51WEt.s 			page 21
+ARM GAS  /tmp/ccPpiArt.s 			page 21
 
 
  507 01ba BBE7     		b	.L13
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  457:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     }
  547              		.loc 1 457 9 is_stmt 1 view .LVU222
  457:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_alternate_setting_set.c ****     }
-ARM GAS  /tmp/ccH51WEt.s 			page 22
+ARM GAS  /tmp/ccPpiArt.s 			page 22
 
 
  548              		.loc 1 457 26 is_stmt 0 view .LVU223
@@ -1307,14 +1307,14 @@ ARM GAS  /tmp/ccH51WEt.s 			page 1
  586              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  587              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
  588              		.file 6 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
-ARM GAS  /tmp/ccH51WEt.s 			page 23
+ARM GAS  /tmp/ccPpiArt.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_alternate_setting_set.c
-     /tmp/ccH51WEt.s:26     .text._ux_device_stack_alternate_setting_set:00000000 $t
-     /tmp/ccH51WEt.s:32     .text._ux_device_stack_alternate_setting_set:00000000 _ux_device_stack_alternate_setting_set
-     /tmp/ccH51WEt.s:575    .text._ux_device_stack_alternate_setting_set:000001e8 $d
+     /tmp/ccPpiArt.s:26     .text._ux_device_stack_alternate_setting_set:00000000 $t
+     /tmp/ccPpiArt.s:32     .text._ux_device_stack_alternate_setting_set:00000000 _ux_device_stack_alternate_setting_set
+     /tmp/ccPpiArt.s:575    .text._ux_device_stack_alternate_setting_set:000001e8 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

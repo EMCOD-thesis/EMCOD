@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cczeKtJS.s 			page 1
+ARM GAS  /tmp/ccfkGCrL.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
   22:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
   23:../Middlewares/threadx/common/src/tx_byte_allocate.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
-ARM GAS  /tmp/cczeKtJS.s 			page 2
+ARM GAS  /tmp/ccfkGCrL.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
   79:../Middlewares/threadx/common/src/tx_byte_allocate.c **** /*                                            resulting in version 6.1    */
   80:../Middlewares/threadx/common/src/tx_byte_allocate.c **** /*                                                                        */
   81:../Middlewares/threadx/common/src/tx_byte_allocate.c **** /**************************************************************************/
-ARM GAS  /tmp/cczeKtJS.s 			page 3
+ARM GAS  /tmp/ccfkGCrL.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/tx_byte_allocate.c **** UINT  _tx_byte_allocate(TX_BYTE_POOL *pool_ptr, VOID **memory_ptr, ULONG memory_size,  ULONG wait_o
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
   62              		.cfi_offset 9, -16
   63              		.cfi_offset 10, -12
   64              		.cfi_offset 11, -8
-ARM GAS  /tmp/cczeKtJS.s 			page 4
+ARM GAS  /tmp/ccfkGCrL.s 			page 4
 
 
   65              		.cfi_offset 14, -4
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
   39:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    processor architectures.  For example, the size or number of bits   */
   40:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    in an "int" data type vary between microprocessor architectures and */
   41:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    even C compilers for the same microprocessor.  ThreadX does not     */
-ARM GAS  /tmp/cczeKtJS.s 			page 5
+ARM GAS  /tmp/ccfkGCrL.s 			page 5
 
 
   42:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*    directly use native C data types.  Instead, ThreadX creates its     */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
   96:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define compiler library include files.  */
   97:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   98:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <stdlib.h>
-ARM GAS  /tmp/cczeKtJS.s 			page 6
+ARM GAS  /tmp/ccfkGCrL.s 			page 6
 
 
   99:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #include <string.h>
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  153:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  154:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  155:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cczeKtJS.s 			page 7
+ARM GAS  /tmp/ccfkGCrL.s 			page 7
 
 
  156:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Services with error checking.  */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  210:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  211:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_SOURCE                    *((volatile ULONG *) 0x0a800024)
  212:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TRACE_TIME_MASK                      0x0000FFFFUL
-ARM GAS  /tmp/cczeKtJS.s 			page 8
+ARM GAS  /tmp/ccfkGCrL.s 			page 8
 
 
  213:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  267:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef  TX_ENABLE_IAR_LIBRARY_SUPPORT
  268:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* IAR library support */
  269:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #if !defined(TX_SINGLE_MODE_SECURE) && !defined(TX_SINGLE_MODE_NON_SECURE)
-ARM GAS  /tmp/cczeKtJS.s 			page 9
+ARM GAS  /tmp/ccfkGCrL.s 			page 9
 
 
  270:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* ThreadX in non-secure zone with calls to secure zone. */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  324:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  325:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_DELETE_EXTENSION(thread_ptr)                      do {_tx_iar_destroy_per_thread_
  326:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                         thread_ptr -> tx_thread_iar
-ARM GAS  /tmp/cczeKtJS.s 			page 10
+ARM GAS  /tmp/ccfkGCrL.s 			page 10
 
 
  327:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  381:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  382:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
  383:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cczeKtJS.s 			page 11
+ARM GAS  /tmp/ccfkGCrL.s 			page 11
 
 
  384:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_COMPLETED_EXTENSION(thread_ptr)   {                                              
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  438:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  439:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
  440:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
-ARM GAS  /tmp/cczeKtJS.s 			page 12
+ARM GAS  /tmp/ccfkGCrL.s 			page 12
 
 
  441:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  495:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_DELETE_EXTENSION(mutex_ptr)
  496:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_DELETE_EXTENSION(queue_ptr)
  497:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_DELETE_EXTENSION(semaphore_ptr)
-ARM GAS  /tmp/cczeKtJS.s 			page 13
+ARM GAS  /tmp/ccfkGCrL.s 			page 13
 
 
  498:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_TIMER_DELETE_EXTENSION(timer_ptr)
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  552:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #elif defined(__GNUC__) /* GCC and AC6 Compiler */
  553:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_LOWEST_SET_BIT_CALCULATE(m, b)       __asm__ volatile (" RBIT %0,%1 ": "=r" (m) : "r" (m
  554:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                 __asm__ volatile (" CLZ  %0,%1 ": "=r" (b) : "r" (m
-ARM GAS  /tmp/cczeKtJS.s 			page 14
+ARM GAS  /tmp/ccfkGCrL.s 			page 14
 
 
  555:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  565:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_PORT_USE_BASEPRI
   85              		.loc 2 565 1 view .LVU21
  569:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/cczeKtJS.s 			page 15
+ARM GAS  /tmp/ccfkGCrL.s 			page 15
 
 
   86              		.loc 2 569 5 view .LVU22
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  113:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
  114              		.loc 1 113 5 view .LVU30
  115 0018 4E4B     		ldr	r3, .L32+4
-ARM GAS  /tmp/cczeKtJS.s 			page 16
+ARM GAS  /tmp/ccfkGCrL.s 			page 16
 
 
  116              	.LVL6:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  160              	.LBE31:
  161              	.LBE30:
  162              		.loc 1 130 5 discriminator 1 view .LVU50
-ARM GAS  /tmp/cczeKtJS.s 			page 17
+ARM GAS  /tmp/ccfkGCrL.s 			page 17
 
 
  163 0030 4A4B     		ldr	r3, .L32+12
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  217 006a C5F81C90 		str	r9, [r5, #28]
  218              		.loc 1 130 5 is_stmt 1 view .LVU74
  219              	.LVL17:
-ARM GAS  /tmp/cczeKtJS.s 			page 18
+ARM GAS  /tmp/ccfkGCrL.s 			page 18
 
 
  220              		.loc 1 130 5 view .LVU75
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  151:../Middlewares/threadx/common/src/tx_byte_allocate.c ****     /* Save the time stamp for later comparison to verify that
  152:../Middlewares/threadx/common/src/tx_byte_allocate.c ****        the event hasn't been overwritten by the time the allocate
  153:../Middlewares/threadx/common/src/tx_byte_allocate.c ****        call succeeds.  */
-ARM GAS  /tmp/cczeKtJS.s 			page 19
+ARM GAS  /tmp/ccfkGCrL.s 			page 19
 
 
  154:../Middlewares/threadx/common/src/tx_byte_allocate.c ****     lower_tbu =  *((ULONG *) (log_entry_ptr + TX_EL_EVENT_TIME_LOWER_OFFSET));
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  178:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         /* Lockout interrupts.  */
  179:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         TX_DISABLE
  281              		.loc 1 179 9 is_stmt 1 view .LVU100
-ARM GAS  /tmp/cczeKtJS.s 			page 20
+ARM GAS  /tmp/ccfkGCrL.s 			page 20
 
 
  282              	.LBB35:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  186:../Middlewares/threadx/common/src/tx_byte_allocate.c ****             finished =  TX_TRUE;
  187:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         }
  188:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         else
-ARM GAS  /tmp/cczeKtJS.s 			page 21
+ARM GAS  /tmp/ccfkGCrL.s 			page 21
 
 
  189:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  234:../Middlewares/threadx/common/src/tx_byte_allocate.c ****            allocate event.  In that case, do nothing here.  */
  235:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         if (lower_tbu ==  *((ULONG *) (log_entry_ptr + TX_EL_EVENT_TIME_LOWER_OFFSET)) &&
  236:../Middlewares/threadx/common/src/tx_byte_allocate.c ****             upper_tbu ==  *((ULONG *) (log_entry_ptr + TX_EL_EVENT_TIME_UPPER_OFFSET)))
-ARM GAS  /tmp/cczeKtJS.s 			page 22
+ARM GAS  /tmp/ccfkGCrL.s 			page 22
 
 
  237:../Middlewares/threadx/common/src/tx_byte_allocate.c ****         {
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  266:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                 TX_RESTORE
  267:../Middlewares/threadx/common/src/tx_byte_allocate.c ****             }
  268:../Middlewares/threadx/common/src/tx_byte_allocate.c ****             else
-ARM GAS  /tmp/cczeKtJS.s 			page 23
+ARM GAS  /tmp/ccfkGCrL.s 			page 23
 
 
  269:../Middlewares/threadx/common/src/tx_byte_allocate.c ****             {
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  323:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     thread_ptr -> tx_thread_suspended_next =        next_thread;
  324:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     previous_thread =                               next_thread -> tx_thread_suspen
  325:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     thread_ptr -> tx_thread_suspended_previous =    previous_thread;
-ARM GAS  /tmp/cczeKtJS.s 			page 24
+ARM GAS  /tmp/ccfkGCrL.s 			page 24
 
 
  326:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     previous_thread -> tx_thread_suspended_next =   thread_ptr;
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  380:../Middlewares/threadx/common/src/tx_byte_allocate.c **** #ifdef TX_ENABLE_EVENT_LOGGING
  381:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                 /* Check that the event time stamp is unchanged.  A different
  382:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                    timestamp means that a later event wrote over the byte
-ARM GAS  /tmp/cczeKtJS.s 			page 25
+ARM GAS  /tmp/ccfkGCrL.s 			page 25
 
 
  383:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                    allocate event.  In that case, do nothing here.  */
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  130:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
  373              		.loc 1 130 5 is_stmt 1 discriminator 11 view .LVU132
  374 00be 0B60     		str	r3, [r1]
-ARM GAS  /tmp/cczeKtJS.s 			page 26
+ARM GAS  /tmp/ccfkGCrL.s 			page 26
 
 
  130:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  413              		.thumb
  414              		.syntax unified
  415              	.LBE43:
-ARM GAS  /tmp/cczeKtJS.s 			page 27
+ARM GAS  /tmp/ccfkGCrL.s 			page 27
 
 
  416              	.LBE42:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  303:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
  454              		.loc 1 303 17 is_stmt 1 view .LVU165
  303:../Middlewares/threadx/common/src/tx_byte_allocate.c **** 
-ARM GAS  /tmp/cczeKtJS.s 			page 28
+ARM GAS  /tmp/ccfkGCrL.s 			page 28
 
 
  455              		.loc 1 303 33 is_stmt 0 view .LVU166
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  491              	.LVL44:
  492              	.LBB44:
  493              	.LBI44:
-ARM GAS  /tmp/cczeKtJS.s 			page 29
+ARM GAS  /tmp/ccfkGCrL.s 			page 29
 
 
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  322:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     thread_ptr -> tx_thread_suspended_next =        next_thread;
  534              		.loc 1 322 21 is_stmt 1 view .LVU199
  322:../Middlewares/threadx/common/src/tx_byte_allocate.c ****                     thread_ptr -> tx_thread_suspended_next =        next_thread;
-ARM GAS  /tmp/cczeKtJS.s 			page 30
+ARM GAS  /tmp/ccfkGCrL.s 			page 30
 
 
  535              		.loc 1 322 33 is_stmt 0 view .LVU200
@@ -1794,14 +1794,14 @@ ARM GAS  /tmp/cczeKtJS.s 			page 1
  576              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  577              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
  578              		.file 6 "../Middlewares/threadx/common/inc/tx_byte_pool.h"
-ARM GAS  /tmp/cczeKtJS.s 			page 31
+ARM GAS  /tmp/ccfkGCrL.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_byte_allocate.c
-     /tmp/cczeKtJS.s:26     .text._tx_byte_allocate:00000000 $t
-     /tmp/cczeKtJS.s:32     .text._tx_byte_allocate:00000000 _tx_byte_allocate
-     /tmp/cczeKtJS.s:559    .text._tx_byte_allocate:00000150 $d
+     /tmp/ccfkGCrL.s:26     .text._tx_byte_allocate:00000000 $t
+     /tmp/ccfkGCrL.s:32     .text._tx_byte_allocate:00000000 _tx_byte_allocate
+     /tmp/ccfkGCrL.s:559    .text._tx_byte_allocate:00000150 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

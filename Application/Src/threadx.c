@@ -15,7 +15,7 @@ static void blink(ULONG thread_input) {
     while (1) {
         BSP_LED_Toggle(LED_GREEN);
         BSP_LED_Toggle(LED_RED);
-        tx_thread_sleep(TX_TIMER_TICKS_PER_SECOND * 5);
+        tx_thread_sleep(TX_TIMER_TICKS_PER_SECOND * 3);
     }
 }
 

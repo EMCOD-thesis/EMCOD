@@ -9,7 +9,7 @@
 UART_HandleTypeDef huart1;
 volatile int32_t cameraFrameReceived;
 
-static void SystemClock_Config(void);
+static void system_clock_config(void);
 
 int main(void) {
   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
@@ -18,12 +18,12 @@ int main(void) {
 
   HAL_Init();
   SCB_EnableICache();
-  SystemClock_Config();
+  system_clock_config();
   tx_kernel_enter();
   while (1) {}
 }
 
-static void SystemClock_Config(void) {
+static void system_clock_config(void) {
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_PeriphCLKInitTypeDef RCC_PeriphCLKInitStruct = {0};
@@ -31,7 +31,8 @@ static void SystemClock_Config(void) {
   /* Ensure VDDCORE=0.9V before increasing the system frequency */
   BSP_SMPS_Init(SMPS_VOLTAGE_OVERDRIVE);
 
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_NONE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
 
   /* PLL1 = 64 x 25 / 2 = 800MHz */
   RCC_OscInitStruct.PLL1.PLLState = RCC_PLL_ON;

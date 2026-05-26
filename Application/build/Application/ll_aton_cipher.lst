@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccvowg2E.s 			page 1
+ARM GAS  /tmp/cclzxo2D.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   22:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
   23:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** #if (LL_ATON_PLATFORM != LL_ATON_PLAT_EC_TRACE)
   24:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
-ARM GAS  /tmp/ccvowg2E.s 			page 2
+ARM GAS  /tmp/cclzxo2D.s 			page 2
 
 
   25:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** #include "ll_aton_runtime.h"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   44 0002 10B5     		push	{r4, lr}
   45              		.cfi_def_cfa_offset 8
   46              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccvowg2E.s 			page 3
+ARM GAS  /tmp/cclzxo2D.s 			page 3
 
 
   47              		.cfi_offset 14, -4
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   81              	.LVL4:
   81:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   t = ATON_STRENG_ENCR_MSB_SET_ROUNDS(t, LL_Streng_EncryptionStruct->rounds);
   82              		.loc 1 81 7 view .LVU25
-ARM GAS  /tmp/ccvowg2E.s 			page 4
+ARM GAS  /tmp/cclzxo2D.s 			page 4
 
 
   83 001c 03F48053 		and	r3, r3, #4096
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   69:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  121              		.loc 1 69 12 view .LVU43
  122 003e 4FF0FF30 		mov	r0, #-1
-ARM GAS  /tmp/ccvowg2E.s 			page 5
+ARM GAS  /tmp/cclzxo2D.s 			page 5
 
 
  123              	.LVL10:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  107:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   LL_ATON_LIB_UNUSED(key_low);
  159              		.loc 1 107 1 view .LVU51
  160 0004 DDE90354 		ldrd	r5, r4, [sp, #12]
-ARM GAS  /tmp/ccvowg2E.s 			page 6
+ARM GAS  /tmp/cclzxo2D.s 			page 6
 
 
  161              		.loc 1 115 6 view .LVU52
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  206 001e 0433     		adds	r3, r3, #4
  207              		.loc 1 124 5 discriminator 4 view .LVU82
  208 0020 C450     		str	r4, [r0, r3]
-ARM GAS  /tmp/ccvowg2E.s 			page 7
+ARM GAS  /tmp/cclzxo2D.s 			page 7
 
 
  209              		.loc 1 124 5 is_stmt 1 view .LVU83
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  129:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     ATON_BUSIF_KEY_SET(id, ATON_BUSIF_0_KEY1_95_64_IDX, ATON_BUSIF_0_KEY1_95_64_S, key_hi & 0xfffff
  236              		.loc 1 129 5 view .LVU98
  129:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     ATON_BUSIF_KEY_SET(id, ATON_BUSIF_0_KEY1_95_64_IDX, ATON_BUSIF_0_KEY1_95_64_S, key_hi & 0xfffff
-ARM GAS  /tmp/ccvowg2E.s 			page 8
+ARM GAS  /tmp/cclzxo2D.s 			page 8
 
 
  237              		.loc 1 129 5 view .LVU99
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  144:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****  * @param id Epoch Controller identifier [0..ATON_EPOCHCTRL_NUM-1]
  145:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****  * @param conf Pointer to LL_Streng_EncryptionTypedef structure describing Encryption parameters
  146:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****  * @retval Error code
-ARM GAS  /tmp/ccvowg2E.s 			page 9
+ARM GAS  /tmp/cclzxo2D.s 			page 9
 
 
  147:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****  * @note Encryption configuration structure is the same as the Stream Engine one
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  311              		.loc 1 161 3 view .LVU126
  312              	.LVL24:
  162:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   t = ATON_EPOCHCTRL_ENCR_MSB_SET_EN(t, conf->enable);
-ARM GAS  /tmp/ccvowg2E.s 			page 10
+ARM GAS  /tmp/cclzxo2D.s 			page 10
 
 
  313              		.loc 1 162 3 view .LVU127
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  355              	.L18:
  156:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  356              		.loc 1 156 12 view .LVU150
-ARM GAS  /tmp/ccvowg2E.s 			page 11
+ARM GAS  /tmp/cclzxo2D.s 			page 11
 
 
  357 0034 4FF0FF30 		mov	r0, #-1
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  394              		.cfi_offset 14, -4
  395              		.loc 1 186 6 view .LVU157
  396 0004 037B     		ldrb	r3, [r0, #12]	@ zero_extendqisi2
-ARM GAS  /tmp/ccvowg2E.s 			page 12
+ARM GAS  /tmp/cclzxo2D.s 			page 12
 
 
  182:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   uint32_t limit;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  225:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****                                          .nbits_unsigned = 0};
  226:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  227:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   if (0 != (cypherInfo->cypherCacheMask & CYPHER_CACHE_SRC))
-ARM GAS  /tmp/ccvowg2E.s 			page 13
+ARM GAS  /tmp/cclzxo2D.s 			page 13
 
 
  228:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   {
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  282:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   LL_Streng_TensorInit(CYPHER_SRC_STRENG_ID, &dma_in, 1);
  283:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   LL_Streng_TensorInit(CYPHER_DST_STRENG_ID, &dma_out, 1);
  284:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
-ARM GAS  /tmp/ccvowg2E.s 			page 14
+ARM GAS  /tmp/cclzxo2D.s 			page 14
 
 
  285:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   /* Enable stream switch */
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  196:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   limit += (8 - (limit & 7));
  437              		.loc 1 196 53 view .LVU170
  438 0030 05F00705 		and	r5, r5, #7
-ARM GAS  /tmp/ccvowg2E.s 			page 15
+ARM GAS  /tmp/cclzxo2D.s 			page 15
 
 
  439              	.LVL36:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  478 0068 4822     		movs	r2, #72
  479 006a 18A8     		add	r0, sp, #96
  213:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   limit += (8 - (limit & 7));
-ARM GAS  /tmp/ccvowg2E.s 			page 16
+ARM GAS  /tmp/cclzxo2D.s 			page 16
 
 
  480              		.loc 1 213 9 view .LVU186
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  240:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     dma_out.cache_allocate = 1;
  519              		.loc 1 240 23 view .LVU202
  520 00aa 44BF     		itt	mi
-ARM GAS  /tmp/ccvowg2E.s 			page 17
+ARM GAS  /tmp/cclzxo2D.s 			page 17
 
 
  521 00ac 23F06003 		bicmi	r3, r3, #96
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  259:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   {
  560              		.loc 1 259 3 is_stmt 1 view .LVU218
  259:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   {
-ARM GAS  /tmp/ccvowg2E.s 			page 18
+ARM GAS  /tmp/cclzxo2D.s 			page 18
 
 
  561              		.loc 1 259 17 is_stmt 0 view .LVU219
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  598              		.loc 1 121 5 view .LVU236
  121:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     ATON_BUSIF_KEY_SET(id, ATON_BUSIF_0_KEY0_63_32_IDX, ATON_BUSIF_0_KEY0_63_32_S, key_low >> 32);
  599              		.loc 1 121 5 is_stmt 0 discriminator 4 view .LVU237
-ARM GAS  /tmp/ccvowg2E.s 			page 19
+ARM GAS  /tmp/cclzxo2D.s 			page 19
 
 
  600 0114 5D61     		str	r5, [r3, #20]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  632 0120 0020     		movs	r0, #0
  633 0122 FFF7FEFF 		bl	LL_Streng_TensorInit
  634              	.LVL50:
-ARM GAS  /tmp/ccvowg2E.s 			page 20
+ARM GAS  /tmp/cclzxo2D.s 			page 20
 
 
  283:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  270:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     }
  677              		.loc 1 270 25 is_stmt 0 view .LVU272
  678 0160 9DF86230 		ldrb	r3, [sp, #98]	@ zero_extendqisi2
-ARM GAS  /tmp/ccvowg2E.s 			page 21
+ARM GAS  /tmp/cclzxo2D.s 			page 21
 
 
  679 0164 43F00403 		orr	r3, r3, #4
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  721 000a 8568     		ldr	r5, [r0, #8]
  317:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   if (extCypherInfo->cypherCacheMask != 0 && extCypherInfo->transferSize > CYPHER_CACHE_SIZE)
  722              		.loc 1 317 1 view .LVU279
-ARM GAS  /tmp/ccvowg2E.s 			page 22
+ARM GAS  /tmp/cclzxo2D.s 			page 22
 
 
  723 000c B3B0     		sub	sp, sp, #204
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  360:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****                                         .nbits_in = 8,
  361:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****                                         .nbits_out = 8,
  362:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****                                         .nbits_unsigned = 0};
-ARM GAS  /tmp/ccvowg2E.s 			page 23
+ARM GAS  /tmp/cclzxo2D.s 			page 23
 
 
  363:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  417:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     {
  418:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****       /* Enable encryption on output stream engine */
  419:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
-ARM GAS  /tmp/ccvowg2E.s 			page 24
+ARM GAS  /tmp/cclzxo2D.s 			page 24
 
 
  420:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****       dma_out.cipher_en = 1;
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  474:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   const uint32_t dma_wait_mask = 1 << CYPHER_DST_STRENG_ID;
  475:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  476:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   /* Wait for end of transfer */
-ARM GAS  /tmp/ccvowg2E.s 			page 25
+ARM GAS  /tmp/cclzxo2D.s 			page 25
 
 
  477:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  332:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     {
  755              		.loc 1 332 53 is_stmt 0 view .LVU291
  756 002c D4F818A0 		ldr	r10, [r4, #24]
-ARM GAS  /tmp/ccvowg2E.s 			page 26
+ARM GAS  /tmp/cclzxo2D.s 			page 26
 
 
  332:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     {
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  797              		.loc 1 352 3 is_stmt 1 view .LVU305
  367:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  798              		.loc 1 367 31 is_stmt 0 view .LVU306
-ARM GAS  /tmp/ccvowg2E.s 			page 27
+ARM GAS  /tmp/cclzxo2D.s 			page 27
 
 
  799 0066 4822     		movs	r2, #72
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  838 00aa 8DF83930 		strbne	r3, [sp, #57]
  369:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   limit = (uint32_t)extCypherInfo->transferSize + (8 - (lastAdd & 7));
  839              		.loc 1 369 11 view .LVU322
-ARM GAS  /tmp/ccvowg2E.s 			page 28
+ARM GAS  /tmp/cclzxo2D.s 			page 28
 
 
  840 00ae 1544     		add	r5, r5, r2
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  878              		.loc 1 375 24 view .LVU338
  879 00e8 2497     		str	r7, [sp, #144]
  377:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   {
-ARM GAS  /tmp/ccvowg2E.s 			page 29
+ARM GAS  /tmp/cclzxo2D.s 			page 29
 
 
  880              		.loc 1 377 3 is_stmt 1 view .LVU339
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  918 011c 20A9     		add	r1, sp, #128
  919 011e 1046     		mov	r0, r2
  920 0120 FFF7FEFF 		bl	LL_Streng_TensorInit
-ARM GAS  /tmp/ccvowg2E.s 			page 30
+ARM GAS  /tmp/cclzxo2D.s 			page 30
 
 
  921              	.LVL80:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  959              		.loc 1 483 3 view .LVU371
  489:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c **** 
  960              		.loc 1 489 3 view .LVU372
-ARM GAS  /tmp/ccvowg2E.s 			page 31
+ARM GAS  /tmp/cclzxo2D.s 			page 31
 
 
  961              	.LBB13:
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   52:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   53:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   CMSIS_DEPRECATED
   54:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #define CMSIS_DEPRECATED                       __attribute__((deprecated))
-ARM GAS  /tmp/ccvowg2E.s 			page 32
+ARM GAS  /tmp/cclzxo2D.s 			page 32
 
 
   55:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  109:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __COMPILER_BARRIER
  110:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __COMPILER_BARRIER()                   __ASM volatile("":::"memory")
  111:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccvowg2E.s 			page 33
+ARM GAS  /tmp/cclzxo2D.s 			page 33
 
 
  112:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __NO_INIT
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  166:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** 
  167:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  168:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Instruction Synchronization Barrier
-ARM GAS  /tmp/ccvowg2E.s 			page 34
+ARM GAS  /tmp/cclzxo2D.s 			page 34
 
 
  169:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Instruction Synchronization Barrier flushes the pipeline in the processor,
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  993              		.thumb
  994              		.syntax unified
  995              	.LBE16:
-ARM GAS  /tmp/ccvowg2E.s 			page 35
+ARM GAS  /tmp/cclzxo2D.s 			page 35
 
 
  996              	.LBE15:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  1037 0198 BAD9     		bls	.L59
  1038 019a 3EE7     		b	.L51
  1039              	.L57:
-ARM GAS  /tmp/ccvowg2E.s 			page 36
+ARM GAS  /tmp/cclzxo2D.s 			page 36
 
 
  416:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     {
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  453:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     {
  1076              		.loc 1 453 8 is_stmt 0 view .LVU414
  1077 01c8 21B1     		cbz	r1, .L60
-ARM GAS  /tmp/ccvowg2E.s 			page 37
+ARM GAS  /tmp/cclzxo2D.s 			page 37
 
 
  455:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****     }
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  1109      205F5F6C 
  1110              		.section	.text.LL_ATON_DecryptAndCopy,"ax",%progbits
  1111              		.align	1
-ARM GAS  /tmp/ccvowg2E.s 			page 38
+ARM GAS  /tmp/cclzxo2D.s 			page 38
 
 
  1112              		.global	LL_ATON_DecryptAndCopy
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  525:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   extCypherInfo.dstAdd = (uint32_t)(uintptr_t)dst;
  1137              		.loc 1 525 24 view .LVU424
  1138 0008 CDE90021 		strd	r2, r1, [sp]
-ARM GAS  /tmp/ccvowg2E.s 			page 39
+ARM GAS  /tmp/cclzxo2D.s 			page 39
 
 
  526:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   extCypherInfo.cypherCacheMask = CYPHER_CACHE_NONE; /* Do not use cache */
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
   24:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_runtime.h **** extern "C"
   25:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_runtime.h **** {
   26:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_runtime.h **** #endif
-ARM GAS  /tmp/ccvowg2E.s 			page 40
+ARM GAS  /tmp/cclzxo2D.s 			page 40
 
 
   27:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_runtime.h **** 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  1189              		.loc 3 40 5 is_stmt 0 discriminator 1 view .LVU449
  1190 0036 2821     		movs	r1, #40
  1191              	.LVL94:
-ARM GAS  /tmp/ccvowg2E.s 			page 41
+ARM GAS  /tmp/cclzxo2D.s 			page 41
 
 
  1192              		.loc 3 40 5 discriminator 1 view .LVU450
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  541:../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.c ****   LL_ExtDmaCypherInit(&extCypherInfo);
  1234              		.loc 1 541 3 view .LVU462
  1235 0060 6846     		mov	r0, sp
-ARM GAS  /tmp/ccvowg2E.s 			page 42
+ARM GAS  /tmp/cclzxo2D.s 			page 42
 
 
  1236              	.LVL101:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  1270 007a 4621     		movs	r1, #70
  1271 007c 084B     		ldr	r3, .L85+24
  1272 007e 0A4A     		ldr	r2, .L85+32
-ARM GAS  /tmp/ccvowg2E.s 			page 43
+ARM GAS  /tmp/cclzxo2D.s 			page 43
 
 
  1273 0080 DCE7     		b	.L84
@@ -2578,37 +2578,37 @@ ARM GAS  /tmp/ccvowg2E.s 			page 1
  1316              		.file 5 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_stdint.h"
  1317              		.file 6 "../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_cipher.h"
  1318              		.file 7 "../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton.h"
-ARM GAS  /tmp/ccvowg2E.s 			page 44
+ARM GAS  /tmp/cclzxo2D.s 			page 44
 
 
  1319              		.file 8 "../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_NN_interface.h"
  1320              		.file 9 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/assert.h"
  1321              		.file 10 "<built-in>"
-ARM GAS  /tmp/ccvowg2E.s 			page 45
+ARM GAS  /tmp/cclzxo2D.s 			page 45
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ll_aton_cipher.c
-     /tmp/ccvowg2E.s:26     .text.LL_Streng_EncryptionInit:00000000 $t
-     /tmp/ccvowg2E.s:32     .text.LL_Streng_EncryptionInit:00000000 LL_Streng_EncryptionInit
-     /tmp/ccvowg2E.s:129    .text.LL_Streng_EncryptionInit:00000044 $d
-     /tmp/ccvowg2E.s:135    .text.LL_Busif_SetKeys:00000000 $t
-     /tmp/ccvowg2E.s:141    .text.LL_Busif_SetKeys:00000000 LL_Busif_SetKeys
-     /tmp/ccvowg2E.s:261    .text.LL_Busif_SetKeys:00000040 $d
-     /tmp/ccvowg2E.s:271    .text.LL_EpochCtrl_EncryptionInit:00000000 $t
-     /tmp/ccvowg2E.s:277    .text.LL_EpochCtrl_EncryptionInit:00000000 LL_EpochCtrl_EncryptionInit
-     /tmp/ccvowg2E.s:364    .text.LL_EpochCtrl_EncryptionInit:0000003c $d
-     /tmp/ccvowg2E.s:369    .text.LL_DmaCypherInit:00000000 $t
-     /tmp/ccvowg2E.s:375    .text.LL_DmaCypherInit:00000000 LL_DmaCypherInit
-     /tmp/ccvowg2E.s:685    .text.LL_DmaCypherInit:00000170 $d
-     /tmp/ccvowg2E.s:690    .text.LL_ExtDmaCypherInit:00000000 $t
-     /tmp/ccvowg2E.s:696    .text.LL_ExtDmaCypherInit:00000000 LL_ExtDmaCypherInit
-     /tmp/ccvowg2E.s:1093   .text.LL_ExtDmaCypherInit:000001d8 $d
-     /tmp/ccvowg2E.s:1111   .text.LL_ATON_DecryptAndCopy:00000000 $t
-     /tmp/ccvowg2E.s:1117   .text.LL_ATON_DecryptAndCopy:00000000 LL_ATON_DecryptAndCopy
-     /tmp/ccvowg2E.s:1291   .text.LL_ATON_DecryptAndCopy:00000088 $d
-     /tmp/ccvowg2E.s:1311   .rodata.__func__.1:00000000 __func__.1
-     /tmp/ccvowg2E.s:1306   .rodata.__func__.0:00000000 __func__.0
+     /tmp/cclzxo2D.s:26     .text.LL_Streng_EncryptionInit:00000000 $t
+     /tmp/cclzxo2D.s:32     .text.LL_Streng_EncryptionInit:00000000 LL_Streng_EncryptionInit
+     /tmp/cclzxo2D.s:129    .text.LL_Streng_EncryptionInit:00000044 $d
+     /tmp/cclzxo2D.s:135    .text.LL_Busif_SetKeys:00000000 $t
+     /tmp/cclzxo2D.s:141    .text.LL_Busif_SetKeys:00000000 LL_Busif_SetKeys
+     /tmp/cclzxo2D.s:261    .text.LL_Busif_SetKeys:00000040 $d
+     /tmp/cclzxo2D.s:271    .text.LL_EpochCtrl_EncryptionInit:00000000 $t
+     /tmp/cclzxo2D.s:277    .text.LL_EpochCtrl_EncryptionInit:00000000 LL_EpochCtrl_EncryptionInit
+     /tmp/cclzxo2D.s:364    .text.LL_EpochCtrl_EncryptionInit:0000003c $d
+     /tmp/cclzxo2D.s:369    .text.LL_DmaCypherInit:00000000 $t
+     /tmp/cclzxo2D.s:375    .text.LL_DmaCypherInit:00000000 LL_DmaCypherInit
+     /tmp/cclzxo2D.s:685    .text.LL_DmaCypherInit:00000170 $d
+     /tmp/cclzxo2D.s:690    .text.LL_ExtDmaCypherInit:00000000 $t
+     /tmp/cclzxo2D.s:696    .text.LL_ExtDmaCypherInit:00000000 LL_ExtDmaCypherInit
+     /tmp/cclzxo2D.s:1093   .text.LL_ExtDmaCypherInit:000001d8 $d
+     /tmp/cclzxo2D.s:1111   .text.LL_ATON_DecryptAndCopy:00000000 $t
+     /tmp/cclzxo2D.s:1117   .text.LL_ATON_DecryptAndCopy:00000000 LL_ATON_DecryptAndCopy
+     /tmp/cclzxo2D.s:1291   .text.LL_ATON_DecryptAndCopy:00000088 $d
+     /tmp/cclzxo2D.s:1311   .rodata.__func__.1:00000000 __func__.1
+     /tmp/cclzxo2D.s:1306   .rodata.__func__.0:00000000 __func__.0
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
                            .group:00000000 wm4.features.h.33.d554620bb17bd3b714c3fb5c268772bc
@@ -2644,7 +2644,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.ll_aton_platform.h.20.8f1d4e7781c282794886ffdd00ccd30b
                            .group:00000000 wm4.stm32n6xx.h.34.c523a1ffdf274a69e8802892c6776332
                            .group:00000000 wm4.stm32n657xx.h.26.acd272cb67318cc1a4791ce2f0720ca6
-ARM GAS  /tmp/ccvowg2E.s 			page 46
+ARM GAS  /tmp/cclzxo2D.s 			page 46
 
 
                            .group:00000000 wm4.cmsis_version.h.30.d128735bf87720f7436b74fefeb5043c

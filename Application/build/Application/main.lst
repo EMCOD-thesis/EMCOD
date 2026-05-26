@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccjTyagi.s 			page 1
+ARM GAS  /tmp/ccX1NXHh.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -25,12 +25,12 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   22              	.Ltext0:
   23              		.cfi_sections	.debug_frame
   24              		.file 1 "Src/main.c"
-  25              		.section	.text.SystemClock_Config,"ax",%progbits
+  25              		.section	.text.system_clock_config,"ax",%progbits
   26              		.align	1
   27              		.syntax unified
   28              		.thumb
   29              		.thumb_func
-  31              	SystemClock_Config:
+  31              	system_clock_config:
   32              	.LFB890:
    1:Src/main.c    **** #include "tx_api.h"
    2:Src/main.c    **** #include "stm32n6xx_nucleo_bus.h"
@@ -43,7 +43,7 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
    9:Src/main.c    **** UART_HandleTypeDef huart1;
   10:Src/main.c    **** volatile int32_t cameraFrameReceived;
   11:Src/main.c    **** 
-  12:Src/main.c    **** static void SystemClock_Config(void);
+  12:Src/main.c    **** static void system_clock_config(void);
   13:Src/main.c    **** 
   14:Src/main.c    **** int main(void) {
   15:Src/main.c    ****   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
@@ -52,23 +52,23 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   18:Src/main.c    **** 
   19:Src/main.c    ****   HAL_Init();
   20:Src/main.c    ****   SCB_EnableICache();
-  21:Src/main.c    ****   SystemClock_Config();
+  21:Src/main.c    ****   system_clock_config();
   22:Src/main.c    ****   tx_kernel_enter();
   23:Src/main.c    ****   while (1) {}
   24:Src/main.c    **** }
   25:Src/main.c    **** 
-  26:Src/main.c    **** static void SystemClock_Config(void) {
-ARM GAS  /tmp/ccjTyagi.s 			page 2
+  26:Src/main.c    **** static void system_clock_config(void) {
+ARM GAS  /tmp/ccX1NXHh.s 			page 2
 
 
-  33              		.loc 1 26 38 view -0
+  33              		.loc 1 26 39 view -0
   34              		.cfi_startproc
   35              		@ args = 0, pretend = 0, frame = 616
   36              		@ frame_needed = 0, uses_anonymous_args = 0
   27:Src/main.c    ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   37              		.loc 1 27 3 view .LVU1
   26:Src/main.c    ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  38              		.loc 1 26 38 is_stmt 0 view .LVU2
+  38              		.loc 1 26 39 is_stmt 0 view .LVU2
   39 0000 70B5     		push	{r4, r5, r6, lr}
   40              		.cfi_def_cfa_offset 16
   41              		.cfi_offset 4, -16
@@ -107,353 +107,357 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   69 0028 FFF7FEFF 		bl	BSP_SMPS_Init
   70              	.LVL3:
   33:Src/main.c    **** 
-  34:Src/main.c    ****   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_NONE;
+  34:Src/main.c    ****   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   71              		.loc 1 34 3 view .LVU9
+  35:Src/main.c    ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  36:Src/main.c    **** 
+  37:Src/main.c    ****   /* PLL1 = 64 x 25 / 2 = 800MHz */
+  38:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLState = RCC_PLL_ON;
+  39:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
+  72              		.loc 1 39 36 is_stmt 0 view .LVU10
+  73 002c 0023     		movs	r3, #0
+  40:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLM = 2;
+  41:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLN = 25;
+ARM GAS  /tmp/ccX1NXHh.s 			page 3
+
+
+  74              		.loc 1 41 31 view .LVU11
+  75 002e 1921     		movs	r1, #25
+  42:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
+  43:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP1 = 1;
+  76              		.loc 1 43 32 view .LVU12
+  77 0030 0125     		movs	r5, #1
+  42:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
+  78              		.loc 1 42 40 view .LVU13
+  79 0032 CDE91D31 		strd	r3, r1, [sp, #116]
+  44:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP2 = 1;
+  45:Src/main.c    **** 
+  46:Src/main.c    ****   /* PLL2 = 64 x 125 / 8 = 1000MHz */
+  47:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLState = RCC_PLL_ON;
+  48:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLSource = RCC_PLLSOURCE_HSI;
+  49:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLM = 8;
+  50:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLFractional = 0;
+  51:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLN = 125;
+  80              		.loc 1 51 31 view .LVU14
+  81 0036 7D21     		movs	r1, #125
+  34:Src/main.c    ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  82              		.loc 1 34 36 view .LVU15
+  83 0038 0226     		movs	r6, #2
   35:Src/main.c    **** 
-  36:Src/main.c    ****   /* PLL1 = 64 x 25 / 2 = 800MHz */
-  37:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLState = RCC_PLL_ON;
-  38:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
-  39:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLM = 2;
-  40:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLN = 25;
-  41:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
-  42:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP1 = 1;
-  72              		.loc 1 42 32 is_stmt 0 view .LVU10
-ARM GAS  /tmp/ccjTyagi.s 			page 3
-
-
-  73 002c 0125     		movs	r5, #1
-  34:Src/main.c    **** 
-  74              		.loc 1 34 36 view .LVU11
-  75 002e 0023     		movs	r3, #0
-  40:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
-  76              		.loc 1 40 31 view .LVU12
-  77 0030 1922     		movs	r2, #25
-  43:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP2 = 1;
-  44:Src/main.c    **** 
-  45:Src/main.c    ****   /* PLL2 = 64 x 125 / 8 = 1000MHz */
-  46:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLState = RCC_PLL_ON;
-  47:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLSource = RCC_PLLSOURCE_HSI;
-  48:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLM = 8;
-  49:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLFractional = 0;
-  50:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLN = 125;
-  78              		.loc 1 50 31 view .LVU13
-  79 0032 7D21     		movs	r1, #125
-  37:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
-  80              		.loc 1 37 35 view .LVU14
-  81 0034 0226     		movs	r6, #2
-  41:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP1 = 1;
-  82              		.loc 1 41 40 view .LVU15
-  83 0036 CDE91D32 		strd	r3, r2, [sp, #116]
-  51:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP1 = 1;
-  84              		.loc 1 51 32 view .LVU16
-  85 003a CDE92515 		strd	r1, r5, [sp, #148]
-  48:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLFractional = 0;
-  86              		.loc 1 48 31 view .LVU17
-  87 003e 0822     		movs	r2, #8
-  52:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP2 = 1;
-  53:Src/main.c    **** 
-  54:Src/main.c    ****   /* PLL3 = (64 x 225 / 8) / (1 * 2) = 900MHz */
-  55:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLState = RCC_PLL_ON;
-  56:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLSource = RCC_PLLSOURCE_HSI;
-  57:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLM = 8;
-  58:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLN = 225;
-  88              		.loc 1 58 31 view .LVU18
+  84              		.loc 1 35 30 view .LVU16
+  85 003a 0822     		movs	r2, #8
+  52:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP1 = 1;
+  86              		.loc 1 52 32 view .LVU17
+  87 003c CDE92515 		strd	r1, r5, [sp, #148]
+  53:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP2 = 1;
+  54:Src/main.c    **** 
+  55:Src/main.c    ****   /* PLL3 = (64 x 225 / 8) / (1 * 2) = 900MHz */
+  56:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLState = RCC_PLL_ON;
+  57:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLSource = RCC_PLLSOURCE_HSI;
+  58:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLM = 8;
+  59:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLN = 225;
+  88              		.loc 1 59 31 view .LVU18
   89 0040 E121     		movs	r1, #225
-  38:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLM = 2;
-  90              		.loc 1 38 36 view .LVU19
-  91 0042 CDE91A63 		strd	r6, r3, [sp, #104]
-  47:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLM = 8;
-  92              		.loc 1 47 36 view .LVU20
+  40:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLN = 25;
+  90              		.loc 1 40 31 view .LVU19
+  91 0042 CDE91B36 		strd	r3, r6, [sp, #108]
+  48:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLM = 8;
+  92              		.loc 1 48 36 view .LVU20
   93 0046 CDE92163 		strd	r6, r3, [sp, #132]
-  49:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLN = 125;
-  94              		.loc 1 49 40 view .LVU21
+  50:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLN = 125;
+  94              		.loc 1 50 40 view .LVU21
   95 004a CDE92323 		strd	r2, r3, [sp, #140]
-  57:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLN = 225;
-  96              		.loc 1 57 31 view .LVU22
+  58:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLN = 225;
+  96              		.loc 1 58 31 view .LVU22
   97 004e CDE92932 		strd	r3, r2, [sp, #164]
-  59:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLFractional = 0;
-  98              		.loc 1 59 40 view .LVU23
+  60:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLFractional = 0;
+  98              		.loc 1 60 40 view .LVU23
   99 0052 CDE92B31 		strd	r3, r1, [sp, #172]
-  60:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP1 = 1;
-  61:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP2 = 2;
-  62:Src/main.c    **** 
-  63:Src/main.c    ****   /* PLL4 = (64 x 225 / 8) / (6 * 6) = 50 MHz */
-ARM GAS  /tmp/ccjTyagi.s 			page 4
+  61:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP1 = 1;
+  62:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP2 = 2;
+  63:Src/main.c    **** 
+  64:Src/main.c    ****   /* PLL4 = (64 x 225 / 8) / (6 * 6) = 50 MHz */
+  65:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLState = RCC_PLL_ON;
+ARM GAS  /tmp/ccX1NXHh.s 			page 4
 
 
-  64:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLState = RCC_PLL_ON;
-  65:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLSource = RCC_PLLSOURCE_HSI;
- 100              		.loc 1 65 36 view .LVU24
+  66:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLSource = RCC_PLLSOURCE_HSI;
+ 100              		.loc 1 66 36 view .LVU24
  101 0056 CDE92F63 		strd	r6, r3, [sp, #188]
-  66:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLM = 8;
-  67:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLFractional = 0;
- 102              		.loc 1 67 40 view .LVU25
+  67:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLM = 8;
+  68:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLFractional = 0;
+ 102              		.loc 1 68 40 view .LVU25
  103 005a CDE93123 		strd	r2, r3, [sp, #196]
-  34:Src/main.c    **** 
- 104              		.loc 1 34 36 view .LVU26
- 105 005e 1093     		str	r3, [sp, #64]
-  37:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
- 106              		.loc 1 37 3 is_stmt 1 view .LVU27
-  39:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLN = 25;
- 107              		.loc 1 39 3 view .LVU28
-  68:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLN = 225;
-  69:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
- 108              		.loc 1 69 32 is_stmt 0 view .LVU29
- 109 0060 0623     		movs	r3, #6
-  70:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP2 = 6;
+  69:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLN = 225;
+  70:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
+ 104              		.loc 1 70 32 view .LVU26
+ 105 005e 0623     		movs	r3, #6
+  71:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP2 = 6;
+  72:Src/main.c    **** 
+  73:Src/main.c    ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) { while(1); }
+ 106              		.loc 1 73 7 view .LVU27
+ 107 0060 10A8     		add	r0, sp, #64
+  44:Src/main.c    **** 
+ 108              		.loc 1 44 32 view .LVU28
+ 109 0062 CDE91F55 		strd	r5, r5, [sp, #124]
+  56:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLSource = RCC_PLLSOURCE_HSI;
+ 110              		.loc 1 56 35 view .LVU29
+ 111 0066 CDE92756 		strd	r5, r6, [sp, #156]
+  62:Src/main.c    **** 
+ 112              		.loc 1 62 32 view .LVU30
+ 113 006a CDE92D56 		strd	r5, r6, [sp, #180]
   71:Src/main.c    **** 
-  72:Src/main.c    ****   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) { while(1); }
- 110              		.loc 1 72 7 view .LVU30
- 111 0062 10A8     		add	r0, sp, #64
-  43:Src/main.c    **** 
- 112              		.loc 1 43 32 view .LVU31
- 113 0064 CDE91F55 		strd	r5, r5, [sp, #124]
-  55:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLSource = RCC_PLLSOURCE_HSI;
- 114              		.loc 1 55 35 view .LVU32
- 115 0068 CDE92756 		strd	r5, r6, [sp, #156]
-  61:Src/main.c    **** 
- 116              		.loc 1 61 32 view .LVU33
- 117 006c CDE92D56 		strd	r5, r6, [sp, #180]
-  70:Src/main.c    **** 
- 118              		.loc 1 70 32 view .LVU34
- 119 0070 CDE93433 		strd	r3, r3, [sp, #208]
-  39:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLN = 25;
- 120              		.loc 1 39 31 view .LVU35
- 121 0074 1C96     		str	r6, [sp, #112]
-  40:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
- 122              		.loc 1 40 3 is_stmt 1 view .LVU36
-  42:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP2 = 1;
- 123              		.loc 1 42 3 view .LVU37
-  46:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLSource = RCC_PLLSOURCE_HSI;
- 124              		.loc 1 46 3 view .LVU38
-  48:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLFractional = 0;
- 125              		.loc 1 48 3 view .LVU39
-  50:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP1 = 1;
- 126              		.loc 1 50 3 view .LVU40
-  52:Src/main.c    **** 
- 127              		.loc 1 52 3 view .LVU41
-  56:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLM = 8;
- 128              		.loc 1 56 3 view .LVU42
-  58:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLFractional = 0;
- 129              		.loc 1 58 3 view .LVU43
-  60:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP2 = 2;
- 130              		.loc 1 60 3 view .LVU44
-ARM GAS  /tmp/ccjTyagi.s 			page 5
+ 114              		.loc 1 71 32 view .LVU31
+ 115 006e CDE93433 		strd	r3, r3, [sp, #208]
+  34:Src/main.c    ****   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+ 116              		.loc 1 34 36 view .LVU32
+ 117 0072 1096     		str	r6, [sp, #64]
+  35:Src/main.c    **** 
+ 118              		.loc 1 35 3 is_stmt 1 view .LVU33
+  35:Src/main.c    **** 
+ 119              		.loc 1 35 30 is_stmt 0 view .LVU34
+ 120 0074 1392     		str	r2, [sp, #76]
+  38:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
+ 121              		.loc 1 38 3 is_stmt 1 view .LVU35
+  38:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLSource = RCC_PLLSOURCE_HSI;
+ 122              		.loc 1 38 35 is_stmt 0 view .LVU36
+ 123 0076 1A96     		str	r6, [sp, #104]
+  39:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLM = 2;
+ 124              		.loc 1 39 3 is_stmt 1 view .LVU37
+  41:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLFractional = 0;
+ 125              		.loc 1 41 3 view .LVU38
+  43:Src/main.c    ****   RCC_OscInitStruct.PLL1.PLLP2 = 1;
+ 126              		.loc 1 43 3 view .LVU39
+  47:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLSource = RCC_PLLSOURCE_HSI;
+ 127              		.loc 1 47 3 view .LVU40
+  49:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLFractional = 0;
+ 128              		.loc 1 49 3 view .LVU41
+  51:Src/main.c    ****   RCC_OscInitStruct.PLL2.PLLP1 = 1;
+ 129              		.loc 1 51 3 view .LVU42
+  53:Src/main.c    **** 
+ 130              		.loc 1 53 3 view .LVU43
+  57:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLM = 8;
+ 131              		.loc 1 57 3 view .LVU44
+ARM GAS  /tmp/ccX1NXHh.s 			page 5
 
 
-  64:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLSource = RCC_PLLSOURCE_HSI;
- 131              		.loc 1 64 3 view .LVU45
-  66:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLFractional = 0;
- 132              		.loc 1 66 3 view .LVU46
-  68:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
- 133              		.loc 1 68 3 view .LVU47
-  68:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
- 134              		.loc 1 68 31 is_stmt 0 view .LVU48
- 135 0076 3391     		str	r1, [sp, #204]
-  69:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP2 = 6;
- 136              		.loc 1 69 3 is_stmt 1 view .LVU49
- 137              		.loc 1 72 3 view .LVU50
- 138              		.loc 1 72 7 is_stmt 0 view .LVU51
- 139 0078 FFF7FEFF 		bl	HAL_RCC_OscConfig
- 140              	.LVL4:
- 141              		.loc 1 72 6 discriminator 1 view .LVU52
- 142 007c 00B1     		cbz	r0, .L2
- 143              	.L3:
- 144              		.loc 1 72 58 is_stmt 1 view .LVU53
- 145              		.loc 1 72 63 view .LVU54
- 146 007e FEE7     		b	.L3
- 147              	.L2:
-  73:Src/main.c    **** 
-  74:Src/main.c    ****   RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_CPUCLK | RCC_CLOCKTYPE_SYSCLK |
- 148              		.loc 1 74 3 view .LVU55
-  75:Src/main.c    ****                                  RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1 |
-  76:Src/main.c    ****                                  RCC_CLOCKTYPE_PCLK2 | RCC_CLOCKTYPE_PCLK4 |
-  77:Src/main.c    ****                                  RCC_CLOCKTYPE_PCLK5);
-  78:Src/main.c    **** 
-  79:Src/main.c    ****   /* CPU CLock (sysa_ck) = ic1_ck = PLL1 output/ic1_divider = 800 MHz */
-  80:Src/main.c    ****   RCC_ClkInitStruct.CPUCLKSource = RCC_CPUCLKSOURCE_IC1;
- 149              		.loc 1 80 34 is_stmt 0 view .LVU56
- 150 0080 4FF44033 		mov	r3, #196608
- 151 0084 7F22     		movs	r2, #127
- 152 0086 CDE90023 		strd	r2, r3, [sp]
-  81:Src/main.c    ****   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_IC2_IC6_IC11;
- 153              		.loc 1 81 3 is_stmt 1 view .LVU57
- 154              		.loc 1 81 34 is_stmt 0 view .LVU58
- 155 008a 4FF04073 		mov	r3, #50331648
- 156 008e 0293     		str	r3, [sp, #8]
-  82:Src/main.c    ****   RCC_ClkInitStruct.IC1Selection.ClockSelection = RCC_ICCLKSOURCE_PLL1;
- 157              		.loc 1 82 3 is_stmt 1 view .LVU59
-  83:Src/main.c    ****   RCC_ClkInitStruct.IC1Selection.ClockDivider = 1;
+  59:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLFractional = 0;
+ 132              		.loc 1 59 3 view .LVU45
+  61:Src/main.c    ****   RCC_OscInitStruct.PLL3.PLLP2 = 2;
+ 133              		.loc 1 61 3 view .LVU46
+  65:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLSource = RCC_PLLSOURCE_HSI;
+ 134              		.loc 1 65 3 view .LVU47
+  67:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLFractional = 0;
+ 135              		.loc 1 67 3 view .LVU48
+  69:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
+ 136              		.loc 1 69 3 view .LVU49
+  69:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP1 = 6;
+ 137              		.loc 1 69 31 is_stmt 0 view .LVU50
+ 138 0078 3391     		str	r1, [sp, #204]
+  70:Src/main.c    ****   RCC_OscInitStruct.PLL4.PLLP2 = 6;
+ 139              		.loc 1 70 3 is_stmt 1 view .LVU51
+ 140              		.loc 1 73 3 view .LVU52
+ 141              		.loc 1 73 7 is_stmt 0 view .LVU53
+ 142 007a FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 143              	.LVL4:
+ 144              		.loc 1 73 6 discriminator 1 view .LVU54
+ 145 007e 00B1     		cbz	r0, .L2
+ 146              	.L3:
+ 147              		.loc 1 73 58 is_stmt 1 view .LVU55
+ 148              		.loc 1 73 63 view .LVU56
+ 149 0080 FEE7     		b	.L3
+ 150              	.L2:
+  74:Src/main.c    **** 
+  75:Src/main.c    ****   RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_CPUCLK | RCC_CLOCKTYPE_SYSCLK |
+ 151              		.loc 1 75 3 view .LVU57
+  76:Src/main.c    ****                                  RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_PCLK1 |
+  77:Src/main.c    ****                                  RCC_CLOCKTYPE_PCLK2 | RCC_CLOCKTYPE_PCLK4 |
+  78:Src/main.c    ****                                  RCC_CLOCKTYPE_PCLK5);
+  79:Src/main.c    **** 
+  80:Src/main.c    ****   /* CPU CLock (sysa_ck) = ic1_ck = PLL1 output/ic1_divider = 800 MHz */
+  81:Src/main.c    ****   RCC_ClkInitStruct.CPUCLKSource = RCC_CPUCLKSOURCE_IC1;
+ 152              		.loc 1 81 34 is_stmt 0 view .LVU58
+ 153 0082 4FF44033 		mov	r3, #196608
+ 154 0086 7F22     		movs	r2, #127
+ 155 0088 CDE90023 		strd	r2, r3, [sp]
+  82:Src/main.c    ****   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_IC2_IC6_IC11;
+ 156              		.loc 1 82 3 is_stmt 1 view .LVU59
+ 157              		.loc 1 82 34 is_stmt 0 view .LVU60
+ 158 008c 4FF04073 		mov	r3, #50331648
+ 159 0090 0293     		str	r3, [sp, #8]
+  83:Src/main.c    ****   RCC_ClkInitStruct.IC1Selection.ClockSelection = RCC_ICCLKSOURCE_PLL1;
+ 160              		.loc 1 83 3 is_stmt 1 view .LVU61
+  84:Src/main.c    ****   RCC_ClkInitStruct.IC1Selection.ClockDivider = 1;
+  85:Src/main.c    **** 
+  86:Src/main.c    ****   /* AXI Clock (sysb_ck) = ic2_ck = PLL1 output/ic2_divider = 400 MHz */
+  87:Src/main.c    ****   RCC_ClkInitStruct.IC2Selection.ClockSelection = RCC_ICCLKSOURCE_PLL1;
+  88:Src/main.c    ****   RCC_ClkInitStruct.IC2Selection.ClockDivider = 2;
+  89:Src/main.c    **** 
+  90:Src/main.c    ****   /* NPU Clock (sysc_ck) = ic6_ck = PLL2 output/ic6_divider = 1000 MHz */
+  91:Src/main.c    ****   RCC_ClkInitStruct.IC6Selection.ClockSelection = RCC_ICCLKSOURCE_PLL2;
+ 161              		.loc 1 91 49 is_stmt 0 view .LVU62
+ 162 0092 4FF08053 		mov	r3, #268435456
+  92:Src/main.c    ****   RCC_ClkInitStruct.IC6Selection.ClockDivider = 1;
+ARM GAS  /tmp/ccX1NXHh.s 			page 6
+
+
+ 163              		.loc 1 92 47 view .LVU63
+ 164 0096 CDE90C35 		strd	r3, r5, [sp, #48]
+  93:Src/main.c    **** 
+  94:Src/main.c    ****   /* AXISRAM3/4/5/6 Clock (sysd_ck) = ic11_ck = PLL3 output/ic11_divider = 900 MHz */
+  95:Src/main.c    ****   RCC_ClkInitStruct.IC11Selection.ClockSelection = RCC_ICCLKSOURCE_PLL3;
+ 165              		.loc 1 95 50 view .LVU64
+ 166 009a 4FF00053 		mov	r3, #536870912
+  96:Src/main.c    ****   RCC_ClkInitStruct.IC11Selection.ClockDivider = 1;
+ 167              		.loc 1 96 48 view .LVU65
+ 168 009e CDE90E35 		strd	r3, r5, [sp, #56]
+  97:Src/main.c    **** 
+  98:Src/main.c    ****   /* HCLK = sysb_ck / HCLK divider = 200 MHz */
+  99:Src/main.c    ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
+ 169              		.loc 1 99 35 view .LVU66
+ 170 00a2 4FF48013 		mov	r3, #1048576
   84:Src/main.c    **** 
-  85:Src/main.c    ****   /* AXI Clock (sysb_ck) = ic2_ck = PLL1 output/ic2_divider = 400 MHz */
-  86:Src/main.c    ****   RCC_ClkInitStruct.IC2Selection.ClockSelection = RCC_ICCLKSOURCE_PLL1;
+ 171              		.loc 1 84 47 view .LVU67
+ 172 00a6 CDE90805 		strd	r0, r5, [sp, #32]
   87:Src/main.c    ****   RCC_ClkInitStruct.IC2Selection.ClockDivider = 2;
+ 173              		.loc 1 87 3 is_stmt 1 view .LVU68
   88:Src/main.c    **** 
-  89:Src/main.c    ****   /* NPU Clock (sysc_ck) = ic6_ck = PLL2 output/ic6_divider = 1000 MHz */
-  90:Src/main.c    ****   RCC_ClkInitStruct.IC6Selection.ClockSelection = RCC_ICCLKSOURCE_PLL2;
- 158              		.loc 1 90 49 is_stmt 0 view .LVU60
- 159 0090 4FF08053 		mov	r3, #268435456
+ 174              		.loc 1 88 47 is_stmt 0 view .LVU69
+ 175 00aa CDE90A06 		strd	r0, r6, [sp, #40]
   91:Src/main.c    ****   RCC_ClkInitStruct.IC6Selection.ClockDivider = 1;
- 160              		.loc 1 91 47 view .LVU61
- 161 0094 CDE90C35 		strd	r3, r5, [sp, #48]
-  92:Src/main.c    **** 
-  93:Src/main.c    ****   /* AXISRAM3/4/5/6 Clock (sysd_ck) = ic11_ck = PLL3 output/ic11_divider = 900 MHz */
-ARM GAS  /tmp/ccjTyagi.s 			page 6
-
-
-  94:Src/main.c    ****   RCC_ClkInitStruct.IC11Selection.ClockSelection = RCC_ICCLKSOURCE_PLL3;
- 162              		.loc 1 94 50 view .LVU62
- 163 0098 4FF00053 		mov	r3, #536870912
+ 176              		.loc 1 91 3 is_stmt 1 view .LVU70
   95:Src/main.c    ****   RCC_ClkInitStruct.IC11Selection.ClockDivider = 1;
- 164              		.loc 1 95 48 view .LVU63
- 165 009c CDE90E35 		strd	r3, r5, [sp, #56]
-  96:Src/main.c    **** 
-  97:Src/main.c    ****   /* HCLK = sysb_ck / HCLK divider = 200 MHz */
-  98:Src/main.c    ****   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
- 166              		.loc 1 98 35 view .LVU64
- 167 00a0 4FF48013 		mov	r3, #1048576
-  83:Src/main.c    **** 
- 168              		.loc 1 83 47 view .LVU65
- 169 00a4 CDE90805 		strd	r0, r5, [sp, #32]
-  86:Src/main.c    ****   RCC_ClkInitStruct.IC2Selection.ClockDivider = 2;
- 170              		.loc 1 86 3 is_stmt 1 view .LVU66
-  87:Src/main.c    **** 
- 171              		.loc 1 87 47 is_stmt 0 view .LVU67
- 172 00a8 CDE90A06 		strd	r0, r6, [sp, #40]
-  90:Src/main.c    ****   RCC_ClkInitStruct.IC6Selection.ClockDivider = 1;
- 173              		.loc 1 90 3 is_stmt 1 view .LVU68
-  94:Src/main.c    ****   RCC_ClkInitStruct.IC11Selection.ClockDivider = 1;
- 174              		.loc 1 94 3 view .LVU69
- 175              		.loc 1 98 3 view .LVU70
-  99:Src/main.c    **** 
- 100:Src/main.c    ****   /* PCLKx = HCLK / PCLKx divider = 200 MHz */
- 101:Src/main.c    ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
- 176              		.loc 1 101 36 is_stmt 0 view .LVU71
- 177 00ac CDE90330 		strd	r3, r0, [sp, #12]
- 102:Src/main.c    ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV1;
- 178              		.loc 1 102 3 is_stmt 1 view .LVU72
- 103:Src/main.c    ****   RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV1;
- 179              		.loc 1 103 36 is_stmt 0 view .LVU73
- 180 00b0 CDE90500 		strd	r0, r0, [sp, #20]
- 104:Src/main.c    ****   RCC_ClkInitStruct.APB5CLKDivider = RCC_APB5_DIV1;
- 181              		.loc 1 104 3 is_stmt 1 view .LVU74
+ 177              		.loc 1 95 3 view .LVU71
+ 178              		.loc 1 99 3 view .LVU72
+ 100:Src/main.c    **** 
+ 101:Src/main.c    ****   /* PCLKx = HCLK / PCLKx divider = 200 MHz */
+ 102:Src/main.c    ****   RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
+ 179              		.loc 1 102 36 is_stmt 0 view .LVU73
+ 180 00ae CDE90330 		strd	r3, r0, [sp, #12]
+ 103:Src/main.c    ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV1;
+ 181              		.loc 1 103 3 is_stmt 1 view .LVU74
+ 104:Src/main.c    ****   RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV1;
  182              		.loc 1 104 36 is_stmt 0 view .LVU75
- 183 00b4 0790     		str	r0, [sp, #28]
- 105:Src/main.c    **** 
- 106:Src/main.c    ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct) != HAL_OK) { while(1); }
- 184              		.loc 1 106 3 is_stmt 1 view .LVU76
- 185              		.loc 1 106 7 is_stmt 0 view .LVU77
- 186 00b6 6846     		mov	r0, sp
- 187 00b8 FFF7FEFF 		bl	HAL_RCC_ClockConfig
- 188              	.LVL5:
- 189              		.loc 1 106 6 discriminator 1 view .LVU78
- 190 00bc 00B1     		cbz	r0, .L4
- 191              	.L5:
- 192              		.loc 1 106 60 is_stmt 1 view .LVU79
- 193              		.loc 1 106 65 view .LVU80
- 194 00be FEE7     		b	.L5
- 195              	.L4:
- 107:Src/main.c    **** 
- 108:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection = 0;
- 196              		.loc 1 108 3 view .LVU81
- 109:Src/main.c    **** 
- 110:Src/main.c    ****   /* XSPI1 kernel clock (ck_ker_xspi1) = HCLK = 200MHz */
-ARM GAS  /tmp/ccjTyagi.s 			page 7
+ 183 00b2 CDE90500 		strd	r0, r0, [sp, #20]
+ 105:Src/main.c    ****   RCC_ClkInitStruct.APB5CLKDivider = RCC_APB5_DIV1;
+ 184              		.loc 1 105 3 is_stmt 1 view .LVU76
+ 185              		.loc 1 105 36 is_stmt 0 view .LVU77
+ 186 00b6 0790     		str	r0, [sp, #28]
+ 106:Src/main.c    **** 
+ 107:Src/main.c    ****   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct) != HAL_OK) { while(1); }
+ 187              		.loc 1 107 3 is_stmt 1 view .LVU78
+ 188              		.loc 1 107 7 is_stmt 0 view .LVU79
+ 189 00b8 6846     		mov	r0, sp
+ 190 00ba FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 191              	.LVL5:
+ 192              		.loc 1 107 6 discriminator 1 view .LVU80
+ 193 00be 00B1     		cbz	r0, .L4
+ 194              	.L5:
+ 195              		.loc 1 107 60 is_stmt 1 view .LVU81
+ 196              		.loc 1 107 65 view .LVU82
+ 197 00c0 FEE7     		b	.L5
+ 198              	.L4:
+ 108:Src/main.c    **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 7
 
 
- 111:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection |= RCC_PERIPHCLK_XSPI1;
- 197              		.loc 1 111 3 view .LVU82
- 112:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi1ClockSelection = RCC_XSPI1CLKSOURCE_HCLK;
- 198              		.loc 1 112 3 view .LVU83
- 199              		.loc 1 112 47 is_stmt 0 view .LVU84
- 200 00c0 084B     		ldr	r3, .L8
- 113:Src/main.c    **** 
- 114:Src/main.c    ****   /* XSPI2 kernel clock (ck_ker_xspi1) = HCLK =  200MHz */
- 115:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection |= RCC_PERIPHCLK_XSPI2;
- 201              		.loc 1 115 48 view .LVU85
- 202 00c2 0022     		movs	r2, #0
- 112:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi1ClockSelection = RCC_XSPI1CLKSOURCE_HCLK;
- 203              		.loc 1 112 47 view .LVU86
- 204 00c4 6193     		str	r3, [sp, #388]
- 205              		.loc 1 115 3 is_stmt 1 view .LVU87
- 206              		.loc 1 115 48 is_stmt 0 view .LVU88
- 207 00c6 4FF44003 		mov	r3, #12582912
- 208 00ca CDE93623 		strd	r2, [sp, #216]
- 116:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi2ClockSelection = RCC_XSPI2CLKSOURCE_HCLK;
- 209              		.loc 1 116 3 is_stmt 1 view .LVU89
- 210              		.loc 1 116 47 is_stmt 0 view .LVU90
- 211 00ce 064B     		ldr	r3, .L8+4
- 117:Src/main.c    **** 
- 118:Src/main.c    ****   if (HAL_RCCEx_PeriphCLKConfig(&RCC_PeriphCLKInitStruct) != HAL_OK) { while(1); }
- 212              		.loc 1 118 7 view .LVU91
- 213 00d0 36A8     		add	r0, sp, #216
- 116:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi2ClockSelection = RCC_XSPI2CLKSOURCE_HCLK;
- 214              		.loc 1 116 47 view .LVU92
- 215 00d2 6293     		str	r3, [sp, #392]
- 216              		.loc 1 118 3 is_stmt 1 view .LVU93
- 217              		.loc 1 118 7 is_stmt 0 view .LVU94
- 218 00d4 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
- 219              	.LVL6:
- 220              		.loc 1 118 6 discriminator 1 view .LVU95
- 221 00d8 00B1     		cbz	r0, .L1
- 222              	.L7:
- 223              		.loc 1 118 72 is_stmt 1 view .LVU96
- 224              		.loc 1 118 77 view .LVU97
- 225 00da FEE7     		b	.L7
- 226              	.L1:
- 119:Src/main.c    **** }...
- 227              		.loc 1 119 1 is_stmt 0 view .LVU98
- 228 00dc 0DF51A7D 		add	sp, sp, #616
- 229              		.cfi_def_cfa_offset 16
- 230              		@ sp needed
- 231 00e0 70BD     		pop	{r4, r5, r6, pc}
- 232              	.L9:
- 233 00e2 00BF     		.align	2
- 234              	.L8:
- 235 00e4 14000003 		.word	50331668
- 236 00e8 14040003 		.word	50332692
- 237              		.cfi_endproc
- 238              	.LFE890:
- 240              		.section	.text.startup.main,"ax",%progbits
- 241              		.align	1
- 242              		.global	main
- 243              		.syntax unified
-ARM GAS  /tmp/ccjTyagi.s 			page 8
+ 109:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection = 0;
+ 199              		.loc 1 109 3 view .LVU83
+ 110:Src/main.c    **** 
+ 111:Src/main.c    ****   /* XSPI1 kernel clock (ck_ker_xspi1) = HCLK = 200MHz */
+ 112:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection |= RCC_PERIPHCLK_XSPI1;
+ 200              		.loc 1 112 3 view .LVU84
+ 113:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi1ClockSelection = RCC_XSPI1CLKSOURCE_HCLK;
+ 201              		.loc 1 113 3 view .LVU85
+ 202              		.loc 1 113 47 is_stmt 0 view .LVU86
+ 203 00c2 084B     		ldr	r3, .L8
+ 114:Src/main.c    **** 
+ 115:Src/main.c    ****   /* XSPI2 kernel clock (ck_ker_xspi1) = HCLK =  200MHz */
+ 116:Src/main.c    ****   RCC_PeriphCLKInitStruct.PeriphClockSelection |= RCC_PERIPHCLK_XSPI2;
+ 204              		.loc 1 116 48 view .LVU87
+ 205 00c4 0022     		movs	r2, #0
+ 113:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi1ClockSelection = RCC_XSPI1CLKSOURCE_HCLK;
+ 206              		.loc 1 113 47 view .LVU88
+ 207 00c6 6193     		str	r3, [sp, #388]
+ 208              		.loc 1 116 3 is_stmt 1 view .LVU89
+ 209              		.loc 1 116 48 is_stmt 0 view .LVU90
+ 210 00c8 4FF44003 		mov	r3, #12582912
+ 211 00cc CDE93623 		strd	r2, [sp, #216]
+ 117:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi2ClockSelection = RCC_XSPI2CLKSOURCE_HCLK;
+ 212              		.loc 1 117 3 is_stmt 1 view .LVU91
+ 213              		.loc 1 117 47 is_stmt 0 view .LVU92
+ 214 00d0 054B     		ldr	r3, .L8+4
+ 118:Src/main.c    **** 
+ 119:Src/main.c    ****   if (HAL_RCCEx_PeriphCLKConfig(&RCC_PeriphCLKInitStruct) != HAL_OK) { while(1); }
+ 215              		.loc 1 119 7 view .LVU93
+ 216 00d2 36A8     		add	r0, sp, #216
+ 117:Src/main.c    ****   RCC_PeriphCLKInitStruct.Xspi2ClockSelection = RCC_XSPI2CLKSOURCE_HCLK;
+ 217              		.loc 1 117 47 view .LVU94
+ 218 00d4 6293     		str	r3, [sp, #392]
+ 219              		.loc 1 119 3 is_stmt 1 view .LVU95
+ 220              		.loc 1 119 7 is_stmt 0 view .LVU96
+ 221 00d6 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
+ 222              	.LVL6:
+ 223              		.loc 1 119 6 discriminator 1 view .LVU97
+ 224 00da 00B1     		cbz	r0, .L1
+ 225              	.L7:
+ 226              		.loc 1 119 72 is_stmt 1 view .LVU98
+ 227              		.loc 1 119 77 view .LVU99
+ 228 00dc FEE7     		b	.L7
+ 229              	.L1:
+ 120:Src/main.c    **** }...
+ 230              		.loc 1 120 1 is_stmt 0 view .LVU100
+ 231 00de 0DF51A7D 		add	sp, sp, #616
+ 232              		.cfi_def_cfa_offset 16
+ 233              		@ sp needed
+ 234 00e2 70BD     		pop	{r4, r5, r6, pc}
+ 235              	.L9:
+ 236              		.align	2
+ 237              	.L8:
+ 238 00e4 14000003 		.word	50331668
+ 239 00e8 14040003 		.word	50332692
+ 240              		.cfi_endproc
+ 241              	.LFE890:
+ARM GAS  /tmp/ccX1NXHh.s 			page 8
 
 
- 244              		.thumb
- 245              		.thumb_func
- 247              	main:
- 248              	.LFB889:
+ 243              		.section	.text.startup.main,"ax",%progbits
+ 244              		.align	1
+ 245              		.global	main
+ 246              		.syntax unified
+ 247              		.thumb
+ 248              		.thumb_func
+ 250              	main:
+ 251              	.LFB889:
   14:Src/main.c    **** int main(void) {
- 249              		.loc 1 14 16 is_stmt 1 view -0
- 250              		.cfi_startproc
- 251              		@ Volatile: function does not return.
- 252              		@ args = 0, pretend = 0, frame = 0
- 253              		@ frame_needed = 0, uses_anonymous_args = 0
+ 252              		.loc 1 14 16 is_stmt 1 view -0
+ 253              		.cfi_startproc
+ 254              		@ Volatile: function does not return.
+ 255              		@ args = 0, pretend = 0, frame = 0
+ 256              		@ frame_needed = 0, uses_anonymous_args = 0
   15:Src/main.c    ****   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
- 254              		.loc 1 15 3 view .LVU100
+ 257              		.loc 1 15 3 view .LVU102
   15:Src/main.c    ****   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
- 255              		.loc 1 15 12 is_stmt 0 view .LVU101
- 256 0000 164A     		ldr	r2, .L13
+ 258              		.loc 1 15 12 is_stmt 0 view .LVU103
+ 259 0000 164A     		ldr	r2, .L13
   14:Src/main.c    **** int main(void) {
- 257              		.loc 1 14 16 view .LVU102
- 258 0002 08B5     		push	{r3, lr}
- 259              		.cfi_def_cfa_offset 8
- 260              		.cfi_offset 3, -8
- 261              		.cfi_offset 14, -4
+ 260              		.loc 1 14 16 view .LVU104
+ 261 0002 08B5     		push	{r3, lr}
+ 262              		.cfi_def_cfa_offset 8
+ 263              		.cfi_offset 3, -8
+ 264              		.cfi_offset 14, -4
   15:Src/main.c    ****   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
- 262              		.loc 1 15 12 view .LVU103
- 263 0004 1368     		ldr	r3, [r2]
+ 265              		.loc 1 15 12 view .LVU105
+ 266 0004 1368     		ldr	r3, [r2]
   15:Src/main.c    ****   MEMSYSCTL->MSCR |= MEMSYSCTL_MSCR_ICACTIVE_Msk;
- 264              		.loc 1 15 19 view .LVU104
- 265 0006 43F40053 		orr	r3, r3, #8192
- 266 000a 1360     		str	r3, [r2]
+ 267              		.loc 1 15 19 view .LVU106
+ 268 0006 43F40053 		orr	r3, r3, #8192
+ 269 000a 1360     		str	r3, [r2]
   16:Src/main.c    ****   __HAL_RCC_CPUCLK_CONFIG(RCC_CPUCLKSOURCE_HSI);
- 267              		.loc 1 16 3 is_stmt 1 view .LVU105
- 268              	.LBB46:
- 269              	.LBI46:
- 270              		.file 2 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h"
+ 270              		.loc 1 16 3 is_stmt 1 view .LVU107
+ 271              	.LBB46:
+ 272              	.LBI46:
+ 273              		.file 2 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h"
    1:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
    2:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   ******************************************************************************
    3:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @file    stm32n6xx_ll_rcc.h
@@ -474,13 +478,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   18:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
   19:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /* Define to prevent recursive inclusion -------------------------------------*/
   20:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #ifndef STM32N6xx_LL_RCC_H
+ARM GAS  /tmp/ccX1NXHh.s 			page 9
+
+
   21:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define STM32N6xx_LL_RCC_H
   22:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
   23:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #ifdef __cplusplus
   24:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** extern "C" {
-ARM GAS  /tmp/ccjTyagi.s 			page 9
-
-
   25:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #endif
   26:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
   27:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /* Includes ------------------------------------------------------------------*/
@@ -534,13 +538,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   75:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_REG_SHIFT     0U
   76:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_POS_SHIFT     8U
   77:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CONFIG_SHIFT  16U
+ARM GAS  /tmp/ccX1NXHh.s 			page 10
+
+
   78:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MASK_SHIFT    24U
   79:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
   80:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
   81:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 10
-
-
   82:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
   83:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /* Private macros ------------------------------------------------------------*/
   84:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_Private_Macros RCC Private Macros
@@ -594,13 +598,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  132:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  133:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  134:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 11
+
+
  135:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  136:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  137:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  138:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 11
-
-
  139:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  140:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /* Exported constants --------------------------------------------------------*/
  141:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_Exported_Constants RCC Exported Constants
@@ -654,13 +658,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  189:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  190:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_MSIFREQ  MSI oscillator frequency select
  191:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
+ARM GAS  /tmp/ccX1NXHh.s 			page 12
+
+
  192:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  193:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MSI_FREQ_4MHZ               0U
  194:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MSI_FREQ_16MHZ              RCC_MSICFGR_MSIFREQSEL
  195:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
-ARM GAS  /tmp/ccjTyagi.s 			page 12
-
-
  196:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  197:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  198:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -714,13 +718,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  246:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  247:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  248:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 13
+
+
  249:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  250:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_CPU_CLKSOURCE_STATUS  CPU clock switch status
  251:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
  252:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 13
-
-
  253:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CPU_CLKSOURCE_STATUS_HSI    0U                                        /*!< HSI used 
  254:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CPU_CLKSOURCE_STATUS_MSI    RCC_CFGR1_CPUSWS_0                        /*!< MSI used 
  255:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CPU_CLKSOURCE_STATUS_HSE    RCC_CFGR1_CPUSWS_1                        /*!< HSE used 
@@ -774,13 +778,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  303:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  304:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  305:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 14
+
+
  306:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  307:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_APB1_DIV  APB1 prescaler
  308:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
  309:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 14
-
-
  310:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB1_DIV_1                  0U
  311:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB1_DIV_2                  RCC_CFGR2_PPRE1_0
  312:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB1_DIV_4                  RCC_CFGR2_PPRE1_1
@@ -834,13 +838,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  360:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB5_DIV_32                 (RCC_CFGR2_PPRE5_2 | RCC_CFGR2_PPRE5_0)
  361:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB5_DIV_64                 (RCC_CFGR2_PPRE5_2 | RCC_CFGR2_PPRE5_1)
  362:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_APB5_DIV_128                (RCC_CFGR2_PPRE5_2 | RCC_CFGR2_PPRE5_1 | RCC_CFGR2_PPRE5
+ARM GAS  /tmp/ccX1NXHh.s 			page 15
+
+
  363:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  364:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  365:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  366:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
-ARM GAS  /tmp/ccjTyagi.s 			page 15
-
-
  367:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_MCOx  MCO selection
  368:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
  369:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
@@ -894,13 +898,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  417:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR5_MCO1PRE_3 | RCC_CCIPR5_MCO1PRE_1 | RCC_CCIPR
  418:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO1_DIV_13                 ((RCC_CCIPR5_MCO1PRE<<16U) | RCC_CCIPR5_MCO1PRE_3 | RCC_
  419:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO1_DIV_14                 ((RCC_CCIPR5_MCO1PRE<<16U) |\
+ARM GAS  /tmp/ccX1NXHh.s 			page 16
+
+
  420:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR5_MCO1PRE_3 | RCC_CCIPR5_MCO1PRE_2 | RCC_CCIPR
  421:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO1_DIV_15                 ((RCC_CCIPR5_MCO1PRE<<16U) |\
  422:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR5_MCO1PRE_3 | RCC_CCIPR5_MCO1PRE_2 | RCC_CCIPR
  423:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO1_DIV_16                 ((RCC_CCIPR5_MCO1PRE<<16U) | RCC_CCIPR5_MCO1PRE)
-ARM GAS  /tmp/ccjTyagi.s 			page 16
-
-
  424:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO2_DIV_1                  (RCC_CCIPR5_MCO2PRE<<16U)
  425:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO2_DIV_2                  ((RCC_CCIPR5_MCO2PRE<<16U) | RCC_CCIPR5_MCO2PRE_0)
  426:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_MCO2_DIV_3                  ((RCC_CCIPR5_MCO2PRE<<16U) | RCC_CCIPR5_MCO2PRE_1)
@@ -954,13 +958,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  474:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_22              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_
  475:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_23              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_
  476:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_24              (RCC_CCIPR7_RTCPRE_4 |\
+ARM GAS  /tmp/ccX1NXHh.s 			page 17
+
+
  477:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_RTCPRE_1 | RCC_CCIPR7_
  478:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_25              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_3)
  479:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_26              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_3 | RCC_CCIPR7_
  480:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_27              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_3 | RCC_CCIPR7_
-ARM GAS  /tmp/ccjTyagi.s 			page 17
-
-
  481:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_28              (RCC_CCIPR7_RTCPRE_4 |\
  482:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_3 | RCC_CCIPR7_RTCPRE_1 | RCC_CCIPR7_
  483:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_29              (RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_3 | RCC_CCIPR7_
@@ -1014,13 +1018,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  531:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_RTCPRE_3 | RCC_CCIPR7_
  532:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_62              (RCC_CCIPR7_RTCPRE_5 | RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_
  533:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_RTCPRE_0)
+ARM GAS  /tmp/ccX1NXHh.s 			page 18
+
+
  534:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_63              (RCC_CCIPR7_RTCPRE_5 | RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_
  535:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_RTCPRE_1)
  536:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_RTC_HSE_DIV_64              (RCC_CCIPR7_RTCPRE_5 | RCC_CCIPR7_RTCPRE_4 | RCC_CCIPR7_
  537:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                             RCC_CCIPR7_RTCPRE_2 | RCC_CCIPR7_RTCPRE_1 | RCC_CCIPR7_
-ARM GAS  /tmp/ccjTyagi.s 			page 18
-
-
  538:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
  539:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  540:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
@@ -1074,13 +1078,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  588:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
  589:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  590:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_DCMIPP_CLKSOURCE_PCLK5      0U
+ARM GAS  /tmp/ccX1NXHh.s 			page 19
+
+
  591:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_DCMIPP_CLKSOURCE_CLKP       RCC_CCIPR1_DCMIPPSEL_0
  592:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_DCMIPP_CLKSOURCE_IC17       RCC_CCIPR1_DCMIPPSEL_1
  593:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_DCMIPP_CLKSOURCE_HSI        (RCC_CCIPR1_DCMIPPSEL_1 | RCC_CCIPR1_DCMIPPSEL_0)
  594:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
-ARM GAS  /tmp/ccjTyagi.s 			page 19
-
-
  595:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  596:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  597:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -1134,13 +1138,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  645:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
  646:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  647:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 20
+
+
  648:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_ETH1PTP_DIV  ETH1 PTP kernel clock divider selection
  649:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
  650:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  651:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_ETH1PTP_DIV_1               0U
-ARM GAS  /tmp/ccjTyagi.s 			page 20
-
-
  652:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_ETH1PTP_DIV_2               RCC_CCIPR2_ETH1PTPDIV_0
  653:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_ETH1PTP_DIV_3               RCC_CCIPR2_ETH1PTPDIV_1
  654:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_ETH1PTP_DIV_4               (RCC_CCIPR2_ETH1PTPDIV_1 | RCC_CCIPR2_ETH1PTPDIV_0)
@@ -1194,13 +1198,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  702:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I2C1_CLKSOURCE_IC15         LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I2C1SEL, RCC_CCIP
  703:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I2C1SEL_1 | RCC_CCIPR4_I2C1SEL_0
  704:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I2C1_CLKSOURCE_MSI          LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I2C1SEL, RCC_CCIP
+ARM GAS  /tmp/ccX1NXHh.s 			page 21
+
+
  705:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I2C1SEL_2)
  706:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I2C1_CLKSOURCE_HSI          LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I2C1SEL, RCC_CCIP
  707:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I2C1SEL_2| RCC_CCIPR4_I2C1SEL_0)
  708:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
-ARM GAS  /tmp/ccjTyagi.s 			page 21
-
-
  709:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I2C2_CLKSOURCE_PCLK1        LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I2C2SEL, RCC_CCIP
  710:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I2C2_CLKSOURCE_CLKP         LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I2C2SEL, RCC_CCIP
  711:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I2C2SEL_0)
@@ -1254,13 +1258,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  759:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I3C1SEL_2)
  760:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I3C1_CLKSOURCE_HSI          LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I3C1SEL, RCC_CCIP
  761:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I3C1SEL_2| RCC_CCIPR4_I3C1SEL_0)
+ARM GAS  /tmp/ccX1NXHh.s 			page 22
+
+
  762:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  763:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I3C2_CLKSOURCE_PCLK1        LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I3C2SEL, RCC_CCIP
  764:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I3C2_CLKSOURCE_CLKP         LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I3C2SEL, RCC_CCIP
  765:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I3C2SEL_0)
-ARM GAS  /tmp/ccjTyagi.s 			page 22
-
-
  766:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I3C2_CLKSOURCE_IC10         LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I3C2SEL, RCC_CCIP
  767:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR4_I3C2SEL_1)
  768:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_I3C2_CLKSOURCE_IC15         LL_CLKSOURCE(CCIPR4_OFFSET, RCC_CCIPR4_I3C2SEL, RCC_CCIP
@@ -1314,13 +1318,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  816:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  817:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_PCLK4      LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
  818:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_CLKP       LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
+ARM GAS  /tmp/ccX1NXHh.s 			page 23
+
+
  819:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_IC15       LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
  820:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_LSE        LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
  821:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR12_LPTIM5SEL_0)
  822:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_LSI        LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
-ARM GAS  /tmp/ccjTyagi.s 			page 23
-
-
  823:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LPTIM5_CLKSOURCE_TIMG       LL_CLKSOURCE(CCIPR12_OFFSET, RCC_CCIPR12_LPTIM5SEL,  RCC
  824:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR12_LPTIM5SEL_0)
  825:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -1374,13 +1378,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  873:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY1_CLKSOURCE_CLKP          LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY1SEL, R
  874:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY1_CLKSOURCE_IC15          LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY1SEL, R
  875:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY1_CLKSOURCE_HSE_DIV_2_OSC LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY1SEL, R
+ARM GAS  /tmp/ccX1NXHh.s 			page 24
+
+
  876:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                             RCC_CCIPR6_OTGPHY1SEL_0)
  877:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
  878:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY2_CLKSOURCE_HSE_DIV_2     LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY2SEL, R
  879:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY2_CLKSOURCE_CLKP          LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY2SEL, R
-ARM GAS  /tmp/ccjTyagi.s 			page 24
-
-
  880:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY2_CLKSOURCE_IC15          LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY2SEL, R
  881:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_OTGPHY2_CLKSOURCE_HSE_DIV_2_OSC LL_CLKSOURCE(CCIPR6_OFFSET, RCC_CCIPR6_OTGPHY2SEL, R
  882:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                             RCC_CCIPR6_OTGPHY2SEL_0)
@@ -1434,13 +1438,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  930:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI1_CLKSOURCE_HSI          LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI1SEL, RCC_CCIP
  931:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR7_SAI1SEL_0)
  932:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI1_CLKSOURCE_I2S_CKIN     LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI1SEL, RCC_CCIP
+ARM GAS  /tmp/ccX1NXHh.s 			page 25
+
+
  933:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR7_SAI1SEL_1)
  934:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI1_CLKSOURCE_SPDIFRX1     LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI1SEL, RCC_CCIP
  935:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR7_SAI1SEL_1 | RCC_CCIPR7_SAI1SEL_0
  936:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
-ARM GAS  /tmp/ccjTyagi.s 			page 25
-
-
  937:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI2_CLKSOURCE_PCLK2        LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI2SEL, RCC_CCIP
  938:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI2_CLKSOURCE_CLKP         LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI2SEL, RCC_CCIP
  939:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SAI2_CLKSOURCE_IC7          LL_CLKSOURCE(CCIPR7_OFFSET, RCC_CCIPR7_SAI2SEL, RCC_CCIP
@@ -1494,13 +1498,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  987:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
  988:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_PCLK2        LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
  989:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_CLKP         LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
+ARM GAS  /tmp/ccX1NXHh.s 			page 26
+
+
  990:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_IC8          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
  991:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_IC9          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
  992:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR9_SPI1SEL_0)
  993:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_MSI          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
-ARM GAS  /tmp/ccjTyagi.s 			page 26
-
-
  994:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_HSI          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
  995:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR9_SPI1SEL_0)
  996:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI1_CLKSOURCE_I2S_CKIN     LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI1SEL, RCC_CCIP
@@ -1554,13 +1558,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1044:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_CLKP         LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
 1045:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_IC8          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
 1046:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_IC9          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
+ARM GAS  /tmp/ccX1NXHh.s 			page 27
+
+
 1047:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR9_SPI6SEL_0)
 1048:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_MSI          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
 1049:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_HSI          LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
 1050:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR9_SPI6SEL_0)
-ARM GAS  /tmp/ccjTyagi.s 			page 27
-
-
 1051:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPI6_CLKSOURCE_I2S_CKIN     LL_CLKSOURCE(CCIPR9_OFFSET, RCC_CCIPR9_SPI6SEL, RCC_CCIP
 1052:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR9_SPI6SEL_1)
 1053:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -1614,13 +1618,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1101:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART8_CLKSOURCE_HSI         LL_CLKSOURCE(CCIPR13_OFFSET, RCC_CCIPR13_UART8SEL, RCC_C
 1102:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR13_UART8SEL_1)
 1103:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 28
+
+
 1104:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_PCLK2       LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
 1105:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_CLKP        LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
 1106:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_IC9         LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
 1107:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_IC14        LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
-ARM GAS  /tmp/ccjTyagi.s 			page 28
-
-
 1108:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR14_UART9SEL_0)
 1109:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_LSE         LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
 1110:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_UART9_CLKSOURCE_MSI         LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_UART9SEL, RCC_C
@@ -1674,13 +1678,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1158:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR13_USART6SEL_0)
 1159:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART6_CLKSOURCE_LSE        LL_CLKSOURCE(CCIPR13_OFFSET, RCC_CCIPR13_USART6SEL, RCC_
 1160:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART6_CLKSOURCE_MSI        LL_CLKSOURCE(CCIPR13_OFFSET, RCC_CCIPR13_USART6SEL, RCC_
+ARM GAS  /tmp/ccX1NXHh.s 			page 29
+
+
 1161:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR13_USART6SEL_0)
 1162:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART6_CLKSOURCE_HSI        LL_CLKSOURCE(CCIPR13_OFFSET, RCC_CCIPR13_USART6SEL, RCC_
 1163:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                         RCC_CCIPR13_USART6SEL_1)
 1164:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
-ARM GAS  /tmp/ccjTyagi.s 			page 29
-
-
 1165:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART10_CLKSOURCE_PCLK2     LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_USART10SEL, RCC
 1166:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART10_CLKSOURCE_CLKP      LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_USART10SEL, RCC
 1167:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_USART10_CLKSOURCE_IC9       LL_CLKSOURCE(CCIPR14_OFFSET, RCC_CCIPR14_USART10SEL, RCC
@@ -1734,13 +1738,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1215:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1216:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1217:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 30
+
+
 1218:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1219:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_CLKP  Peripheral CLKP get clock source
 1220:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
 1221:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 30
-
-
 1222:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CLKP_CLKSOURCE              RCC_CCIPR7_PERSEL
 1223:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1224:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
@@ -1794,13 +1798,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1272:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1273:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1274:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 31
+
+
 1275:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_FDCAN  Peripheral FDCAN get clock source
 1276:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
 1277:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1278:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_FDCAN_CLKSOURCE             RCC_CCIPR3_FDCANSEL
-ARM GAS  /tmp/ccjTyagi.s 			page 31
-
-
 1279:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1280:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1281:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
@@ -1854,13 +1858,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1329:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1330:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1331:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_LTDC  Peripheral LTDC get clock source
+ARM GAS  /tmp/ccX1NXHh.s 			page 32
+
+
 1332:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
 1333:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1334:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_LTDC_CLKSOURCE              RCC_CCIPR4_LTDCSEL
 1335:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
-ARM GAS  /tmp/ccjTyagi.s 			page 32
-
-
 1336:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1337:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1338:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -1914,13 +1918,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1386:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SDMMC2_CLKSOURCE            LL_CLKSOURCE(CCIPR8_OFFSET, RCC_CCIPR8_SDMMC2SEL, RCC_CC
 1387:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1388:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
+ARM GAS  /tmp/ccX1NXHh.s 			page 33
+
+
 1389:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1390:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1391:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_SPDIFRX  Peripheral SPDIFRX get clock source
 1392:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
-ARM GAS  /tmp/ccjTyagi.s 			page 33
-
-
 1393:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1394:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_SPDIFRX1_CLKSOURCE          RCC_CCIPR9_SPDIFRX1SEL
 1395:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -1974,13 +1978,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1443:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1444:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1445:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 34
+
+
 1446:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_TIM_CLKPRESCALER  Timers clocks prescalers selection
 1447:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
 1448:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1449:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_TIM_PRESCALER_1             0U
-ARM GAS  /tmp/ccjTyagi.s 			page 34
-
-
 1450:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_TIM_PRESCALER_2             1U
 1451:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_TIM_PRESCALER_4             2U
 1452:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_TIM_PRESCALER_8             3U
@@ -2034,13 +2038,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1500:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1501:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Read a value in RCC register
 1502:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @param  __REG__ Register to be read
+ARM GAS  /tmp/ccX1NXHh.s 			page 35
+
+
 1503:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval Register value
 1504:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1505:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_ReadReg(__REG__) READ_REG(RCC->__REG__)
 1506:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
-ARM GAS  /tmp/ccjTyagi.s 			page 35
-
-
 1507:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1508:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1509:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -2094,13 +2098,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1557:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_APB2_DIV_32
 1558:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_APB2_DIV_64
 1559:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_APB2_DIV_128
+ARM GAS  /tmp/ccX1NXHh.s 			page 36
+
+
 1560:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval PCLK2 clock frequency (in Hz)
 1561:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1562:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_CALC_PCLK2_FREQ(__HCLKFREQ__, __APB2PRESCALER__) ((__HCLKFREQ__) >> (((__APB2PRESCAL
 1563:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****                                                                  RCC_CFGR2_PPRE2) >> RCC_CFGR2_PPRE
-ARM GAS  /tmp/ccjTyagi.s 			page 36
-
-
 1564:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1565:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1566:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Helper macro to calculate the PCLK4 frequency (ABP4)
@@ -2154,13 +2158,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1614:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1615:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EC_PERIPH_FREQUENCY Peripheral clock frequency
 1616:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
+ARM GAS  /tmp/ccX1NXHh.s 			page 37
+
+
 1617:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1618:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_PERIPH_FREQUENCY_NO         0U                 /*!< No clock enabled for the periphe
 1619:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** #define LL_RCC_PERIPH_FREQUENCY_NA         0xFFFFFFFFUL       /*!< Frequency cannot be provided as 
 1620:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
-ARM GAS  /tmp/ccjTyagi.s 			page 37
-
-
 1621:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
 1622:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1623:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -2214,13 +2218,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1671:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1672:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Disable the HSE Clock Security System bypass.
 1673:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll HSECFGR      HSECSSBYP     LL_RCC_HSE_DisableCSSBypass
+ARM GAS  /tmp/ccX1NXHh.s 			page 38
+
+
 1674:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 1675:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1676:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSE_DisableCSSBypass(void)
 1677:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
-ARM GAS  /tmp/ccjTyagi.s 			page 38
-
-
 1678:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   CLEAR_BIT(RCC->HSECFGR, RCC_HSECFGR_HSECSSBYP);
 1679:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 1680:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -2274,13 +2278,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1728:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll HSECFGR      HSEEXT        LL_RCC_HSE_SelectAnalogClock
 1729:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 1730:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 39
+
+
 1731:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSE_SelectAnalogClock(void)
 1732:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 1733:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   CLEAR_BIT(RCC->HSECFGR, RCC_HSECFGR_HSEEXT);
 1734:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
-ARM GAS  /tmp/ccjTyagi.s 			page 39
-
-
 1735:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1736:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1737:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Select the Digital HSE external clock type in Bypass mode
@@ -2334,13 +2338,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1785:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1786:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1787:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Disable HSE crystal oscillator (HSE ON)
+ARM GAS  /tmp/ccX1NXHh.s 			page 40
+
+
 1788:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll CCR          HSEONC        LL_RCC_HSE_Disable
 1789:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 1790:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1791:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_HSE_Disable(void)
-ARM GAS  /tmp/ccjTyagi.s 			page 40
-
-
 1792:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 1793:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   WRITE_REG(RCC->CCR, RCC_CCR_HSEONC);
 1794:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
@@ -2394,13 +2398,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1842:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 1843:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1844:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
+ARM GAS  /tmp/ccX1NXHh.s 			page 41
+
+
 1845:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Set HSI divider
 1846:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll HSICFGR      HSIDIV        LL_RCC_HSI_SetDivider
 1847:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @param  Divider This parameter can be one of the following values:
 1848:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_HSI_DIV_1
-ARM GAS  /tmp/ccjTyagi.s 			page 41
-
-
 1849:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_HSI_DIV_2
 1850:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_HSI_DIV_4
 1851:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_HSI_DIV_8
@@ -2454,13 +2458,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1899:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 1900:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Get HSI Calibration trimming
 1901:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll HSICFGR      HSITRIM       LL_RCC_HSI_GetCalibTrimming
+ARM GAS  /tmp/ccX1NXHh.s 			page 42
+
+
 1902:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval A value between 0 and 63
 1903:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 1904:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE uint32_t LL_RCC_HSI_GetCalibTrimming(void)
 1905:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
-ARM GAS  /tmp/ccjTyagi.s 			page 42
-
-
 1906:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   return (uint32_t)(READ_BIT(RCC->HSICFGR, RCC_HSICFGR_HSITRIM) >> RCC_HSICFGR_HSITRIM_Pos);
 1907:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 1908:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -2514,13 +2518,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 1956:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 1957:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 1958:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
+ARM GAS  /tmp/ccX1NXHh.s 			page 43
+
+
 1959:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Disable MSI oscillator
 1960:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll CCR          MSIONC        LL_RCC_MSI_Disable
 1961:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 1962:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 43
-
-
 1963:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_MSI_Disable(void)
 1964:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 1965:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   WRITE_REG(RCC->CCR, RCC_CCR_MSIONC);
@@ -2574,13 +2578,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2013:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   return (uint32_t)(READ_BIT(RCC->MSICFGR, RCC_MSICFGR_MSICAL) >> RCC_MSICFGR_MSICAL_Pos);
 2014:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 2015:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 44
+
+
 2016:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 2017:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Set MSI Calibration trimming
 2018:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @note user-programmable trimming value that is added to the MSICAL
 2019:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @note Default value is 16, which, when added to the MSICAL value,
-ARM GAS  /tmp/ccjTyagi.s 			page 44
-
-
 2020:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *       should trim the MSI to 4 MHz +/- 1 %
 2021:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll MSICFGR      MSITRIM       LL_RCC_MSI_SetCalibTrimming
 2022:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @param  Value can be a value between 0 and 31
@@ -2634,13 +2638,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2070:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2071:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 2072:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
+ARM GAS  /tmp/ccX1NXHh.s 			page 45
+
+
 2073:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2074:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2075:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EF_LSE LSE
 2076:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
-ARM GAS  /tmp/ccjTyagi.s 			page 45
-
-
 2077:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2078:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2079:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -2694,13 +2698,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2127:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll LSECFGR      LSEBYP        LL_RCC_LSE_EnableBypass
 2128:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 2129:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
+ARM GAS  /tmp/ccX1NXHh.s 			page 46
+
+
 2130:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_LSE_EnableBypass(void)
 2131:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 2132:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   SET_BIT(RCC->LSECFGR, RCC_LSECFGR_LSEBYP);
 2133:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
-ARM GAS  /tmp/ccjTyagi.s 			page 46
-
-
 2134:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2135:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 2136:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Disable external clock source (LSE bypass)
@@ -2754,13 +2758,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2184:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2185:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 2186:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Get LSE oscillator drive capability
+ARM GAS  /tmp/ccX1NXHh.s 			page 47
+
+
 2187:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll LSECFGR      LSEDRV        LL_RCC_LSE_GetDriveCapability
 2188:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval Returned value can be one of the following values:
 2189:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_LSEDRIVE_LOW
 2190:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_LSEDRIVE_MEDIUMLOW
-ARM GAS  /tmp/ccjTyagi.s 			page 47
-
-
 2191:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_LSEDRIVE_MEDIUMHIGH
 2192:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_LSEDRIVE_HIGH
 2193:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
@@ -2814,13 +2818,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2241:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @brief  Disable the LSE clock glitch filter
 2242:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @note   This API shall be called only when LSE is disabled.
 2243:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @rmtoll LSECFGR      LSEGFON         LL_RCC_LSE_DisableGlitchFilter
+ARM GAS  /tmp/ccX1NXHh.s 			page 48
+
+
 2244:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 2245:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2246:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_LSE_DisableGlitchFilter(void)
 2247:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
-ARM GAS  /tmp/ccjTyagi.s 			page 48
-
-
 2248:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   CLEAR_BIT(RCC->LSECFGR, RCC_LSECFGR_LSEGFON);
 2249:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 2250:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
@@ -2874,13 +2878,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2298:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2299:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
 2300:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @}
+ARM GAS  /tmp/ccX1NXHh.s 			page 49
+
+
 2301:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2302:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2303:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /** @defgroup RCC_LL_EF_System System
 2304:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @{
-ARM GAS  /tmp/ccjTyagi.s 			page 49
-
-
 2305:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2306:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2307:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -2894,24 +2898,24 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2315:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 2316:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
 2317:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_SetCpuClkSource(uint32_t Source)
- 271              		.loc 2 2317 22 view .LVU106
- 272              	.LVL7:
- 273              	.LBB47:
+ 274              		.loc 2 2317 22 view .LVU108
+ 275              	.LVL7:
+ 276              	.LBB47:
 2318:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 2319:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   MODIFY_REG(RCC->CFGR1, RCC_CFGR1_CPUSW, Source);
- 274              		.loc 2 2319 3 view .LVU107
- 275 000c 144B     		ldr	r3, .L13+4
- 276 000e 1A6A     		ldr	r2, [r3, #32]
- 277 0010 22F44032 		bic	r2, r2, #196608
- 278 0014 1A62     		str	r2, [r3, #32]
- 279              	.LVL8:
- 280              		.loc 2 2319 3 is_stmt 0 view .LVU108
- 281              	.LBE47:
- 282              	.LBE46:
+ 277              		.loc 2 2319 3 view .LVU109
+ 278 000c 144B     		ldr	r3, .L13+4
+ 279 000e 1A6A     		ldr	r2, [r3, #32]
+ 280 0010 22F44032 		bic	r2, r2, #196608
+ 281 0014 1A62     		str	r2, [r3, #32]
+ 282              	.LVL8:
+ 283              		.loc 2 2319 3 is_stmt 0 view .LVU110
+ 284              	.LBE47:
+ 285              	.LBE46:
   17:Src/main.c    ****   __HAL_RCC_SYSCLK_CONFIG(RCC_SYSCLKSOURCE_HSI);
- 283              		.loc 1 17 3 is_stmt 1 view .LVU109
- 284              	.LBB48:
- 285              	.LBI48:
+ 286              		.loc 1 17 3 is_stmt 1 view .LVU111
+ 287              	.LBB48:
+ 288              	.LBI48:
 2320:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** }
 2321:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** 
 2322:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** /**
@@ -2934,35 +2938,35 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
 2339:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @param  Source This parameter can be one of the following values:
 2340:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_HSI
 2341:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_MSI
+ARM GAS  /tmp/ccX1NXHh.s 			page 50
+
+
 2342:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_HSE
 2343:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   *         @arg @ref LL_RCC_SYS_CLKSOURCE_IC2_IC6_IC11
 2344:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   * @retval None
 2345:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   */
-ARM GAS  /tmp/ccjTyagi.s 			page 50
-
-
 2346:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** __STATIC_INLINE void LL_RCC_SetSysClkSource(uint32_t Source)
- 286              		.loc 2 2346 22 view .LVU110
- 287              	.LBB49:
+ 289              		.loc 2 2346 22 view .LVU112
+ 290              	.LBB49:
 2347:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h **** {
 2348:../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_rcc.h ****   MODIFY_REG(RCC->CFGR1, RCC_CFGR1_SYSSW, Source);
- 288              		.loc 2 2348 3 view .LVU111
- 289 0016 1A6A     		ldr	r2, [r3, #32]
- 290 0018 22F04072 		bic	r2, r2, #50331648
- 291 001c 1A62     		str	r2, [r3, #32]
- 292              	.LVL9:
- 293              		.loc 2 2348 3 is_stmt 0 view .LVU112
- 294              	.LBE49:
- 295              	.LBE48:
+ 291              		.loc 2 2348 3 view .LVU113
+ 292 0016 1A6A     		ldr	r2, [r3, #32]
+ 293 0018 22F04072 		bic	r2, r2, #50331648
+ 294 001c 1A62     		str	r2, [r3, #32]
+ 295              	.LVL9:
+ 296              		.loc 2 2348 3 is_stmt 0 view .LVU114
+ 297              	.LBE49:
+ 298              	.LBE48:
   19:Src/main.c    ****   HAL_Init();
- 296              		.loc 1 19 3 is_stmt 1 view .LVU113
- 297 001e FFF7FEFF 		bl	HAL_Init
- 298              	.LVL10:
+ 299              		.loc 1 19 3 is_stmt 1 view .LVU115
+ 300 001e FFF7FEFF 		bl	HAL_Init
+ 301              	.LVL10:
   20:Src/main.c    ****   SCB_EnableICache();
- 299              		.loc 1 20 3 view .LVU114
- 300              	.LBB50:
- 301              	.LBI50:
- 302              		.file 3 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h"
+ 302              		.loc 1 20 3 view .LVU116
+ 303              	.LBB50:
+ 304              	.LBI50:
+ 305              		.file 3 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h"
    1:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** /*
    2:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****  * Copyright (c) 2020-2021 Arm Limited. All rights reserved.
    3:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****  *
@@ -2994,13 +2998,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   29:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   #pragma clang system_header    /* treat file as system include file */
   30:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** #endif
   31:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** 
+ARM GAS  /tmp/ccX1NXHh.s 			page 51
+
+
   32:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** /**
   33:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   \ingroup  CMSIS_Core_FunctionInterface
   34:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   \defgroup CMSIS_Core_CacheFunctions Cache Functions
   35:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   \brief    Functions that configure Instruction and Data cache.
-ARM GAS  /tmp/ccjTyagi.s 			page 51
-
-
   36:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   @{
   37:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****  */
   38:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** 
@@ -3021,24 +3025,24 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   53:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   \details Turns on I-Cache
   54:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   */
   55:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** __STATIC_FORCEINLINE void SCB_EnableICache (void)
- 303              		.loc 3 55 27 view .LVU115
- 304              	.LBB51:
+ 306              		.loc 3 55 27 view .LVU117
+ 307              	.LBB51:
   56:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** {
   57:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****   #if defined (__ICACHE_PRESENT) && (__ICACHE_PRESENT == 1U)
   58:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     if (SCB->CCR & SCB_CCR_IC_Msk) return;  /* return if ICache is already enabled */
- 305              		.loc 3 58 5 view .LVU116
- 306              		.loc 3 58 12 is_stmt 0 view .LVU117
- 307 0022 104B     		ldr	r3, .L13+8
- 308 0024 5A69     		ldr	r2, [r3, #20]
- 309              		.loc 3 58 8 view .LVU118
- 310 0026 12F40032 		ands	r2, r2, #131072
- 311 002a 11D1     		bne	.L11
+ 308              		.loc 3 58 5 view .LVU118
+ 309              		.loc 3 58 12 is_stmt 0 view .LVU119
+ 310 0022 104B     		ldr	r3, .L13+8
+ 311 0024 5A69     		ldr	r2, [r3, #20]
+ 312              		.loc 3 58 8 view .LVU120
+ 313 0026 12F40032 		ands	r2, r2, #131072
+ 314 002a 11D1     		bne	.L11
   59:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h **** 
   60:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __DSB();
- 312              		.loc 3 60 5 is_stmt 1 view .LVU119
- 313              	.LBB52:
- 314              	.LBI52:
- 315              		.file 4 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h"
+ 315              		.loc 3 60 5 is_stmt 1 view .LVU121
+ 316              	.LBB52:
+ 317              	.LBI52:
+ 318              		.file 4 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h"
    1:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
    2:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
@@ -3054,13 +3058,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   13:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
   14:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * You may obtain a copy of the License at
   15:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  *
+ARM GAS  /tmp/ccX1NXHh.s 			page 52
+
+
   16:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
   17:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   18:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
   19:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
-ARM GAS  /tmp/ccjTyagi.s 			page 52
-
-
   20:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   21:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
   22:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
@@ -3114,13 +3118,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
   70:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   71:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
   72:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+ARM GAS  /tmp/ccX1NXHh.s 			page 53
+
+
   73:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
   74:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   75:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
   76:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
-ARM GAS  /tmp/ccjTyagi.s 			page 53
-
-
   77:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
   78:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   79:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
@@ -3174,13 +3178,13 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  127:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  * Otherwise, use general registers, specified by constraint "r" */
  128:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
  129:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
+ARM GAS  /tmp/ccX1NXHh.s 			page 54
+
+
  130:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+l" (r)
  131:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
  132:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  133:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
-ARM GAS  /tmp/ccjTyagi.s 			page 54
-
-
  134:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+r" (r)
  135:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "r" (r)
  136:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -3232,195 +3236,195 @@ ARM GAS  /tmp/ccjTyagi.s 			page 1
  182:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****            It completes when all explicit memory accesses before this instruction complete.
  183:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  184:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __DSB(void)
- 316              		.loc 4 184 27 view .LVU120
- 317              	.LBB53:
+ 319              		.loc 4 184 27 view .LVU122
+ 320              	.LBB53:
+ARM GAS  /tmp/ccX1NXHh.s 			page 55
+
+
  185:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
  186:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dsb 0xF":::"memory");
- 318              		.loc 4 186 3 view .LVU121
- 319              		.syntax unified
-ARM GAS  /tmp/ccjTyagi.s 			page 55
-
-
- 320              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 321 002c BFF34F8F 		dsb 0xF
- 322              	@ 0 "" 2
- 323              		.thumb
- 324              		.syntax unified
- 325              	.LBE53:
- 326              	.LBE52:
+ 321              		.loc 4 186 3 view .LVU123
+ 322              		.syntax unified
+ 323              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 324 002c BFF34F8F 		dsb 0xF
+ 325              	@ 0 "" 2
+ 326              		.thumb
+ 327              		.syntax unified
+ 328              	.LBE53:
+ 329              	.LBE52:
   61:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __ISB();
- 327              		.loc 3 61 5 view .LVU122
- 328              	.LBB54:
- 329              	.LBI54:
+ 330              		.loc 3 61 5 view .LVU124
+ 331              	.LBB54:
+ 332              	.LBI54:
  173:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 330              		.loc 4 173 27 view .LVU123
- 331              	.LBB55:
+ 333              		.loc 4 173 27 view .LVU125
+ 334              	.LBB55:
  175:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 332              		.loc 4 175 3 view .LVU124
- 333              		.syntax unified
- 334              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 335 0030 BFF36F8F 		isb 0xF
- 336              	@ 0 "" 2
- 337              		.thumb
- 338              		.syntax unified
- 339              	.LBE55:
- 340              	.LBE54:
+ 335              		.loc 4 175 3 view .LVU126
+ 336              		.syntax unified
+ 337              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 338 0030 BFF36F8F 		isb 0xF
+ 339              	@ 0 "" 2
+ 340              		.thumb
+ 341              		.syntax unified
+ 342              	.LBE55:
+ 343              	.LBE54:
   62:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     SCB->ICIALLU = 0UL;                     /* invalidate I-Cache */
- 341              		.loc 3 62 5 view .LVU125
- 342              		.loc 3 62 18 is_stmt 0 view .LVU126
- 343 0034 C3F85022 		str	r2, [r3, #592]
+ 344              		.loc 3 62 5 view .LVU127
+ 345              		.loc 3 62 18 is_stmt 0 view .LVU128
+ 346 0034 C3F85022 		str	r2, [r3, #592]
   63:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __DSB();
- 344              		.loc 3 63 5 is_stmt 1 view .LVU127
- 345              	.LBB56:
- 346              	.LBI56:
+ 347              		.loc 3 63 5 is_stmt 1 view .LVU129
+ 348              	.LBB56:
+ 349              	.LBI56:
  184:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 347              		.loc 4 184 27 view .LVU128
- 348              	.LBB57:
- 349              		.loc 4 186 3 view .LVU129
- 350              		.syntax unified
- 351              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 352 0038 BFF34F8F 		dsb 0xF
- 353              	@ 0 "" 2
- 354              		.thumb
- 355              		.syntax unified
- 356              	.LBE57:
- 357              	.LBE56:
+ 350              		.loc 4 184 27 view .LVU130
+ 351              	.LBB57:
+ 352              		.loc 4 186 3 view .LVU131
+ 353              		.syntax unified
+ 354              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 355 0038 BFF34F8F 		dsb 0xF
+ 356              	@ 0 "" 2
+ 357              		.thumb
+ 358              		.syntax unified
+ 359              	.LBE57:
+ 360              	.LBE56:
   64:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __ISB();
- 358              		.loc 3 64 5 view .LVU130
- 359              	.LBB58:
- 360              	.LBI58:
+ 361              		.loc 3 64 5 view .LVU132
+ 362              	.LBB58:
+ 363              	.LBI58:
  173:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 361              		.loc 4 173 27 view .LVU131
- 362              	.LBB59:
+ 364              		.loc 4 173 27 view .LVU133
+ 365              	.LBB59:
  175:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 363              		.loc 4 175 3 view .LVU132
- 364              		.syntax unified
- 365              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 366 003c BFF36F8F 		isb 0xF
- 367              	@ 0 "" 2
-ARM GAS  /tmp/ccjTyagi.s 			page 56
+ 366              		.loc 4 175 3 view .LVU134
+ARM GAS  /tmp/ccX1NXHh.s 			page 56
 
 
- 368              		.thumb
- 369              		.syntax unified
- 370              	.LBE59:
- 371              	.LBE58:
+ 367              		.syntax unified
+ 368              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 369 003c BFF36F8F 		isb 0xF
+ 370              	@ 0 "" 2
+ 371              		.thumb
+ 372              		.syntax unified
+ 373              	.LBE59:
+ 374              	.LBE58:
   65:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
- 372              		.loc 3 65 5 view .LVU133
- 373              		.loc 3 65 8 is_stmt 0 view .LVU134
- 374 0040 5A69     		ldr	r2, [r3, #20]
- 375              		.loc 3 65 14 view .LVU135
- 376 0042 42F40032 		orr	r2, r2, #131072
- 377 0046 5A61     		str	r2, [r3, #20]
+ 375              		.loc 3 65 5 view .LVU135
+ 376              		.loc 3 65 8 is_stmt 0 view .LVU136
+ 377 0040 5A69     		ldr	r2, [r3, #20]
+ 378              		.loc 3 65 14 view .LVU137
+ 379 0042 42F40032 		orr	r2, r2, #131072
+ 380 0046 5A61     		str	r2, [r3, #20]
   66:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __DSB();
- 378              		.loc 3 66 5 is_stmt 1 view .LVU136
- 379              	.LBB60:
- 380              	.LBI60:
+ 381              		.loc 3 66 5 is_stmt 1 view .LVU138
+ 382              	.LBB60:
+ 383              	.LBI60:
  184:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 381              		.loc 4 184 27 view .LVU137
- 382              	.LBB61:
- 383              		.loc 4 186 3 view .LVU138
- 384              		.syntax unified
- 385              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 386 0048 BFF34F8F 		dsb 0xF
- 387              	@ 0 "" 2
- 388              		.thumb
- 389              		.syntax unified
- 390              	.LBE61:
- 391              	.LBE60:
+ 384              		.loc 4 184 27 view .LVU139
+ 385              	.LBB61:
+ 386              		.loc 4 186 3 view .LVU140
+ 387              		.syntax unified
+ 388              	@ 186 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 389 0048 BFF34F8F 		dsb 0xF
+ 390              	@ 0 "" 2
+ 391              		.thumb
+ 392              		.syntax unified
+ 393              	.LBE61:
+ 394              	.LBE60:
   67:../STM32Cube_FW_N6/Drivers/CMSIS/Include/m-profile/armv7m_cachel1.h ****     __ISB();
- 392              		.loc 3 67 5 view .LVU139
- 393              	.LBB62:
- 394              	.LBI62:
+ 395              		.loc 3 67 5 view .LVU141
+ 396              	.LBB62:
+ 397              	.LBI62:
  173:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 395              		.loc 4 173 27 view .LVU140
- 396              	.LBB63:
+ 398              		.loc 4 173 27 view .LVU142
+ 399              	.LBB63:
  175:../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 397              		.loc 4 175 3 view .LVU141
- 398              		.syntax unified
- 399              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 400 004c BFF36F8F 		isb 0xF
- 401              	@ 0 "" 2
- 402              		.thumb
- 403              		.syntax unified
- 404              	.L11:
- 405              	.LBE63:
- 406              	.LBE62:
- 407              	.LBE51:
- 408              	.LBE50:
-  21:Src/main.c    ****   SystemClock_Config();
- 409              		.loc 1 21 3 view .LVU142
- 410 0050 FFF7FEFF 		bl	SystemClock_Config
- 411              	.LVL11:
+ 400              		.loc 4 175 3 view .LVU143
+ 401              		.syntax unified
+ 402              	@ 175 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 403 004c BFF36F8F 		isb 0xF
+ 404              	@ 0 "" 2
+ 405              		.thumb
+ 406              		.syntax unified
+ 407              	.L11:
+ 408              	.LBE63:
+ 409              	.LBE62:
+ 410              	.LBE51:
+ 411              	.LBE50:
+  21:Src/main.c    ****   system_clock_config();
+ 412              		.loc 1 21 3 view .LVU144
+ 413 0050 FFF7FEFF 		bl	system_clock_config
+ 414              	.LVL11:
   22:Src/main.c    ****   tx_kernel_enter();
- 412              		.loc 1 22 3 view .LVU143
- 413 0054 FFF7FEFF 		bl	_tx_initialize_kernel_enter
- 414              	.LVL12:
- 415              	.L12:
-  23:Src/main.c    ****   while (1) {}
-ARM GAS  /tmp/ccjTyagi.s 			page 57
+ 415              		.loc 1 22 3 view .LVU145
+ARM GAS  /tmp/ccX1NXHh.s 			page 57
 
 
- 416              		.loc 1 23 3 view .LVU144
+ 416 0054 FFF7FEFF 		bl	_tx_initialize_kernel_enter
+ 417              	.LVL12:
+ 418              	.L12:
   23:Src/main.c    ****   while (1) {}
- 417              		.loc 1 23 14 view .LVU145
+ 419              		.loc 1 23 3 view .LVU146
   23:Src/main.c    ****   while (1) {}
- 418              		.loc 1 23 9 view .LVU146
- 419 0058 FEE7     		b	.L12
- 420              	.L14:
- 421 005a 00BF     		.align	2
- 422              	.L13:
- 423 005c 00E001E0 		.word	-536748032
- 424 0060 00800256 		.word	1443004416
- 425 0064 00ED00E0 		.word	-536810240
- 426              		.cfi_endproc
- 427              	.LFE889:
- 429              		.global	cameraFrameReceived
- 430              		.section	.bss.cameraFrameReceived,"aw",%nobits
- 431              		.align	2
- 434              	cameraFrameReceived:
- 435 0000 00000000 		.space	4
- 436              		.global	huart1
- 437              		.section	.bss.huart1,"aw",%nobits
- 438              		.align	2
- 441              	huart1:
- 442 0000 00000000 		.space	148
- 442      00000000 
- 442      00000000 
- 442      00000000 
- 442      00000000 
- 443              		.text
- 444              	.Letext0:
- 445              		.file 5 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/_default_ty
- 446              		.file 6 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_stdint.h"
- 447              		.file 7 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/core_cm55.h"
- 448              		.file 8 "../STM32Cube_FW_N6/Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n657xx.h"
- 449              		.file 9 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_def.h"
- 450              		.file 10 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rcc.h"
- 451              		.file 11 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rcc_ex.h"
- 452              		.file 12 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_gpio.h"
- 453              		.file 13 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h"
- 454              		.file 14 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h"
- 455              		.file 15 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h"
- 456              		.file 16 "../STM32Cube_FW_N6/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.h"
- 457              		.file 17 "../Middlewares/threadx/common/inc/tx_api.h"
- 458              		.file 18 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h"
- 459              		.file 19 "<built-in>"
-ARM GAS  /tmp/ccjTyagi.s 			page 58
+ 420              		.loc 1 23 14 view .LVU147
+  23:Src/main.c    ****   while (1) {}
+ 421              		.loc 1 23 9 view .LVU148
+ 422 0058 FEE7     		b	.L12
+ 423              	.L14:
+ 424 005a 00BF     		.align	2
+ 425              	.L13:
+ 426 005c 00E001E0 		.word	-536748032
+ 427 0060 00800256 		.word	1443004416
+ 428 0064 00ED00E0 		.word	-536810240
+ 429              		.cfi_endproc
+ 430              	.LFE889:
+ 432              		.global	cameraFrameReceived
+ 433              		.section	.bss.cameraFrameReceived,"aw",%nobits
+ 434              		.align	2
+ 437              	cameraFrameReceived:
+ 438 0000 00000000 		.space	4
+ 439              		.global	huart1
+ 440              		.section	.bss.huart1,"aw",%nobits
+ 441              		.align	2
+ 444              	huart1:
+ 445 0000 00000000 		.space	148
+ 445      00000000 
+ 445      00000000 
+ 445      00000000 
+ 445      00000000 
+ 446              		.text
+ 447              	.Letext0:
+ 448              		.file 5 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/machine/_default_ty
+ 449              		.file 6 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/sys/_stdint.h"
+ 450              		.file 7 "../STM32Cube_FW_N6/Drivers/CMSIS/Include/core_cm55.h"
+ 451              		.file 8 "../STM32Cube_FW_N6/Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n657xx.h"
+ 452              		.file 9 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_def.h"
+ 453              		.file 10 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rcc.h"
+ 454              		.file 11 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_rcc_ex.h"
+ 455              		.file 12 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_gpio.h"
+ 456              		.file 13 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma.h"
+ 457              		.file 14 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_dma_ex.h"
+ 458              		.file 15 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h"
+ 459              		.file 16 "../STM32Cube_FW_N6/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.h"
+ 460              		.file 17 "../Middlewares/threadx/common/inc/tx_api.h"
+ 461              		.file 18 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h"
+ 462              		.file 19 "<built-in>"
+ARM GAS  /tmp/ccX1NXHh.s 			page 58
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-     /tmp/ccjTyagi.s:26     .text.SystemClock_Config:00000000 $t
-     /tmp/ccjTyagi.s:31     .text.SystemClock_Config:00000000 SystemClock_Config
-     /tmp/ccjTyagi.s:235    .text.SystemClock_Config:000000e4 $d
-     /tmp/ccjTyagi.s:241    .text.startup.main:00000000 $t
-     /tmp/ccjTyagi.s:247    .text.startup.main:00000000 main
-     /tmp/ccjTyagi.s:423    .text.startup.main:0000005c $d
-     /tmp/ccjTyagi.s:434    .bss.cameraFrameReceived:00000000 cameraFrameReceived
-     /tmp/ccjTyagi.s:431    .bss.cameraFrameReceived:00000000 $d
-     /tmp/ccjTyagi.s:441    .bss.huart1:00000000 huart1
-     /tmp/ccjTyagi.s:438    .bss.huart1:00000000 $d
+     /tmp/ccX1NXHh.s:26     .text.system_clock_config:00000000 $t
+     /tmp/ccX1NXHh.s:31     .text.system_clock_config:00000000 system_clock_config
+     /tmp/ccX1NXHh.s:238    .text.system_clock_config:000000e4 $d
+     /tmp/ccX1NXHh.s:244    .text.startup.main:00000000 $t
+     /tmp/ccX1NXHh.s:250    .text.startup.main:00000000 main
+     /tmp/ccX1NXHh.s:426    .text.startup.main:0000005c $d
+     /tmp/ccX1NXHh.s:437    .bss.cameraFrameReceived:00000000 cameraFrameReceived
+     /tmp/ccX1NXHh.s:434    .bss.cameraFrameReceived:00000000 $d
+     /tmp/ccX1NXHh.s:444    .bss.huart1:00000000 huart1
+     /tmp/ccX1NXHh.s:441    .bss.huart1:00000000 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
@@ -3466,7 +3470,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.armv7m_cachel1.h.24.936dd92d6e204a8d0b17d5e4ea4a356e
                            .group:00000000 wm4.stm32n657xx.h.575.78d331c417ec710388ced647138f735f
                            .group:00000000 wm4.stm32n6xx.h.116.b4247d9785590e7c5ec9234ffb2153bf
-ARM GAS  /tmp/ccjTyagi.s 			page 59
+ARM GAS  /tmp/ccX1NXHh.s 			page 59
 
 
                            .group:00000000 wm4.stm32_hal_legacy.h.22.e62aae2fd3ae33360b6781c8a72e5b18

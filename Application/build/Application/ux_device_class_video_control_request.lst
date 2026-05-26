@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccRlwPRP.s 			page 1
+ARM GAS  /tmp/ccgwiRBA.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** #define UX_SOURCE_CODE
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** 
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** 
-ARM GAS  /tmp/ccRlwPRP.s 			page 2
+ARM GAS  /tmp/ccgwiRBA.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** /* Include necessary system files.  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
   40              		.loc 1 73 1 view .LVU1
   74:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** UX_SLAVE_DEVICE               *device;
   41              		.loc 1 74 1 view .LVU2
-ARM GAS  /tmp/ccRlwPRP.s 			page 3
+ARM GAS  /tmp/ccgwiRBA.s 			page 3
 
 
   75:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** UX_SLAVE_CLASS                *class_inst;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
   68              		.loc 1 101 5 view .LVU20
  102:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****     value_cs = transfer_request -> ux_slave_transfer_request_setup[UX_SETUP_VALUE + 1];
   69              		.loc 1 102 5 view .LVU21
-ARM GAS  /tmp/ccRlwPRP.s 			page 4
+ARM GAS  /tmp/ccgwiRBA.s 			page 4
 
 
  103:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****     index_low = transfer_request -> ux_slave_transfer_request_setup[UX_SETUP_INDEX];
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  104 0032 0DD1     		bne	.L4
  116:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****         {
  117:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****         case UX_DEVICE_CLASS_VIDEO_VC_REQUEST_ERROR_CODE_CONTROL:
-ARM GAS  /tmp/ccRlwPRP.s 			page 5
+ARM GAS  /tmp/ccgwiRBA.s 			page 5
 
 
  118:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  152:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****         }
  153:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** 
  154:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****         /* By default it's not handled.  */
-ARM GAS  /tmp/ccRlwPRP.s 			page 6
+ARM GAS  /tmp/ccgwiRBA.s 			page 6
 
 
  155:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****         status = UX_ERROR;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  209:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****                     /* Send data.  */
  210:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****                     status = _ux_device_stack_transfer_request(transfer_request, 1, 1);
  211:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****                     return(status);
-ARM GAS  /tmp/ccRlwPRP.s 			page 7
+ARM GAS  /tmp/ccgwiRBA.s 			page 7
 
 
  212:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****                 }
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  145              		.loc 1 140 25 is_stmt 0 view .LVU54
  146 004c 3270     		strb	r2, [r6]
  147              	.LVL7:
-ARM GAS  /tmp/ccRlwPRP.s 			page 8
+ARM GAS  /tmp/ccgwiRBA.s 			page 8
 
 
  140:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  189 0064 02D1     		bne	.L10
  190              	.LVL14:
  191              	.L1:
-ARM GAS  /tmp/ccRlwPRP.s 			page 9
+ARM GAS  /tmp/ccgwiRBA.s 			page 9
 
 
  192              		.loc 1 240 1 is_stmt 0 view .LVU69
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  198:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****                     return(status);
  233              		.loc 1 198 30 view .LVU83
  234 0088 0122     		movs	r2, #1
-ARM GAS  /tmp/ccRlwPRP.s 			page 10
+ARM GAS  /tmp/ccgwiRBA.s 			page 10
 
 
  235              	.LVL17:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  273              		.loc 1 235 9 is_stmt 1 view .LVU99
  235:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/src/ux_device_class_video_control_request.c ****     }
  274              		.loc 1 235 16 is_stmt 0 view .LVU100
-ARM GAS  /tmp/ccRlwPRP.s 			page 11
+ARM GAS  /tmp/ccgwiRBA.s 			page 11
 
 
  275 00a2 4032     		adds	r2, r2, #64
@@ -619,14 +619,14 @@ ARM GAS  /tmp/ccRlwPRP.s 			page 1
  290              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/usbx_device_classes/inc/ux_device_class_vid
  291              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  292              		.file 6 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
-ARM GAS  /tmp/ccRlwPRP.s 			page 12
+ARM GAS  /tmp/ccgwiRBA.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_class_video_control_request.c
-     /tmp/ccRlwPRP.s:26     .text._ux_device_class_video_control_request:00000000 $t
-     /tmp/ccRlwPRP.s:32     .text._ux_device_class_video_control_request:00000000 _ux_device_class_video_control_request
-     /tmp/ccRlwPRP.s:282    .text._ux_device_class_video_control_request:000000a8 $d
+     /tmp/ccgwiRBA.s:26     .text._ux_device_class_video_control_request:00000000 $t
+     /tmp/ccgwiRBA.s:32     .text._ux_device_class_video_control_request:00000000 _ux_device_class_video_control_request
+     /tmp/ccgwiRBA.s:282    .text._ux_device_class_video_control_request:000000a8 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

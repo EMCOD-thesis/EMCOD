@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccV6Cnac.s 			page 1
+ARM GAS  /tmp/ccbi6h7n.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
-ARM GAS  /tmp/ccV6Cnac.s 			page 2
+ARM GAS  /tmp/ccbi6h7n.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** /*                                                                        */
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** /*  05-19-2020     Chaoqiong Xiao           Initial Version 6.0           */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** /*  09-30-2020     Chaoqiong Xiao           Modified comment(s),          */
-ARM GAS  /tmp/ccV6Cnac.s 			page 3
+ARM GAS  /tmp/ccbi6h7n.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** /*                                            optimized descriptor search */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  118:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** ULONG                           length;
   53              		.loc 1 118 1 view .LVU15
  119:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** UCHAR                           *string_memory;
-ARM GAS  /tmp/ccV6Cnac.s 			page 4
+ARM GAS  /tmp/ccbi6h7n.s 			page 4
 
 
   54              		.loc 1 119 1 view .LVU16
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  149:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     descriptor_index =  descriptor_type & 0xff;
   77              		.loc 1 149 22 view .LVU26
   78 000a 5FFA80F9 		uxtb	r9, r0
-ARM GAS  /tmp/ccV6Cnac.s 			page 5
+ARM GAS  /tmp/ccbi6h7n.s 			page 5
 
 
  134:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  108              		.loc 1 155 5 view .LVU41
  158:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
  109              		.loc 1 158 5 view .LVU42
-ARM GAS  /tmp/ccV6Cnac.s 			page 6
+ARM GAS  /tmp/ccbi6h7n.s 			page 6
 
 
  110              		.loc 1 161 5 view .LVU43
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  184:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             length =  UX_OTG_DESCRIPTOR_LENGTH;
  185:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
  186:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         /* We may or may not have a device qualifier descriptor.  */
-ARM GAS  /tmp/ccV6Cnac.s 			page 7
+ARM GAS  /tmp/ccbi6h7n.s 			page 7
 
 
  187:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         device_framework =  _ux_system_slave -> ux_system_slave_device_framework;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  227:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         if (descriptor_type == UX_OTHER_SPEED_DESCRIPTOR_ITEM)
  228:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         {
  229:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
-ARM GAS  /tmp/ccV6Cnac.s 			page 8
+ARM GAS  /tmp/ccbi6h7n.s 			page 8
 
 
  230:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             /* This request is used by the host to find out the capability of this device
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  284:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 item into a Other Speed Descriptor. */
  285:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 if (*(device_framework + 1) == UX_CONFIGURATION_DESCRIPTOR_ITEM)
  286:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 {
-ARM GAS  /tmp/ccV6Cnac.s 			page 9
+ARM GAS  /tmp/ccbi6h7n.s 			page 9
 
 
  287:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  341:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 /* Stall the endpoint.  */
  342:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 status =  dcd -> ux_slave_dcd_function(dcd, UX_DCD_STALL_ENDPOINT, endpoint);
  343:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 break;
-ARM GAS  /tmp/ccV6Cnac.s 			page 10
+ARM GAS  /tmp/ccbi6h7n.s 			page 10
 
 
  344:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             }
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  398:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
  399:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             /* We can return the string language ID descriptor.  */
  400:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             status =  _ux_device_stack_transfer_request(transfer_request, length, host_length);
-ARM GAS  /tmp/ccV6Cnac.s 			page 11
+ARM GAS  /tmp/ccbi6h7n.s 			page 11
 
 
  401:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  455:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                            of the length itself as well as the descriptor type,
  456:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                            hence the ' + 2'.  */
  457:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                         *string_memory =  (UCHAR)((*(string_framework + 3)*2) + 2);
-ARM GAS  /tmp/ccV6Cnac.s 			page 12
+ARM GAS  /tmp/ccbi6h7n.s 			page 12
 
 
  458:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  170              	.L5:
  182:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****             host_length > UX_OTG_DESCRIPTOR_LENGTH)
  171              		.loc 1 182 55 discriminator 1 view .LVU55
-ARM GAS  /tmp/ccV6Cnac.s 			page 13
+ARM GAS  /tmp/ccbi6h7n.s 			page 13
 
 
  172 0068 052E     		cmp	r6, #5
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  506:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     }
  507:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
  508:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     /* Return the status to the caller.  */
-ARM GAS  /tmp/ccV6Cnac.s 			page 14
+ARM GAS  /tmp/ccbi6h7n.s 			page 14
 
 
  509:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     return(status);
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  244:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         }
  247              		.loc 1 244 34 is_stmt 0 view .LVU79
  248 00a2 D4E93353 		ldrdne	r5, r3, [r4, #204]
-ARM GAS  /tmp/ccV6Cnac.s 			page 15
+ARM GAS  /tmp/ccbi6h7n.s 			page 15
 
 
  249 00a6 2B44     		add	r3, r3, r5
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  287              		.loc 1 272 21 is_stmt 1 view .LVU95
  273:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                 }
  288              		.loc 1 273 21 view .LVU96
-ARM GAS  /tmp/ccV6Cnac.s 			page 16
+ARM GAS  /tmp/ccbi6h7n.s 			page 16
 
 
  322:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****         {
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  289:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                     {
  331              		.loc 1 289 24 is_stmt 0 view .LVU110
  332 00f4 4A45     		cmp	r2, r9
-ARM GAS  /tmp/ccV6Cnac.s 			page 17
+ARM GAS  /tmp/ccbi6h7n.s 			page 17
 
 
  333 00f6 08D1     		bne	.L19
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  371              		.loc 1 347 13 is_stmt 1 view .LVU126
  372 0110 4A46     		mov	r2, r9
  373 0112 2946     		mov	r1, r5
-ARM GAS  /tmp/ccV6Cnac.s 			page 18
+ARM GAS  /tmp/ccbi6h7n.s 			page 18
 
 
  374 0114 A06E     		ldr	r0, [r4, #104]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  370:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c **** 
  413              		.loc 1 370 17 view .LVU142
  414 0144 FFF7FEFF 		bl	_ux_system_error_handler
-ARM GAS  /tmp/ccV6Cnac.s 			page 19
+ARM GAS  /tmp/ccbi6h7n.s 			page 19
 
 
  415              	.LVL48:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  390:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                                                         _ux_system_slave -> ux_system_slave_languag
  458              		.loc 1 390 13 view .LVU155
  459 0164 0230     		adds	r0, r0, #2
-ARM GAS  /tmp/ccV6Cnac.s 			page 20
+ARM GAS  /tmp/ccbi6h7n.s 			page 20
 
 
  460              	.LVL52:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  505:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     }
  502              		.loc 1 505 9 view .LVU168
  505:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****     }
-ARM GAS  /tmp/ccV6Cnac.s 			page 21
+ARM GAS  /tmp/ccbi6h7n.s 			page 21
 
 
  503              		.loc 1 505 15 is_stmt 0 view .LVU169
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  463:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_descriptor_send.c ****                         {
  541              		.loc 1 463 25 is_stmt 0 view .LVU186
  542 01be 0AEB0304 		add	r4, r10, r3
-ARM GAS  /tmp/ccV6Cnac.s 			page 22
+ARM GAS  /tmp/ccbi6h7n.s 			page 22
 
 
  543              	.LVL64:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  580              		.loc 1 463 106 is_stmt 1 discriminator 3 view .LVU203
  581 01e2 F0E7     		b	.L28
  582              	.LVL71:
-ARM GAS  /tmp/ccV6Cnac.s 			page 23
+ARM GAS  /tmp/ccbi6h7n.s 			page 23
 
 
  583              	.L27:
@@ -1355,17 +1355,17 @@ ARM GAS  /tmp/ccV6Cnac.s 			page 1
  610              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  611              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
  612              		.file 6 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
-ARM GAS  /tmp/ccV6Cnac.s 			page 24
+ARM GAS  /tmp/ccbi6h7n.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_descriptor_send.c
-     /tmp/ccV6Cnac.s:26     .text._ux_device_stack_descriptor_send:00000000 $t
-     /tmp/ccV6Cnac.s:32     .text._ux_device_stack_descriptor_send:00000000 _ux_device_stack_descriptor_send
-     /tmp/ccV6Cnac.s:116    .text._ux_device_stack_descriptor_send:00000038 $d
-     /tmp/ccV6Cnac.s:600    .text._ux_device_stack_descriptor_send:000001f4 $d
-     /tmp/ccV6Cnac.s:131    .text._ux_device_stack_descriptor_send:00000047 $d
-     /tmp/ccV6Cnac.s:131    .text._ux_device_stack_descriptor_send:00000048 $t
+     /tmp/ccbi6h7n.s:26     .text._ux_device_stack_descriptor_send:00000000 $t
+     /tmp/ccbi6h7n.s:32     .text._ux_device_stack_descriptor_send:00000000 _ux_device_stack_descriptor_send
+     /tmp/ccbi6h7n.s:116    .text._ux_device_stack_descriptor_send:00000038 $d
+     /tmp/ccbi6h7n.s:600    .text._ux_device_stack_descriptor_send:000001f4 $d
+     /tmp/ccbi6h7n.s:131    .text._ux_device_stack_descriptor_send:00000047 $d
+     /tmp/ccbi6h7n.s:131    .text._ux_device_stack_descriptor_send:00000048 $t
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

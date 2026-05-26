@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccCi6tmV.s 			page 1
+ARM GAS  /tmp/ccx8xURx.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
   22:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
   23:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 2
+ARM GAS  /tmp/ccx8xURx.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
   35              		.loc 1 78 1 view -0
   36              		.cfi_startproc
   37              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccCi6tmV.s 			page 3
+ARM GAS  /tmp/ccx8xURx.s 			page 3
 
 
   38              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
   10:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
   11:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   12:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 4
+ARM GAS  /tmp/ccx8xURx.s 			page 4
 
 
   13:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
   67:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  01-31-2022      Scott Larson            Modified comment(s), unified  */
   68:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            this file across compilers, */
   69:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            fixed predefined macro,     */
-ARM GAS  /tmp/ccCi6tmV.s 			page 5
+ARM GAS  /tmp/ccx8xURx.s 			page 5
 
 
   70:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.10 */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  124:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned short                          USHORT;
  125:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define ULONG64_DEFINED
  126:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 6
+ARM GAS  /tmp/ccx8xURx.s 			page 6
 
 
  127:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Function prototypes for this port. */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  181:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  182:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  183:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the system timer thread's default stack size and priority.  These are only applicable
-ARM GAS  /tmp/ccCi6tmV.s 			page 7
+ARM GAS  /tmp/ccx8xURx.s 			page 7
 
 
  184:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    if TX_TIMER_PROCESS_IN_ISR is not defined.  */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  238:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    a function call.  */
  239:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  240:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_MISRA_ENABLE
-ARM GAS  /tmp/ccCi6tmV.s 			page 8
+ARM GAS  /tmp/ccx8xURx.s 			page 8
 
 
  241:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_DISABLE_INLINE
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  295:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_EXTENSION
  296:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_EXTENSION
  297:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_EXTENSION
-ARM GAS  /tmp/ccCi6tmV.s 			page 9
+ARM GAS  /tmp/ccx8xURx.s 			page 9
 
 
  298:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_EXTENSION
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  352:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_fpccr_get(void);
  353:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_vfp_touch(void);
  354:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 10
+ARM GAS  /tmp/ccx8xURx.s 			page 10
 
 
  355:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* TX_MISRA_ENABLE not defined */
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  409:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
  410:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
  411:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
-ARM GAS  /tmp/ccCi6tmV.s 			page 11
+ARM GAS  /tmp/ccx8xURx.s 			page 11
 
 
  412:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_vfp_state;                      
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  466:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
  467:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
  468:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
-ARM GAS  /tmp/ccCi6tmV.s 			page 12
+ARM GAS  /tmp/ccx8xURx.s 			page 12
 
 
  469:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  523:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  524:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the check for whether or not to call the _tx_thread_system_return function.  A non-zero v
  525:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    indicates that _tx_thread_system_return should not be called. This overrides the definition in t
-ARM GAS  /tmp/ccCi6tmV.s 			page 13
+ARM GAS  /tmp/ccx8xURx.s 			page 13
 
 
  526:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for Cortex-M since so we don't waste time checking the _tx_thread_system_state variable that is 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  580:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __enable_interrupts(void)
  581:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  582:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("CPSIE  i": : : "memory");
-ARM GAS  /tmp/ccCi6tmV.s 			page 14
+ARM GAS  /tmp/ccx8xURx.s 			page 14
 
 
  583:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
   78              		.loc 2 569 5 view .LVU14
   79              		.syntax unified
   80              	@ 569 "../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h" 1
-ARM GAS  /tmp/ccCi6tmV.s 			page 15
+ARM GAS  /tmp/ccx8xURx.s 			page 15
 
 
   81 0008 EFF31086 		MRS  r6, PRIMASK 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  123              	.LBI28:
  507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  124              		.loc 2 507 55 view .LVU29
-ARM GAS  /tmp/ccCi6tmV.s 			page 16
+ARM GAS  /tmp/ccx8xURx.s 			page 16
 
 
  125              	.LBB29:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  175              		.loc 1 117 5 is_stmt 0 discriminator 9 view .LVU48
  176 0046 384A     		ldr	r2, .L22+12
  177 0048 5268     		ldr	r2, [r2, #4]
-ARM GAS  /tmp/ccCi6tmV.s 			page 17
+ARM GAS  /tmp/ccx8xURx.s 			page 17
 
 
  178 004a 5D61     		str	r5, [r3, #20]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  122:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****     /* Determine if the new threshold is greater than the current user priority.  */
  123:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****     if (new_threshold > thread_ptr -> tx_thread_user_priority)
  228              		.loc 1 123 5 is_stmt 1 view .LVU70
-ARM GAS  /tmp/ccCi6tmV.s 			page 18
+ARM GAS  /tmp/ccx8xURx.s 			page 18
 
 
  229              		.loc 1 123 36 is_stmt 0 view .LVU71
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  253              		.loc 1 150 17 view .LVU83
  254 0096 9A40     		lsls	r2, r2, r3
  255              	.LVL21:
-ARM GAS  /tmp/ccCi6tmV.s 			page 19
+ARM GAS  /tmp/ccx8xURx.s 			page 19
 
 
  256              		.loc 1 151 94 view .LVU84
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  270              		.loc 1 172 9 is_stmt 1 view .LVU90
  175:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****         {
  271              		.loc 1 175 12 is_stmt 0 view .LVU91
-ARM GAS  /tmp/ccCi6tmV.s 			page 20
+ARM GAS  /tmp/ccx8xURx.s 			page 20
 
 
  272 00a8 D4F89C30 		ldr	r3, [r4, #156]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  207:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
  208:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** #if TX_MAX_PRIORITIES > 32
  209:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 21
+ARM GAS  /tmp/ccx8xURx.s 			page 21
 
 
  210:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****                         /* Calculate the index into the bit map array.  */
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  244:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****                         /* Move to next entry.  */
  245:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****                         _tx_thread_performance__execute_log_index++;
  246:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
-ARM GAS  /tmp/ccCi6tmV.s 			page 22
+ARM GAS  /tmp/ccx8xURx.s 			page 22
 
 
  247:../Middlewares/threadx/common/src/tx_thread_preemption_change.c ****                         /* Check for wrap condition.  */
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  351              	.LBB32:
  352              	.LBI32:
  595:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
-ARM GAS  /tmp/ccCi6tmV.s 			page 23
+ARM GAS  /tmp/ccx8xURx.s 			page 23
 
 
  353              		.loc 2 595 55 view .LVU123
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  396 00fa 35BF     		itete	cc
  397 00fc 0146     		movcc	r1, r0
  398              	.LVL34:
-ARM GAS  /tmp/ccCi6tmV.s 			page 24
+ARM GAS  /tmp/ccx8xURx.s 			page 24
 
 
  117:../Middlewares/threadx/common/src/tx_thread_preemption_change.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  591:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  435              		.loc 2 591 5 is_stmt 0 view .LVU149
  436              		.thumb
-ARM GAS  /tmp/ccCi6tmV.s 			page 25
+ARM GAS  /tmp/ccx8xURx.s 			page 25
 
 
  437              		.syntax unified
@@ -1476,14 +1476,14 @@ ARM GAS  /tmp/ccCi6tmV.s 			page 1
  466              		.file 3 "../Middlewares/threadx/common/inc/tx_api.h"
  467              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  468              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
-ARM GAS  /tmp/ccCi6tmV.s 			page 26
+ARM GAS  /tmp/ccx8xURx.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_thread_preemption_change.c
-     /tmp/ccCi6tmV.s:26     .text._tx_thread_preemption_change:00000000 $t
-     /tmp/ccCi6tmV.s:32     .text._tx_thread_preemption_change:00000000 _tx_thread_preemption_change
-     /tmp/ccCi6tmV.s:448    .text._tx_thread_preemption_change:0000011c $d
+     /tmp/ccx8xURx.s:26     .text._tx_thread_preemption_change:00000000 $t
+     /tmp/ccx8xURx.s:32     .text._tx_thread_preemption_change:00000000 _tx_thread_preemption_change
+     /tmp/ccx8xURx.s:448    .text._tx_thread_preemption_change:0000011c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

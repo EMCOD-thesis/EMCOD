@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccJpSitJ.s 			page 1
+ARM GAS  /tmp/ccH2kOo2.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
-ARM GAS  /tmp/ccJpSitJ.s 			page 2
+ARM GAS  /tmp/ccH2kOo2.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*                                                                        */
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*  OUTPUT                                                                */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*                                                                        */
-ARM GAS  /tmp/ccJpSitJ.s 			page 3
+ARM GAS  /tmp/ccH2kOo2.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*    Completion Status                                                   */ 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  128:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** UINT                            status;
   43              		.loc 1 128 1 view .LVU5
  129:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** ULONG                           interfaces_found;
-ARM GAS  /tmp/ccJpSitJ.s 			page 4
+ARM GAS  /tmp/ccH2kOo2.s 			page 4
 
 
   44              		.loc 1 129 1 view .LVU6
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  153:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****     /* Store the string framework address and length in the project structure.  */
  154:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****     _ux_system_slave -> ux_system_slave_device_framework_full_speed =             device_framework_
   74              		.loc 1 154 5 is_stmt 1 view .LVU22
-ARM GAS  /tmp/ccJpSitJ.s 			page 5
+ARM GAS  /tmp/ccH2kOo2.s 			page 5
 
 
  155:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****     _ux_system_slave -> ux_system_slave_device_framework_length_full_speed =      device_framework_
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
   99 0022 0A9B     		ldr	r3, [sp, #40]
  100 0024 C4F8EC30 		str	r3, [r4, #236]
  163:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
-ARM GAS  /tmp/ccJpSitJ.s 			page 6
+ARM GAS  /tmp/ccH2kOo2.s 			page 6
 
 
  101              		.loc 1 163 5 is_stmt 1 view .LVU35
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  134 004c FFF7FEFF 		bl	_ux_utility_memory_allocate
  135              	.LVL9:
  187:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****           _ux_utility_memory_allocate(UX_NO_ALIGN, UX_CACHE_SAFE_MEMORY, UX_SLAVE_REQUEST_CONTROL_M
-ARM GAS  /tmp/ccJpSitJ.s 			page 7
+ARM GAS  /tmp/ccH2kOo2.s 			page 7
 
 
  136              		.loc 1 187 64 view .LVU53
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  222:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
  223:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         /* Parse the device framework and locate interfaces and endpoint descriptor(s).  */
  224:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         while (device_framework_length != 0)
-ARM GAS  /tmp/ccJpSitJ.s 			page 8
+ARM GAS  /tmp/ccH2kOo2.s 			page 8
 
 
  157              		.loc 1 224 9 view .LVU67
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  256:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                     /* Compare the number of endpoints found in this non 0 alternate setting.  */
  257:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                     if (endpoints_in_interface_found < (ULONG) *(device_framework + 4))
  258:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                     
-ARM GAS  /tmp/ccJpSitJ.s 			page 9
+ARM GAS  /tmp/ccH2kOo2.s 			page 9
 
 
  259:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                         /* Adjust the number of maximum endpoints in this interface.  */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  176              		.loc 1 310 9 view .LVU76
  311:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                     
  312:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             /* We need to adjust the number of maximum endpoints.  */
-ARM GAS  /tmp/ccJpSitJ.s 			page 10
+ARM GAS  /tmp/ccH2kOo2.s 			page 10
 
 
  313:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             endpoints_found =  local_endpoints_found;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  345:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             UX_TRACE_IN_LINE_INSERT(UX_TRACE_ERROR, UX_MEMORY_INSUFFICIENT, device_framework, 0, 0,
  346:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
  347:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             status = UX_MEMORY_INSUFFICIENT;
-ARM GAS  /tmp/ccJpSitJ.s 			page 11
+ARM GAS  /tmp/ccH2kOo2.s 			page 11
 
 
  348:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  396:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                 /* Ensure we could allocate memory.  */
  397:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                 if (endpoints_pool -> ux_slave_endpoint_transfer_request.ux_slave_transfer_request_
  398:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                 {
-ARM GAS  /tmp/ccJpSitJ.s 			page 12
+ARM GAS  /tmp/ccH2kOo2.s 			page 12
 
 
  399:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****                     status = UX_MEMORY_INSUFFICIENT;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  453:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         _ux_utility_memory_free(device -> ux_slave_device_endpoints_pool);
  454:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****     }
  455:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
-ARM GAS  /tmp/ccJpSitJ.s 			page 13
+ARM GAS  /tmp/ccH2kOo2.s 			page 13
 
 
  456:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****     /* Free device -> ux_slave_device_interfaces_pool.  */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  234:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             {
  241              		.loc 1 234 13 view .LVU105
  242 00a6 B8F1020F 		cmp	r8, #2
-ARM GAS  /tmp/ccJpSitJ.s 			page 14
+ARM GAS  /tmp/ccH2kOo2.s 			page 14
 
 
  243 00aa 18D0     		beq	.L5
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  281              		.loc 1 303 13 is_stmt 1 view .LVU121
  303:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         }
  282              		.loc 1 303 30 is_stmt 0 view .LVU122
-ARM GAS  /tmp/ccJpSitJ.s 			page 15
+ARM GAS  /tmp/ccH2kOo2.s 			page 15
 
 
  283 00d2 4844     		add	r0, r0, r9
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  323              		.loc 1 337 9 is_stmt 1 view .LVU136
  337:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****             max_interface_number >= UX_MAX_SLAVE_INTERFACES)
  324              		.loc 1 337 34 is_stmt 0 discriminator 1 view .LVU137
-ARM GAS  /tmp/ccJpSitJ.s 			page 16
+ARM GAS  /tmp/ccH2kOo2.s 			page 16
 
 
  325 00f4 BEF10F0F 		cmp	lr, #15
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  358:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
  365              		.loc 1 358 9 is_stmt 1 view .LVU152
  358:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
-ARM GAS  /tmp/ccJpSitJ.s 			page 17
+ARM GAS  /tmp/ccH2kOo2.s 			page 17
 
 
  366              		.loc 1 358 58 is_stmt 0 view .LVU153
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  403              	.L1:
  469:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** }
  404              		.loc 1 469 1 is_stmt 0 view .LVU171
-ARM GAS  /tmp/ccJpSitJ.s 			page 18
+ARM GAS  /tmp/ccH2kOo2.s 			page 18
 
 
  405 0140 3046     		mov	r0, r6
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  501:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*                                                                        */
  502:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*    Application                                                         */
  503:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*                                                                        */
-ARM GAS  /tmp/ccJpSitJ.s 			page 19
+ARM GAS  /tmp/ccH2kOo2.s 			page 19
 
 
  504:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** /*  RELEASE HISTORY                                                       */
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  462              		.loc 1 522 44 view .LVU184
  463 001c 3FB1     		cbz	r7, .L40
  523:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c ****         return(UX_INVALID_PARAMETER);
-ARM GAS  /tmp/ccJpSitJ.s 			page 20
+ARM GAS  /tmp/ccH2kOo2.s 			page 20
 
 
  524:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_initialize.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  514              	_ux_system_device_class_video_name:
  515 0000 75785F64 		.ascii	"ux_device_class_video\000"
  515      65766963 
-ARM GAS  /tmp/ccJpSitJ.s 			page 21
+ARM GAS  /tmp/ccH2kOo2.s 			page 21
 
 
  515      655F636C 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  557 0000 75785F73 		.ascii	"ux_slave_class_hid\000"
  557      6C617665 
  557      5F636C61 
-ARM GAS  /tmp/ccJpSitJ.s 			page 22
+ARM GAS  /tmp/ccH2kOo2.s 			page 22
 
 
  557      73735F68 
@@ -1301,30 +1301,30 @@ ARM GAS  /tmp/ccJpSitJ.s 			page 1
  585              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  586              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  587              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
-ARM GAS  /tmp/ccJpSitJ.s 			page 23
+ARM GAS  /tmp/ccH2kOo2.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_initialize.c
-     /tmp/ccJpSitJ.s:26     .text._ux_device_stack_initialize:00000000 $t
-     /tmp/ccJpSitJ.s:32     .text._ux_device_stack_initialize:00000000 _ux_device_stack_initialize
-     /tmp/ccJpSitJ.s:415    .text._ux_device_stack_initialize:0000014c $d
-     /tmp/ccJpSitJ.s:508    .bss._ux_system_slave:00000000 _ux_system_slave
-     /tmp/ccJpSitJ.s:420    .text._uxe_device_stack_initialize:00000000 $t
-     /tmp/ccJpSitJ.s:426    .text._uxe_device_stack_initialize:00000000 _uxe_device_stack_initialize
-     /tmp/ccJpSitJ.s:505    .bss._ux_system_slave:00000000 $d
-     /tmp/ccJpSitJ.s:514    .data._ux_system_device_class_video_name:00000000 _ux_system_device_class_video_name
-     /tmp/ccJpSitJ.s:520    .data._ux_system_device_class_ccid_name:00000000 _ux_system_device_class_ccid_name
-     /tmp/ccJpSitJ.s:526    .data._ux_system_device_class_printer_name:00000000 _ux_system_device_class_printer_name
-     /tmp/ccJpSitJ.s:532    .data._ux_system_slave_class_audio_name:00000000 _ux_system_slave_class_audio_name
-     /tmp/ccJpSitJ.s:538    .data._ux_system_slave_class_dfu_name:00000000 _ux_system_slave_class_dfu_name
-     /tmp/ccJpSitJ.s:544    .data._ux_system_slave_class_cdc_ecm_name:00000000 _ux_system_slave_class_cdc_ecm_name
-     /tmp/ccJpSitJ.s:550    .data._ux_system_slave_class_rndis_name:00000000 _ux_system_slave_class_rndis_name
-     /tmp/ccJpSitJ.s:556    .data._ux_system_slave_class_hid_name:00000000 _ux_system_slave_class_hid_name
-     /tmp/ccJpSitJ.s:562    .data._ux_system_slave_class_pima_name:00000000 _ux_system_slave_class_pima_name
-     /tmp/ccJpSitJ.s:568    .data._ux_system_slave_class_dpump_name:00000000 _ux_system_slave_class_dpump_name
-     /tmp/ccJpSitJ.s:574    .data._ux_system_slave_class_cdc_acm_name:00000000 _ux_system_slave_class_cdc_acm_name
-     /tmp/ccJpSitJ.s:580    .data._ux_system_slave_class_storage_name:00000000 _ux_system_slave_class_storage_name
+     /tmp/ccH2kOo2.s:26     .text._ux_device_stack_initialize:00000000 $t
+     /tmp/ccH2kOo2.s:32     .text._ux_device_stack_initialize:00000000 _ux_device_stack_initialize
+     /tmp/ccH2kOo2.s:415    .text._ux_device_stack_initialize:0000014c $d
+     /tmp/ccH2kOo2.s:508    .bss._ux_system_slave:00000000 _ux_system_slave
+     /tmp/ccH2kOo2.s:420    .text._uxe_device_stack_initialize:00000000 $t
+     /tmp/ccH2kOo2.s:426    .text._uxe_device_stack_initialize:00000000 _uxe_device_stack_initialize
+     /tmp/ccH2kOo2.s:505    .bss._ux_system_slave:00000000 $d
+     /tmp/ccH2kOo2.s:514    .data._ux_system_device_class_video_name:00000000 _ux_system_device_class_video_name
+     /tmp/ccH2kOo2.s:520    .data._ux_system_device_class_ccid_name:00000000 _ux_system_device_class_ccid_name
+     /tmp/ccH2kOo2.s:526    .data._ux_system_device_class_printer_name:00000000 _ux_system_device_class_printer_name
+     /tmp/ccH2kOo2.s:532    .data._ux_system_slave_class_audio_name:00000000 _ux_system_slave_class_audio_name
+     /tmp/ccH2kOo2.s:538    .data._ux_system_slave_class_dfu_name:00000000 _ux_system_slave_class_dfu_name
+     /tmp/ccH2kOo2.s:544    .data._ux_system_slave_class_cdc_ecm_name:00000000 _ux_system_slave_class_cdc_ecm_name
+     /tmp/ccH2kOo2.s:550    .data._ux_system_slave_class_rndis_name:00000000 _ux_system_slave_class_rndis_name
+     /tmp/ccH2kOo2.s:556    .data._ux_system_slave_class_hid_name:00000000 _ux_system_slave_class_hid_name
+     /tmp/ccH2kOo2.s:562    .data._ux_system_slave_class_pima_name:00000000 _ux_system_slave_class_pima_name
+     /tmp/ccH2kOo2.s:568    .data._ux_system_slave_class_dpump_name:00000000 _ux_system_slave_class_dpump_name
+     /tmp/ccH2kOo2.s:574    .data._ux_system_slave_class_cdc_acm_name:00000000 _ux_system_slave_class_cdc_acm_name
+     /tmp/ccH2kOo2.s:580    .data._ux_system_slave_class_storage_name:00000000 _ux_system_slave_class_storage_name
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
@@ -1361,7 +1361,7 @@ DEFINED SYMBOLS
 
 UNDEFINED SYMBOLS
 _ux_utility_memory_allocate
-ARM GAS  /tmp/ccJpSitJ.s 			page 24
+ARM GAS  /tmp/ccH2kOo2.s 			page 24
 
 
 _ux_system_error_handler

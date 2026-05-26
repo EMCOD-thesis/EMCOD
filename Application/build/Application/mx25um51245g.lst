@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccCDub9p.s 			page 1
+ARM GAS  /tmp/cctLNn1j.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
   22:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   *   DTR(Double Transfer Rate) in SPI modes
   23:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   *
   24:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   ******************************************************************************
-ARM GAS  /tmp/ccCDub9p.s 			page 2
+ARM GAS  /tmp/cctLNn1j.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @attention
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
   46              		.loc 1 67 33 is_stmt 0 view .LVU4
   47 000c 4FF48052 		mov	r2, #4096
   48 0010 4FF48063 		mov	r3, #1024
-ARM GAS  /tmp/ccCDub9p.s 			page 3
+ARM GAS  /tmp/cctLNn1j.s 			page 3
 
 
   49 0014 C0E90232 		strd	r3, r2, [r0, #8]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
   86:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                          MX25UM51245G_Transfer_t Rate)
   87:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** {
   83              		.loc 1 87 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccCDub9p.s 			page 4
+ARM GAS  /tmp/cctLNn1j.s 			page 4
 
 
   84              		.cfi_startproc
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  101:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_1_LINE
  102:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_INSTRUCTION_8_LINES;
  123              		.loc 1 102 34 discriminator 1 view .LVU28
-ARM GAS  /tmp/ccCDub9p.s 			page 5
+ARM GAS  /tmp/cctLNn1j.s 			page 5
 
 
  124 0020 0123     		movs	r3, #1
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  147:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
  148:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
  149:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
-ARM GAS  /tmp/ccCDub9p.s 			page 6
+ARM GAS  /tmp/cctLNn1j.s 			page 6
 
 
  150:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   return MX25UM51245G_OK;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  170              		.loc 1 113 3 is_stmt 1 view .LVU45
  115:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressWidth       = HAL_XSPI_ADDRESS_32_BITS;
  171              		.loc 1 115 34 is_stmt 0 view .LVU46
-ARM GAS  /tmp/ccCDub9p.s 			page 7
+ARM GAS  /tmp/cctLNn1j.s 			page 7
 
 
  172 004e DA02     		lsls	r2, r3, #11
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  207              		.loc 1 128 3 is_stmt 1 view .LVU65
  208              	.L10:
  128:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XS
-ARM GAS  /tmp/ccCDub9p.s 			page 8
+ARM GAS  /tmp/cctLNn1j.s 			page 8
 
 
  209              		.loc 1 128 32 is_stmt 0 discriminator 4 view .LVU66
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  247              		.loc 1 145 6 discriminator 1 view .LVU82
  248 00ac 0038     		subs	r0, r0, #0
  249 00ae 18BF     		it	ne
-ARM GAS  /tmp/ccCDub9p.s 			page 9
+ARM GAS  /tmp/cctLNn1j.s 			page 9
 
 
  250 00b0 0120     		movne	r0, #1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  161:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  ReadAddr Read start address
  162:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Size Size of data to read
  163:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @retval Memory status
-ARM GAS  /tmp/ccCDub9p.s 			page 10
+ARM GAS  /tmp/cctLNn1j.s 			page 10
 
 
  164:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   */
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  330 001c 4FF0FF30 		mov	r0, #-1
  331              	.L20:
  174:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
-ARM GAS  /tmp/ccCDub9p.s 			page 11
+ARM GAS  /tmp/cctLNn1j.s 			page 11
 
 
  175:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  339              	.L21:
  340              		.cfi_restore_state
  177:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.IOSelect           = HAL_XSPI_SELECT_IO_7_0;
-ARM GAS  /tmp/ccCDub9p.s 			page 12
+ARM GAS  /tmp/cctLNn1j.s 			page 12
 
 
  341              		.loc 1 177 3 is_stmt 1 view .LVU105
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  199:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataMode           = (Mode == MX25UM51245G_SPI_MODE) ? HAL_XSPI_DATA_1_LINE : HAL_XSPI_
  377              		.loc 1 199 3 is_stmt 1 view .LVU124
  200:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = HAL_XSPI_DATA_DTR_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 13
+ARM GAS  /tmp/cctLNn1j.s 			page 13
 
 
  378              		.loc 1 200 3 view .LVU125
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  417 007e 4042     		rsbs	r0, r0, #0
  418 0080 CEE7     		b	.L20
  419              	.L24:
-ARM GAS  /tmp/ccCDub9p.s 			page 14
+ARM GAS  /tmp/cctLNn1j.s 			page 14
 
 
  179:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_1_LINE
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  231:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @note   Only OPI mode support DTR transfer rate
  232:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @retval Memory status
  233:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   */
-ARM GAS  /tmp/ccCDub9p.s 			page 15
+ARM GAS  /tmp/cctLNn1j.s 			page 15
 
 
  234:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** int32_t MX25UM51245G_ReadDTR(XSPI_HandleTypeDef *Ctx, uint8_t *pData, uint32_t ReadAddr, uint32_t S
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  496              		.loc 1 241 32 view .LVU166
  497 001a 0493     		str	r3, [sp, #16]
  242:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionDTRMode = HAL_XSPI_INSTRUCTION_DTR_ENABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 16
+ARM GAS  /tmp/cctLNn1j.s 			page 16
 
 
  498              		.loc 1 242 3 is_stmt 1 view .LVU167
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  532 0054 01A9     		add	r1, sp, #4
  248:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
  533              		.loc 1 248 32 view .LVU184
-ARM GAS  /tmp/ccCDub9p.s 			page 17
+ARM GAS  /tmp/cctLNn1j.s 			page 17
 
 
  534 0056 0797     		str	r7, [sp, #28]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  569              	.LVL26:
  570              	.L35:
  571              		.cfi_restore_state
-ARM GAS  /tmp/ccCDub9p.s 			page 18
+ARM GAS  /tmp/cctLNn1j.s 			page 18
 
 
  262:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  606 0008 1546     		mov	r5, r2
  607              		.loc 1 291 26 view .LVU204
  608 000a 0021     		movs	r1, #0
-ARM GAS  /tmp/ccCDub9p.s 			page 19
+ARM GAS  /tmp/cctLNn1j.s 			page 19
 
 
  609              	.LVL28:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  323:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataMode           = (Mode == MX25UM51245G_SPI_MODE) ? HAL_XSPI_DATA_1_LINE : HAL_XSPI_
  324:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = HAL_XSPI_DATA_DTR_DISABLE;
  325:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
-ARM GAS  /tmp/ccCDub9p.s 			page 20
+ARM GAS  /tmp/cctLNn1j.s 			page 20
 
 
  326:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataLength         = Size;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  656              	.L41:
  320:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Address            = WriteAddr;
  657              		.loc 1 320 34 discriminator 1 view .LVU223
-ARM GAS  /tmp/ccCDub9p.s 			page 21
+ARM GAS  /tmp/cctLNn1j.s 			page 21
 
 
  658 0036 002D     		cmp	r5, #0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  693 005e 41F28832 		movw	r2, #5000
  694 0062 01A9     		add	r1, sp, #4
  326:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 22
+ARM GAS  /tmp/cctLNn1j.s 			page 22
 
 
  695              		.loc 1 326 32 view .LVU243
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  733              		.loc 1 316 34 is_stmt 0 discriminator 1 view .LVU259
  734 0090 4FF48073 		mov	r3, #256
  735 0094 CFE7     		b	.L41
-ARM GAS  /tmp/ccCDub9p.s 			page 23
+ARM GAS  /tmp/cctLNn1j.s 			page 23
 
 
  736              		.cfi_endproc
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  776              	.LVL38:
  358:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  777              		.loc 1 358 1 view .LVU267
-ARM GAS  /tmp/ccCDub9p.s 			page 24
+ARM GAS  /tmp/cctLNn1j.s 			page 24
 
 
  778 0010 1E46     		mov	r6, r3
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  374:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = HAL_XSPI_DATA_DTR_ENABLE;
  814              		.loc 1 374 32 view .LVU287
  815 0040 4FF00063 		mov	r3, #134217728
-ARM GAS  /tmp/ccCDub9p.s 			page 25
+ARM GAS  /tmp/cctLNn1j.s 			page 25
 
 
  375:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  392:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
  393:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
  394:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   return MX25UM51245G_OK;
-ARM GAS  /tmp/ccCDub9p.s 			page 26
+ARM GAS  /tmp/cctLNn1j.s 			page 26
 
 
  395:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** }
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  883              		.cfi_offset 7, -12
  884              		.cfi_offset 8, -8
  885              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccCDub9p.s 			page 27
+ARM GAS  /tmp/cctLNn1j.s 			page 27
 
 
  886 0004 0E46     		mov	r6, r1
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  432:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionDTRMode = (Rate == MX25UM51245G_DTR_TRANSFER)
  918              		.loc 1 432 3 is_stmt 1 view .LVU317
  433:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_DTR_ENABLE
-ARM GAS  /tmp/ccCDub9p.s 			page 28
+ARM GAS  /tmp/cctLNn1j.s 			page 28
 
 
  434:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_INSTRUCTION_DTR_DISABLE;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  948              		.loc 1 441 34 view .LVU330
  949 0048 4FEAC424 		lsl	r4, r4, #11
  442:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_24_BITS
-ARM GAS  /tmp/ccCDub9p.s 			page 29
+ARM GAS  /tmp/cctLNn1j.s 			page 29
 
 
  950              		.loc 1 442 3 is_stmt 1 view .LVU331
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  478:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                 ? MX25UM51245G_SUBSECTOR_ERASE_4K_CMD
  479:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                 : MX25UM51245G_4_BYTE_SUBSECTOR_ERASE_4K_CMD;
  480:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****       }
-ARM GAS  /tmp/ccCDub9p.s 			page 30
+ARM GAS  /tmp/cctLNn1j.s 			page 30
 
 
  481:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****       break;
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1009 0088 4FF48072 		mov	r2, #256
  1010 008c D5E7     		b	.L56
  1011              	.L58:
-ARM GAS  /tmp/ccCDub9p.s 			page 31
+ARM GAS  /tmp/cctLNn1j.s 			page 31
 
 
  469:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****       {
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1051              		.loc 1 501 1 is_stmt 1 view -0
  1052              		.cfi_startproc
  1053              		@ args = 0, pretend = 0, frame = 80
-ARM GAS  /tmp/ccCDub9p.s 			page 32
+ARM GAS  /tmp/cctLNn1j.s 			page 32
 
 
  1054              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1091 001c 0493     		str	r3, [sp, #16]
  516:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionDTRMode = (Rate == MX25UM51245G_DTR_TRANSFER)
  1092              		.loc 1 516 3 is_stmt 1 view .LVU375
-ARM GAS  /tmp/ccCDub9p.s 			page 33
+ARM GAS  /tmp/cctLNn1j.s 			page 33
 
 
  517:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_DTR_ENABLE
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  527:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
  1122              		.loc 1 527 3 view .LVU389
  528:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 34
+ARM GAS  /tmp/cctLNn1j.s 			page 34
 
 
  1123              		.loc 1 528 3 view .LVU390
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  543:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** /**
  544:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @brief  Enable memory mapped mode for the memory on STR mode.
  545:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   *         SPI/OPI; 1-1-1/8-8-8
-ARM GAS  /tmp/ccCDub9p.s 			page 35
+ARM GAS  /tmp/cctLNn1j.s 			page 35
 
 
  546:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Ctx Component object pointer
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1207 001e 012C     		cmp	r4, #1
  1208 0020 40D1     		bne	.L79
  1209              		.loc 1 558 39 discriminator 1 view .LVU411
-ARM GAS  /tmp/ccCDub9p.s 			page 36
+ARM GAS  /tmp/cctLNn1j.s 			page 36
 
 
  1210 0022 1DB9     		cbnz	r5, .L80
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  608:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   if (HAL_XSPI_Command(Ctx, &s_command, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
  609:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
  610:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
-ARM GAS  /tmp/ccCDub9p.s 			page 37
+ARM GAS  /tmp/cctLNn1j.s 			page 37
 
 
  611:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1245              		.loc 1 579 3 is_stmt 1 view .LVU425
  580:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_24_BITS
  1246              		.loc 1 580 3 view .LVU426
-ARM GAS  /tmp/ccCDub9p.s 			page 38
+ARM GAS  /tmp/cctLNn1j.s 			page 38
 
 
  582:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1284              		.loc 1 600 3 is_stmt 1 view .LVU443
  604:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
  1285              		.loc 1 604 34 is_stmt 0 view .LVU444
-ARM GAS  /tmp/ccCDub9p.s 			page 39
+ARM GAS  /tmp/cctLNn1j.s 			page 39
 
 
  1286 0072 3CBB     		cbnz	r4, .L93
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  564:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.IOSelect           = HAL_XSPI_SELECT_IO_7_0;
  1326              		.loc 1 564 3 is_stmt 1 view .LVU459
  564:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.IOSelect           = HAL_XSPI_SELECT_IO_7_0;
-ARM GAS  /tmp/ccCDub9p.s 			page 40
+ARM GAS  /tmp/cctLNn1j.s 			page 40
 
 
  1327              		.loc 1 564 32 is_stmt 0 view .LVU460
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1368              		.thumb_func
  1370              	MX25UM51245G_EnableDTRMemoryMappedMode:
  1371              	.LVL71:
-ARM GAS  /tmp/ccCDub9p.s 			page 41
+ARM GAS  /tmp/cctLNn1j.s 			page 41
 
 
  1372              	.LFB890:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1404 0012 2A46     		mov	r2, r5
  1405 0014 0021     		movs	r1, #0
  1406 0016 01A8     		add	r0, sp, #4
-ARM GAS  /tmp/ccCDub9p.s 			page 42
+ARM GAS  /tmp/cctLNn1j.s 			page 42
 
 
  1407 0018 FFF7FEFF 		bl	memset
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  651:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataMode           = HAL_XSPI_DATA_8_LINES;
  1444              		.loc 1 651 32 view .LVU507
  1445 004a 1393     		str	r3, [sp, #76]
-ARM GAS  /tmp/ccCDub9p.s 			page 43
+ARM GAS  /tmp/cctLNn1j.s 			page 43
 
 
  652:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = HAL_XSPI_DATA_DTR_ENABLE;
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  683:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
  684:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   return MX25UM51245G_OK;
  685:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** }
-ARM GAS  /tmp/ccCDub9p.s 			page 44
+ARM GAS  /tmp/cctLNn1j.s 			page 44
 
 
  1469              		.loc 1 685 1 view .LVU518
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1508 0092 FFF7FEFF 		bl	HAL_XSPI_MemoryMapped
  1509              	.LVL79:
  679:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
-ARM GAS  /tmp/ccCDub9p.s 			page 45
+ARM GAS  /tmp/cctLNn1j.s 			page 45
 
 
  1510              		.loc 1 679 6 discriminator 1 view .LVU534
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1552              	.LVL82:
  1553              		.loc 1 697 26 view .LVU541
  1554 000e 01A8     		add	r0, sp, #4
-ARM GAS  /tmp/ccCDub9p.s 			page 46
+ARM GAS  /tmp/cctLNn1j.s 			page 46
 
 
  1555              	.LVL83:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1586              		.loc 1 714 32 view .LVU555
  1587 002c 0593     		str	r3, [sp, #20]
  717:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Instruction        = (Mode == MX25UM51245G_SPI_MODE)
-ARM GAS  /tmp/ccCDub9p.s 			page 47
+ARM GAS  /tmp/cctLNn1j.s 			page 47
 
 
  1588              		.loc 1 717 3 is_stmt 1 view .LVU556
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1617              		@ sp needed
  1618 004a 70BD     		pop	{r4, r5, r6, pc}
  1619              	.LVL88:
-ARM GAS  /tmp/ccCDub9p.s 			page 48
+ARM GAS  /tmp/cctLNn1j.s 			page 48
 
 
  1620              	.L103:
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1660              		.cfi_def_cfa_offset 96
  747:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  1661              		.loc 1 747 1 view .LVU575
-ARM GAS  /tmp/ccCDub9p.s 			page 49
+ARM GAS  /tmp/cctLNn1j.s 			page 49
 
 
  1662 0006 0646     		mov	r6, r0
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1697              		.loc 1 765 3 is_stmt 1 view .LVU589
  766:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_8_BITS
  767:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_INSTRUCTION_16_BITS;
-ARM GAS  /tmp/ccCDub9p.s 			page 50
+ARM GAS  /tmp/cctLNn1j.s 			page 50
 
 
  1698              		.loc 1 767 34 is_stmt 0 view .LVU590
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  782:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
  783:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
  784:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
-ARM GAS  /tmp/ccCDub9p.s 			page 51
+ARM GAS  /tmp/cctLNn1j.s 			page 51
 
 
  785:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1767              		.loc 1 800 3 view .LVU610
  799:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef     s_command = {0};
  1768              		.loc 1 799 1 is_stmt 0 view .LVU611
-ARM GAS  /tmp/ccCDub9p.s 			page 52
+ARM GAS  /tmp/cctLNn1j.s 			page 52
 
 
  1769 0000 F0B5     		push	{r4, r5, r6, r7, lr}
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1807 0022 9D42     		cmp	r5, r3
  1808 0024 04D1     		bne	.L114
  1809              	.LVL104:
-ARM GAS  /tmp/ccCDub9p.s 			page 53
+ARM GAS  /tmp/cctLNn1j.s 			page 53
 
 
  1810              	.L117:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  864:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
  865:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_config.MatchValue      = 2U;
  866:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_config.MatchMask       = 2U;
-ARM GAS  /tmp/ccCDub9p.s 			page 54
+ARM GAS  /tmp/cctLNn1j.s 			page 54
 
 
  867:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_config.MatchMode       = HAL_XSPI_MATCH_MODE_AND;
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1846 0044 40F2F963 		movw	r3, #1785
  1847              	.L116:
  834:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
-ARM GAS  /tmp/ccCDub9p.s 			page 55
+ARM GAS  /tmp/cctLNn1j.s 			page 55
 
 
  1848              		.loc 1 834 7 view .LVU636
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1884 0072 0420     		movs	r0, #4
  1885              	.L125:
  856:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode        = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XSPI_D
-ARM GAS  /tmp/ccCDub9p.s 			page 56
+ARM GAS  /tmp/cctLNn1j.s 			page 56
 
 
  1886              		.loc 1 856 32 discriminator 4 view .LVU655
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  1924              		.loc 1 869 28 view .LVU671
  1925 00a6 1022     		movs	r2, #16
  866:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_config.MatchMode       = HAL_XSPI_MATCH_MODE_AND;
-ARM GAS  /tmp/ccCDub9p.s 			page 57
+ARM GAS  /tmp/cctLNn1j.s 			page 57
 
 
  1926              		.loc 1 866 28 view .LVU672
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  840:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                              ? MX25UM51245G_READ_STATUS_REG_CMD
  1963              		.loc 1 840 28 view .LVU690
  1964 00d2 4FF0050C 		mov	ip, #5
-ARM GAS  /tmp/ccCDub9p.s 			page 58
+ARM GAS  /tmp/cctLNn1j.s 			page 58
 
 
  856:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode        = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XSPI_D
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  887:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** int32_t MX25UM51245G_WriteDisable(XSPI_HandleTypeDef *Ctx, MX25UM51245G_Interface_t Mode, MX25UM512
  888:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** {
  2006              		.loc 1 888 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccCDub9p.s 			page 59
+ARM GAS  /tmp/cctLNn1j.s 			page 59
 
 
  2007              		.cfi_startproc
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  900:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_1_LINE
  2045              		.loc 1 900 32 view .LVU709
  2046 001c 0493     		str	r3, [sp, #16]
-ARM GAS  /tmp/ccCDub9p.s 			page 60
+ARM GAS  /tmp/cctLNn1j.s 			page 60
 
 
  903:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionDTRMode = (Rate == MX25UM51245G_DTR_TRANSFER)
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  913:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataMode           = HAL_XSPI_DATA_NONE;
  2076              		.loc 1 913 3 view .LVU723
  914:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
-ARM GAS  /tmp/ccCDub9p.s 			page 61
+ARM GAS  /tmp/cctLNn1j.s 			page 61
 
 
  2077              		.loc 1 914 3 view .LVU724
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2122              	.LFB895:
  929:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
  930:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** /**
-ARM GAS  /tmp/ccCDub9p.s 			page 62
+ARM GAS  /tmp/cctLNn1j.s 			page 62
 
 
  931:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @brief  Read Flash Status register value
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  946:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
  947:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
  948:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
-ARM GAS  /tmp/ccCDub9p.s 			page 63
+ARM GAS  /tmp/cctLNn1j.s 			page 63
 
 
  949:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  992:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
  993:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   /* Reception of the data */
  994:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   if (HAL_XSPI_Receive(Ctx, Value, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
-ARM GAS  /tmp/ccCDub9p.s 			page 64
+ARM GAS  /tmp/cctLNn1j.s 			page 64
 
 
  995:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2204 0044 0893     		str	r3, [sp, #32]
  966:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_DTR_ENABLE
  2205              		.loc 1 966 3 is_stmt 1 view .LVU761
-ARM GAS  /tmp/ccCDub9p.s 			page 65
+ARM GAS  /tmp/cctLNn1j.s 			page 65
 
 
  968:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressWidth       = HAL_XSPI_ADDRESS_32_BITS;
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2241 006e 1293     		str	r3, [sp, #72]
  981:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XS
  2242              		.loc 1 981 3 is_stmt 1 view .LVU781
-ARM GAS  /tmp/ccCDub9p.s 			page 66
+ARM GAS  /tmp/cctLNn1j.s 			page 66
 
 
  2243              	.L142:
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2284 00a6 0423     		movs	r3, #4
  2285 00a8 1293     		str	r3, [sp, #72]
  981:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XS
-ARM GAS  /tmp/ccCDub9p.s 			page 67
+ARM GAS  /tmp/cctLNn1j.s 			page 67
 
 
  2286              		.loc 1 981 3 is_stmt 1 view .LVU795
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1027:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     {
 1028:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****       return MX25UM51245G_ERROR;
 1029:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     }
-ARM GAS  /tmp/ccCDub9p.s 			page 68
+ARM GAS  /tmp/cctLNn1j.s 			page 68
 
 
 1030:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1084:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Mode Interface mode
 1085:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Rate Transfer rate STR or DTR
 1086:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Value Value to write to configuration register
-ARM GAS  /tmp/ccCDub9p.s 			page 69
+ARM GAS  /tmp/cctLNn1j.s 			page 69
 
 
 1087:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @retval error status
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2353              	.LVL131:
  2354              	.L156:
 1097:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
-ARM GAS  /tmp/ccCDub9p.s 			page 70
+ARM GAS  /tmp/cctLNn1j.s 			page 70
 
 
 1098:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1149:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   if (HAL_XSPI_Command(Ctx, &s_command, HAL_XSPI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
 1150:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
 1151:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
-ARM GAS  /tmp/ccCDub9p.s 			page 71
+ARM GAS  /tmp/cctLNn1j.s 			page 71
 
 
 1152:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2391 0040 7B42     		rsbs	r3, r7, #0
  2392 0042 7B41     		adcs	r3, r3, r7
  2393 0044 0022     		movs	r2, #0
-ARM GAS  /tmp/ccCDub9p.s 			page 72
+ARM GAS  /tmp/cctLNn1j.s 			page 72
 
 
  2394 0046 4FEAC30E 		lsl	lr, r3, #3
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2430              		.loc 1 1137 89 discriminator 1 view .LVU844
  2431 007a 08BF     		it	eq
  2432 007c 4FF08072 		moveq	r2, #16777216
-ARM GAS  /tmp/ccCDub9p.s 			page 73
+ARM GAS  /tmp/cctLNn1j.s 			page 73
 
 
 1138:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_DATA_DTR_ENABLE
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2468 00a4 41F28832 		movw	r2, #5000
  2469 00a8 3046     		mov	r0, r6
  2470 00aa 01A9     		add	r1, sp, #4
-ARM GAS  /tmp/ccCDub9p.s 			page 74
+ARM GAS  /tmp/cctLNn1j.s 			page 74
 
 
 1143:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** #if defined (XSPI_CCR_SIOO)
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2510              		.loc 1 1142 75 discriminator 2 view .LVU878
  2511 00de 0223     		movs	r3, #2
  2512 00e0 DEE7     		b	.L160
-ARM GAS  /tmp/ccCDub9p.s 			page 75
+ARM GAS  /tmp/cctLNn1j.s 			page 75
 
 
  2513              		.cfi_endproc
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2553              	.LVL139:
 1173:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  2554              		.loc 1 1173 1 view .LVU886
-ARM GAS  /tmp/ccCDub9p.s 			page 76
+ARM GAS  /tmp/cctLNn1j.s 			page 76
 
 
  2555 0010 1F46     		mov	r7, r3
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1211:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                     ? DUMMY_CYCLES_REG_OCTAL_DTR
 1212:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                     : DUMMY_CYCLES_REG_OCTAL);
 1213:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataLength             = (Rate == MX25UM51245G_DTR_TRANSFER) ? 2U : 1U;
-ARM GAS  /tmp/ccCDub9p.s 			page 77
+ARM GAS  /tmp/cctLNn1j.s 			page 77
 
 
 1214:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XS
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1191:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_8_BITS
  2598              		.loc 1 1191 32 view .LVU902
  2599 0038 1023     		movs	r3, #16
-ARM GAS  /tmp/ccCDub9p.s 			page 78
+ARM GAS  /tmp/cctLNn1j.s 			page 78
 
 
  2600 003a 41F2EA51 		movw	r1, #5610
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2635              		.loc 1 1204 32 discriminator 4 view .LVU921
  2636 0066 0F93     		str	r3, [sp, #60]
 1205:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_DATA_DTR_ENABLE
-ARM GAS  /tmp/ccCDub9p.s 			page 79
+ARM GAS  /tmp/cctLNn1j.s 			page 79
 
 
  2637              		.loc 1 1205 3 is_stmt 1 view .LVU922
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2676              	.LVL143:
 1226:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
  2677              		.loc 1 1226 6 discriminator 1 view .LVU938
-ARM GAS  /tmp/ccCDub9p.s 			page 80
+ARM GAS  /tmp/cctLNn1j.s 			page 80
 
 
  2678 009a 0038     		subs	r0, r0, #0
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1013:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  2724              		.loc 1 1013 1 is_stmt 0 view .LVU949
  2725 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
-ARM GAS  /tmp/ccCDub9p.s 			page 81
+ARM GAS  /tmp/cctLNn1j.s 			page 81
 
 
  2726              		.cfi_def_cfa_offset 24
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2768              		.cfi_def_cfa_offset 24
  2769              		@ sp needed
  2770 0026 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
-ARM GAS  /tmp/ccCDub9p.s 			page 82
+ARM GAS  /tmp/cctLNn1j.s 			page 82
 
 
  2771              	.LVL149:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1049:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_DTR_ENABLE
  2811              		.loc 1 1049 32 view .LVU976
  2812 0060 0A91     		str	r1, [sp, #40]
-ARM GAS  /tmp/ccCDub9p.s 			page 83
+ARM GAS  /tmp/cctLNn1j.s 			page 83
 
 
 1052:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Address            = 0U;
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1060:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
  2848              		.loc 1 1060 3 view .LVU996
 1060:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 84
+ARM GAS  /tmp/cctLNn1j.s 			page 84
 
 
  2849              		.loc 1 1060 75 is_stmt 0 view .LVU997
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2890 00ca 4FF0040E 		mov	lr, #4
  2891 00ce B7E7     		b	.L184
  2892              	.L192:
-ARM GAS  /tmp/ccCDub9p.s 			page 85
+ARM GAS  /tmp/cctLNn1j.s 			page 85
 
 
  2893 00d0 A446     		mov	ip, r4
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  2931              		.loc 1 1245 1 view .LVU1016
  2932 0006 0646     		mov	r6, r0
  2933 0008 1446     		mov	r4, r2
-ARM GAS  /tmp/ccCDub9p.s 			page 86
+ARM GAS  /tmp/cctLNn1j.s 			page 86
 
 
  2934              		.loc 1 1246 26 view .LVU1017
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1272:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_ADDRESS_DTR_DISABLE;
 1273:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressWidth       = HAL_XSPI_ADDRESS_32_BITS;
 1274:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Address            = WriteAddr;
-ARM GAS  /tmp/ccCDub9p.s 			page 87
+ARM GAS  /tmp/cctLNn1j.s 			page 87
 
 
 1275:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1265:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Instruction        = (Mode == MX25UM51245G_SPI_MODE)
  2983              		.loc 1 1265 34 is_stmt 0 view .LVU1034
  2984 0034 002D     		cmp	r5, #0
-ARM GAS  /tmp/ccCDub9p.s 			page 88
+ARM GAS  /tmp/cctLNn1j.s 			page 88
 
 
  2985 0036 30D0     		beq	.L205
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1276:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = (Rate == MX25UM51245G_DTR_TRANSFER)
  3021              		.loc 1 1276 3 view .LVU1053
 1276:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataDTRMode        = (Rate == MX25UM51245G_DTR_TRANSFER)
-ARM GAS  /tmp/ccCDub9p.s 			page 89
+ARM GAS  /tmp/cctLNn1j.s 			page 89
 
 
  3022              		.loc 1 1276 32 is_stmt 0 discriminator 4 view .LVU1054
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3061 0094 0120     		movne	r0, #1
  3062 0096 4042     		rsbs	r0, r0, #0
  3063 0098 C3E7     		b	.L196
-ARM GAS  /tmp/ccCDub9p.s 			page 90
+ARM GAS  /tmp/cctLNn1j.s 			page 90
 
 
  3064              	.L205:
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3102              		.cfi_def_cfa_offset 104
 1312:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  3103              		.loc 1 1312 1 view .LVU1076
-ARM GAS  /tmp/ccCDub9p.s 			page 91
+ARM GAS  /tmp/cctLNn1j.s 			page 91
 
 
  3104 0006 0646     		mov	r6, r0
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1337:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressDTRMode     = (Rate == MX25UM51245G_DTR_TRANSFER)
 1338:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_DTR_ENABLE
 1339:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_ADDRESS_DTR_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 92
+ARM GAS  /tmp/cctLNn1j.s 			page 92
 
 
 1340:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressWidth       = HAL_XSPI_ADDRESS_32_BITS;
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3150 002e 5A41     		adcs	r2, r2, r3
  3151 0030 D300     		lsls	r3, r2, #3
 1327:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_DTR_ENABLE
-ARM GAS  /tmp/ccCDub9p.s 			page 93
+ARM GAS  /tmp/cctLNn1j.s 			page 93
 
 
  3152              		.loc 1 1327 32 view .LVU1092
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3188              		.loc 1 1333 32 view .LVU1110
  3189 0060 0391     		str	r1, [sp, #12]
 1341:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
-ARM GAS  /tmp/ccCDub9p.s 			page 94
+ARM GAS  /tmp/cctLNn1j.s 			page 94
 
 
  3190              		.loc 1 1341 32 view .LVU1111
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3227 0088 0028     		cmp	r0, #0
  3228 008a C8D1     		bne	.L219
 1365:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
-ARM GAS  /tmp/ccCDub9p.s 			page 95
+ARM GAS  /tmp/cctLNn1j.s 			page 95
 
 
  3229              		.loc 1 1365 3 is_stmt 1 view .LVU1129
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3275              	MX25UM51245G_WriteSecurityRegister:
  3276              	.LVL169:
  3277              	.LFB901:
-ARM GAS  /tmp/ccCDub9p.s 			page 96
+ARM GAS  /tmp/cctLNn1j.s 			page 96
 
 
 1372:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3310              		.loc 1 1391 6 is_stmt 0 view .LVU1150
  3311 0014 D5B9     		cbnz	r5, .L231
  3312              		.loc 1 1391 39 discriminator 1 view .LVU1151
-ARM GAS  /tmp/ccCDub9p.s 			page 97
+ARM GAS  /tmp/cctLNn1j.s 			page 97
 
 
  3313 0016 012C     		cmp	r4, #1
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1413:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DataMode           = HAL_XSPI_DATA_NONE;
 1414:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = 0U;
 1415:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 98
+ARM GAS  /tmp/cctLNn1j.s 			page 98
 
 
 1416:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** #if defined (XSPI_CCR_SIOO)
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3376              		.loc 1 1410 34 discriminator 1 view .LVU1176
  3377 0050 2F23     		movs	r3, #47
  3378 0052 EEE7     		b	.L230
-ARM GAS  /tmp/ccCDub9p.s 			page 99
+ARM GAS  /tmp/cctLNn1j.s 			page 99
 
 
  3379              	.L232:
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3418              		.loc 1 1441 26 view .LVU1183
  3419 000c 4C22     		movs	r2, #76
  3420              	.LVL180:
-ARM GAS  /tmp/ccCDub9p.s 			page 100
+ARM GAS  /tmp/cctLNn1j.s 			page 100
 
 
  3421              		.loc 1 1441 26 view .LVU1184
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1473:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_DATA_DTR_ENABLE
 1474:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_DATA_DTR_DISABLE;
 1475:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DummyCycles        = (Mode == MX25UM51245G_SPI_MODE)
-ARM GAS  /tmp/ccCDub9p.s 			page 101
+ARM GAS  /tmp/cctLNn1j.s 			page 101
 
 
 1476:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? 0U
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3464              		.loc 1 1460 34 is_stmt 0 view .LVU1199
  3465 0034 002D     		cmp	r5, #0
  3466 0036 33D0     		beq	.L247
-ARM GAS  /tmp/ccCDub9p.s 			page 102
+ARM GAS  /tmp/cctLNn1j.s 			page 102
 
 
 1458:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_8_BITS
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3502 0062 0F93     		str	r3, [sp, #60]
 1472:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_DATA_DTR_ENABLE
  3503              		.loc 1 1472 3 is_stmt 1 view .LVU1219
-ARM GAS  /tmp/ccCDub9p.s 			page 103
+ARM GAS  /tmp/cctLNn1j.s 			page 103
 
 
 1472:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_DATA_DTR_ENABLE
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1493:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
  3543              		.loc 1 1493 6 discriminator 1 view .LVU1235
  3544 0096 0038     		subs	r0, r0, #0
-ARM GAS  /tmp/ccCDub9p.s 			page 104
+ARM GAS  /tmp/cctLNn1j.s 			page 104
 
 
  3545 0098 18BF     		it	ne
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1508:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  Mode Interface mode
 1509:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  ID 3 bytes IDs pointer
 1510:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @param  DualFlash Dual flash mode state
-ARM GAS  /tmp/ccCDub9p.s 			page 105
+ARM GAS  /tmp/cctLNn1j.s 			page 105
 
 
 1511:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   * @retval error status
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1525:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.OperationType      = HAL_XSPI_OPTYPE_COMMON_CFG;
 1526:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.IOSelect           = HAL_XSPI_SELECT_IO_7_0;
 1527:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionMode    = (Mode == MX25UM51245G_SPI_MODE)
-ARM GAS  /tmp/ccCDub9p.s 			page 106
+ARM GAS  /tmp/cctLNn1j.s 			page 106
 
 
 1528:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_1_LINE
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1571:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   {
 1572:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****     return MX25UM51245G_ERROR;
 1573:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   }
-ARM GAS  /tmp/ccCDub9p.s 			page 107
+ARM GAS  /tmp/cctLNn1j.s 			page 107
 
 
 1574:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3669 004a 0392     		str	r2, [sp, #12]
 1539:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_ADDRESS_NONE
  3670              		.loc 1 1539 32 view .LVU1272
-ARM GAS  /tmp/ccCDub9p.s 			page 108
+ARM GAS  /tmp/cctLNn1j.s 			page 108
 
 
  3671 004c 0893     		str	r3, [sp, #32]
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1552:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? 0U
  3707              		.loc 1 1552 32 view .LVU1291
  3708 0078 1293     		str	r3, [sp, #72]
-ARM GAS  /tmp/ccCDub9p.s 			page 109
+ARM GAS  /tmp/cctLNn1j.s 			page 109
 
 
 1557:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = (Rate == MX25UM51245G_DTR_TRANSFER) ? HAL_XSPI_DQS_ENABLE : HAL_XS
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3748 00ac CCE7     		b	.L255
  3749              		.cfi_endproc
  3750              	.LFE903:
-ARM GAS  /tmp/ccCDub9p.s 			page 110
+ARM GAS  /tmp/cctLNn1j.s 			page 110
 
 
  3752              		.section	.text.MX25UM51245G_ResetEnable,"ax",%progbits
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1590:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** 
 1591:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   /* SPI mode and DTR transfer not supported by memory */
 1592:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   if ((Mode == MX25UM51245G_SPI_MODE) && (Rate == MX25UM51245G_DTR_TRANSFER))
-ARM GAS  /tmp/ccCDub9p.s 			page 111
+ARM GAS  /tmp/cctLNn1j.s 			page 111
 
 
  3792              		.loc 1 1592 3 is_stmt 1 view .LVU1315
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3823 002e 46F29963 		movw	r3, #26265
  3824              	.L268:
 1612:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressMode        = HAL_XSPI_ADDRESS_NONE;
-ARM GAS  /tmp/ccCDub9p.s 			page 112
+ARM GAS  /tmp/cctLNn1j.s 			page 112
 
 
 1613:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AlternateBytesMode = HAL_XSPI_ALT_BYTES_NONE;
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3856 004c 0423     		movs	r3, #4
  3857 004e E5E7     		b	.L266
  3858              	.L271:
-ARM GAS  /tmp/ccCDub9p.s 			page 113
+ARM GAS  /tmp/cctLNn1j.s 			page 113
 
 
 1611:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.AddressMode        = HAL_XSPI_ADDRESS_NONE;
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3899              	.LVL204:
  3900              		.loc 1 1640 26 view .LVU1349
  3901 000c 4C22     		movs	r2, #76
-ARM GAS  /tmp/ccCDub9p.s 			page 114
+ARM GAS  /tmp/cctLNn1j.s 			page 114
 
 
  3902              	.LVL205:
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3934 002a 1023     		movs	r3, #16
  3935              	.LVL209:
 1657:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.InstructionWidth   = (Mode == MX25UM51245G_SPI_MODE)
-ARM GAS  /tmp/ccCDub9p.s 			page 115
+ARM GAS  /tmp/cctLNn1j.s 			page 115
 
 
  3936              		.loc 1 1657 32 view .LVU1364
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  3964 0048 14B0     		add	sp, sp, #80
  3965              		.cfi_remember_state
  3966              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccCDub9p.s 			page 116
+ARM GAS  /tmp/cctLNn1j.s 			page 116
 
 
  3967              		@ sp needed
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  4007              		.cfi_offset 14, -4
  4008 0002 0D46     		mov	r5, r1
  4009 0004 94B0     		sub	sp, sp, #80
-ARM GAS  /tmp/ccCDub9p.s 			page 117
+ARM GAS  /tmp/cctLNn1j.s 			page 117
 
 
  4010              		.cfi_def_cfa_offset 96
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1709:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_8_BITS
 1710:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_INSTRUCTION_16_BITS;
 1711:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.Instruction        = (Mode == MX25UM51245G_SPI_MODE) ? MX25UM51245G_NOP_CMD : MX25UM512
-ARM GAS  /tmp/ccCDub9p.s 			page 118
+ARM GAS  /tmp/cctLNn1j.s 			page 118
 
 
  4045              		.loc 1 1711 89 discriminator 1 view .LVU1397
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  4077              	.LVL221:
  4078              		.loc 1 1722 6 discriminator 1 view .LVU1414
  4079 0040 0038     		subs	r0, r0, #0
-ARM GAS  /tmp/ccCDub9p.s 			page 119
+ARM GAS  /tmp/cctLNn1j.s 			page 119
 
 
  4080 0042 18BF     		it	ne
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  4116              		@ frame_needed = 0, uses_anonymous_args = 0
 1741:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
  4117              		.loc 1 1741 3 view .LVU1419
-ARM GAS  /tmp/ccCDub9p.s 			page 120
+ARM GAS  /tmp/cctLNn1j.s 			page 120
 
 
 1740:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   XSPI_RegularCmdTypeDef s_command = {0};
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  4154              		.loc 1 1756 3 is_stmt 1 view .LVU1431
 1757:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  ? HAL_XSPI_INSTRUCTION_DTR_ENABLE
 1758:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****                                  : HAL_XSPI_INSTRUCTION_DTR_DISABLE;
-ARM GAS  /tmp/ccCDub9p.s 			page 121
+ARM GAS  /tmp/cctLNn1j.s 			page 121
 
 
  4155              		.loc 1 1758 34 is_stmt 0 view .LVU1432
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
 1768:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c ****   s_command.DQSMode            = HAL_XSPI_DQS_DISABLE;
  4185              		.loc 1 1768 3 view .LVU1446
 1769:../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.c **** #if defined (XSPI_CCR_SIOO)
-ARM GAS  /tmp/ccCDub9p.s 			page 122
+ARM GAS  /tmp/cctLNn1j.s 			page 122
 
 
  4186              		.loc 1 1769 3 view .LVU1447
@@ -7314,67 +7314,67 @@ ARM GAS  /tmp/ccCDub9p.s 			page 1
  4228              		.file 8 "../STM32Cube_FW_N6/Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_xspi.h"
  4229              		.file 9 "../STM32Cube_FW_N6/Drivers/BSP/Components/mx25um51245g/mx25um51245g.h"
  4230              		.file 10 "<built-in>"
-ARM GAS  /tmp/ccCDub9p.s 			page 123
+ARM GAS  /tmp/cctLNn1j.s 			page 123
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 mx25um51245g.c
-     /tmp/ccCDub9p.s:26     .text.MX25UM51245G_GetFlashInfo:00000000 $t
-     /tmp/ccCDub9p.s:32     .text.MX25UM51245G_GetFlashInfo:00000000 MX25UM51245G_GetFlashInfo
-     /tmp/ccCDub9p.s:74     .text.MX25UM51245G_AutoPollingMemReady:00000000 $t
-     /tmp/ccCDub9p.s:80     .text.MX25UM51245G_AutoPollingMemReady:00000000 MX25UM51245G_AutoPollingMemReady
-     /tmp/ccCDub9p.s:280    .text.MX25UM51245G_ReadSTR:00000000 $t
-     /tmp/ccCDub9p.s:286    .text.MX25UM51245G_ReadSTR:00000000 MX25UM51245G_ReadSTR
-     /tmp/ccCDub9p.s:447    .text.MX25UM51245G_ReadDTR:00000000 $t
-     /tmp/ccCDub9p.s:453    .text.MX25UM51245G_ReadDTR:00000000 MX25UM51245G_ReadDTR
-     /tmp/ccCDub9p.s:579    .text.MX25UM51245G_PageProgram:00000000 $t
-     /tmp/ccCDub9p.s:585    .text.MX25UM51245G_PageProgram:00000000 MX25UM51245G_PageProgram
-     /tmp/ccCDub9p.s:740    .text.MX25UM51245G_PageProgramDTR:00000000 $t
-     /tmp/ccCDub9p.s:746    .text.MX25UM51245G_PageProgramDTR:00000000 MX25UM51245G_PageProgramDTR
-     /tmp/ccCDub9p.s:863    .text.MX25UM51245G_BlockErase:00000000 $t
-     /tmp/ccCDub9p.s:869    .text.MX25UM51245G_BlockErase:00000000 MX25UM51245G_BlockErase
-     /tmp/ccCDub9p.s:1042   .text.MX25UM51245G_ChipErase:00000000 $t
-     /tmp/ccCDub9p.s:1048   .text.MX25UM51245G_ChipErase:00000000 MX25UM51245G_ChipErase
-     /tmp/ccCDub9p.s:1159   .text.MX25UM51245G_EnableSTRMemoryMappedMode:00000000 $t
-     /tmp/ccCDub9p.s:1165   .text.MX25UM51245G_EnableSTRMemoryMappedMode:00000000 MX25UM51245G_EnableSTRMemoryMappedMode
-     /tmp/ccCDub9p.s:1364   .text.MX25UM51245G_EnableDTRMemoryMappedMode:00000000 $t
-     /tmp/ccCDub9p.s:1370   .text.MX25UM51245G_EnableDTRMemoryMappedMode:00000000 MX25UM51245G_EnableDTRMemoryMappedMode
-     /tmp/ccCDub9p.s:1520   .text.MX25UM51245G_Suspend:00000000 $t
-     /tmp/ccCDub9p.s:1526   .text.MX25UM51245G_Suspend:00000000 MX25UM51245G_Suspend
-     /tmp/ccCDub9p.s:1637   .text.MX25UM51245G_Resume:00000000 $t
-     /tmp/ccCDub9p.s:1643   .text.MX25UM51245G_Resume:00000000 MX25UM51245G_Resume
-     /tmp/ccCDub9p.s:1754   .text.MX25UM51245G_WriteEnable:00000000 $t
-     /tmp/ccCDub9p.s:1760   .text.MX25UM51245G_WriteEnable:00000000 MX25UM51245G_WriteEnable
-     /tmp/ccCDub9p.s:1997   .text.MX25UM51245G_WriteDisable:00000000 $t
-     /tmp/ccCDub9p.s:2003   .text.MX25UM51245G_WriteDisable:00000000 MX25UM51245G_WriteDisable
-     /tmp/ccCDub9p.s:2114   .text.MX25UM51245G_ReadStatusRegister:00000000 $t
-     /tmp/ccCDub9p.s:2120   .text.MX25UM51245G_ReadStatusRegister:00000000 MX25UM51245G_ReadStatusRegister
-     /tmp/ccCDub9p.s:2303   .text.MX25UM51245G_WriteCfgRegister:00000000 $t
-     /tmp/ccCDub9p.s:2309   .text.MX25UM51245G_WriteCfgRegister:00000000 MX25UM51245G_WriteCfgRegister
-     /tmp/ccCDub9p.s:2517   .text.MX25UM51245G_ReadCfgRegister:00000000 $t
-     /tmp/ccCDub9p.s:2523   .text.MX25UM51245G_ReadCfgRegister:00000000 MX25UM51245G_ReadCfgRegister
-     /tmp/ccCDub9p.s:2710   .text.MX25UM51245G_WriteStatusRegister:00000000 $t
-     /tmp/ccCDub9p.s:2716   .text.MX25UM51245G_WriteStatusRegister:00000000 MX25UM51245G_WriteStatusRegister
-     /tmp/ccCDub9p.s:2906   .text.MX25UM51245G_WriteCfg2Register:00000000 $t
-     /tmp/ccCDub9p.s:2912   .text.MX25UM51245G_WriteCfg2Register:00000000 MX25UM51245G_WriteCfg2Register
-     /tmp/ccCDub9p.s:3078   .text.MX25UM51245G_ReadCfg2Register:00000000 $t
-     /tmp/ccCDub9p.s:3084   .text.MX25UM51245G_ReadCfg2Register:00000000 MX25UM51245G_ReadCfg2Register
-     /tmp/ccCDub9p.s:3269   .text.MX25UM51245G_WriteSecurityRegister:00000000 $t
-     /tmp/ccCDub9p.s:3275   .text.MX25UM51245G_WriteSecurityRegister:00000000 MX25UM51245G_WriteSecurityRegister
-     /tmp/ccCDub9p.s:3387   .text.MX25UM51245G_ReadSecurityRegister:00000000 $t
-     /tmp/ccCDub9p.s:3393   .text.MX25UM51245G_ReadSecurityRegister:00000000 MX25UM51245G_ReadSecurityRegister
-     /tmp/ccCDub9p.s:3576   .text.MX25UM51245G_ReadID:00000000 $t
-     /tmp/ccCDub9p.s:3582   .text.MX25UM51245G_ReadID:00000000 MX25UM51245G_ReadID
-     /tmp/ccCDub9p.s:3753   .text.MX25UM51245G_ResetEnable:00000000 $t
-     /tmp/ccCDub9p.s:3759   .text.MX25UM51245G_ResetEnable:00000000 MX25UM51245G_ResetEnable
-     /tmp/ccCDub9p.s:3870   .text.MX25UM51245G_ResetMemory:00000000 $t
-     /tmp/ccCDub9p.s:3876   .text.MX25UM51245G_ResetMemory:00000000 MX25UM51245G_ResetMemory
-     /tmp/ccCDub9p.s:3987   .text.MX25UM51245G_NoOperation:00000000 $t
-     /tmp/ccCDub9p.s:3993   .text.MX25UM51245G_NoOperation:00000000 MX25UM51245G_NoOperation
-     /tmp/ccCDub9p.s:4104   .text.MX25UM51245G_EnterPowerDown:00000000 $t
-     /tmp/ccCDub9p.s:4110   .text.MX25UM51245G_EnterPowerDown:00000000 MX25UM51245G_EnterPowerDown
+     /tmp/cctLNn1j.s:26     .text.MX25UM51245G_GetFlashInfo:00000000 $t
+     /tmp/cctLNn1j.s:32     .text.MX25UM51245G_GetFlashInfo:00000000 MX25UM51245G_GetFlashInfo
+     /tmp/cctLNn1j.s:74     .text.MX25UM51245G_AutoPollingMemReady:00000000 $t
+     /tmp/cctLNn1j.s:80     .text.MX25UM51245G_AutoPollingMemReady:00000000 MX25UM51245G_AutoPollingMemReady
+     /tmp/cctLNn1j.s:280    .text.MX25UM51245G_ReadSTR:00000000 $t
+     /tmp/cctLNn1j.s:286    .text.MX25UM51245G_ReadSTR:00000000 MX25UM51245G_ReadSTR
+     /tmp/cctLNn1j.s:447    .text.MX25UM51245G_ReadDTR:00000000 $t
+     /tmp/cctLNn1j.s:453    .text.MX25UM51245G_ReadDTR:00000000 MX25UM51245G_ReadDTR
+     /tmp/cctLNn1j.s:579    .text.MX25UM51245G_PageProgram:00000000 $t
+     /tmp/cctLNn1j.s:585    .text.MX25UM51245G_PageProgram:00000000 MX25UM51245G_PageProgram
+     /tmp/cctLNn1j.s:740    .text.MX25UM51245G_PageProgramDTR:00000000 $t
+     /tmp/cctLNn1j.s:746    .text.MX25UM51245G_PageProgramDTR:00000000 MX25UM51245G_PageProgramDTR
+     /tmp/cctLNn1j.s:863    .text.MX25UM51245G_BlockErase:00000000 $t
+     /tmp/cctLNn1j.s:869    .text.MX25UM51245G_BlockErase:00000000 MX25UM51245G_BlockErase
+     /tmp/cctLNn1j.s:1042   .text.MX25UM51245G_ChipErase:00000000 $t
+     /tmp/cctLNn1j.s:1048   .text.MX25UM51245G_ChipErase:00000000 MX25UM51245G_ChipErase
+     /tmp/cctLNn1j.s:1159   .text.MX25UM51245G_EnableSTRMemoryMappedMode:00000000 $t
+     /tmp/cctLNn1j.s:1165   .text.MX25UM51245G_EnableSTRMemoryMappedMode:00000000 MX25UM51245G_EnableSTRMemoryMappedMode
+     /tmp/cctLNn1j.s:1364   .text.MX25UM51245G_EnableDTRMemoryMappedMode:00000000 $t
+     /tmp/cctLNn1j.s:1370   .text.MX25UM51245G_EnableDTRMemoryMappedMode:00000000 MX25UM51245G_EnableDTRMemoryMappedMode
+     /tmp/cctLNn1j.s:1520   .text.MX25UM51245G_Suspend:00000000 $t
+     /tmp/cctLNn1j.s:1526   .text.MX25UM51245G_Suspend:00000000 MX25UM51245G_Suspend
+     /tmp/cctLNn1j.s:1637   .text.MX25UM51245G_Resume:00000000 $t
+     /tmp/cctLNn1j.s:1643   .text.MX25UM51245G_Resume:00000000 MX25UM51245G_Resume
+     /tmp/cctLNn1j.s:1754   .text.MX25UM51245G_WriteEnable:00000000 $t
+     /tmp/cctLNn1j.s:1760   .text.MX25UM51245G_WriteEnable:00000000 MX25UM51245G_WriteEnable
+     /tmp/cctLNn1j.s:1997   .text.MX25UM51245G_WriteDisable:00000000 $t
+     /tmp/cctLNn1j.s:2003   .text.MX25UM51245G_WriteDisable:00000000 MX25UM51245G_WriteDisable
+     /tmp/cctLNn1j.s:2114   .text.MX25UM51245G_ReadStatusRegister:00000000 $t
+     /tmp/cctLNn1j.s:2120   .text.MX25UM51245G_ReadStatusRegister:00000000 MX25UM51245G_ReadStatusRegister
+     /tmp/cctLNn1j.s:2303   .text.MX25UM51245G_WriteCfgRegister:00000000 $t
+     /tmp/cctLNn1j.s:2309   .text.MX25UM51245G_WriteCfgRegister:00000000 MX25UM51245G_WriteCfgRegister
+     /tmp/cctLNn1j.s:2517   .text.MX25UM51245G_ReadCfgRegister:00000000 $t
+     /tmp/cctLNn1j.s:2523   .text.MX25UM51245G_ReadCfgRegister:00000000 MX25UM51245G_ReadCfgRegister
+     /tmp/cctLNn1j.s:2710   .text.MX25UM51245G_WriteStatusRegister:00000000 $t
+     /tmp/cctLNn1j.s:2716   .text.MX25UM51245G_WriteStatusRegister:00000000 MX25UM51245G_WriteStatusRegister
+     /tmp/cctLNn1j.s:2906   .text.MX25UM51245G_WriteCfg2Register:00000000 $t
+     /tmp/cctLNn1j.s:2912   .text.MX25UM51245G_WriteCfg2Register:00000000 MX25UM51245G_WriteCfg2Register
+     /tmp/cctLNn1j.s:3078   .text.MX25UM51245G_ReadCfg2Register:00000000 $t
+     /tmp/cctLNn1j.s:3084   .text.MX25UM51245G_ReadCfg2Register:00000000 MX25UM51245G_ReadCfg2Register
+     /tmp/cctLNn1j.s:3269   .text.MX25UM51245G_WriteSecurityRegister:00000000 $t
+     /tmp/cctLNn1j.s:3275   .text.MX25UM51245G_WriteSecurityRegister:00000000 MX25UM51245G_WriteSecurityRegister
+     /tmp/cctLNn1j.s:3387   .text.MX25UM51245G_ReadSecurityRegister:00000000 $t
+     /tmp/cctLNn1j.s:3393   .text.MX25UM51245G_ReadSecurityRegister:00000000 MX25UM51245G_ReadSecurityRegister
+     /tmp/cctLNn1j.s:3576   .text.MX25UM51245G_ReadID:00000000 $t
+     /tmp/cctLNn1j.s:3582   .text.MX25UM51245G_ReadID:00000000 MX25UM51245G_ReadID
+     /tmp/cctLNn1j.s:3753   .text.MX25UM51245G_ResetEnable:00000000 $t
+     /tmp/cctLNn1j.s:3759   .text.MX25UM51245G_ResetEnable:00000000 MX25UM51245G_ResetEnable
+     /tmp/cctLNn1j.s:3870   .text.MX25UM51245G_ResetMemory:00000000 $t
+     /tmp/cctLNn1j.s:3876   .text.MX25UM51245G_ResetMemory:00000000 MX25UM51245G_ResetMemory
+     /tmp/cctLNn1j.s:3987   .text.MX25UM51245G_NoOperation:00000000 $t
+     /tmp/cctLNn1j.s:3993   .text.MX25UM51245G_NoOperation:00000000 MX25UM51245G_NoOperation
+     /tmp/cctLNn1j.s:4104   .text.MX25UM51245G_EnterPowerDown:00000000 $t
+     /tmp/cctLNn1j.s:4110   .text.MX25UM51245G_EnterPowerDown:00000000 MX25UM51245G_EnterPowerDown
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
-ARM GAS  /tmp/ccCDub9p.s 			page 124
+ARM GAS  /tmp/cctLNn1j.s 			page 124
 
 
                            .group:00000000 wm4.stm32n6xx_hal_conf.h.21.d32f04f7ae387b70d8c80735cac3eea9
@@ -7434,7 +7434,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.stm32n6xx_hal_i2c_ex.h.21.79e9196c22282cdaf6b4047893638c45
                            .group:00000000 wm4.stm32n6xx_hal_i2c.h.741.1084702632703acc669e4282b3043372
                            .group:00000000 wm4.stm32n6xx_hal_ltdc.h.21.ae1eb09930e7e550e48e418ac5849e4d
-ARM GAS  /tmp/ccCDub9p.s 			page 125
+ARM GAS  /tmp/cctLNn1j.s 			page 125
 
 
                            .group:00000000 wm4.stm32n6xx_hal_ltdc.h.1002.b13ede7fc94ed5ad1c6768a157d2149a

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWrATyG.s 			page 1
+ARM GAS  /tmp/ccKbwl36.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /* Define UX_SYSTEM_INIT to bring in the USBX version ID string.  */
-ARM GAS  /tmp/ccWrATyG.s 			page 2
+ARM GAS  /tmp/ccKbwl36.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*    This function initializes the various control data structures for   */
   80:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*    the USBX system.                                                    */
   81:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*                                                                        */
-ARM GAS  /tmp/ccWrATyG.s 			page 3
+ARM GAS  /tmp/ccKbwl36.s 			page 3
 
 
   82:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*  INPUT                                                                 */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  130:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** VOID                *cache_safe_memory_pool_end;
   41              		.loc 1 130 1 view .LVU3
  131:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** ULONG               memory_pool_offset;
-ARM GAS  /tmp/ccWrATyG.s 			page 4
+ARM GAS  /tmp/ccKbwl36.s 			page 4
 
 
   42              		.loc 1 131 1 view .LVU4
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  144:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****     /* Set the _ux_system structure at the start of our regular memory */
  145:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****     _ux_system =  (UX_SYSTEM *) regular_memory_pool_start;
   81              		.loc 1 145 5 is_stmt 1 view .LVU15
-ARM GAS  /tmp/ccWrATyG.s 			page 5
+ARM GAS  /tmp/ccKbwl36.s 			page 5
 
 
   82              		.loc 1 145 16 is_stmt 0 view .LVU16
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
   96 002e 1360     		str	r3, [r2]
  166:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
   97              		.loc 1 166 5 is_stmt 1 view .LVU24
-ARM GAS  /tmp/ccWrATyG.s 			page 6
+ARM GAS  /tmp/ccKbwl36.s 			page 6
 
 
   98              	.LVL6:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  125 0044 25F00701 		bic	r1, r5, #7
  126              	.LVL10:
  207:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
-ARM GAS  /tmp/ccWrATyG.s 			page 7
+ARM GAS  /tmp/ccKbwl36.s 			page 7
 
 
  208:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****     /* Set the end of the regular memory pool.  */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  244:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****         {
  245:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** 
  246:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****             /* No memory available.  */
-ARM GAS  /tmp/ccWrATyG.s 			page 8
+ARM GAS  /tmp/ccKbwl36.s 			page 8
 
 
  247:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****             return(UX_MEMORY_INSUFFICIENT);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  152              		.loc 1 184 24 view .LVU47
  153 0056 4FF4CE75 		mov	r5, #412
  154 005a F0E7     		b	.L3
-ARM GAS  /tmp/ccWrATyG.s 			page 9
+ARM GAS  /tmp/ccKbwl36.s 			page 9
 
 
  155              	.LVL15:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  192              		.loc 1 250 9 is_stmt 1 view .LVU64
  193              	.LVL22:
  252:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****                                             (UX_MEMORY_BYTE_POOL *)int_memory_pool_start, pool_size
-ARM GAS  /tmp/ccWrATyG.s 			page 10
+ARM GAS  /tmp/ccKbwl36.s 			page 10
 
 
  194              		.loc 1 252 9 view .LVU65
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  302:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*                                                                        */
  303:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*  DESCRIPTION                                                           */
  304:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*                                                                        */
-ARM GAS  /tmp/ccWrATyG.s 			page 11
+ARM GAS  /tmp/ccKbwl36.s 			page 11
 
 
  305:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c **** /*    This function checks errors in system initialization function call. */
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  252              		.loc 1 338 5 view .LVU75
  253 000a 0621     		movs	r1, #6
  254              	.LVL28:
-ARM GAS  /tmp/ccWrATyG.s 			page 12
+ARM GAS  /tmp/ccKbwl36.s 			page 12
 
 
  255              		.loc 1 338 5 view .LVU76
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  306              		.loc 1 340 5 view .LVU96
  307              		.loc 1 340 5 view .LVU97
  308 003c FEE7     		b	.L25
-ARM GAS  /tmp/ccWrATyG.s 			page 13
+ARM GAS  /tmp/ccKbwl36.s 			page 13
 
 
  309              	.L24:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  360              	.L30:
  361              		.loc 1 343 159 view .LVU118
  344:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_system_initialize.c ****     UX_ASSERT((_ux_utility_descriptor_parse_size(_ux_system_dfu_functional_descriptor_structure, UX
-ARM GAS  /tmp/ccWrATyG.s 			page 14
+ARM GAS  /tmp/ccKbwl36.s 			page 14
 
 
  362              		.loc 1 344 5 view .LVU119
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  413              		.loc 1 347 5 view .LVU139
  414 00a2 0322     		movs	r2, #3
  415 00a4 1248     		ldr	r0, .L45+36
-ARM GAS  /tmp/ccWrATyG.s 			page 15
+ARM GAS  /tmp/ccKbwl36.s 			page 15
 
 
  416 00a6 FFF7FEFF 		bl	_ux_utility_descriptor_parse_size
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  459              	.L46:
  460              		.loc 1 357 1 view .LVU153
  461 00ca 00BF     		.align	2
-ARM GAS  /tmp/ccWrATyG.s 			page 16
+ARM GAS  /tmp/ccKbwl36.s 			page 16
 
 
  462              	.L45:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  525              		.global	_ux_system_class_audio_streaming_endpoint_descriptor_structure
  526              		.section	.data._ux_system_class_audio_streaming_endpoint_descriptor_structure,"aw"
  529              	_ux_system_class_audio_streaming_endpoint_descriptor_structure:
-ARM GAS  /tmp/ccWrATyG.s 			page 17
+ARM GAS  /tmp/ccKbwl36.s 			page 17
 
 
  530 0000 01010101 		.ascii	"\001\001\001\001\001\001"
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  592              		.section	.data._ux_system_device_descriptor_structure,"aw"
  595              	_ux_system_device_descriptor_structure:
  596 0000 01010201 		.ascii	"\001\001\002\001\001\001\001\002\002\002\001\001\001"
-ARM GAS  /tmp/ccWrATyG.s 			page 18
+ARM GAS  /tmp/ccKbwl36.s 			page 18
 
 
  596      01010102 
@@ -1059,43 +1059,43 @@ ARM GAS  /tmp/ccWrATyG.s 			page 1
  628              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  629              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  630              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_utility.h"
-ARM GAS  /tmp/ccWrATyG.s 			page 19
+ARM GAS  /tmp/ccKbwl36.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_system_initialize.c
-     /tmp/ccWrATyG.s:26     .text._ux_system_initialize:00000000 $t
-     /tmp/ccWrATyG.s:32     .text._ux_system_initialize:00000000 _ux_system_initialize
-     /tmp/ccWrATyG.s:219    .text._ux_system_initialize:00000090 $d
-     /tmp/ccWrATyG.s:616    .bss._ux_system:00000000 _ux_system
-     /tmp/ccWrATyG.s:225    .text._uxe_system_initialize:00000000 $t
-     /tmp/ccWrATyG.s:231    .text._uxe_system_initialize:00000000 _uxe_system_initialize
-     /tmp/ccWrATyG.s:463    .text._uxe_system_initialize:000000cc $d
-     /tmp/ccWrATyG.s:602    .data._ux_system_endpoint_descriptor_structure:00000000 _ux_system_endpoint_descriptor_structure
-     /tmp/ccWrATyG.s:595    .data._ux_system_device_descriptor_structure:00000000 _ux_system_device_descriptor_structure
-     /tmp/ccWrATyG.s:589    .data._ux_system_configuration_descriptor_structure:00000000 _ux_system_configuration_descriptor_structure
-     /tmp/ccWrATyG.s:583    .data._ux_system_interface_descriptor_structure:00000000 _ux_system_interface_descriptor_structure
-     /tmp/ccWrATyG.s:577    .data._ux_system_interface_association_descriptor_structure:00000000 _ux_system_interface_association_descriptor_structure
-     /tmp/ccWrATyG.s:571    .data._ux_system_string_descriptor_structure:00000000 _ux_system_string_descriptor_structure
-     /tmp/ccWrATyG.s:565    .data._ux_system_dfu_functional_descriptor_structure:00000000 _ux_system_dfu_functional_descriptor_structure
-     /tmp/ccWrATyG.s:492    .data._ux_system_bos_descriptor_structure:00000000 _ux_system_bos_descriptor_structure
-     /tmp/ccWrATyG.s:486    .data._ux_system_usb_2_0_extension_descriptor_structure:00000000 _ux_system_usb_2_0_extension_descriptor_structure
-     /tmp/ccWrATyG.s:480    .data._ux_system_container_id_descriptor_structure:00000000 _ux_system_container_id_descriptor_structure
-     /tmp/ccWrATyG.s:498    .data._ux_system_ecm_interface_descriptor_structure:00000000 _ux_system_ecm_interface_descriptor_structure
-     /tmp/ccWrATyG.s:504    .data._ux_system_class_pima_object_structure:00000000 _ux_system_class_pima_object_structure
-     /tmp/ccWrATyG.s:511    .data._ux_system_class_pima_storage_structure:00000000 _ux_system_class_pima_storage_structure
-     /tmp/ccWrATyG.s:517    .data._ux_system_hid_descriptor_structure:00000000 _ux_system_hid_descriptor_structure
-     /tmp/ccWrATyG.s:523    .data._ux_system_hub_descriptor_structure:00000000 _ux_system_hub_descriptor_structure
-     /tmp/ccWrATyG.s:529    .data._ux_system_class_audio_streaming_endpoint_descriptor_structure:00000000 _ux_system_class_audio_streaming_endpoint_descriptor_structure
-     /tmp/ccWrATyG.s:535    .data._ux_system_class_audio_streaming_interface_descriptor_structure:00000000 _ux_system_class_audio_streaming_interface_descriptor_structure
-     /tmp/ccWrATyG.s:541    .data._ux_system_class_audio_feature_unit_descriptor_structure:00000000 _ux_system_class_audio_feature_unit_descriptor_structure
-     /tmp/ccWrATyG.s:547    .data._ux_system_class_audio_output_terminal_descriptor_structure:00000000 _ux_system_class_audio_output_terminal_descriptor_structure
-     /tmp/ccWrATyG.s:553    .data._ux_system_class_audio_input_terminal_descriptor_structure:00000000 _ux_system_class_audio_input_terminal_descriptor_structure
-     /tmp/ccWrATyG.s:559    .data._ux_system_class_audio_interface_descriptor_structure:00000000 _ux_system_class_audio_interface_descriptor_structure
-     /tmp/ccWrATyG.s:609    .bss._ux_system_otg:00000000 _ux_system_otg
-     /tmp/ccWrATyG.s:606    .bss._ux_system_otg:00000000 $d
-     /tmp/ccWrATyG.s:613    .bss._ux_system:00000000 $d
-     /tmp/ccWrATyG.s:622    .data._ux_version_id:00000000 _ux_version_id
+     /tmp/ccKbwl36.s:26     .text._ux_system_initialize:00000000 $t
+     /tmp/ccKbwl36.s:32     .text._ux_system_initialize:00000000 _ux_system_initialize
+     /tmp/ccKbwl36.s:219    .text._ux_system_initialize:00000090 $d
+     /tmp/ccKbwl36.s:616    .bss._ux_system:00000000 _ux_system
+     /tmp/ccKbwl36.s:225    .text._uxe_system_initialize:00000000 $t
+     /tmp/ccKbwl36.s:231    .text._uxe_system_initialize:00000000 _uxe_system_initialize
+     /tmp/ccKbwl36.s:463    .text._uxe_system_initialize:000000cc $d
+     /tmp/ccKbwl36.s:602    .data._ux_system_endpoint_descriptor_structure:00000000 _ux_system_endpoint_descriptor_structure
+     /tmp/ccKbwl36.s:595    .data._ux_system_device_descriptor_structure:00000000 _ux_system_device_descriptor_structure
+     /tmp/ccKbwl36.s:589    .data._ux_system_configuration_descriptor_structure:00000000 _ux_system_configuration_descriptor_structure
+     /tmp/ccKbwl36.s:583    .data._ux_system_interface_descriptor_structure:00000000 _ux_system_interface_descriptor_structure
+     /tmp/ccKbwl36.s:577    .data._ux_system_interface_association_descriptor_structure:00000000 _ux_system_interface_association_descriptor_structure
+     /tmp/ccKbwl36.s:571    .data._ux_system_string_descriptor_structure:00000000 _ux_system_string_descriptor_structure
+     /tmp/ccKbwl36.s:565    .data._ux_system_dfu_functional_descriptor_structure:00000000 _ux_system_dfu_functional_descriptor_structure
+     /tmp/ccKbwl36.s:492    .data._ux_system_bos_descriptor_structure:00000000 _ux_system_bos_descriptor_structure
+     /tmp/ccKbwl36.s:486    .data._ux_system_usb_2_0_extension_descriptor_structure:00000000 _ux_system_usb_2_0_extension_descriptor_structure
+     /tmp/ccKbwl36.s:480    .data._ux_system_container_id_descriptor_structure:00000000 _ux_system_container_id_descriptor_structure
+     /tmp/ccKbwl36.s:498    .data._ux_system_ecm_interface_descriptor_structure:00000000 _ux_system_ecm_interface_descriptor_structure
+     /tmp/ccKbwl36.s:504    .data._ux_system_class_pima_object_structure:00000000 _ux_system_class_pima_object_structure
+     /tmp/ccKbwl36.s:511    .data._ux_system_class_pima_storage_structure:00000000 _ux_system_class_pima_storage_structure
+     /tmp/ccKbwl36.s:517    .data._ux_system_hid_descriptor_structure:00000000 _ux_system_hid_descriptor_structure
+     /tmp/ccKbwl36.s:523    .data._ux_system_hub_descriptor_structure:00000000 _ux_system_hub_descriptor_structure
+     /tmp/ccKbwl36.s:529    .data._ux_system_class_audio_streaming_endpoint_descriptor_structure:00000000 _ux_system_class_audio_streaming_endpoint_descriptor_structure
+     /tmp/ccKbwl36.s:535    .data._ux_system_class_audio_streaming_interface_descriptor_structure:00000000 _ux_system_class_audio_streaming_interface_descriptor_structure
+     /tmp/ccKbwl36.s:541    .data._ux_system_class_audio_feature_unit_descriptor_structure:00000000 _ux_system_class_audio_feature_unit_descriptor_structure
+     /tmp/ccKbwl36.s:547    .data._ux_system_class_audio_output_terminal_descriptor_structure:00000000 _ux_system_class_audio_output_terminal_descriptor_structure
+     /tmp/ccKbwl36.s:553    .data._ux_system_class_audio_input_terminal_descriptor_structure:00000000 _ux_system_class_audio_input_terminal_descriptor_structure
+     /tmp/ccKbwl36.s:559    .data._ux_system_class_audio_interface_descriptor_structure:00000000 _ux_system_class_audio_interface_descriptor_structure
+     /tmp/ccKbwl36.s:609    .bss._ux_system_otg:00000000 _ux_system_otg
+     /tmp/ccKbwl36.s:606    .bss._ux_system_otg:00000000 $d
+     /tmp/ccKbwl36.s:613    .bss._ux_system:00000000 $d
+     /tmp/ccKbwl36.s:622    .data._ux_version_id:00000000 _ux_version_id
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22
@@ -1119,7 +1119,7 @@ DEFINED SYMBOLS
                            .group:00000000 wm4.stdio.h.67.0cf8a9c281ab0b348aef5c02e7e48825
                            .group:00000000 wm4.stdio.h.2.4aa87247282eca6c8f36f9de33d8df1a
                            .group:00000000 wm4.stdio.h.87.a1e20d2651f9bfb66e51bfbe849db00a
-ARM GAS  /tmp/ccWrATyG.s 			page 20
+ARM GAS  /tmp/ccKbwl36.s 			page 20
 
 
                            .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccfnEgU9.s 			page 1
+ARM GAS  /tmp/ccusCliP.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
   22:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** 
   23:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** #define UX_SOURCE_CODE
   24:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** 
-ARM GAS  /tmp/ccfnEgU9.s 			page 2
+ARM GAS  /tmp/ccusCliP.s 			page 2
 
 
   25:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
   79:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** {
   35              		.loc 1 79 1 view -0
   36              		.cfi_startproc
-ARM GAS  /tmp/ccfnEgU9.s 			page 3
+ARM GAS  /tmp/ccusCliP.s 			page 3
 
 
   37              		@ args = 0, pretend = 0, frame = 0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  110:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****     data_length = 2;
  111:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****     
  112:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****     /* The status can be for either the device or the endpoint.  */
-ARM GAS  /tmp/ccfnEgU9.s 			page 4
+ARM GAS  /tmp/ccusCliP.s 			page 4
 
 
  113:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****     switch (request_type & UX_REQUEST_TARGET)
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  123:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****             /* Set the data length to 1.  */
  124:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****             data_length = 1;
  125:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****             
-ARM GAS  /tmp/ccfnEgU9.s 			page 5
+ARM GAS  /tmp/ccusCliP.s 			page 5
 
 
  126:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** #ifdef UX_OTG_SUPPORT
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  180:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****         
  181:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****         /* We stall the command.  */
  182:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****         dcd -> ux_slave_dcd_function(dcd, UX_DCD_STALL_ENDPOINT, endpoint);
-ARM GAS  /tmp/ccfnEgU9.s 			page 6
+ARM GAS  /tmp/ccusCliP.s 			page 6
 
 
   91              		.loc 1 182 9 is_stmt 1 view .LVU27
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  141:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****                 *transfer_request -> ux_slave_transfer_request_data_pointer |=  2;
  122              		.loc 1 141 13 is_stmt 1 view .LVU39
  141:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c ****                 *transfer_request -> ux_slave_transfer_request_data_pointer |=  2;
-ARM GAS  /tmp/ccfnEgU9.s 			page 7
+ARM GAS  /tmp/ccusCliP.s 			page 7
 
 
  123              		.loc 1 141 34 is_stmt 0 view .LVU40
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  164              		.loc 1 153 9 is_stmt 1 view .LVU54
  153:../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/src/ux_device_stack_get_status.c **** #else
  165              		.loc 1 153 19 is_stmt 0 view .LVU55
-ARM GAS  /tmp/ccfnEgU9.s 			page 8
+ARM GAS  /tmp/ccusCliP.s 			page 8
 
 
  166 006a 21F08002 		bic	r2, r1, #128
@@ -473,14 +473,14 @@ ARM GAS  /tmp/ccfnEgU9.s 			page 1
  206              		.file 3 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_api.h"
  207              		.file 4 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_system.h"
  208              		.file 5 "../STM32Cube_FW_N6/Middlewares/ST/usbx/common/core/inc/ux_device_stack.h"
-ARM GAS  /tmp/ccfnEgU9.s 			page 9
+ARM GAS  /tmp/ccusCliP.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ux_device_stack_get_status.c
-     /tmp/ccfnEgU9.s:26     .text._ux_device_stack_get_status:00000000 $t
-     /tmp/ccfnEgU9.s:32     .text._ux_device_stack_get_status:00000000 _ux_device_stack_get_status
-     /tmp/ccfnEgU9.s:199    .text._ux_device_stack_get_status:0000008c $d
+     /tmp/ccusCliP.s:26     .text._ux_device_stack_get_status:00000000 $t
+     /tmp/ccusCliP.s:32     .text._ux_device_stack_get_status:00000000 _ux_device_stack_get_status
+     /tmp/ccusCliP.s:199    .text._ux_device_stack_get_status:0000008c $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.ux_user.h.114.1a24f49ab4050de1d28cc96eed1ff7ed
                            .group:00000000 wm4._newlib_version.h.4.0eb654b64686e2bd29646258853f6c22

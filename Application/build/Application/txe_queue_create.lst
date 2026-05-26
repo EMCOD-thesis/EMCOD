@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc3LA3rC.s 			page 1
+ARM GAS  /tmp/cctdTgJX.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
   22:../Middlewares/threadx/common/src/txe_queue_create.c **** 
   23:../Middlewares/threadx/common/src/txe_queue_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/txe_queue_create.c **** 
-ARM GAS  /tmp/cc3LA3rC.s 			page 2
+ARM GAS  /tmp/cctdTgJX.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/txe_queue_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
   79:../Middlewares/threadx/common/src/txe_queue_create.c **** /*  09-30-2020     Yuxin Zhou               Modified comment(s),          */
   80:../Middlewares/threadx/common/src/txe_queue_create.c **** /*                                            resulting in version 6.1    */
   81:../Middlewares/threadx/common/src/txe_queue_create.c **** /*                                                                        */
-ARM GAS  /tmp/cc3LA3rC.s 			page 3
+ARM GAS  /tmp/cctdTgJX.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/txe_queue_create.c **** /**************************************************************************/
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
   66 0010 10B9     		cbnz	r0, .L2
   67              	.LVL2:
   68              	.L4:
-ARM GAS  /tmp/cc3LA3rC.s 			page 4
+ARM GAS  /tmp/cctdTgJX.s 			page 4
 
 
  102:../Middlewares/threadx/common/src/txe_queue_create.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  152:../Middlewares/threadx/common/src/txe_queue_create.c ****         /* Restore interrupts.  */
  153:../Middlewares/threadx/common/src/txe_queue_create.c ****         TX_RESTORE
  154:../Middlewares/threadx/common/src/txe_queue_create.c **** 
-ARM GAS  /tmp/cc3LA3rC.s 			page 5
+ARM GAS  /tmp/cctdTgJX.s 			page 5
 
 
  155:../Middlewares/threadx/common/src/txe_queue_create.c ****         /* Check for preemption.  */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  209:../Middlewares/threadx/common/src/txe_queue_create.c ****                 /* Invalid caller of this function, return appropriate error code.  */
  210:../Middlewares/threadx/common/src/txe_queue_create.c ****                 status =  TX_CALLER_ERROR;
  211:../Middlewares/threadx/common/src/txe_queue_create.c ****             }
-ARM GAS  /tmp/cc3LA3rC.s 			page 6
+ARM GAS  /tmp/cctdTgJX.s 			page 6
 
 
  212:../Middlewares/threadx/common/src/txe_queue_create.c **** #endif
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
   12:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
   13:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
   14:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
-ARM GAS  /tmp/cc3LA3rC.s 			page 7
+ARM GAS  /tmp/cctdTgJX.s 			page 7
 
 
   15:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**                                                                       */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
   69:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            fixed predefined macro,     */
   70:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.10 */
   71:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  04-25-2022      Scott Larson            Modified comments and added   */
-ARM GAS  /tmp/cc3LA3rC.s 			page 8
+ARM GAS  /tmp/cctdTgJX.s 			page 8
 
 
   72:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            volatile to registers,      */
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  126:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  127:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Function prototypes for this port. */
  128:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** struct  TX_THREAD_STRUCT;
-ARM GAS  /tmp/cc3LA3rC.s 			page 9
+ARM GAS  /tmp/cctdTgJX.s 			page 9
 
 
  129:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** UINT    _txe_thread_secure_stack_allocate(struct TX_THREAD_STRUCT *thread_ptr, ULONG stack_size);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  183:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the system timer thread's default stack size and priority.  These are only applicable
  184:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    if TX_TIMER_PROCESS_IN_ISR is not defined.  */
  185:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc3LA3rC.s 			page 10
+ARM GAS  /tmp/cctdTgJX.s 			page 10
 
 
  186:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_TIMER_THREAD_STACK_SIZE
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  240:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_MISRA_ENABLE
  241:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_DISABLE_INLINE
  242:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
-ARM GAS  /tmp/cc3LA3rC.s 			page 11
+ARM GAS  /tmp/cctdTgJX.s 			page 11
 
 
  243:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_INLINE_INITIALIZATION
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  297:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_EVENT_FLAGS_GROUP_EXTENSION
  298:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MUTEX_EXTENSION
  299:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_QUEUE_EXTENSION
-ARM GAS  /tmp/cc3LA3rC.s 			page 12
+ARM GAS  /tmp/cctdTgJX.s 			page 12
 
 
  300:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_SEMAPHORE_EXTENSION
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  354:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  355:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* TX_MISRA_ENABLE not defined */
  356:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc3LA3rC.s 			page 13
+ARM GAS  /tmp/cctdTgJX.s 			page 13
 
 
  357:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef __GNUC__ /* GCC and ARM Compiler 6 */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  411:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         {                                          
  412:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         ULONG  _tx_vfp_state;                      
  413:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_control_get();     
-ARM GAS  /tmp/cc3LA3rC.s 			page 14
+ARM GAS  /tmp/cctdTgJX.s 			page 14
 
 
  414:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             _tx_vfp_state = _tx_vfp_state & ~((ULON
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  468:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     }
  469:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  470:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/cc3LA3rC.s 			page 15
+ARM GAS  /tmp/cctdTgJX.s 			page 15
 
 
  471:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else   /* No VFP in use */
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  525:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    indicates that _tx_thread_system_return should not be called. This overrides the definition in t
  526:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    for Cortex-M since so we don't waste time checking the _tx_thread_system_state variable that is 
  527:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    zero after initialization for Cortex-M ports. */
-ARM GAS  /tmp/cc3LA3rC.s 			page 16
+ARM GAS  /tmp/cctdTgJX.s 			page 16
 
 
  528:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  582:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("CPSIE  i": : : "memory");
  583:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  584:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
-ARM GAS  /tmp/cc3LA3rC.s 			page 17
+ARM GAS  /tmp/cctdTgJX.s 			page 17
 
 
  585:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  112              	.LVL6:
  113              		.loc 2 606 5 is_stmt 0 view .LVU27
  114              		.thumb
-ARM GAS  /tmp/cc3LA3rC.s 			page 18
+ARM GAS  /tmp/cctdTgJX.s 			page 18
 
 
  115              		.syntax unified
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  157 003a 01D0     		beq	.L9
  133:../Middlewares/threadx/common/src/txe_queue_create.c ****             {
  158              		.loc 1 133 13 view .LVU40
-ARM GAS  /tmp/cc3LA3rC.s 			page 19
+ARM GAS  /tmp/cctdTgJX.s 			page 19
 
 
  133:../Middlewares/threadx/common/src/txe_queue_create.c ****             {
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  200              		.loc 1 150 35 is_stmt 0 view .LVU55
  201 0046 1A68     		ldr	r2, [r3]
  202 0048 013A     		subs	r2, r2, #1
-ARM GAS  /tmp/cc3LA3rC.s 			page 20
+ARM GAS  /tmp/cctdTgJX.s 			page 20
 
 
  203 004a 1A60     		str	r2, [r3]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  242              	.LVL17:
  206:../Middlewares/threadx/common/src/txe_queue_create.c ****             {
  243              		.loc 1 206 13 view .LVU71
-ARM GAS  /tmp/cc3LA3rC.s 			page 21
+ARM GAS  /tmp/cctdTgJX.s 			page 21
 
 
  206:../Middlewares/threadx/common/src/txe_queue_create.c ****             {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  285              	.LBI34:
  507:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  286              		.loc 2 507 55 view .LVU85
-ARM GAS  /tmp/cc3LA3rC.s 			page 22
+ARM GAS  /tmp/cctdTgJX.s 			page 22
 
 
  287              	.LBB35:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  330              		.cfi_restore 5
  331              		.cfi_restore 4
  332              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/cc3LA3rC.s 			page 23
+ARM GAS  /tmp/cctdTgJX.s 			page 23
 
 
  333              	.LVL26:
@@ -1376,14 +1376,14 @@ ARM GAS  /tmp/cc3LA3rC.s 			page 1
  377              		.file 4 "../Middlewares/threadx/common/inc/tx_timer.h"
  378              		.file 5 "../Middlewares/threadx/common/inc/tx_thread.h"
  379              		.file 6 "../Middlewares/threadx/common/inc/tx_queue.h"
-ARM GAS  /tmp/cc3LA3rC.s 			page 24
+ARM GAS  /tmp/cctdTgJX.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 txe_queue_create.c
-     /tmp/cc3LA3rC.s:26     .text._txe_queue_create:00000000 $t
-     /tmp/cc3LA3rC.s:32     .text._txe_queue_create:00000000 _txe_queue_create
-     /tmp/cc3LA3rC.s:365    .text._txe_queue_create:000000b4 $d
+     /tmp/cctdTgJX.s:26     .text._txe_queue_create:00000000 $t
+     /tmp/cctdTgJX.s:32     .text._txe_queue_create:00000000 _txe_queue_create
+     /tmp/cctdTgJX.s:365    .text._txe_queue_create:000000b4 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

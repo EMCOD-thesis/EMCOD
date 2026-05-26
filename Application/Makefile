@@ -1,4 +1,3 @@
-# quiet mode
 V = 0
 ifeq ($(V), 0)
   quiet = quiet_
@@ -12,14 +11,12 @@ quiet_SZ  = @echo "  SZ $@"; $(SZ)
 quiet_HEX  = @echo "  HEX $@"; $(HEX)
 quiet_BIN  = @echo "  BIN $@"; $(BIN)
 
-# helpers
 rwildcard=$(foreach d,$(wildcard $(1:=/*)),$(call rwildcard,$d,$2) $(filter $(subst *,%,$2),$d))
 
-# target
 TARGET = Project
 MODEL_DIR = ../Model/NUCLEO-N657X0-Q
 BINARY_DIR = Binary
-# SPI or UVCL
+
 SCR_LIB_SCREEN_ITF := UVCL
 SCR_LIB_RTOS := NONE
 ifdef APP_GIT_SHA1_STRING
@@ -29,16 +26,11 @@ ifdef APP_VERSION_STRING
 C_DEFS += -DAPP_VERSION_STRING=\"$(APP_VERSION_STRING)\"
 endif
 
-# building variables
 OPT = -Os -g3
 
-# paths
-# Build path
 BUILD_TOP = build
 BUILD_DIR = $(BUILD_TOP)/Application
 
-# source
-# C sources
 C_SOURCES += $(wildcard Src/*.c)
 C_SOURCES += $(wildcard ../Middlewares/threadx/common/src/*.c)
 C_SOURCES += $(wildcard ../Middlewares/ai-postprocessing-wrapper/*.c)
@@ -112,8 +104,6 @@ C_SOURCES += ../Middlewares/stedgeai-lib/Npu/ll_aton/ll_sw_integer.c
 C_SOURCES += ../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_lib.c
 C_SOURCES += ../Middlewares/stedgeai-lib/Npu/ll_aton/ll_aton_lib_sw_operators.c
 
-
-# ASM sources
 ASM_SOURCES_s += ../STM32Cube_FW_N6/Drivers/CMSIS/Device/ST/STM32N6xx/Source/Templates/gcc/startup_stm32n657xx_fsbl.s
 ASM_SOURCES_S += ../Middlewares/threadx/ports/cortex_m55/gnu/src/tx_initialize_low_level.S
 ASM_SOURCES_S += ../Middlewares/threadx/ports/cortex_m55/gnu/src/tx_thread_context_restore.S
@@ -129,10 +119,8 @@ ASM_SOURCES_S += ../Middlewares/threadx/ports/cortex_m55/gnu/src/tx_thread_secur
 ASM_SOURCES_S += ../Middlewares/threadx/ports/cortex_m55/gnu/src/tx_thread_secure_stack_allocate.S
 ASM_SOURCES_S += ../Middlewares/threadx/ports/cortex_m55/gnu/src/tx_thread_secure_stack_free.S
 
-# binaries
 PREFIX = arm-none-eabi-
-# The gcc compiler bin path can be either defined in make command via GCC_PATH variable (> make GCC_PATH=xxx)
-# either it can be added to the PATH environment variable.
+
 ifdef GCC_PATH
 CC = $(GCC_PATH)/$(PREFIX)gcc
 AS = $(GCC_PATH)/$(PREFIX)gcc -x assembler-with-cpp
@@ -155,14 +143,11 @@ SIGNER = STM32_SigningTool_CLI
 OBJCOPY = arm-none-eabi-objcopy
 EL = "$(shell dirname "$(shell which $(FLASHER))")/ExternalLoader/MX25UM51245G_STM32N6570-NUCLEO.stldr"
 
-# CFLAGS
 CPU = -mcpu=cortex-m55 -mcmse -mthumb
 FPU = -mfpu=fpv5-d16 -mfloat-abi=hard
 
-# mcu
 MCU = $(CPU) $(FPU)
 
-# C defines
 C_DEFS += -DSTM32N657xx
 C_DEFS += -DSTM32N6570_NUCLEO_REV
 C_DEFS += -DUSE_FULL_ASSERT
@@ -179,14 +164,11 @@ C_DEFS += -DTX_ENABLE_STACK_CHECKING
 C_DEFS += -DTX_ENABLE_EVENT_TRACE
 C_DEFS += -DUSE_BSP_COM_FEATURE=1
 C_DEFS += -DUSE_COM_LOG=1
-# C_DEFS += -DTX_DISABLE_ERROR_CHECKING
 ifeq ($(SCR_LIB_SCREEN_ITF), SPI)
 C_DEFS += -DSCR_LIB_USE_SPI
 endif
 C_DEFS += -DTX_SINGLE_MODE_SECURE
 
-# C includes
-# Patched files
 C_INCLUDES += -I../Middlewares/stm32-mw-camera
 C_INCLUDES += -I../Middlewares/stm32-mw-camera/sensors
 C_INCLUDES += -I../Middlewares/stm32-mw-camera/sensors/imx335
@@ -217,37 +199,28 @@ C_INCLUDES += -I../STM32Cube_FW_N6/Drivers/BSP/Components/aps256xx
 
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fstack-usage -fdata-sections -ffunction-sections -fcyclomatic-complexity
 CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fstack-usage -fdata-sections -ffunction-sections -fcyclomatic-complexity
-# Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 
 CFLAGS += -std=gnu11
 
-# LDFLAGS
-# link script
 LDSCRIPT = STM32CubeIDE/STM32N657xx.ld
 
-# libraries
 LIBS = -lc -lm -lnosys -l:NetworkRuntime1200_CM55_GCC.a
 LIBDIR = -L../Middlewares/stedgeai-lib/Lib/GCC/ARMCortexM55
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
-# Uncomment to enable %f formatted output
 LDFLAGS += -u _printf_float
 LDFLAGS += -Wl,--print-memory-usage
-# Avoid 'build/Project.elf has a LOAD segment with RWX permissions' warning
 LDFLAGS += -Wl,--no-warn-rwx-segments
 
-# Include mk files
 SCR_USBX_REL_DIR := ../STM32Cube_FW_N6/Middlewares/ST/usbx
 include ../Middlewares/screenl/scr_lib.mk
 
-# base build
 .PHONY: all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).bin
 
 .PHONY: sign
 sign: $(BUILD_DIR)/$(TARGET)_sign.hex
 
-# build the application
 OBJECTS = $(addprefix $(BUILD_DIR)/, $(C_SOURCES:.c=.o))
 OBJECTS += $(addprefix $(BUILD_DIR)/,$(ASM_SOURCES_s:.s=.o))
 OBJECTS += $(addprefix $(BUILD_DIR)/,$(ASM_SOURCES_S:.S=.o))
@@ -284,12 +257,10 @@ $(BUILD_DIR)/$(TARGET)_sign.hex: $(BUILD_DIR)/$(TARGET)_sign.bin
 $(BUILD_DIR):
 	mkdir -p $@
 
-# clean up
 .PHONY: clean
 clean:
 	-rm -fR $(BUILD_TOP)
 
-# flash
 .PHONY: flash
 flash: $(BUILD_DIR)/$(TARGET)_sign.bin
 	$(FLASHER) -c port=SWD mode=HOTPLUG -el $(EL) -hardRst -w $< 0x70100000
@@ -299,5 +270,4 @@ flash: $(BUILD_DIR)/$(TARGET)_sign.bin
 flash_weights: $(MODEL_DIR)/network_data.hex
 	$(FLASHER) -c port=SWD mode=HOTPLUG -el $(EL) -hardRst -w $<
 
-# dependencies
 -include $(call rwildcard,$(BUILD_TOP),*.d)

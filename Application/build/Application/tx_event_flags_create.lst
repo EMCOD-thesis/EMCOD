@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccSJkkTM.s 			page 1
+ARM GAS  /tmp/ccpImmgG.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
   22:../Middlewares/threadx/common/src/tx_event_flags_create.c **** 
   23:../Middlewares/threadx/common/src/tx_event_flags_create.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_event_flags_create.c **** 
-ARM GAS  /tmp/ccSJkkTM.s 			page 2
+ARM GAS  /tmp/ccpImmgG.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_event_flags_create.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
   37              		@ args = 0, pretend = 0, frame = 8
   38              		@ frame_needed = 0, uses_anonymous_args = 0
   77:../Middlewares/threadx/common/src/tx_event_flags_create.c **** 
-ARM GAS  /tmp/ccSJkkTM.s 			page 3
+ARM GAS  /tmp/ccpImmgG.s 			page 3
 
 
   78:../Middlewares/threadx/common/src/tx_event_flags_create.c **** TX_INTERRUPT_SAVE_AREA
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
    8:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       and in the root directory of this software.                      */
    9:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                                                        */
   10:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /**************************************************************************/
-ARM GAS  /tmp/ccSJkkTM.s 			page 4
+ARM GAS  /tmp/ccpImmgG.s 			page 4
 
 
   11:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
   65:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack check error handling, */
   66:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.9  */
   67:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  01-31-2022      Scott Larson            Modified comment(s), unified  */
-ARM GAS  /tmp/ccSJkkTM.s 			page 5
+ARM GAS  /tmp/ccpImmgG.s 			page 5
 
 
   68:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            this file across compilers, */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  122:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long long                      ULONG64;
  123:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef short                                   SHORT;
  124:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned short                          USHORT;
-ARM GAS  /tmp/ccSJkkTM.s 			page 6
+ARM GAS  /tmp/ccpImmgG.s 			page 6
 
 
  125:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define ULONG64_DEFINED
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  179:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MINIMUM_STACK                        200         /* Minimum stack size for this port  */
  180:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  181:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccSJkkTM.s 			page 7
+ARM GAS  /tmp/ccpImmgG.s 			page 7
 
 
  182:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  236:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the in-line initialization constant so that modules with in-line
  237:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    initialization capabilities can prevent their initialization from being
  238:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    a function call.  */
-ARM GAS  /tmp/ccSJkkTM.s 			page 8
+ARM GAS  /tmp/ccpImmgG.s 			page 8
 
 
  239:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  293:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port extensions of the remaining ThreadX objects.  */
  294:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  295:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BLOCK_POOL_EXTENSION
-ARM GAS  /tmp/ccSJkkTM.s 			page 9
+ARM GAS  /tmp/ccpImmgG.s 			page 9
 
 
  296:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_BYTE_POOL_EXTENSION
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  350:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_control_get(void);
  351:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_control_set(ULONG value);
  352:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_fpccr_get(void);
-ARM GAS  /tmp/ccSJkkTM.s 			page 10
+ARM GAS  /tmp/ccpImmgG.s 			page 10
 
 
  353:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** void   _tx_misra_vfp_touch(void);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  407:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
  408:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                     ULONG  _tx_system_state;                       
  409:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         _tx_system_state = TX_THREAD_GET_SYSTEM_STA
-ARM GAS  /tmp/ccSJkkTM.s 			page 11
+ARM GAS  /tmp/ccpImmgG.s 			page 11
 
 
  410:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         if ((_tx_system_state == ((ULONG) 0)) && ((
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  464:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_misra_control_set(_tx_vfp_s
  465:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 }                                  
  466:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                             }                                      
-ARM GAS  /tmp/ccSJkkTM.s 			page 12
+ARM GAS  /tmp/ccpImmgG.s 			page 12
 
 
  467:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                         }                                          
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  521:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_THREAD_GET_SYSTEM_STATE */
  522:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  523:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccSJkkTM.s 			page 13
+ARM GAS  /tmp/ccpImmgG.s 			page 13
 
 
  524:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the check for whether or not to call the _tx_thread_system_return function.  A non-zero v
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  578:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
  579:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #else
  580:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __enable_interrupts(void)
-ARM GAS  /tmp/ccSJkkTM.s 			page 14
+ARM GAS  /tmp/ccpImmgG.s 			page 14
 
 
  581:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
   95              	@ 0 "" 2
  605:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif
  606:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     return(int_posture);
-ARM GAS  /tmp/ccSJkkTM.s 			page 15
+ARM GAS  /tmp/ccpImmgG.s 			page 15
 
 
   96              		.loc 2 606 5 view .LVU21
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  115:../Middlewares/threadx/common/src/tx_event_flags_create.c ****         previous_group -> tx_event_flags_group_created_next =  group_ptr;
  116:../Middlewares/threadx/common/src/tx_event_flags_create.c **** 
  117:../Middlewares/threadx/common/src/tx_event_flags_create.c ****         /* Setup this group's created links.  */
-ARM GAS  /tmp/ccSJkkTM.s 			page 16
+ARM GAS  /tmp/ccpImmgG.s 			page 16
 
 
  118:../Middlewares/threadx/common/src/tx_event_flags_create.c ****         group_ptr -> tx_event_flags_group_created_previous =  previous_group;
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  159 0048 274B     		ldr	r3, .L17+16
  160 004a 1B68     		ldr	r3, [r3]
  161 004c 1B07     		lsls	r3, r3, #28
-ARM GAS  /tmp/ccSJkkTM.s 			page 17
+ARM GAS  /tmp/ccpImmgG.s 			page 17
 
 
  162 004e 29D5     		bpl	.L5
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  211 0072 9360     		str	r3, [r2, #8]
  212              		.loc 1 132 5 is_stmt 1 view .LVU66
  213              		.loc 1 132 5 is_stmt 0 discriminator 9 view .LVU67
-ARM GAS  /tmp/ccSJkkTM.s 			page 18
+ARM GAS  /tmp/ccpImmgG.s 			page 18
 
 
  214 0074 1F4B     		ldr	r3, .L17+28
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  262              		.loc 1 138 5 is_stmt 1 view .LVU88
  263              	.LBB21:
  264              	.LBI21:
-ARM GAS  /tmp/ccSJkkTM.s 			page 19
+ARM GAS  /tmp/ccpImmgG.s 			page 19
 
 
  586:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  303 00b6 8461     		str	r4, [r0, #24]
  118:../Middlewares/threadx/common/src/tx_event_flags_create.c ****         group_ptr -> tx_event_flags_group_created_next =      next_group;
  304              		.loc 1 118 9 is_stmt 1 view .LVU103
-ARM GAS  /tmp/ccSJkkTM.s 			page 20
+ARM GAS  /tmp/ccpImmgG.s 			page 20
 
 
  119:../Middlewares/threadx/common/src/tx_event_flags_create.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  349              		.cfi_endproc
  350              	.LFE8:
  352              		.text
-ARM GAS  /tmp/ccSJkkTM.s 			page 21
+ARM GAS  /tmp/ccpImmgG.s 			page 21
 
 
  353              	.Letext0:
@@ -1208,14 +1208,14 @@ ARM GAS  /tmp/ccSJkkTM.s 			page 1
  357              		.file 6 "../Middlewares/threadx/common/inc/tx_event_flags.h"
  358              		.file 7 "/opt/st/stm32cubeclt_1.21.0/GNU-tools-for-STM32/arm-none-eabi/include/string.h"
  359              		.file 8 "<built-in>"
-ARM GAS  /tmp/ccSJkkTM.s 			page 22
+ARM GAS  /tmp/ccpImmgG.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_event_flags_create.c
-     /tmp/ccSJkkTM.s:26     .text._tx_event_flags_create:00000000 $t
-     /tmp/ccSJkkTM.s:32     .text._tx_event_flags_create:00000000 _tx_event_flags_create
-     /tmp/ccSJkkTM.s:336    .text._tx_event_flags_create:000000d8 $d
+     /tmp/ccpImmgG.s:26     .text._tx_event_flags_create:00000000 $t
+     /tmp/ccpImmgG.s:32     .text._tx_event_flags_create:00000000 _tx_event_flags_create
+     /tmp/ccpImmgG.s:336    .text._tx_event_flags_create:000000d8 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d

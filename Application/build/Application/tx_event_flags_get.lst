@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccEFr36b.s 			page 1
+ARM GAS  /tmp/ccvs1sIv.s 			page 1
 
 
    1              		.arch armv8.1-m.main
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
   22:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
   23:../Middlewares/threadx/common/src/tx_event_flags_get.c **** #define TX_SOURCE_CODE
   24:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 2
+ARM GAS  /tmp/ccvs1sIv.s 			page 2
 
 
   25:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
   79:../Middlewares/threadx/common/src/tx_event_flags_get.c **** /*  04-25-2022      Scott Larson            Modified comment(s),          */
   80:../Middlewares/threadx/common/src/tx_event_flags_get.c **** /*                                            handle 0 flags case,        */
   81:../Middlewares/threadx/common/src/tx_event_flags_get.c **** /*                                            resulting in version 6.1.11 */
-ARM GAS  /tmp/ccEFr36b.s 			page 3
+ARM GAS  /tmp/ccvs1sIv.s 			page 3
 
 
   82:../Middlewares/threadx/common/src/tx_event_flags_get.c **** /*  10-31-2022      Scott Larson            Modified comment(s), always   */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
    5:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       This software is licensed under the Microsoft Software License   */
    6:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       Terms for Microsoft Azure RTOS. Full text of the license can be  */
    7:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       found in the LICENSE file at https://aka.ms/AzureRTOS_EULA       */
-ARM GAS  /tmp/ccEFr36b.s 			page 4
+ARM GAS  /tmp/ccvs1sIv.s 			page 4
 
 
    8:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*       and in the root directory of this software.                      */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
   62:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack error handler,        */
   63:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            resulting in version 6.1.7  */
   64:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*  10-15-2021      Scott Larson            Modified comment(s), improved */
-ARM GAS  /tmp/ccEFr36b.s 			page 5
+ARM GAS  /tmp/ccvs1sIv.s 			page 5
 
 
   65:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /*                                            stack check error handling, */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  119:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned int                            UINT;
  120:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef long                                    LONG;
  121:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long                           ULONG;
-ARM GAS  /tmp/ccEFr36b.s 			page 6
+ARM GAS  /tmp/ccvs1sIv.s 			page 6
 
 
  122:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** typedef unsigned long long                      ULONG64;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  176:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****    thread creation is less than this value, the thread create call will return an error.  */
  177:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  178:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MINIMUM_STACK
-ARM GAS  /tmp/ccEFr36b.s 			page 7
+ARM GAS  /tmp/ccvs1sIv.s 			page 7
 
 
  179:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_MINIMUM_STACK                        200         /* Minimum stack size for this port  */
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  233:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_PORT_SPECIFIC_BUILD_OPTIONS          (0)
  234:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  235:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 8
+ARM GAS  /tmp/ccvs1sIv.s 			page 8
 
 
  236:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the in-line initialization constant so that modules with in-line
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  290:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_EXTENSION_3
  291:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  292:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 9
+ARM GAS  /tmp/ccvs1sIv.s 			page 9
 
 
  293:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** /* Define the port extensions of the remaining ThreadX objects.  */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  347:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  348:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifdef TX_MISRA_ENABLE
  349:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 10
+ARM GAS  /tmp/ccvs1sIv.s 			page 10
 
 
  350:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG  _tx_misra_control_get(void);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  404:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
  405:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #ifndef TX_MISRA_ENABLE
  406:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 11
+ARM GAS  /tmp/ccvs1sIv.s 			page 11
 
 
  407:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_TERMINATED_EXTENSION(thread_ptr)  {                                              
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  461:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                 {                                  
  462:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_misra_contr
  463:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_vfp_state = _tx_vfp_state &
-ARM GAS  /tmp/ccEFr36b.s 			page 12
+ARM GAS  /tmp/ccvs1sIv.s 			page 12
 
 
  464:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****                                                                     _tx_misra_control_set(_tx_vfp_s
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  518:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** ULONG   _tx_misra_ipsr_get(VOID);
  519:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #define TX_THREAD_GET_SYSTEM_STATE()        (_tx_thread_system_state | _tx_misra_ipsr_get())
  520:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_MISRA_ENABLE */
-ARM GAS  /tmp/ccEFr36b.s 			page 13
+ARM GAS  /tmp/ccvs1sIv.s 			page 13
 
 
  521:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** #endif  /* TX_THREAD_GET_SYSTEM_STATE */
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  575:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** __attribute__( ( always_inline ) ) static inline void __set_basepri_value(UINT basepri_value)
  576:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** {
  577:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h ****     __asm__ volatile ("MSR  BASEPRI,%0 ": : "r" (basepri_value));
-ARM GAS  /tmp/ccEFr36b.s 			page 14
+ARM GAS  /tmp/ccvs1sIv.s 			page 14
 
 
  578:../Middlewares/threadx/ports/cortex_m55/gnu/inc/tx_port.h **** }
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
   82 0008 0646     		mov	r6, r0
   83 000a 0F46     		mov	r7, r1
   84 000c 1546     		mov	r5, r2
-ARM GAS  /tmp/ccEFr36b.s 			page 15
+ARM GAS  /tmp/ccvs1sIv.s 			page 15
 
 
   85 000e 9A46     		mov	r10, r3
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  117              		.loc 1 123 5 view .LVU30
  118              		.loc 1 123 5 view .LVU31
  119              		.loc 1 123 5 view .LVU32
-ARM GAS  /tmp/ccEFr36b.s 			page 16
+ARM GAS  /tmp/ccvs1sIv.s 			page 16
 
 
  120 0016 4E4C     		ldr	r4, .L40
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  169              		.loc 1 123 5 is_stmt 0 discriminator 3 view .LVU49
  170 0036 D86B     		ldr	r0, [r3, #60]
  171 0038 D96A     		ldr	r1, [r3, #44]
-ARM GAS  /tmp/ccEFr36b.s 			page 17
+ARM GAS  /tmp/ccvs1sIv.s 			page 17
 
 
  172              	.LVL11:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  226              		.loc 1 123 5 is_stmt 1 discriminator 12 view .LVU73
  227 0076 9847     		blx	r3
  228              	.LVL16:
-ARM GAS  /tmp/ccEFr36b.s 			page 18
+ARM GAS  /tmp/ccvs1sIv.s 			page 18
 
 
  229              	.L3:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  158:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  159:../Middlewares/threadx/common/src/tx_event_flags_get.c ****         /* OR request is present. Simply or the requested flags and the current flags.  */
  160:../Middlewares/threadx/common/src/tx_event_flags_get.c ****         flags_satisfied =  (current_flags & requested_flags);
-ARM GAS  /tmp/ccEFr36b.s 			page 19
+ARM GAS  /tmp/ccvs1sIv.s 			page 19
 
 
  161:../Middlewares/threadx/common/src/tx_event_flags_get.c ****     }
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  201:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  202:../Middlewares/threadx/common/src/tx_event_flags_get.c ****         /* Calculate the flags present.  */
  203:../Middlewares/threadx/common/src/tx_event_flags_get.c ****         flags_satisfied =  (current_flags & requested_flags);
-ARM GAS  /tmp/ccEFr36b.s 			page 20
+ARM GAS  /tmp/ccvs1sIv.s 			page 20
 
 
  261              		.loc 1 203 25 is_stmt 0 view .LVU90
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  233:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  234:../Middlewares/threadx/common/src/tx_event_flags_get.c ****             /* Set interrupted set request flag to false.  */
  235:../Middlewares/threadx/common/src/tx_event_flags_get.c ****             interrupted_set_request =  TX_FALSE;
-ARM GAS  /tmp/ccEFr36b.s 			page 21
+ARM GAS  /tmp/ccvs1sIv.s 			page 21
 
 
  285              		.loc 1 235 13 is_stmt 1 view .LVU101
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  264:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 /* Yes, clear the flags that satisfied this request.  */
  265:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 group_ptr -> tx_event_flags_group_current =
  266:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                                         group_ptr -> tx_event_flags_group_current & ~requested_flag
-ARM GAS  /tmp/ccEFr36b.s 			page 22
+ARM GAS  /tmp/ccvs1sIv.s 			page 22
 
 
  267:../Middlewares/threadx/common/src/tx_event_flags_get.c ****             }
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  321:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 thread_ptr -> tx_thread_suspend_control_block =  (VOID *) group_ptr;
  322:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  323:../Middlewares/threadx/common/src/tx_event_flags_get.c **** #ifndef TX_NOT_INTERRUPTABLE
-ARM GAS  /tmp/ccEFr36b.s 			page 23
+ARM GAS  /tmp/ccvs1sIv.s 			page 23
 
 
  324:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  378:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  379:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 /* Restore interrupts.  */
  380:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 TX_RESTORE
-ARM GAS  /tmp/ccEFr36b.s 			page 24
+ARM GAS  /tmp/ccvs1sIv.s 			page 24
 
 
  381:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  123:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  334              		.loc 1 123 5 discriminator 6 view .LVU120
  335 00b8 35BF     		itete	cc
-ARM GAS  /tmp/ccEFr36b.s 			page 25
+ARM GAS  /tmp/ccvs1sIv.s 			page 25
 
 
  336 00ba 1946     		movcc	r1, r3
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  283:../Middlewares/threadx/common/src/tx_event_flags_get.c ****             {
  375              		.loc 1 283 13 is_stmt 1 view .LVU136
  283:../Middlewares/threadx/common/src/tx_event_flags_get.c ****             {
-ARM GAS  /tmp/ccEFr36b.s 			page 26
+ARM GAS  /tmp/ccvs1sIv.s 			page 26
 
 
  376              		.loc 1 283 45 is_stmt 0 view .LVU137
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  331:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
  413              		.loc 1 331 17 view .LVU155
  414              	.LVL42:
-ARM GAS  /tmp/ccEFr36b.s 			page 27
+ARM GAS  /tmp/ccvs1sIv.s 			page 27
 
 
  334:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 {
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  450 0122 0133     		adds	r3, r3, #1
  451 0124 1360     		str	r3, [r2]
  380:../Middlewares/threadx/common/src/tx_event_flags_get.c **** 
-ARM GAS  /tmp/ccEFr36b.s 			page 28
+ARM GAS  /tmp/ccvs1sIv.s 			page 28
 
 
  452              		.loc 1 380 17 is_stmt 1 view .LVU175
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  493              		.thumb
  494              		.syntax unified
  495              	.LBE38:
-ARM GAS  /tmp/ccEFr36b.s 			page 29
+ARM GAS  /tmp/ccvs1sIv.s 			page 29
 
 
  496              	.LBE37:
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  352:../Middlewares/threadx/common/src/tx_event_flags_get.c ****                 }
  535              		.loc 1 352 65 is_stmt 0 view .LVU206
  536 0146 4C67     		str	r4, [r1, #116]
-ARM GAS  /tmp/ccEFr36b.s 			page 30
+ARM GAS  /tmp/ccvs1sIv.s 			page 30
 
 
  537 0148 E2E7     		b	.L14
@@ -1770,14 +1770,14 @@ ARM GAS  /tmp/ccEFr36b.s 			page 1
  563              		.file 4 "../Middlewares/threadx/common/inc/tx_thread.h"
  564              		.file 5 "../Middlewares/threadx/common/inc/tx_trace.h"
  565              		.file 6 "../Middlewares/threadx/common/inc/tx_event_flags.h"
-ARM GAS  /tmp/ccEFr36b.s 			page 31
+ARM GAS  /tmp/ccvs1sIv.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tx_event_flags_get.c
-     /tmp/ccEFr36b.s:26     .text._tx_event_flags_get:00000000 $t
-     /tmp/ccEFr36b.s:32     .text._tx_event_flags_get:00000000 _tx_event_flags_get
-     /tmp/ccEFr36b.s:546    .text._tx_event_flags_get:00000150 $d
+     /tmp/ccvs1sIv.s:26     .text._tx_event_flags_get:00000000 $t
+     /tmp/ccvs1sIv.s:32     .text._tx_event_flags_get:00000000 _tx_event_flags_get
+     /tmp/ccvs1sIv.s:546    .text._tx_event_flags_get:00000150 $d
                            .group:00000000 wm4.0.43608cab4da50df6ba2dfee95636a2b5
                            .group:00000000 wm4.tx_api.h.111.1e40bacadb0edb5b6b36282830ee23a5
                            .group:00000000 wm4.ieeefp.h.77.99029d7b8220a2cd73dd257e2bbe825d
