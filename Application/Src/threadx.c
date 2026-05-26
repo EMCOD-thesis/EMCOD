@@ -8,7 +8,7 @@ static TX_THREAD blink_thread;
 static ULONG blink_stack[BLINK_THREAD_STACK_SIZE / sizeof(ULONG)];
 
 static void blink(ULONG thread_input) {
-    printf("printf works\n");
+    printf("printf works\r\n");
     BSP_LED_Init(LED_GREEN);
     BSP_LED_Init(LED_RED);
     while (1) {

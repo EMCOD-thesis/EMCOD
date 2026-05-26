@@ -3,12 +3,15 @@
 WORK IN PROGRESS
 
 > [!NOTE]
->This repo is partly based on [STM32N6-GettingStarted-ObjectDetection](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection)
+>This repo was initially based on [STM32N6-GettingStarted-ObjectDetection](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection)
 
 > [!WARNING]
 > Third-party components under `Middlewares/`, `Application/STM32CubeIDE/` and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
 
 ## contributing
+
+> [!NOTE]
+>Remember to `\r` before `\n` when using printf.
 
 commit to your own branch
 
@@ -48,7 +51,8 @@ The instructions below assume that STM32CubeCLT, `arm-none-eabi-gdb`, and `scree
 From the `Application` directory, run:
 
 ```bash
-make -j8
+cmake -B build -DCMAKE_TOOLCHAIN_FILE=arm-none-eabi-gcc.cmake
+cmake --build build --parallel
 ```
 
 This builds the ELF file at:
