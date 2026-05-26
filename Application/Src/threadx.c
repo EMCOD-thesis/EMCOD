@@ -4,7 +4,6 @@
 
 #define BLINK_THREAD_STACK_SIZE 1024
 
-volatile UINT status = 0xFFFFFFFFu;
 static TX_THREAD blink_thread;
 static ULONG blink_stack[BLINK_THREAD_STACK_SIZE / sizeof(ULONG)];
 
@@ -20,5 +19,5 @@ static void blink(ULONG thread_input) {
 }
 
 void tx_application_define(void *first_unused_memory) {
-    status = tx_thread_create(&blink_thread, "blink", blink, 0, blink_stack, sizeof(blink_stack), 3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
+    tx_thread_create(&blink_thread, "blink", blink, 0, blink_stack, sizeof(blink_stack), 3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
 }
