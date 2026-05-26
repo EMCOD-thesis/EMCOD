@@ -17,6 +17,8 @@ WORK IN PROGRESS
 
 ## contributing
 
+please read our [coding guidelines](./coding-guidelines.md) before contributing
+
 commit to your own branch
 
 ```bash
