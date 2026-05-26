@@ -2,7 +2,6 @@
 #include "stm32n6xx_nucleo_bus.h"
 #include "stm32n6xx_nucleo_xspi.h"
 #include "stm32n6xx_nucleo.h"
-#include "app_fuseprogramming.h"
 #include "npu_cache.h"
 #include "main.h"
 

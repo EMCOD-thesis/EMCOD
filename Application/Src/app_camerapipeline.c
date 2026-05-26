@@ -2,7 +2,6 @@
 #include "cmw_camera.h"
 #include "app_camerapipeline.h"
 #include "app_config.h"
-#include "crop_img.h"
 #include "scrl.h"
 #include "main.h"
 #include "stai_network.h"
