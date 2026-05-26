@@ -8,10 +8,14 @@ WORK IN PROGRESS
 > [!WARNING]
 > Third-party components under `Middlewares/`, `Application/STM32CubeIDE/` and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
 
-## contributing
+## Table of Contents
 
-> [!NOTE]
->Remember to `\r` before `\n` when using printf.
+- [contributing](#contributing)
+- [building dependencies](#building-dependencies)
+- [build and run](#build-and-run)
+- [useful gdb commands](#useful-gdb-commands)
+
+## contributing
 
 commit to your own branch
 
@@ -27,26 +31,18 @@ git checkout nickname
 
 Then pull request to main. Remember to ```git pull origin main``` after your repository was merged
 
-## mac os dependencies
+## building dependencies
 
-Install [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
+- [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
+- arm-none-eabi-gcc
+- screen
+- make
 
-Apple build basics
-```bash
-xcode-select --install
-```
-
-Make and ARM embedded compiler/toolchain
-```bash
-brew install git make
-brew install arm-none-eabi-gcc
-```
-
-## Build and Run
+## build and run
 
 The instructions below assume that STM32CubeCLT, `arm-none-eabi-gdb`, and `screen` are installed and available in your shell.
 
-### 1. Build the application
+### 1. build the application
 
 From the `Application` directory, run:
 
@@ -61,7 +57,7 @@ This builds the ELF file at:
 Application/build/Application/Project.elf
 ```
 
-### 2. Start the ST-LINK GDB server
+### 2. start the ST-LINK GDB server
 
 Open a new terminal and run:
 
@@ -78,7 +74,7 @@ ST-LINK_gdbserver \
 
 Keep this terminal open while debugging or flashing the board.
 
-### 3. Open the UART monitor
+### 3. open the UART monitor
 
 Open another terminal and run:
 
@@ -94,7 +90,7 @@ To exit `screen`, press:
 Ctrl+A, then K, then Y
 ```
 
-### 4. Flash and run the application
+### 4. flash and run the application
 
 Open a third terminal from the `Application` directory and start GDB:
 
@@ -113,7 +109,7 @@ continue
 
 The application should now be running with screen displaying UART output.
 
-## Useful gdb commands
+## useful gdb commands
 
 Set a breakpoint at a function:
 
