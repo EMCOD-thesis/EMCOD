@@ -203,7 +203,7 @@ CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 
 CFLAGS += -std=gnu11
 
-LDSCRIPT = STM32CubeIDE/STM32N657xx.ld
+LDSCRIPT = STM32N657xx.ld
 
 LIBS = -lc -lm -lnosys -l:NetworkRuntime1200_CM55_GCC.a
 LIBDIR = -L../Middlewares/stedgeai-lib/Lib/GCC/ARMCortexM55
