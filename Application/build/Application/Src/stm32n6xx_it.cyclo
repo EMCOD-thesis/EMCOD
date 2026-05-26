@@ -1,7 +1,0 @@
-Src/stm32n6xx_it.c:11:6:NMI_Handler	1
-Src/stm32n6xx_it.c:21:6:MemManage_Handler	1
-Src/stm32n6xx_it.c:34:6:BusFault_Handler	1
-Src/stm32n6xx_it.c:47:6:SecureFault_Handler	1
-Src/stm32n6xx_it.c:59:6:DebugMon_Handler	1
-Src/stm32n6xx_it.c:72:6:CSI_IRQHandler	1
-Src/stm32n6xx_it.c:78:6:DCMIPP_IRQHandler	1

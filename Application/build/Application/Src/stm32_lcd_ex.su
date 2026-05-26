@@ -1,2 +1,0 @@
-Src/stm32_lcd_ex.c:9:6:UTIL_LCDEx_PrintfAtLine	20	static
-Src/stm32_lcd_ex.c:19:6:UTIL_LCDEx_PrintfAt	28	static
