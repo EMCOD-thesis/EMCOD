@@ -31,7 +31,7 @@ Install [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html
 Apple build basics
 ```bash
 xcode-select --install
-``
+```
 
 Make and ARM embedded compiler/toolchain
 ```bash
