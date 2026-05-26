@@ -1,4 +1,4 @@
-Third-party components under `Middlewares/`, 'Application/STM32CubeIDE/' and
+Third-party components under `Middlewares/`, `Application/STM32CubeIDE/` and
 `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to
 their own respective license terms, including STMicroelectronics SLA0044 and/or
 Microsoft Software License Terms for Azure RTOS where applicable.

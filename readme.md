@@ -6,7 +6,7 @@ WORK IN PROGRESS
 >This repo is partly based on [STM32N6-GettingStarted-ObjectDetection](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection)
 
 > [!WARNING]
-> Third-party components under `Middlewares/`, 'Application/STM32CubeIDE/' and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
+> Third-party components under `Middlewares/`, `Application/STM32CubeIDE/` and `STM32Cube_FW_N6/`, are not covered by the MIT License. They remain subject to their own respective license terms.
 
 ## contributing
 
@@ -23,6 +23,21 @@ git checkout nickname
 ```
 
 Then pull request to main. Remember to ```git pull origin main``` after your repository was merged
+
+## mac os dependencies
+
+Install [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
+
+Apple build basics
+```bash
+xcode-select --install
+``
+
+Make and ARM embedded compiler/toolchain
+```bash
+brew install git make
+brew install arm-none-eabi-gcc
+```
 
 ## Build and Run
 
