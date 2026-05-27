@@ -31,29 +31,33 @@ or if the branch already exists
 git checkout nickname
 ```
 
-Then pull request to main. Remember to ```git pull origin main``` after your repository was merged
+then pull request to main. Remember to ```git pull origin main``` after your repository was merged
 
-## building dependencies
+## dependencies
 
-- [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
-- arm-none-eabi-gcc
-- screen
-- make
+install cmake
+install screen
+ensure the subfolders of [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html) below are in path
+```
+GNU-tools-for-STM32/bin
+STLink-gdb-server/bin
+STM32CubeProgrammer/bin
+```
 
 ## build and run
 
-The instructions below assume that STM32CubeCLT, `arm-none-eabi-gdb`, and `screen` are installed and available in your shell.
+the instructions below assume that STM32CubeCLT, `arm-none-eabi-gdb`, and `screen` are installed and available in your shell.
 
 ### 1. build the application
 
-From the `Application` directory, run:
+from the `Application` directory, run:
 
 ```bash
 cmake -B build -DCMAKE_TOOLCHAIN_FILE=arm-none-eabi-gcc.cmake
 cmake --build build --parallel
 ```
 
-This builds the ELF file at:
+this builds the ELF file at:
 
 ```bash
 Application/build/Application/Project.elf
@@ -61,7 +65,7 @@ Application/build/Application/Project.elf
 
 ### 2. start the ST-LINK GDB server
 
-Open a new terminal and run:
+open a new terminal and run:
 
 ```bash
 ST-LINK_gdbserver \
@@ -69,38 +73,48 @@ ST-LINK_gdbserver \
   -l 1 \
   -d \
   -s \
-  -cp /opt/st/stm32cubeclt_1.21.0/STM32CubeProgrammer/bin \
+  -cp STM32CubeProgrammer/bin \
   -m 1 \
   -g
 ```
 
-Keep this terminal open while debugging or flashing the board.
+keep this terminal open while debugging or flashing the board.
 
 ### 3. open the UART monitor
 
-Open another terminal and run:
+open another terminal and run:
 
 ```bash
 screen /dev/ttyACM0 115200
 ```
 
-This listens to the board's UART output at 115200 baud.
+for linux, the devide can be found via 
+```bash
+ls /dev/ttyACM*
+```
 
-To exit `screen`, press:
+for mac os, the device can be found via
+```bash
+ls /dev/cu.usbmodem*
+```
+
+this listens to the board's UART output at 115200 baud.
+
+to exit `screen`, press:
 
 ```text
-Ctrl+A, then K, then Y
+ctrl+A, then K, then Y
 ```
 
 ### 4. flash and run the application
 
-Open a third terminal from the `Application` directory and start GDB:
+open a third terminal from the `Application` directory and start GDB:
 
 ```bash
 arm-none-eabi-gdb build/Application/Project.elf
 ```
 
-Inside the GDB prompt, run:
+inside the GDB prompt, run:
 
 ```gdb
 target remote :61234
@@ -109,41 +123,41 @@ load
 continue
 ```
 
-The application should now be running with screen displaying UART output.
+the application should now be running with screen displaying UART output.
 
 ## useful gdb commands
 
-Set a breakpoint at a function:
+set a breakpoint at a function:
 
 ```gdb
 break function_name
 ```
 
-Continue execution:
+continue execution:
 
 ```gdb
 continue
 ```
 
-Step into the next line or function:
+step into the next line or function:
 
 ```gdb
 step
 ```
 
-Step over the next line:
+step over the next line:
 
 ```gdb
 next
 ```
 
-Print a variable:
+print a variable:
 
 ```gdb
 print variable_name
 ```
 
-Show a backtrace:
+show a backtrace:
 
 ```gdb
 backtrace
