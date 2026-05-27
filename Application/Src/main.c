@@ -1,9 +1,9 @@
-#include "tx_api.h"
-#include "stm32n6xx_nucleo_bus.h"
 #include "stm32n6xx_nucleo_xspi.h"
+#include "stm32n6xx_nucleo_bus.h"
 #include "stm32n6xx_nucleo.h"
+#include "stm32n6xx_hal.h"
 #include "npu_cache.h"
-#include "main.h"
+#include "tx_api.h"
 
 UART_HandleTypeDef huart1;
 volatile int32_t cameraFrameReceived;
