@@ -11,7 +11,7 @@ WORK IN PROGRESS
 ## Table of Contents
 
 - [contributing](#contributing)
-- [building dependencies](#building-dependencies)
+- [dependencies](#dependencies)
 - [build and run](#build-and-run)
 - [useful gdb commands](#useful-gdb-commands)
 
